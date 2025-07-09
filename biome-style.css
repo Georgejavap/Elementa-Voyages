@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
+
+body, html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background: #a6b2c1;
+  color: #ffffff;
+}
+
+/* Top Logo Banner */
+.banner-top {
+  background: #a6b2c1; /* Pale frosty blue */
+  height: 15%;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+/* Logo Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container a img {
+  max-width: 220px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.logo-container a img:hover {
+  transform: scale(1.05);
+}
+
+/* Hero Section merged with Filters */
+.destination-filter {
+  padding: 2rem;
+  text-align: center;
+  background-color: #a6b2c1;
+  position: relative;
+}
+
+.frost-bg {
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  margin: 0.5rem 0;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Filter Bar Styling */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  z-index: 2;
+  position: relative;
+}
+
+.filter-bar select,
+.clear-btn {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: black;
+  background: #ffffff;
+  border: 1px solid black;
+  padding: 0.6rem 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-bar select:focus {
+  outline: none;
+}
+
+.filter-bar select:hover,
+.clear-btn:hover {
+  border-color: #00f0ff;
+}
+
+/* Destination Cards */
+.destination-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.destination-card {
+  background-color: #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.destination-card h3 {
+  padding: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: white;
+}
