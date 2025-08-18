@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biome Background Slideshow</title>
+  <link rel="stylesheet" href="test-styles.css" />
+</head>
+<body>
+
+  <!-- Background Slides -->
+  <div class="bg-slides">
+    <div class="bg-slide active" style="background-image: url('biome-images/snow.png');"></div>
+    <div class="bg-slide" style="background-image: url('biome-images/green.png');"></div>
+    <div class="bg-slide" style="background-image: url('biome-images/island.png');"></div>
+    <div class="bg-slide" style="background-image: url('biome-images/fire.png');"></div>
+  </div>
+
+  <!-- Logo and Navigation on top of slideshow -->
+  <header class="top-header">
+    <div class="logo-container">
+      <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" /></a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Slide Text Content -->
+  <div class="slide-text-container" id="slideText">
+    <h1>Frost Biome</h1>
+    <p>Explore the icy landscapes and crisp adventures of the Frost biome.</p>
+    <a href="frost.html" class="slide-btn">Explore Frost</a>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.bg-slide');
+const slideText = document.getElementById('slideText');
+
+// Data for each slide's text and link
+const slideData = [
+  {
+    title: 'Frost Biome',
+    description: 'Explore the icy landscapes and crisp adventures of the Frost biome.',
+    link: 'frost.html',
+    btnText: 'Explore Frost'
+  },
+  {
+    title: 'Jungle Biome',
+    description: 'Dense, wild, and full of life. The jungle awaits your discovery.',
+    link: 'jungle.html',
+    btnText: 'Explore Jungle'
+  },
+  {
+    title: 'Desert Biome',
+    description: 'Golden dunes and ancient secrets lie within the desert biome.',
+    link: 'desert.html',
+    btnText: 'Explore Desert'
+  },
+  {
+    title: 'Frost Biome',
+    description: 'Explore the icy landscapes and crisp adventures of the Frost biome.',
+    link: 'frost.html',
+    btnText: 'Explore Frost'
+  },
+  {
+    title: 'Frost Biome',
+    description: 'Explore the icy landscapes and crisp adventures of the Frost biome.',
+    link: 'frost.html',
+    btnText: 'Explore Frost'
+  }
+];
+
+let current = 0;
+const total = slides.length;
+const intervalTime = 6000; // 6 seconds
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+
+  // Update text
+  slideText.querySelector('h1').textContent = slideData[index].title;
+  slideText.querySelector('p').textContent = slideData[index].description;
+  slideText.querySelector('a').href = slideData[index].link;
+  slideText.querySelector('a').textContent = slideData[index].btnText;
+}
+
+setInterval(() => {
+  current = (current + 1) % total;
+  showSlide(current);
+}, intervalTime);
+
+  </script>
+  
+</body>
+</html>

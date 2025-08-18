@@ -1,27 +1,142 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
 
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
 body, html {
-  margin: 0;
   height: 100%;
-  width: 100%;
   font-family: 'Open Sans', sans-serif;
-  background: #a6b2c1;
-  color: #ffffff;
+  background: #000000;
+  color: #f0f0f0;
+  overflow-x: hidden;
 }
 
-/* Top Logo Banner */
-.banner-top {
-  background: #a6b2c1; /* Pale frosty blue */
-  height: 15%;
-  display: flex;
-  align-items: center;
-  padding-left: 2rem;
+/* Container for filter + grid */
+.destination-filter {
+  width: 100%;
+  margin: 3rem auto 5rem auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
 }
+
+/* Filters bar */
+.filter-bar {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.filter-bar select,
+.filter-bar button {
+  background: transparent;
+  border: 2px solid #f0f0f0;
+  color: #f0f0f0;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 140px;
+  text-align: center;
+}
+
+.filter-bar select:hover,
+.filter-bar button:hover {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+/* Grid layout: 2 columns, 8 rows max */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  justify-items: center;
+  /* REMOVE max-height + overflow */
+}
+
+/* Scrollbar for grid if needed */
+.destination-grid::-webkit-scrollbar {
+  width: 8px;
+}
+.destination-grid::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+/* Destination Cards */
+.destination-card {
+  background: #111111;
+  border: 2px solid #f0f0f0;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 520px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(240, 240, 240, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Images */
+.destination-card img {
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  object-fit: cover;
+}
+
+/* Text */
+.destination-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .destination-grid {
+    grid-template-columns: 1fr;
+    max-height: none;
+    overflow: visible;
+  }
+  .filter-bar {
+    justify-content: space-around;
+  }
+}
+
+
+/* Top Header with background image */
+.top-header {
+  height: 45%;
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem 2rem 0 2rem;
+  background: url('sunset.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden; /* ensures fade stays inside */
+}
+
 
 /* Logo Styling */
 .logo-container {
   display: flex;
   align-items: center;
+  z-index: 70;
+  
 }
 
 .logo-container a img {
@@ -34,104 +149,172 @@ body, html {
   transform: scale(1.05);
 }
 
-/* Hero Section merged with Filters */
-.destination-filter {
-  padding: 2rem;
-  text-align: center;
-  background-color: #a6b2c1;
-  position: relative;
+/* Navigation */
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+  z-index: 2;
 }
 
-.frost-bg {
-  
-  background-size: cover;
-  background-position: center;
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: rgb(240, 238, 238);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
 }
 
-.overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-
-  z-index: 1;
+.nav-links a:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.hero-text {
+.logo-container,
+.nav-links {
   position: relative;
   z-index: 2;
-  text-align: center;
-  padding-bottom: 2rem;
-}
-.hero-text h1 {
-  font-size: 3.5rem;
-  font-family: 'Playfair Display', serif;
-  margin: 0.5rem 0;
-}
-.hero-text p {
-  font-size: 1.2rem;
-  margin: 0;
 }
 
-/* Filter Bar Styling */
+/* Frost Biome Modern Art Style */
+.frost-bg {
+  background-color: #000; /* deep black for luxury feel */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 4rem 2rem;
+}
+
+/* Hero Text - simple, sharp typography */
+.frost-bg .hero-text h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.frost-bg .hero-text p {
+  font-size: 1.3rem;
+  color: #ccc;
+  max-width: 600px;
+}
+
+/* Filters - futuristic sharp box */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
-  z-index: 2;
-  position: relative;
+  margin: 2rem 0;
+  padding: 1rem; /* inner spacing */
+  border: 2px solid #605c5c; /* sharp white border */
+  border-radius: 4px; /* minimal rounding for sharp look */
+  background: rgba(0,0,0,0.2); /* subtle black overlay for depth */
+  box-shadow: 0 0 15px rgba(240,240,240,0.1); /* subtle glow for luxury feel */
+  justify-content: center;
+  align-items: center;
 }
 
-.filter-bar select,
-.clear-btn {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.4rem;
-  color: black;
-  background: #ffffff;
-  border: 1px solid black;
-  padding: 0.6rem 1.2rem;
-  text-align: center;
+.filter-bar select, .filter-bar button {
+  background: #111;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s all ease-in-out;
 }
 
-.filter-bar select:focus {
-  outline: none;
+.filter-bar select:hover, .filter-bar button:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
 }
 
-.filter-bar select:hover,
-.clear-btn:hover {
-  border-color: #00f0ff;
+/* Destination Grid */
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 /* Destination Cards */
-.destination-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
 .destination-card {
-  background-color: #000000;
-  border-radius: 10px;
+  position: relative;
   overflow: hidden;
-  width: 280px;
+  cursor: pointer;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .destination-card img {
   width: 100%;
-  height: 180px;
+  height: 400px;
   object-fit: cover;
+  border-bottom: 2px solid #fff;
 }
 
 .destination-card h3 {
-  padding: 1rem;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  color: white;
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
+
+/* Hover for luxury effect */
+.destination-card:hover {
+  transform: scale(1.02); /* color pop */
+}
+
+.destination-card h3::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #00aaff; /* subtle color accent */
+  margin: 0.5rem auto 0 auto;
+}
+
+/* Optional: abstract minimal shapes */
+.destination-card::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  top: 10px;
+  right: 10px;
+  transform: rotate(45deg);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+
+
+/* Left side vertical line */
+.destination-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: #605c5c; /* or subtle accent color */
+  opacity:1;
+  pointer-events: none;
+}
+
+

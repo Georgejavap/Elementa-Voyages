@@ -1,0 +1,137 @@
+/* Reset & base */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Playfair Display', serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Background slides container */
+.bg-slides {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.bg-slide.active {
+  opacity: 1;
+  z-index: 0;
+}
+
+/* Top Header with logo and nav (on top of slideshow) */
+.top-header {/* Pale frosty blue */
+  height: 15%;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+/* Logo Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container a img {
+  max-width: 220px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.logo-container a img:hover {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+/* Slide Text Box */
+.slide-text-container {
+  position: fixed;
+  bottom: 15%;
+  left: 5%;
+  width: 35%;
+  background: linear-gradient(to right, rgba(0,0,0,0.7), transparent);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  z-index: 10;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.slide-text-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.slide-text-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.slide-btn {
+  padding: 0.8rem 1.6rem;
+  background: rgba(255,255,255,0.25);
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+.slide-btn:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slide-text-container {
+    width: 90%;
+    bottom: 10%;
+    left: 5%;
+    font-size: 0.9rem;
+  }
+  .slide-text-container h1 {
+    font-size: 2rem;
+  }
+}

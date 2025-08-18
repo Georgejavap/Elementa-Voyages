@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,29 +9,323 @@
   <script async src="https://www.gstatic.com/maps-platform/places/web-component/loader.js"></script>
 </head>
 <body>
-  <div class="hero home-bg">
+
+  <!-- Background Slides (leave CSS out of here) -->
+  <div class="bg-slides">
+    <div class="bg-slide active" style="background-image: url('images/0ne-front.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('images/banff-national-park-3840x2160-12366.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('images/cityscape-sunrise-portland-panorama-city-lights-3840x2160-23.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('images/macaw-birds-couple-colorful-jungle-love-birds-tropical-3840x2160-7464.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('images/kihaadhuffaru-island-maldives-water-villa-wooden-pier-3840x2160-3884.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('images/lake-louise-winter-3840x2160-19913.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('images/rainbow-bridge-3840x2160-9723.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('images/mount-rundle-nightscape-banff-national-park-reflections-3840x2160-28.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('images/peacock-green-grass-beautiful-green-feathers-bird-trees-3840x2160-2147.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('images/nanpu-bridge-modern-architecture-cityscape-shanghai-city-3840x2160-18.jpg');"></div>
+  </div>
+
+  <!-- Hero (unchanged structure) -->
+  <div class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
       <h1>Elementa Voyagés</h1>
       <p>Luxury journeys through the world’s rawest beauty</p>
+
       <nav class="navbar">
-        <a href="explore.html" class="nav-button">Destinations</a>
-        <a href="#" class="nav-button">About Us</a>
+        <a href="test-explore.html" class="nav-button">Destinations</a>
+        <a href="about-us.html" class="nav-button">About Us</a>
         <div class="dropdown">
-          <a class="nav-button dropbtn"> Voyagés Journal ▾</a>
+          <a class="nav-button dropbtn">Journal ▾</a>
           <div class="dropdown-content">
-            <a href="blog-main.html">Trails To Tides</a>
-            <a href="blog-culture.html">Whispers of the World</a>
-            <a href="blog-expeditions.html">The Fifth Element</a>
-            <a href="blog-luxury.html">Echoes of Earth</a>
+            <a href="https://roadbook.com/" target="_blank">Trails To Tides</a>
+            <a href="https://www.rojocangrejo.com/" target="_blank">Whispers of the World</a>
+            <a href="https://anywhereweroam.com/" target="_blank">The Fifth Element</a>
+            <a href="https://www.notesfromtheroad.com/" target="_blank">Echoes of Earth</a>
           </div>
         </div>
       </nav>
     </div>
+
+    <!-- Decorative shapes -->
+    <div class="shape shape-circle"></div>
+    <div class="shape shape-line"></div>
+
+    <!-- Scroll arrow -->
+    <div class="scroll-arrow" id="scrollArrow">&#x2193;</div>
   </div>
-  <section id="info-section">
-    <h2>Explore Our Destinations</h2>
+
+<div id="info-section">
+  <section class="how-it-works-split" id="how-it-works">
     
+    <!-- Left: How It Works -->
+    <div class="how-left">
+      <h2>How It Works</h2>
+      <div class="mindmap-container">
+        <div class="mind-box" id="box1">
+          <h3>Browse Biomes</h3>
+          <p>Explore curated travel biomes to find your perfect journey.</p>
+        </div>
+        <div class="arrow arrow1">&#8594;</div>
+
+        <div class="mind-box" id="box2">
+          <h3>Select Destination</h3>
+          <p>Choose your luxury getaway and preview it on the map.</p>
+        </div>
+        <div class="arrow arrow2">&#8595;</div>
+
+        <div class="mind-box" id="box3">
+          <h3>Book Trip</h3>
+          <p>Secure your trip with our seamless booking process.</p>
+        </div>
+        <div class="arrow arrow3">&#8594;</div>
+
+        <div class="mind-box" id="box4">
+          <h3>Exclusive Events</h3>
+          <p>Access Gold Member events and premium experiences.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Travel Experts -->
+    <div class="how-right">
+      <h2>Meet Our Travel Experts</h2>
+
+      <div class="agent">
+        <div class="agent-img"><img src="staff/Screenshot 2025-08-14 125200.png" alt="Alexandra M."></div>
+        <div class="agent-info">
+          <h3>Alex M.</h3>
+          <p>With over 12 years of experience curating bespoke European vacations, 
+            Alex ensures every client experiences the perfect blend of culture, luxury, and adventure.
+             Specializes in exclusive villas, private tours, and gastronomic journeys.</p>
+        </div>
+      </div>
+
+      <div class="agent">
+        <div class="agent-img"><img src="staff/Screenshot 2025-08-15 144810.png" alt="Ravi K."></div>
+        <div class="agent-info">
+          <h3>Ravi K.</h3>
+          <p> Ravi has spent the last decade exploring hidden corners of the world. 
+            From remote mountain treks to off-the-grid islands, he curates extraordinary 
+            experiences for thrill-seekers and nature enthusiasts alike.</p>
+        </div>
+      </div>
+
+      <div class="agent">
+        <div class="agent-img"><img src="staff/Screenshot 2025-08-15 144949.png" alt="Leila S."></div>
+        <div class="agent-info">
+          <h3>Leila S.</h3>
+          <p> Leila is passionate about connecting travelers with authentic cultural and culinary adventures. 
+            From cooking classes with local chefs to immersive city tours, she ensures clients return home with unforgettable memories.
+    </p></p>
+        </div>
+      </div>
+
+      <!-- Contact Button -->
+      <div class="contact-box">
+        <h3>Get in Touch</h3>
+        <p>Contact any of our travel specialists for queries about selected destinations and city escapes.</p>
+        <a href="mailto:info@elementavoyages.com" class="contact-button">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+
+
+
+<section class="featured-holidays">
+  <h2>Travelers’ Favourite Holidays</h2>
+  <div class="holidays-rotator">
+    <div class="holiday-card">
+      <img src="holiday-pictures-frost/Screenshot 2025-08-05 201405.png" alt="Patagonia, Argentina" />
+      <div class="holiday-info">
+        <h3>Patagonia, Argentina</h3>
+        <a href="map.html?dest=patagonia" class="map-link">View on Map</a>
+      </div>
+    </div>
+
+    <div class="holiday-card">
+      <img src="feature-holidays/baros-maldives-island-seascape-tropical-beach-blue-sky-3840x2160-4325.jpg" alt="Male, Maldives" />
+      <div class="holiday-info">
+        <h3>Male, Maldives</h3>
+        <a href="map.html?dest=maldives" class="map-link">View on Map</a>
+      </div>
+    </div>
+
+    <div class="holiday-card">
+      <img src="feature-holidays/santorini-island-thira-aegean-sea-fira-town-greece-dusk-3840x2160-8092.jpg" alt="Santorini, Greece" />
+      <div class="holiday-info">
+        <h3>Santorini, Greece</h3>
+        <a href="map.html?dest=santorini" class="map-link">View on Map</a>
+      </div>
+    </div>
+
+    <div class="holiday-card">
+      <img src="feature-holidays/eiffel-tower-la-tour-eiffel-night-cloudy-sky-sunset-paris-3840x2160-6099.jpg" alt="Paris, France" />
+      <div class="holiday-info">
+        <h3>Paris, France</h3>
+        <a href="map.html?dest=paris" class="map-link">View on Map</a>
+      </div>
+    </div>
+
+    <div class="holiday-card">
+      <img src="feature-holidays/shanghai-city-3840x2160-16563.jpg" alt="Shanghai, China" />
+      <div class="holiday-info">
+        <h3>Shanghai, China</h3>
+        <a href="map.html?dest=shanghai" class="map-link">View on Map</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero-biomes">
+  <div class="hero-overlay">
+    <h2>Your Dream is Just One Click Away</h2>
+    <p>Explore curated biomes and luxury escapes designed for you.</p>
+    <div class="biome-buttons">
+      <a href="frost.html" class="biome-btn">Desert</a>
+      <a href="frost.html" class="biome-btn">Forest</a>
+      <a href="jungle.html" class="biome-btn">Mountain</a>
+      <a href="tides.html" class="biome-btn">Beach</a>
+    </div>
+  </div>
+</section>
+
+<section class="gold-event">
+  <h2>Ultra Luxury Event</h2>
+  <p>Exclusive experience for Gold Members. Access requires a special membership code.</p>
+  <div class="event-card">
+    <img src="images/gold-event.jpg" alt="Gold Event">
+    <button disabled>Access Code Required</button>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Column 1: Logo & About -->
+    <div class="footer-column">
+      <div class="footer-logo">
+        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo">
+      </div>
+      <p class="footer-tagline">
+        Curated journeys, luxurious stays, and unforgettable experiences.
+      </p>
+    </div>
+    
+    <!-- Column 2: Quick Links -->
+    <div class="footer-column">
+      <h4>Explore</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="test-explore.html">Destinations</a></li>
+        <li><a href="mailto:info@elementavoyages.com">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Newsletter & Social -->
+    <div class="footer-column">
+      <h4>Stay Connected</h4>
+      <p>Join our newsletter for travel inspiration & exclusive offers.</p>
+      <form class="footer-newsletter">
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sponsors & Credits -->
+  <div class="footer-sponsors">
+    <p>Sponsored by Luxury Travels & Partners</p>
+    <div class="sponsor-logos">
+      <img src="sponsors/Screenshot 2025-08-18 164132.png" alt="Sponsor 1">
+      <img src="sponsors/Screenshot 2025-08-18 164141.png" alt="Sponsor 2">
+      <img src="sponsors/Screenshot 2025-08-18 164206.png" alt="Sponsor 3">
+      <img src="sponsors/Screenshot 2025-08-18 164213.png" alt="Sponsor 4">
+      <img src="sponsors/Screenshot 2025-08-18 164353.png" alt="Sponsor 5">
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Elementa Voyagés. All Rights Reserved.</p>
+  </div>
+
+  
+</footer>
+
+
+
+    
+    
+<script>
+
+  // Background slideshow
+  const slides = document.querySelectorAll('.bg-slide');
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 5000); // 5 seconds per slide
+
+  // Lock scroll initially
+  document.body.classList.add('lock-scroll');
+
+  const arrow = document.getElementById('scrollArrow');
+  const infoSection = document.getElementById('info-section');
+
+  arrow.addEventListener('click', () => {
+    // Unlock scroll
+    document.body.classList.remove('lock-scroll');
+
+    // Make the info section visible
+    infoSection.classList.add('visible');
+
+    // Scroll smoothly to the info section
+    infoSection.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // Select all elements to reveal
+  const mindBoxes = document.querySelectorAll('.mind-box');
+  const arrows = document.querySelectorAll('.arrow');
+  const agents = document.querySelectorAll('.agent');
+
+  // Check if element is in viewport
+  function isInViewport(el, offset = 0.85) {
+    const rect = el.getBoundingClientRect();
+    return rect.top < window.innerHeight * offset;
+  }
+
+  // Reveal elements only if section is visible
+  function revealElements() {
+    if (!infoSection.classList.contains('visible')) return;
+
+    mindBoxes.forEach(box => {
+      if (isInViewport(box)) box.classList.add('visible');
+    });
+
+    arrows.forEach(arrow => {
+      if (isInViewport(arrow)) arrow.classList.add('visible');
+    });
+
+    agents.forEach(agent => {
+      if (isInViewport(agent)) agent.classList.add('visible');
+    });
+  }
+
+  // Run on scroll and on page load
+  window.addEventListener('scroll', revealElements);
+  window.addEventListener('load', revealElements);
+</script>
 
   </body>
 </html>

@@ -2,29 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elementa Voyagés</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script async src="https://www.gstatic.com/maps-platform/places/web-component/loader.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Frost – Elementa Voyagés</title>
+  <link rel="stylesheet" href="biome-style.css" />
 </head>
 <body>
-  <div class="hero home-bg">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Elementa Voyagés</h1>
-      <p>Luxury journeys through the world’s rawest beauty</p>
-      <nav class="navbar">
-        <a href="#" class="nav-button">Destinations</a>
-        <a href="#" class="nav-button">About Us</a>
-        <div class="dropdown">
-          <a class="nav-button dropbtn"> Voyagés Journal ▾</a>
-          <div class="dropdown-content">
-            <a href="blog-main.html">Trails To Tides</a>
-            <a href="blog-culture.html">Whispers of the World</a>
-            <a href="blog-expeditions.html">The Fifth Element</a>
-            <a href="blog-luxury.html">Echoes of Earth</a>
-          </div>
-        </div>
-      </nav>
-    </div>
+
+<header class="top-header">
+  <div class="logo-container">
+    <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" /></a>
   </div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+
+
+
+  <!-- FILTERS + GRID -->
+  <section class="destination-filter">
+    
+
+    <div class="filter-bar">
+      <select id="family-select">
+        <option value="">Family / Adult</option>
+        <option value="family">Family Friendly</option>
+        <option value="adult">Adult Only</option>
+      </select>
+
+      <select id="continent-select">
+        <option value="">Continent</option>
+        <option value="europe">Europe</option>
+        <option value="asia">Asia</option>
+        <option value="north-america">North America</option>
+        <option value="south-america">South America</option>
+      </select>
+
+      <select id="type-select">
+        <option value="">Holiday Type</option>
+        <option value="relaxing">Relaxing</option>
+        <option value="adventurous">Adventurous</option>
+      </select>
+
+      <button class="clear-btn">✖ Clear Filters</button>
+    </div>
+
+    <div class="destination-grid">
+      <!-- Europe -->
+      <div class="destination-card" data-family="family" data-continent="europe" data-type="relaxing">
+        <img src="Screenshot 2025-08-05 200419.png" alt="Lapland, Sweden" />
+        <h3>Lapland, Sweden</h3>
+      </div>
+      <div class="destination-card" data-family="adult" data-continent="europe" data-type="adventurous">
+        <img src="Screenshot 2025-08-05 201405.png" alt="Iceland Glaciers" />
+        <h3>Iceland Glaciers</h3>
+      </div>
+      <div class="destination-card" data-family="family" data-continent="europe" data-type="adventurous">
+        <img src="Screenshot 2025-08-05 201650.png" alt="Norway Fjords" />
+        <h3>Norway Fjords</h3>
+      </div>
+      <div class="destination-card" data-family="adult" data-continent="europe" data-type="relaxing">
+        <img src="Screenshot 2025-08-13 105952.png" alt="Swiss Alps" />
+        <h3>Swiss Alps</h3>
+      </div>
+
+      <!-- Asia -->
+      <div class="destination-card" data-family="family" data-continent="asia" data-type="relaxing">
+        <img src="images/japan-alps.jpg" alt="Japan Alps" />
+        <h3>Japan Alps</h3>
+      </div>
+      <div class="destination-card" data-family="adult" data-continent="asia" data-type="adventurous">
+        <img src="images/himalayas.jpg" alt="Himalayas, Nepal" />
+        <h3>Himalayas, Nepal</h3>
+      </div>
+      <div class="destination-card" data-family="family" data-continent="asia" data-type="adventurous">
+        <img src="images/mongolia.jpg" alt="Mongolia Winter Steppe" />
+        <h3>Mongolia Winter Steppe</h3>
+      </div>
+      <div class="destination-card" data-family="adult" data-continent="asia" data-type="relaxing">
+        <img src="images/kyrgyzstan.jpg" alt="Kyrgyzstan Lakes" />
+        <h3>Kyrgyzstan Lakes</h3>
+      </div>
+
+      <!-- North America -->
+      <div class="destination-card" data-family="family" data-continent="north-america" data-type="relaxing">
+        <img src="images/canada.jpg" alt="Banff, Canada" />
+        <h3>Banff, Canada</h3>
+      </div>
+      <div class="destination-card" data-family="adult" data-continent="north-america" data-type="adventurous">
+        <img src="images/alaska.jpg" alt="Alaska Wilderness" />
+        <h3>Alaska Wilderness</h3>
+      </div>
+      <div class="destination-card" data-family="family" data-continent="north-america" data-type="adventurous">
+        <img src="images/rockies.jpg" alt="Rocky Mountains, USA" />
+        <h3>Rocky Mountains, USA</h3>
+      </div>
+      <div class="destination-card" data-family="adult" data-continent="north-america" data-type="relaxing">
+        <img src="images/yukon.jpg" alt="Yukon, Canada" />
+        <h3>Yukon, Canada</h3>
+      </div>
+
+      <!-- South America -->
+      <div class="destination-card" data-family="family" data-continent="south-america" data-type="relaxing">
+        <img src="images/chile.jpg" alt="Torres del Paine, Chile" />
+        <h3>Torres del Paine, Chile</h3>
+      </div>
+      <div class="destination-card" data-family="adult" data-continent="south-america" data-type="adventurous">
+        <img src="images/argentina.jpg" alt="Patagonia, Argentina" />
+        <h3>Patagonia, Argentina</h3>
+      </div>
+      <div class="destination-card" data-family="family" data-continent="south-america" data-type="adventurous">
+        <img src="images/andes.jpg" alt="Andes, Peru" />
+        <h3>Andes, Peru</h3>
+      </div>
+      <div class="destination-card" data-family="adult" data-continent="south-america" data-type="relaxing">
+        <img src="images/bolivia.jpg" alt="Salar de Uyuni, Bolivia" />
+        <h3>Salar de Uyuni, Bolivia</h3>
+      </div>
+    </div>
+  </section>
+
+  <script src="biome.js"></script>
+</body>
+</html>
