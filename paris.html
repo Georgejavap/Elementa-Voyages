@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paris Map & Hotels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="city-map.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+</head>
+<body>
+
+<header class="top-header">
+  <div class="logo-container">
+    <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo"></a>
+  </div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<h1 id="city-title">Explore Paris</h1>
+
+<div class="main-content">
+  <div class="map-section">
+    <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
+    <gmp-map id="map" center="48.8566,2.3522" zoom="14">
+      <div slot="control-block-start-inline-start" class="place-picker-container">
+        <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
+      </div>
+    </gmp-map>
+  </div>
+
+  <div class="sidebar">
+    <h2>Recommended Hotels</h2>
+    <div class="hotel-links">
+      <a href="https://www.chateauvoltaire.com/en/" target="_blank" class="hotel-card">
+        <img src="paris/Screenshot 2025-08-19 164518.png" alt="Château Voltaire">
+        <h3>Château Voltaire</h3>
+      </a>
+      <a href="https://hotellemireille.com/" target="_blank" class="hotel-card">
+        <img src="paris/Screenshot 2025-08-19 164757.png" alt="Hôtel Le Mireille">
+        <h3>Hôtel Le Mireille</h3>
+      </a>
+      <a href="https://hotelgeorgette.com/" target="_blank" class="hotel-card">
+        <img src="paris/Screenshot 2025-08-19 164918.png" alt="Hôtel Georgette">
+        <h3>Hôtel Georgette</h3>
+      </a>
+      <a href="https://www.grandhoteldupalaisroyal.com/" target="_blank" class="hotel-card">
+        <img src="paris/Screenshot 2025-08-19 165241.png" alt="Grand Hôtel du Palais Royal">
+        <h3>Grand Hôtel du Palais Royal</h3>
+      </a>
+      <a href="https://www.ritzparis.com/" target="_blank" class="hotel-card">
+        <img src="paris/Screenshot 2025-08-19 165646.png" alt="Ritz Paris">
+        <h3>Ritz Paris</h3>
+      </a>
+      <a href="https://www.fourseasons.com/paris/" target="_blank" class="hotel-card">
+        <img src="paris/Screenshot 2025-08-19 165715.png" alt="Four Seasons Hotel George V">
+        <h3>Four Seasons Hotel George V</h3>
+      </a>
+      <a href="https://www.lebristolparis.com/" target="_blank" class="hotel-card">
+        <img src="paris/Screenshot 2025-08-19 165745.png" alt="Le Bristol Paris">
+        <h3>Le Bristol Paris</h3>
+      </a>
+      <a href="https://www.shangri-la.com/paris/shangrila/" target="_blank" class="hotel-card">
+        <img src="paris/Screenshot 2025-08-19 165926.png" alt="Shangri-La Hotel Paris">
+        <h3>Shangri-La Hotel Paris</h3>
+      </a>
+      <a href="https://www.peninsula.com/en/paris/5-star-luxury-hotel-16e" target="_blank" class="hotel-card">
+        <img src="paris/Screenshot 2025-08-19 165955.png" alt="The Peninsula Paris">
+        <h3>The Peninsula Paris</h3>
+      </a>
+      <a href="https://www.hotelplazaathenee.com/" target="_blank" class="hotel-card">
+        <img src="paris/Screenshot 2025-08-19 170252.png" alt="Hôtel Plaza Athénée">
+        <h3>Hôtel Plaza Athénée</h3>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  async function init() {
+    await customElements.whenDefined('gmp-map');
+    const map = document.querySelector('#map');
+    const placePicker = document.querySelector('gmpx-place-picker');
+    const infoWindow = new google.maps.InfoWindow();
+
+    placePicker.addEventListener('gmpx-placechange', () => {
+      const place = placePicker.value;
+
+      if (!place.location) {
+        window.alert("No details available for input: '" + place.name + "'");
+        return;
+      }
+
+      if (place.viewport) {
+        map.innerMap.fitBounds(place.viewport);
+      } else {
+        map.center = place.location;
+        map.zoom = 14;
+      }
+
+      const searchMarker = new google.maps.Marker({
+        position: place.location,
+        map: map.innerMap,
+        title: place.displayName
+      });
+
+      infoWindow.setContent(`<strong>${place.displayName}</strong><br>${place.formattedAddress || ""}`);
+      infoWindow.open(map.innerMap, searchMarker);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patagonia Map & Hotels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="city-map.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+</head>
+<body>
+
+<header class="top-header">
+  <div class="logo-container">
+    <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo"></a>
+  </div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<h1 id="city-title">Explore Patagonia</h1>
+
+<div class="main-content">
+  <div class="map-section">
+    <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
+    <gmp-map id="map" center="-50.9423,-73.4068" zoom="6">
+      <div slot="control-block-start-inline-start" class="place-picker-container">
+        <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
+      </div>
+    </gmp-map>
+  </div>
+
+  <div class="sidebar">
+    <h2>Recommended Hotels</h2>
+    <div class="hotel-links">
+      <a href="https://llaollao.com/" target="_blank" class="hotel-card">
+        <img src="patagonia/Screenshot 2025-08-19 171019.png" alt="Llao Llao Hotel">
+        <h3>Llao Llao Hotel</h3>
+      </a>
+      <a href="https://awasi.com/" target="_blank" class="hotel-card">
+        <img src="patagonia/Screenshot 2025-08-19 171155.png" alt="Awasi Patagonia">
+        <h3>Awasi Patagonia</h3>
+      </a>
+      <a href="https://www.hotelcostaustralis.com/" target="_blank" class="hotel-card">
+        <img src="patagonia/Screenshot 2025-08-19 171432.png" alt="Hotel Costaustralis">
+        <h3>Hotel Costaustralis</h3>
+      </a>
+      <a href="https://www.hosteriapehoe.cl/" target="_blank" class="hotel-card">
+        <img src="patagonia/Screenshot 2025-08-19 171620.png" alt="Hosteria Pehoe">
+        <h3>Hosteria Pehoe</h3>
+      </a>
+      <a href="https://hotels.cloudbeds.com/404?redirect_url=https%3A%2F%2Fhotels.cloudbeds.com%2Fes%2Freservation%2FPttMz3%3Fcurrency%3Dars&error_code=GENERIC" target="_blank" class="hotel-card">
+        <img src="patagonia/Screenshot 2025-08-19 171722.png" alt="Socialtel Bariloche">
+        <h3>Socialtel Bariloche</h3>
+      </a>
+      <a href="https://tierrapatagonia.com/" target="_blank" class="hotel-card">
+        <img src="patagonia/Screenshot 2025-08-19 171854.png" alt="Tierra Patagonia">
+        <h3>Tierra Patagonia</h3>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  async function init() {
+    await customElements.whenDefined('gmp-map');
+    const map = document.querySelector('#map');
+    const placePicker = document.querySelector('gmpx-place-picker');
+    const infoWindow = new google.maps.InfoWindow();
+
+    placePicker.addEventListener('gmpx-placechange', () => {
+      const place = placePicker.value;
+
+      if (!place.location) {
+        window.alert("No details available for input: '" + place.name + "'");
+        return;
+      }
+
+      if (place.viewport) {
+        map.innerMap.fitBounds(place.viewport);
+      } else {
+        map.center = place.location;
+        map.zoom = 14;
+      }
+
+      const searchMarker = new google.maps.Marker({
+        position: place.location,
+        map: map.innerMap,
+        title: place.displayName
+      });
+
+      infoWindow.setContent(`<strong>${place.displayName}</strong><br>${place.formattedAddress || ""}`);
+      infoWindow.open(map.innerMap, searchMarker);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maldives Map & Hotels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="city-map.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+</head>
+<body>
+
+<header class="top-header">
+  <div class="logo-container">
+    <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo"></a>
+  </div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<h1 id="city-title">Explore Maldives</h1>
+
+<div class="main-content">
+  <div class="map-section">
+    <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
+    <!-- Maldives coordinates: 3.2028° N, 73.2207° E -->
+    <gmp-map id="map" center="3.2028,73.2207" zoom="14">
+      <div slot="control-block-start-inline-start" class="place-picker-container">
+        <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
+      </div>
+    </gmp-map>
+  </div>
+
+  <div class="sidebar">
+    <h2>Recommended Hotels</h2>
+    <div class="hotel-links">
+      <a href="https://www.ayadamaldives.com/" target="_blank" class="hotel-card">
+        <img src="maldives/Screenshot 2025-08-19 162416.png" alt="Ayada Maldives">
+        <h3>Ayada Maldives</h3>
+      </a>
+      <a href="https://www.cinnamonhotels.com/cinnamon-velifushi-maldives?utm_source=google&utm_medium=organic&utm_campaign=cinnamonvelifushimaldives&utm_term=gbp" target="_blank" class="hotel-card">
+        <img src="maldives/Screenshot 2025-08-19 162628.png" alt="Cinnamon Velifushi Maldives">
+        <h3>Cinnamon Velifushi Maldives</h3>
+      </a>
+      <a href="https://www.fushifaru.com/" target="_blank" class="hotel-card">
+        <img src="maldives/Screenshot 2025-08-19 162827.png" alt="Fushifaru Maldives">
+        <h3>Fushifaru Maldives</h3>
+      </a>
+      <a href="https://so-hotels.com/en/maldives/?utm_source=google&utm_medium=organic&utm_campaign=gmb-website&utm_content=website_button" target="_blank" class="hotel-card">
+        <img src="maldives/Screenshot 2025-08-19 163054.png" alt="SO/ Maldives">
+        <h3>SO/ Maldives</h3>
+      </a>
+      <a href="https://www.jaresortshotels.com/maldives/ja-manafaru" target="_blank" class="hotel-card">
+        <img src="maldives/Screenshot 2025-08-19 163223.png" alt="JA Manafaru">
+        <h3>JA Manafaru</h3>
+      </a>
+      <a href="https://medhufushiisland.com/" target="_blank" class="hotel-card">
+        <img src="maldives/Screenshot 2025-08-19 163339.png" alt="Medhufushi Island Resort">
+        <h3>Medhufushi Island Resort</h3>
+      </a>
+      <a href="https://soneva.com/resorts/soneva-fushi/" target="_blank" class="hotel-card">
+        <img src="maldives/Screenshot 2025-08-19 163431.png" alt="Soneva Fushi">
+        <h3>Soneva Fushi</h3>
+      </a>
+      <a href="https://www.bluepillow.com/search/5943837d7c00cb0e64323665?dest=bkng&cat=House&lat=3.60714&lng=72.9552" target="_blank" class="hotel-card">
+        <img src="maldives/Screenshot 2025-08-19 163607.png" alt="Banyan Villa Maldives">
+        <h3>Banyan Villa Maldives</h3>
+      </a>
+      <a href="https://www.joali.com/joali-maldives/?utm_source=GoogleBusinessProfile&utm_medium=GBP&utm_campaign=Google_GBP" target="_blank" class="hotel-card">
+        <img src="maldives/Screenshot 2025-08-19 163706.png" alt="JOALI Maldives">
+        <h3>JOALI Maldives</h3>
+      </a>
+      <a href="https://www.kandolhu.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp" target="_blank" class="hotel-card">
+        <img src="maldives/Screenshot 2025-08-19 163902.png" alt="Kandolhu Maldives">
+        <h3>Kandolhu Maldives</h3>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  async function init() {
+    await customElements.whenDefined('gmp-map');
+    const map = document.querySelector('#map');
+    const placePicker = document.querySelector('gmpx-place-picker');
+    const infoWindow = new google.maps.InfoWindow();
+
+    placePicker.addEventListener('gmpx-placechange', () => {
+      const place = placePicker.value;
+
+      if (!place.location) {
+        window.alert("No details available for input: '" + place.name + "'");
+        return;
+      }
+
+      if (place.viewport) {
+        map.innerMap.fitBounds(place.viewport);
+      } else {
+        map.center = place.location;
+        map.zoom = 14;
+      }
+
+      const searchMarker = new google.maps.Marker({
+        position: place.location,
+        map: map.innerMap,
+        title: place.displayName
+      });
+
+      infoWindow.setContent(`<strong>${place.displayName}</strong><br>${place.formattedAddress || ""}`);
+      infoWindow.open(map.innerMap, searchMarker);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+
+</body>
+</html>

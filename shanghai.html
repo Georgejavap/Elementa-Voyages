@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanghai Map & Hotels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="city-map.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+</head>
+<body>
+
+<header class="top-header">
+  <div class="logo-container">
+    <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo"></a>
+  </div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<h1 id="city-title">Explore Shanghai</h1>
+
+<div class="main-content">
+  <div class="map-section">
+    <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
+    <gmp-map id="map" center="31.2304,121.4737" zoom="14">
+      <div slot="control-block-start-inline-start" class="place-picker-container">
+        <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
+      </div>
+    </gmp-map>
+  </div>
+
+  <div class="sidebar">
+    <h2>Recommended Hotels</h2>
+    <div class="hotel-links">
+      <a href="https://www.hyatt.com/zh-CN/hotel/china/grand-hyatt-shanghai/shagh" target="_blank" class="hotel-card">
+        <img src="shanghai/Screenshot 2025-08-19 172120.png" alt="Grand Hyatt Shanghai">
+        <h3>Grand Hyatt Shanghai</h3>
+      </a>
+      <a href="https://www.hyatt.com/grand-hyatt/zh-CN/shang-hyatt-on-the-bund-shanghai" target="_blank" class="hotel-card">
+        <img src="shanghai/Screenshot 2025-08-19 172213.png" alt="Hyatt on the Bund Hotel">
+        <h3>Hyatt on the Bund Hotel</h3>
+      </a>
+      <a href="https://www.mandarinoriental.com/en/shanghai/pudong/offers?src=ps.brand.mopud.ggl&gclsrc=aw.ds&gad_source=1&gad_campaignid=20814215455&gclid=Cj0KCQjwwZDFBhCpARIsAB95qO3-yKum76rDgVry1qnP2w-rB6GqEA7C32mAKiJmrC0VXEpKOooGlKYaAq0OEALw_wcB" target="_blank" class="hotel-card">
+        <img src="shanghai/Screenshot 2025-08-19 172506.png" alt="Mandarin Oriental Pudong">
+        <h3>Mandarin Oriental Pudong</h3>
+      </a>
+      <a href="https://waldorfastoriahotels.com.cn/zh-cn/hotel/shanghai/waldorf-astoria-shanghai-SHAWAWA/index.html" target="_blank" class="hotel-card">
+        <img src="shanghai/Screenshot 2025-08-19 172609.png" alt="Waldorf Astoria Shanghai on the Bund">
+        <h3>Waldorf Astoria Shanghai on the Bund</h3>
+      </a>
+      <a href="https://www.hotel.com.au/shanghai/shanghai-meego-qingwen-hotel.htm" target="_blank" class="hotel-card">
+        <img src="shanghai/Screenshot 2025-08-19 172825.png" alt="Meego Qingwen Hotel">
+        <h3>Meego Qingwen Hotel</h3>
+      </a>
+      <a href="https://www.marriott.com.cn/hotels/shamc-shanghai-marriott-marquis-city-centre/overview/" target="_blank" class="hotel-card">
+        <img src="shanghai/Screenshot 2025-08-19 172955.png" alt="Shanghai Marriott Hotel City Centre">
+        <h3>Shanghai Marriott Hotel City Centre</h3>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  async function init() {
+    await customElements.whenDefined('gmp-map');
+    const map = document.querySelector('#map');
+    const placePicker = document.querySelector('gmpx-place-picker');
+    const infoWindow = new google.maps.InfoWindow();
+
+    placePicker.addEventListener('gmpx-placechange', () => {
+      const place = placePicker.value;
+
+      if (!place.location) {
+        window.alert("No details available for input: '" + place.name + "'");
+        return;
+      }
+
+      if (place.viewport) {
+        map.innerMap.fitBounds(place.viewport);
+      } else {
+        map.center = place.location;
+        map.zoom = 14;
+      }
+
+      const searchMarker = new google.maps.Marker({
+        position: place.location,
+        map: map.innerMap,
+        title: place.displayName
+      });
+
+      infoWindow.setContent(`<strong>${place.displayName}</strong><br>${place.formattedAddress || ""}`);
+      infoWindow.open(map.innerMap, searchMarker);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+</script>
+
+</body>
+</html>

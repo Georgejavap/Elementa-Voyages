@@ -142,23 +142,24 @@
       <img src="holiday-pictures-frost/Screenshot 2025-08-05 201405.png" alt="Patagonia, Argentina" />
       <div class="holiday-info">
         <h3>Patagonia, Argentina</h3>
-        <a href="map.html?dest=patagonia" class="map-link">View on Map</a>
+        <a href="argentina.html" class="map-link">View on Map</a>
       </div>
     </div>
 
     <div class="holiday-card">
-      <img src="feature-holidays/baros-maldives-island-seascape-tropical-beach-blue-sky-3840x2160-4325.jpg" alt="Male, Maldives" />
-      <div class="holiday-info">
-        <h3>Male, Maldives</h3>
-        <a href="map.html?dest=maldives" class="map-link">View on Map</a>
-      </div>
-    </div>
+  <img src="feature-holidays/baros-maldives-island-seascape-tropical-beach-blue-sky-3840x2160-4325.jpg" alt="Male, Maldives" />
+  <div class="holiday-info">
+    <h3>Male, Maldives</h3>
+    <a href="maldives.html" class="map-link">View on Map</a>
+  </div>
+</div>
+
 
     <div class="holiday-card">
       <img src="feature-holidays/santorini-island-thira-aegean-sea-fira-town-greece-dusk-3840x2160-8092.jpg" alt="Santorini, Greece" />
       <div class="holiday-info">
         <h3>Santorini, Greece</h3>
-        <a href="map.html?dest=santorini" class="map-link">View on Map</a>
+        <a href="santorini.html" class="map-link">View on Map</a>
       </div>
     </div>
 
@@ -166,7 +167,7 @@
       <img src="feature-holidays/eiffel-tower-la-tour-eiffel-night-cloudy-sky-sunset-paris-3840x2160-6099.jpg" alt="Paris, France" />
       <div class="holiday-info">
         <h3>Paris, France</h3>
-        <a href="map.html?dest=paris" class="map-link">View on Map</a>
+        <a href="paris.html" class="map-link">View on Map</a>
       </div>
     </div>
 
@@ -174,7 +175,7 @@
       <img src="feature-holidays/shanghai-city-3840x2160-16563.jpg" alt="Shanghai, China" />
       <div class="holiday-info">
         <h3>Shanghai, China</h3>
-        <a href="map.html?dest=shanghai" class="map-link">View on Map</a>
+        <a href="shanghai.html" class="map-link">View on Map</a>
       </div>
     </div>
   </div>
@@ -195,14 +196,30 @@
   </div>
 </section>
 
-<section class="gold-event">
-  <h2>Ultra Luxury Event</h2>
-  <p>Exclusive experience for Gold Members. Access requires a special membership code.</p>
-  <div class="event-card">
-    <img src="images/gold-event.jpg" alt="Gold Event">
-    <button disabled>Access Code Required</button>
+<section class="gold-event-full">
+  <div class="gold-card">
+    <div class="gold-bg"></div>
+    <div class="gold-content">
+      <h2>Gold Membership</h2>
+      <p>
+        Experience the ultimate luxury getaway. Exclusive access to curated trips, personalized services, and once-in-a-lifetime experiences await our Gold Members.
+      </p>
+      <button onclick="location.href='mailto:info@yourdomain.com?subject=Gold Membership Inquiry'">
+        Inquire Now
+      </button>
+    </div>
+
+    <!-- Abstract Shapes -->
+    <div class="abstract-shape gold-shape1"></div>
+    <div class="abstract-shape gold-shape2"></div>
   </div>
 </section>
+
+
+
+
+
+
 
 <footer class="site-footer">
   <div class="footer-container">
@@ -267,7 +284,7 @@
     
     
 <script>
-
+   
   // Background slideshow
   const slides = document.querySelectorAll('.bg-slide');
   let current = 0;
@@ -325,6 +342,8 @@
   // Run on scroll and on page load
   window.addEventListener('scroll', revealElements);
   window.addEventListener('load', revealElements);
+
+
 </script>
 
   </body>
