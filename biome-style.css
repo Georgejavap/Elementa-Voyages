@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
 
+/* Import fonts: Playfair Display (for headings) and Open Sans (for body text) */
+
 * {
-  margin: 0; padding: 0; box-sizing: border-box;
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
 }
+/* Reset all elements: remove default margin/padding and use border-box sizing */
 
 :root {
   --gold: #c5a880;
   --black: #000;
   --white: #fff;
 }
+/* Define reusable theme color variables (gold, black, white) */
 
 body, html {
   height: 100%;
@@ -17,8 +23,9 @@ body, html {
   color: #f0f0f0;
   overflow-x: hidden;
 }
+/* Set global styles: full height, dark background, light text, Open Sans font, prevent horizontal scroll */
 
-/* Container for filter + grid */
+/* Container for filter controls + grid layout */
 .destination-filter {
   width: 100%;
   margin: 3rem auto 5rem auto;
@@ -27,7 +34,7 @@ body, html {
   z-index: 2;
 }
 
-/* Filters bar */
+/* Filters bar wrapper */
 .filter-bar {
   margin-bottom: 2rem;
   display: flex;
@@ -36,6 +43,7 @@ body, html {
   justify-content: center;
 }
 
+/* Style for filter dropdowns and buttons */
 .filter-bar select,
 .filter-bar button {
   background: transparent;
@@ -50,13 +58,13 @@ body, html {
   text-align: center;
 }
 
+/* Hover effect: invert background and text color */
 .filter-bar select:hover,
 .filter-bar button:hover {
   background-color: #f0f0f0;
   color: #000000;
 }
-
-/* Grid layout: 2 columns, 8 rows max */
+/* Grid layout for all destination cards */
 .destination-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -66,7 +74,7 @@ body, html {
   /* REMOVE max-height + overflow */
 }
 
-/* Scrollbar for grid if needed */
+/* Custom scrollbar styling for the destination grid */
 .destination-grid::-webkit-scrollbar {
   width: 8px;
 }
@@ -75,7 +83,7 @@ body, html {
   border-radius: 4px;
 }
 
-/* Destination Cards */
+/* Styling for individual destination cards with hover effect */
 .destination-card {
   background: #111111;
   border: 2px solid #f0f0f0;
@@ -92,7 +100,7 @@ body, html {
   transform: translateY(-8px);
 }
 
-/* Images */
+/* Image styling inside destination cards */
 .destination-card img {
   width: 100%;
   height: 180px;
@@ -101,7 +109,7 @@ body, html {
   object-fit: cover;
 }
 
-/* Text */
+/* Text styling for destination card titles */
 .destination-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
@@ -111,7 +119,7 @@ body, html {
   flex-grow: 1;
 }
 
-/* Responsive tweaks */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .destination-grid {
     grid-template-columns: 1fr;
@@ -124,8 +132,7 @@ body, html {
 }
 
 
-/* Top Header with background image */
-/* Shared base */
+/* Base styling for the top header section with background image */
 .top-header {
   height: 65%;
   display: flex;
@@ -137,7 +144,7 @@ body, html {
   background-position: center;
 }
 
-/* Fade overlay */
+/* Fade overlay at bottom of header for visual depth */
 .top-header::after {
   content: "";
   position: absolute;
@@ -149,7 +156,7 @@ body, html {
   pointer-events: none;
 }
 
-/* Biome-specific backgrounds */
+/* Specific background images for different biomes */
 .top-header.frost {
   background-image: url('biome-background/frost.jpg');
 }
@@ -166,16 +173,13 @@ body, html {
   background-image: url('biome-background/waves.jpg');
 }
 
- 
 
 
-
-/* Logo Styling */
+/* Logo Styling: container and hover effect for logo image */
 .logo-container {
   display: flex;
   align-items: center;
   z-index: 70;
-  
 }
 
 .logo-container a img {
@@ -185,10 +189,10 @@ body, html {
   transition: transform 0.3s ease;
 }
 .logo-container a img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/* Navigation */
+/* Navigation Styling: horizontal menu with spacing and hover effect */
 .nav-links {
   margin-left: auto;
   display: flex;
@@ -209,17 +213,19 @@ body, html {
 }
 
 .nav-links a:hover {
-  background-color: #ffffff;
+  background-color: #ffffff; /* Highlight on hover */
   color: #000000;
 }
 
+/* Ensure logo and nav have proper stacking context */
 .logo-container,
 .nav-links {
   position: relative;
   z-index: 2;
 }
 
-/* Frost Biome Modern Art Style */
+
+/* Frost Biome Section: background container with luxury feel */
 .frost-bg {
   background-color: #000; /* deep black for luxury feel */
   position: relative;
@@ -228,7 +234,7 @@ body, html {
   padding: 4rem 2rem;
 }
 
-/* Hero Text - simple, sharp typography */
+/* Hero Text Styling: large heading and supporting paragraph */
 .frost-bg .hero-text h1 {
   font-size: 3.2rem;
   font-weight: 700;
@@ -241,10 +247,11 @@ body, html {
 .frost-bg .hero-text p {
   font-size: 1.3rem;
   color: #ccc;
-  max-width: 600px;
+  max-width: 600px; /* constrain width for readability */
 }
 
-/* Filters - futuristic sharp box */
+
+/* Filter Bar Section: futuristic sharp container with subtle glow */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -259,6 +266,7 @@ body, html {
   align-items: center;
 }
 
+/* Filter Controls: select dropdowns and buttons styling */
 .filter-bar select, .filter-bar button {
   background: #111;
   color: #fff;
@@ -270,13 +278,14 @@ body, html {
   transition: 0.2s all ease-in-out;
 }
 
+/* Hover effects: invert colors for interactivity */
 .filter-bar select:hover, .filter-bar button:hover {
   background: #fff;
   color: #000;
   border-color: #fff;
 }
 
-/* Destination Grid */
+/* Destination Grid Section: sets up 2-column layout for destinations */
 .destination-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 per row */
@@ -285,7 +294,7 @@ body, html {
   z-index: 2;
 }
 
-/* Destination Cards */
+/* Individual Destination Cards: container, background, flex layout */
 .destination-card {
   position: relative;
   overflow: hidden;
@@ -298,6 +307,7 @@ body, html {
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
+/* Images inside cards: full width, fixed height, cover object-fit */
 .destination-card img {
   width: 100%;
   height: 400px;
@@ -305,6 +315,7 @@ body, html {
   border-bottom: 2px solid #fff;
 }
 
+/* Card Titles */
 .destination-card h3 {
   margin: 1rem 0;
   font-size: 1.4rem;
@@ -313,11 +324,12 @@ body, html {
   letter-spacing: 1px;
 }
 
-/* Hover for luxury effect */
+/* Hover effect for luxury feel */
 .destination-card:hover {
-  transform: scale(1.02); /* color pop */
+  transform: scale(1.02); /* subtle pop effect */
 }
 
+/* Decorative line under card titles */
 .destination-card h3::after {
   content: '';
   display: block;
@@ -327,7 +339,7 @@ body, html {
   margin: 0.5rem auto 0 auto;
 }
 
-/* Optional: abstract minimal shapes */
+/* Abstract minimal shapes for design detail */
 .destination-card::before {
   content: '';
   position: absolute;
@@ -341,9 +353,7 @@ body, html {
   pointer-events: none;
 }
 
-
-
-/* Left side vertical line */
+/* Left vertical line for visual structure */
 .destination-grid::before {
   content: '';
   position: absolute;
@@ -351,16 +361,14 @@ body, html {
   left: 0;
   width: 2px;
   height: 100%;
-  background: #605c5c; /* or subtle accent color */
+  background: #605c5c; /* subtle accent color */
   opacity:1;
   pointer-events: none;
 }
 
 
 
-
-
-/* Footer Base */
+/* Footer Base: main styling for the footer container */
 .site-footer {
   background: linear-gradient(180deg, #000 0%, #000000 100%);
   color: #eee;
@@ -368,20 +376,19 @@ body, html {
   font-family: 'playfair display', serif;
   font-size: 14px;
   position: relative;
-  overflow: hidden; /* shapes stay inside footer */
+  overflow: hidden; /* ensures decorative shapes stay inside footer */
 }
 
-/* Abstract shapes inside footer */
+/* Abstract shapes: decorative elements inside footer */
 .footer-shape {
   position: absolute;
   border-radius: 50%;
   opacity: 0.07;
   z-index: 0;
-  pointer-events: none;
+  pointer-events: none; /* shapes don't interfere with interaction */
 }
 
-
-/* Ensure all footer content appears above shapes */
+/* Layering: ensures all main footer content sits above shapes */
 .footer-container,
 .footer-sponsors,
 .footer-bottom {
@@ -389,7 +396,7 @@ body, html {
   z-index: 1;
 }
 
-/* Layout */
+/* Layout: grid structure for footer columns */
 .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -398,8 +405,7 @@ body, html {
   margin: 0 auto 40px;
   text-align: left;
 }
-
-/* Logo & tagline */
+/* Logo & Tagline: styles for footer branding */
 .footer-logo img {
   max-width: 160px;
   margin-bottom: 15px;
@@ -410,7 +416,7 @@ body, html {
   line-height: 1.6;
 }
 
-/* Links */
+/* Links: styles for footer navigation links */
 .footer-column h4 {
   color: var(--gold);
   margin-bottom: 15px;
@@ -434,7 +440,7 @@ body, html {
   color: var(--gold);
 }
 
-/* Newsletter */
+/* Newsletter: input field and subscribe button styling */
 .footer-newsletter {
   display: flex;
   gap: 10px;
@@ -461,7 +467,7 @@ body, html {
   background: var(--gold);
 }
 
-/* Social links */
+/* Social links: styling for footer social media icons/links */
 .footer-social {
   margin-top: 10px;
 }
@@ -476,7 +482,7 @@ body, html {
   opacity: 0.7;
 }
 
-/* Sponsors */
+/* Sponsors: text and logos of footer sponsors */
 .footer-sponsors {
   text-align: center;
   margin-bottom: 20px;
@@ -496,8 +502,7 @@ body, html {
   transition: filter 0.3s;
 }
 
-
-/* Bottom credits */
+/* Bottom credits: copyright and small footer info */
 .footer-bottom {
   border-top: 1px solid #333;
   padding-top: 15px;

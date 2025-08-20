@@ -1,23 +1,21 @@
-/* ------------------------------
-   Import Fonts
------------------------------- */
+/* Import fonts for headings and body text */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
 
+/* Root variables for consistent color scheme */
 :root {
   --gold: #c5a880;
   --black: #000;
   --white: #fff;
 }
 
-/* ------------------------------
-   Global Styles
------------------------------- */
+/* Global reset: remove default margin/padding and use border-box sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base HTML/body styles */
 html, body {
   height: 100%;
   font-family: 'playfair display', serif;
@@ -28,10 +26,7 @@ body {
   background-color: black;
 }
 
-
-/* ------------------------------
-   Background Slideshow
------------------------------- */
+/* Background slides container: fixed and behind all content */
 .bg-slides {
   position: fixed;
   top: 0;
@@ -42,6 +37,7 @@ body {
   overflow: hidden;
 }
 
+/* Individual slides: full-size and fade transition */
 .bg-slide {
   position: absolute;
   width: 100%;
@@ -52,14 +48,15 @@ body {
   transition: opacity 1.5s ease-in-out;
 }
 
+/* Active slide: visible and layered correctly */
 .bg-slide.active {
   opacity: 1;
   z-index: 0;
 }
 
-/* Top Header with logo and nav (on top of slideshow) */
+/* Top Header: fixed navigation bar overlaying slides */
 .top-header {
-  position: fixed;          /* overlay instead of pushing down */
+  position: fixed;          /* overlay instead of pushing down content */
   top: 3%;
   left: 0;
   width: 100%;
@@ -67,15 +64,16 @@ body {
   display: flex;
   align-items: center;
   padding: 0 2rem;
-  z-index: 1000;            /* keep it above everything */
+  z-index: 1000;            /* stays above all other content */
 }
 
-/* Logo Styling */
+/* Logo container: horizontal alignment */
 .logo-container {
   display: flex;
   align-items: center;
 }
 
+/* Logo image styling with hover effect */
 .logo-container a img {
   max-width: 220px;
   height: auto;
@@ -85,6 +83,8 @@ body {
 .logo-container a img:hover {
   transform: scale(1.05);
 }
+
+/* Navigation links container */
 .nav-links {
   margin-left: auto;
   display: flex;
@@ -93,7 +93,7 @@ body {
   align-items: center;
 }
 
-/* Buttons inside nav */
+/* Navigation buttons styling */
 .nav-links a {
   text-decoration: none;
   font-family: 'Playfair Display', serif;
@@ -108,16 +108,15 @@ body {
   text-align: center;
 }
 
-/* Hover = white fill with black text */
+/* Navigation hover effect: invert colors */
 .nav-links a:hover {
   background-color: white;
   color: black;
   border-color: white;
 }
 
-/* ------------------------------
-   Hero Section
------------------------------- */
+
+/* Hero Section */
 .hero {
   height: 100%;
   background-size: cover;
@@ -129,6 +128,7 @@ body {
   text-align: center;
 }
 
+/* Overlay Layer */
 .overlay {
   position: absolute;
   top: 0;
@@ -138,6 +138,7 @@ body {
   z-index: 1;
 }
 
+/* Hero Content */
 .hero-content {
   position: relative;
   z-index: 2;
@@ -145,21 +146,21 @@ body {
   max-width: 90%;
 }
 
+/* Hero Title */
 .hero h1 {
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
   margin-bottom: 1rem;
 }
 
+/* Hero Paragraph */
 .hero p {
   font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
 
-/* ------------------------------
-   Navigation Bar
------------------------------- */
+/* Navbar Container */
 .navbar {
   padding: 1rem 2rem;
   display: flex;
@@ -168,10 +169,10 @@ body {
   justify-content: center;
 }
 
-/* Shared Button Style */
+/* Buttons inside Navbar */
 .nav-button,
 .dropbtn {
-  font-family: 'playfair display', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   color: white;
   border: 2px solid white;
@@ -184,6 +185,7 @@ body {
   text-align: center;
 }
 
+/* Button Hover Effect */
 .nav-button:hover,
 .dropbtn:hover {
   background-color: white;
@@ -191,15 +193,14 @@ body {
 }
 
 
-/* ------------------------------
-   Dropdown Menu
------------------------------- */
+
+/* Dropdown Container */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Button */
+/* Dropdown Button Styling */
 .dropbtn {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.5rem;
@@ -215,18 +216,19 @@ body {
   display: inline-block;
 }
 
-/* Dropdown Content */
+/* Dropdown Menu (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%; /* Slightly below the button */
+  top: 100%; /* Position below button */
   left: 0;
-  width: 100%; /* Same width as button */
+  width: 100%; /* Match button width */
   border: 2px solid white;
   overflow: hidden;
   z-index: 999;
 }
 
+/* Links inside Dropdown */
 .dropdown-content a {
   font-family: 'Cormorant Garamond', serif;
   color: white;
@@ -239,29 +241,33 @@ body {
   font-size: 1.2rem;
 }
 
+/* Remove border for last link */
 .dropdown-content a:last-child {
   border-bottom: none;
 }
 
+/* Hover effect for dropdown links */
 .dropdown-content a:hover {
   background-color: white;
   color: black;
 }
 
+/* Show dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 
-/* ------------------------------
-   Decorative Shapes
------------------------------- */
+
+
+/* Base Shape Styling */
 .shape {
   position: absolute;
   z-index: 1;
-  pointer-events: none;
+  pointer-events: none; /* Shapes are decorative only */
 }
 
+/* Circular Shape */
 .shape-circle {
   width: 150px;
   height: 150px;
@@ -272,6 +278,7 @@ body {
   transform: rotate(15deg);
 }
 
+/* Vertical/Diagonal Line Shape */
 .shape-line {
   width: 3px;
   height: 300px;
@@ -282,9 +289,7 @@ body {
 }
 
 
-/* ------------------------------
-   Misc Elements
------------------------------- */
+/* Details Box Styling */
 details {
   padding: 2rem;
   background-color: #222;
@@ -292,23 +297,20 @@ details {
   border-radius: 8px;
   margin: 1rem 0;
   cursor: pointer;
-  direction: ltr;
+  direction: ltr; /* ensure left-to-right text flow */
 }
 
-
-/* ------------------------------
-   Media Query for Tablets / 768px
------------------------------- */
+/* Responsive Adjustments for screens ≤ 768px */
 @media (max-width: 768px) {
-  
-  /* Top Header */
+
+  /* Top Header adjustments */
   .top-header {
     height: 60px;
     padding: 0 1rem;
   }
 
   .logo-container a img {
-    max-width: 180px; /* smaller logo */
+    max-width: 180px; /* smaller logo on mobile */
   }
 
   .nav-links {
@@ -321,7 +323,7 @@ details {
     padding: 0.4rem 0.8rem;
   }
 
-  /* Hero Section */
+  /* Hero Section adjustments */
   .hero-content {
     padding: 1rem;
     max-width: 95%;
@@ -335,7 +337,7 @@ details {
     font-size: 1.2rem;
   }
 
-  /* Navbar Buttons / Dropdown */
+  /* Navbar Buttons / Dropdown adjustments */
   .nav-button,
   .dropbtn {
     font-size: 1.2rem;
@@ -347,7 +349,7 @@ details {
     padding: 0.5rem 0.8rem;
   }
 
-  /* Decorative Shapes */
+  /* Decorative Shapes adjustments */
   .shape-circle {
     width: 100px;
     height: 100px;
@@ -364,7 +366,6 @@ details {
 }
 
 
-
 /* Main How It Works Section */
 .how-it-works-split {
   display: flex;
@@ -375,15 +376,15 @@ details {
   max-width: 1900px;
   margin: 0 auto;
   align-items: flex-start;
-  position: relative; /* for abstract shapes */
+  position: relative; /* for abstract shapes positioning */
   overflow: hidden;
 }
 
 .how-left, .how-right {
-  flex: 1;
+  flex: 1; /* split section equally */
 }
 
-/* Titles */
+/* Titles for left and right sections */
 .how-left h2, .how-right h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
@@ -391,7 +392,7 @@ details {
   color: var(--white);
 }
 
-/* Mindmap Boxes */
+/* Mindmap container holding multiple boxes */
 .mindmap-container {
   display: flex;
   flex-wrap: wrap;
@@ -400,6 +401,7 @@ details {
   z-index: 1;
 }
 
+/* Individual Mindmap Box */
 .mind-box {
   flex: 1 1 220px;
   min-width: 220px;
@@ -408,16 +410,19 @@ details {
   padding: 2rem;
   text-align: center;
   color: var(--white);
-  opacity: 0;
-  transform: translateY(40px);
+  opacity: 0;                  /* initial hidden state for animation */
+  transform: translateY(40px); /* initial slide-up position */
   transition: all 0.8s ease-out;
-  box-shadow: 0 10px 25px rgba(240, 167, 19, 0.5);
-}
-.mind-box.visible {
-  opacity: 1;
-  transform: translateY(0);
+  box-shadow: 0 10px 25px rgba(240, 167, 19, 0.5); /* subtle glow */
 }
 
+/* Mind Box visible state */
+.mind-box.visible {
+  opacity: 1;
+  transform: translateY(0); /* slide into view */
+}
+
+/* Mind Box text styling */
 .mind-box h3 {
   color: var(--gold);
   margin-bottom: 0.5rem;
@@ -428,33 +433,42 @@ details {
   line-height: 1.4;
 }
 
-/* Arrows */
+/* Arrows between mindmap elements */
 .arrow {
   font-size: 2rem;
   color: var(--gold);
-  opacity: 0;
+  opacity: 0;                  /* hidden initially for animation */
   transition: all 0.8s ease-out;
 }
-.arrow.visible { opacity: 1; }
+
+/* Arrow visible state */
+.arrow.visible { 
+  opacity: 1; 
+}
+
+/* Specific arrow positions */
 .arrow1 { align-self: center; margin: 0 1rem; }
 .arrow2 { flex-basis: 100%; text-align: center; margin: 1rem 0; }
 .arrow3 { align-self: center; margin: 0 1rem; }
 
-/* Agent Cards */
+/* Agent Cards container */
 .agent {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 2rem;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 0;                  /* initial hidden for animation */
+  transform: translateY(30px); /* slide-up effect */
   transition: all 0.8s ease-out;
 }
+
+/* Agent Card visible state */
 .agent.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
+/* Agent Image Styling */
 .agent-img img {
   width: 80px;
   height: 80px;
@@ -463,6 +477,7 @@ details {
   border: 2px solid var(--gold);
 }
 
+/* Agent Info Styling */
 .agent-info { 
   position: relative; 
 }
@@ -480,6 +495,7 @@ details {
   margin-bottom: 0.5rem; 
 }
 
+/* Connector lines inside agent cards */
 .agent-lines .line-horizontal {
   position: absolute;
   top: 50%;
@@ -488,6 +504,7 @@ details {
   height: 2px;
   background: rgba(240, 167, 19, 0.5);
 }
+
 .agent-lines .line-vertical {
   position: absolute;
   top: -10px;
@@ -497,7 +514,7 @@ details {
   background: rgba(240, 167, 19, 0.5);
 }
 
-/* Contact Box */
+/* Contact Section Box */
 .contact-box {
   background: linear-gradient(135deg, #111111 0%, #000000 100%);
   padding: 2rem;
@@ -506,11 +523,13 @@ details {
   margin-top: 2rem;
 }
 
+/* Text inside Contact Box */
 .contact-box p { 
   color: #fff; 
   margin-bottom: 1rem; 
 }
 
+/* Contact Button Styling */
 .contact-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -520,12 +539,14 @@ details {
   text-decoration: none;
   transition: 0.3s;
 }
+
+/* Hover effect for contact button */
 .contact-button:hover {
   background-color: #000000;
   color: var(--white);
 }
 
-/* Abstract Shapes & Lines */
+/* Decorative abstract shapes */
 .abstract-shape {
   position: absolute;
   border-radius: 50%;
@@ -534,11 +555,11 @@ details {
   z-index: 0;
 }
 
-
-/* Responsive */
+/* Responsive tweaks for smaller screens */
 @media (max-width: 1024px) {
   .how-it-works-split { 
-    flex-direction: column; gap: 3rem; 
+    flex-direction: column; 
+    gap: 3rem; 
   }
   .mindmap-container { 
     justify-content: center; 
@@ -554,10 +575,7 @@ details {
 
 
 
-
-
-
-
+/* Featured Holidays Section */
 .featured-holidays {
   padding: 4rem 2rem;
   background: #000000;
@@ -565,6 +583,7 @@ details {
   text-align: center;
 }
 
+/* Section Title */
 .featured-holidays h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
@@ -573,6 +592,7 @@ details {
   letter-spacing: 1px;
 }
 
+/* Holidays Rotator Container */
 .holidays-rotator {
   display: flex;
   gap: 2rem;
@@ -581,6 +601,7 @@ details {
   padding-bottom: 1rem;
 }
 
+/* Individual Holiday Card */
 .holiday-card {
   min-width: 300px;
   background: linear-gradient(145deg, #111, #1a1a1a);
@@ -592,11 +613,13 @@ details {
   flex-direction: column;
 }
 
+/* Hover effect for holiday card */
 .holiday-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.7);
 }
 
+/* Holiday Card Image */
 .holiday-card img {
   width: 100%;
   height: 180px;
@@ -604,10 +627,12 @@ details {
   transition: transform 0.4s ease;
 }
 
+/* Image hover effect */
 .holiday-card:hover img {
   transform: scale(1.05);
 }
 
+/* Holiday Info Container */
 .holiday-info {
   padding: 1rem 1.2rem;
   background: #0d0d0d;
@@ -617,12 +642,14 @@ details {
   flex: 1;
 }
 
+/* Holiday Info Title */
 .holiday-info h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
+/* Map Link inside Holiday Info */
 .holiday-info .map-link {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -631,18 +658,19 @@ details {
   transition: color 0.3s ease;
 }
 
+/* Map Link Hover Effect */
 .holiday-info .map-link:hover {
   color: #ffffff;
 }
 
+/* Responsive adjustments for featured holidays */
 @media (max-width: 768px) {
   .featured-holidays h2 {
     font-size: 2.5rem;
   }
 }
 
-
-
+/* Hero Biomes Section */
 .hero-biomes {
   position: relative;
   background: url('explore-image/pexels-vr33s-26831720.jpg') center/cover no-repeat;
@@ -650,33 +678,36 @@ details {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden
+  overflow: hidden;
 }
 
+/* Overlay for Hero Biomes */
 .hero-overlay {
   text-align: center;
   color: #fff;
   background: rgba(0,0,0,0.4); /* subtle overlay for readability */
   padding: 2rem;
   border-radius: 16px;
-  position: relative; /* make top work */
+  position: relative; /* allows top positioning */
   top: 12%;
 }
 
+/* Hero Overlay Heading */
 .hero-overlay h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   color: var(--white);
   margin-bottom: 1rem;
-  
 }
 
+/* Hero Overlay Paragraph */
 .hero-overlay p {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
 
+/* Biome Buttons Container */
 .biome-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -685,6 +716,7 @@ details {
   margin-top: 2rem;
 }
 
+/* Individual Biome Button */
 .biome-btn {
   text-decoration: none;
   padding: 0.8rem 1.5rem;
@@ -695,14 +727,13 @@ details {
   display: inline-block;
 }
 
-/* Hover effect like your nav buttons */
+/* Hover Effect for Biome Buttons */
 .biome-btn:hover {
   background-color: #000000;
   color: #ffffff;
-  
 }
 
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .hero-overlay {
     padding: 1rem 1.5rem; /* smaller padding */
@@ -731,7 +762,7 @@ details {
 
 
 
-
+/* Full Gold Event Section */
 .gold-event-full {
   width: 100%;
   padding: 6rem 2rem;
@@ -741,18 +772,19 @@ details {
   position: relative;
 }
 
+/* Individual Gold Card */
 .gold-card {
   position: relative;
   width: 100%;
   max-width: 1400px;
   height: 500px;
-  
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Background Image for Gold Card */
 .gold-bg {
   position: absolute;
   top: 0;
@@ -764,6 +796,7 @@ details {
   z-index: 0;
 }
 
+/* Content inside Gold Card */
 .gold-content {
   position: relative;
   z-index: 1;
@@ -773,6 +806,7 @@ details {
   padding: 2rem;
 }
 
+/* Headings inside Gold Card */
 .gold-content h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
@@ -780,12 +814,14 @@ details {
   margin-bottom: 1rem;
 }
 
+/* Paragraphs inside Gold Card */
 .gold-content p {
   font-size: 1.3rem;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
 
+/* Button inside Gold Card */
 .gold-content button {
   padding: 1rem 2rem;
   border: none;
@@ -795,13 +831,13 @@ details {
   transition: all 0.3s ease;
 }
 
+/* Button Hover Effect */
 .gold-content button:hover {
   background: #000000;
   color: #ffffff;
-  
 }
 
-/* Abstract Shapes */
+/* Abstract Shapes for Gold Section */
 .abstract-shape {
   position: absolute;
   border-radius: 50%;
@@ -810,6 +846,7 @@ details {
   z-index: 0;
 }
 
+/* Gold Radial Shape 1 */
 .gold-shape1 {
   width: 400px;
   height: 400px;
@@ -818,6 +855,7 @@ details {
   left: -100px;
 }
 
+/* Gold Radial Shape 2 */
 .gold-shape2 {
   width: 500px;
   height: 500px;
@@ -826,7 +864,7 @@ details {
   right: -150px;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
 @media (max-width: 900px) {
   .gold-card {
     height: 400px;
@@ -843,28 +881,27 @@ details {
 
 
 
-/* Footer Base */
+/* Footer Base: main styling for the footer container */
 .site-footer {
-  background: linear-gradient(180deg, #000 0%, #111 100%);
+  background: linear-gradient(180deg, #000 0%, #000000 100%);
   color: #eee;
   padding: 50px 20px 20px;
   font-family: 'playfair display', serif;
   font-size: 14px;
   position: relative;
-  overflow: hidden; /* shapes stay inside footer */
+  overflow: hidden; /* ensures decorative shapes stay inside footer */
 }
 
-/* Abstract shapes inside footer */
+/* Abstract shapes: decorative elements inside footer */
 .footer-shape {
   position: absolute;
   border-radius: 50%;
   opacity: 0.07;
   z-index: 0;
-  pointer-events: none;
+  pointer-events: none; /* shapes don't interfere with interaction */
 }
 
-
-/* Ensure all footer content appears above shapes */
+/* Layering: ensures all main footer content sits above shapes */
 .footer-container,
 .footer-sponsors,
 .footer-bottom {
@@ -872,7 +909,7 @@ details {
   z-index: 1;
 }
 
-/* Layout */
+/* Layout: grid structure for footer columns */
 .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -881,8 +918,7 @@ details {
   margin: 0 auto 40px;
   text-align: left;
 }
-
-/* Logo & tagline */
+/* Logo & Tagline: styles for footer branding */
 .footer-logo img {
   max-width: 160px;
   margin-bottom: 15px;
@@ -893,7 +929,7 @@ details {
   line-height: 1.6;
 }
 
-/* Links */
+/* Links: styles for footer navigation links */
 .footer-column h4 {
   color: var(--gold);
   margin-bottom: 15px;
@@ -917,7 +953,7 @@ details {
   color: var(--gold);
 }
 
-/* Newsletter */
+/* Newsletter: input field and subscribe button styling */
 .footer-newsletter {
   display: flex;
   gap: 10px;
@@ -944,7 +980,7 @@ details {
   background: var(--gold);
 }
 
-/* Social links */
+/* Social links: styling for footer social media icons/links */
 .footer-social {
   margin-top: 10px;
 }
@@ -959,7 +995,7 @@ details {
   opacity: 0.7;
 }
 
-/* Sponsors */
+/* Sponsors: text and logos of footer sponsors */
 .footer-sponsors {
   text-align: center;
   margin-bottom: 20px;
@@ -979,8 +1015,7 @@ details {
   transition: filter 0.3s;
 }
 
-
-/* Bottom credits */
+/* Bottom credits: copyright and small footer info */
 .footer-bottom {
   border-top: 1px solid #333;
   padding-top: 15px;
@@ -992,7 +1027,7 @@ details {
 
 
 
-
+/* Scroll Down Arrow */
 .scroll-arrow {
   position: absolute;
   bottom: 20px;
@@ -1002,16 +1037,17 @@ details {
   color: #ffffff;
   cursor: pointer;
   animation: bounce 1.5s infinite;
-  z-index: 10; /* above everything */
+  z-index: 10; /* keep arrow above all */
 }
 
+/* Bounce Animation */
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
   40% { transform: translate(-50%, 15px); }
   60% { transform: translate(-50%, 8px); }
 }
 
-
+/* Info Section Fade-In */
 #info-section {
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
@@ -1021,7 +1057,8 @@ details {
   opacity: 1;
 }
 
-
+/* Body Scroll Lock (used for modals or menu) */
 body.lock-scroll {
   overflow: hidden;
 }
+

@@ -1,9 +1,10 @@
-/* Reset & base */
+/* Reset & base styles: remove default margin/padding, set box-sizing, base font */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
 
 * {
   margin: 0; padding: 0; box-sizing: border-box;
 }
+
 html, body {
   height: 100%;
   font-family: 'Playfair Display', serif;
@@ -11,7 +12,7 @@ html, body {
   position: relative;
 }
 
-/* Background slides container */
+/* Background slides container: fixed behind content, covers full viewport */
 .bg-slides {
   position: fixed;
   top: 0; left: 0;
@@ -21,6 +22,7 @@ html, body {
   overflow: hidden;
 }
 
+/* Individual background slides: absolute, full size, transition for fade */
 .bg-slide {
   position: absolute;
   width: 100%;
@@ -31,12 +33,13 @@ html, body {
   transition: opacity 1.5s ease-in-out;
 }
 
+/* Active slide: visible and on top */
 .bg-slide.active {
   opacity: 1;
   z-index: 0;
 }
 
-/* Top Header with logo and nav (on top of slideshow) */
+/* Top Header with logo and nav: flex container at top of page */
 .top-header {/* Pale frosty blue */
   height: 15%;
   display: flex;
@@ -44,12 +47,13 @@ html, body {
   padding-left: 2rem;
 }
 
-/* Logo Styling */
+/* Logo container: flex for alignment */
 .logo-container {
   display: flex;
   align-items: center;
 }
 
+/* Logo image styling with hover scale effect */
 .logo-container a img {
   max-width: 220px;
   height: auto;
@@ -60,6 +64,7 @@ html, body {
   transform: scale(1.05);
 }
 
+/* Navigation links container: flex layout, spacing, alignment */
 .nav-links {
   margin-left: auto;
   display: flex;
@@ -68,6 +73,7 @@ html, body {
   align-items: center;
 }
 
+/* Navigation links styling with hover effect */
 .nav-links a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
@@ -77,14 +83,13 @@ html, body {
   border-radius: 6px;
   transition: background 0.3s, color 0.3s;
 }
-
 .nav-links a:hover {
   background-color: #ffffff;
   color: #000000;
 }
 
 
-/* Slide Text Box */
+/* Slide Text Box: fixed overlay for text on slides with gradient background and shadow */
 .slide-text-container {
   position: fixed;
   bottom: 15%;
@@ -98,16 +103,20 @@ html, body {
   box-shadow: 0 0 15px rgba(0,0,0,0.7);
 }
 
+/* Slide heading styling */
 .slide-text-container h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
 }
+
+/* Slide paragraph styling */
 .slide-text-container p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
   line-height: 1.4;
 }
 
+/* Slide button: semi-transparent with border and hover effect */
 .slide-btn {
   padding: 0.8rem 1.6rem;
   background: rgba(255,255,255,0.25);
@@ -123,7 +132,7 @@ html, body {
   background: rgba(255,255,255,0.5);
 }
 
-/* Responsive */
+/* Responsive: adjust text box size and fonts on smaller screens */
 @media (max-width: 768px) {
   .slide-text-container {
     width: 90%;

@@ -1,5 +1,7 @@
+/* Google Fonts import: Playfair Display and Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
 
+/* Base body and html styling: full height, reset margin, font, background, and text color */
 body, html {
   height: 100%;
   margin: 0;
@@ -8,22 +10,26 @@ body, html {
   color: var(--gold);
 }
 
+/* Root color variables */
 :root {
   --gold: #c5a880;
   --black: #000;
   --white: #fff;
 }
 
+/* City title styling: centered, gold color, Playfair Display font */
 #city-title {
   text-align: center;
   color: var(--gold);
   font-family: 'playfair display', serif;
 }
 
+/* All h2 headings centered */
 h2 {
   text-align: center;
 }
-/* Top Header with logo and nav (on top of slideshow) */
+
+/* Top Header with logo and navigation (on top of slideshow) */
 .top-header {/* Pale frosty blue */
   height: 15%;
   display: flex;
@@ -31,12 +37,13 @@ h2 {
   padding-left: 2rem;
 }
 
-/* Logo Styling */
+/* Logo container styling */
 .logo-container {
   display: flex;
   align-items: center;
 }
 
+/* Logo image styling with hover scale effect */
 .logo-container a img {
   max-width: 220px;
   height: auto;
@@ -47,6 +54,7 @@ h2 {
   transform: scale(1.05);
 }
 
+/* Navigation links container styling */
 .nav-links {
   margin-left: auto;
   display: flex;
@@ -55,6 +63,7 @@ h2 {
   align-items: center;
 }
 
+/* Individual navigation link styling and hover effects */
 .nav-links a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
@@ -70,21 +79,25 @@ h2 {
   color: #000000;
 }
 
+/* Main content area: flex layout with map and sidebar, fills viewport height minus header */
 .main-content {
   display: flex;
   height: calc(100vh - 120px);
 }
 
+/* Map section: takes majority of space, positioned relative for overlays */
 .map-section {
   flex: 2;
   position: relative;
 }
 
+/* Google map component: full width and height */
 gmp-map {
   height: 100%;
   width: 100%;
 }
 
+/* Place picker container: small overlay panel with padding and shadow */
 .place-picker-container {
   padding: 10px;
   background: rgba(255, 255, 255, 0.9);
@@ -92,6 +105,7 @@ gmp-map {
   margin: 10px;
 }
 
+/* Sidebar: scrollable, black background, padding */
 .sidebar {
   flex: 1;
   overflow-y: auto;
@@ -99,11 +113,13 @@ gmp-map {
   padding: 10px;
 }
 
+/* Sidebar heading styling */
 .sidebar h2 {
   margin-top: 0;
   font-family: 'Playfair Display', serif;
 }
 
+/* Grid for hotel links inside sidebar: 2 columns */
 .hotel-links {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
@@ -111,7 +127,7 @@ gmp-map {
   justify-items: center;
 }
 
-/* Hotel cards */
+/* Individual hotel cards: block links with gold border and text */
 .hotel-card {
   display: block;
   text-decoration: none;
@@ -124,17 +140,20 @@ gmp-map {
   width: 100%;
 }
 
+/* Hover effect for hotel cards: subtle scale */
 .hotel-card:hover {
   transform: scale(1.02);
   border-color: var(--gold); /* Keep gold on hover */
 }
 
+/* Hotel image styling: full width, fixed height, cover */
 .hotel-card img {
   width: 100%;
   height: 120px;
   object-fit: cover;
 }
 
+/* Hotel card title styling */
 .hotel-card h3 {
   margin: 8px;
   font-size: 16px;

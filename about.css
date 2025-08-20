@@ -1,4 +1,4 @@
-/* Global Reset */
+/* Global Reset: remove default margins/paddings, set box-sizing and font */
 * {
   margin: 0;
   padding: 0;
@@ -6,23 +6,22 @@
   font-family: "plyfair display", sans-serif;
 }
 
-/* Colors */
+/* Color variables: define gold, black, white for reuse */
 :root {
   --gold: #c5a880;
   --black: #000;
   --white: #fff;
 }
 
-
-/* Top Header with logo and nav (on top of slideshow) */
-.top-header {/* Pale frosty blue */
+/* Top Header: container for logo and navigation bar on top of slideshow */
+.top-header {
   height: 15%;
   display: flex;
   align-items: center;
   padding-left: 2rem;
 }
 
-/* Logo Styling */
+/* Logo Styling: layout, hover effect, and scaling on hover */
 .logo-container {
   display: flex;
   align-items: center;
@@ -38,6 +37,7 @@
   transform: scale(1.05);
 }
 
+/* Navigation links: horizontal layout, spacing, and hover effect */
 .nav-links {
   margin-left: auto;
   display: flex;
@@ -60,7 +60,7 @@
   background-color: #000000;
   color: #ffffff;
 }
-/* Main Container */
+/* Main Container: sets padding, max width, centering, and stacking context */
 .about-container {
   padding: 2rem;
   max-width: 1200px;
@@ -69,7 +69,7 @@
   z-index: 2;
 }
 
-/* Intro Section */
+/* Intro Section: centered text with spacing */
 .intro {
   text-align: center;
   margin-bottom: 3rem;
@@ -87,7 +87,7 @@
   line-height: 1.6;
 }
 
-/* Story Section */
+/* Story Section: side-by-side text and image with spacing */
 .story {
   display: flex;
   align-items: center;
@@ -95,6 +95,7 @@
   gap: 2rem;
 }
 
+/* Story Text: styling for headings and paragraphs */
 .story-text {
   flex: 1;
 }
@@ -109,6 +110,7 @@
   line-height: 1.6;
 }
 
+/* Story Image: image sizing, rounding, and subtle shadow */
 .story-image {
   flex: 1;
 }
@@ -118,8 +120,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
-/* Values Section */
+/* Values Section: overall centering and heading styling */
 .values {
   text-align: center;
 }
@@ -130,12 +131,14 @@
   font-size: 2rem;
 }
 
+/* Values Grid: 3-column layout with spacing */
 .values-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
+/* Individual Value Cards: background, border, padding, shadow, hover effect */
 .value-card {
   background: var(--white);
   border: 2px solid var(--gold);
@@ -149,18 +152,20 @@
   transform: translateY(-5px);
 }
 
+/* Images inside value cards: full width, rounded corners, margin */
 .value-card img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
+/* Card headings: color and spacing */
 .value-card h3 {
   color: var(--gold);
   margin-bottom: 0.5rem;
 }
 
-/* Footer */
+/* Footer styling: background, text color, center alignment, spacing */
 .footer {
   background: var(--black);
   color: var(--white);
@@ -169,7 +174,7 @@
   margin-top: 2rem;
 }
 
-/* Abstract Shapes */
+/* Abstract Shapes: circular accents with low opacity for decoration */
 .abstract-shape {
   position: absolute;
   border-radius: 50%;
@@ -177,6 +182,7 @@
   z-index: 1;
 }
 
+/* Specific decorative shapes with size and position */
 .shape1 {
   width: 200px;
   height: 200px;
@@ -201,7 +207,7 @@
   left: 40%;
 }
 
-/* Responsive */
+/* Responsive adjustments: stack story section and single-column values grid */
 @media (max-width: 900px) {
   .story {
     flex-direction: column;
@@ -212,28 +218,28 @@
 }
 
 
-/* Footer Base */
+
+/* Footer Base: main styling for the footer container */
 .site-footer {
-  background: linear-gradient(180deg, #000 0%, #111 100%);
+  background: linear-gradient(180deg, #000 0%, #000000 100%);
   color: #eee;
   padding: 50px 20px 20px;
   font-family: 'playfair display', serif;
   font-size: 14px;
   position: relative;
-  overflow: hidden; /* shapes stay inside footer */
+  overflow: hidden; /* ensures decorative shapes stay inside footer */
 }
 
-/* Abstract shapes inside footer */
+/* Abstract shapes: decorative elements inside footer */
 .footer-shape {
   position: absolute;
   border-radius: 50%;
   opacity: 0.07;
   z-index: 0;
-  pointer-events: none;
+  pointer-events: none; /* shapes don't interfere with interaction */
 }
 
-
-/* Ensure all footer content appears above shapes */
+/* Layering: ensures all main footer content sits above shapes */
 .footer-container,
 .footer-sponsors,
 .footer-bottom {
@@ -241,7 +247,7 @@
   z-index: 1;
 }
 
-/* Layout */
+/* Layout: grid structure for footer columns */
 .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -250,8 +256,7 @@
   margin: 0 auto 40px;
   text-align: left;
 }
-
-/* Logo & tagline */
+/* Logo & Tagline: styles for footer branding */
 .footer-logo img {
   max-width: 160px;
   margin-bottom: 15px;
@@ -262,7 +267,7 @@
   line-height: 1.6;
 }
 
-/* Links */
+/* Links: styles for footer navigation links */
 .footer-column h4 {
   color: var(--gold);
   margin-bottom: 15px;
@@ -286,7 +291,7 @@
   color: var(--gold);
 }
 
-/* Newsletter */
+/* Newsletter: input field and subscribe button styling */
 .footer-newsletter {
   display: flex;
   gap: 10px;
@@ -313,7 +318,7 @@
   background: var(--gold);
 }
 
-/* Social links */
+/* Social links: styling for footer social media icons/links */
 .footer-social {
   margin-top: 10px;
 }
@@ -328,7 +333,7 @@
   opacity: 0.7;
 }
 
-/* Sponsors */
+/* Sponsors: text and logos of footer sponsors */
 .footer-sponsors {
   text-align: center;
   margin-bottom: 20px;
@@ -345,18 +350,14 @@
 }
 .sponsor-logos img {
   max-height: 50px;
-  filter: grayscale(100%);
   transition: filter 0.3s;
 }
-.sponsor-logos img:hover {
-  filter: grayscale(0%);
-}
 
-/* Bottom credits */
+/* Bottom credits: copyright and small footer info */
 .footer-bottom {
   border-top: 1px solid #333;
   padding-top: 15px;
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
   color: #888;
 }
