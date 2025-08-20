@@ -3,6 +3,13 @@
 * {
   margin: 0; padding: 0; box-sizing: border-box;
 }
+
+:root {
+  --gold: #c5a880;
+  --black: #000;
+  --white: #fff;
+}
+
 body, html {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -53,7 +60,7 @@ body, html {
 .destination-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: rem;
   width: 100%;
   justify-items: center;
   /* REMOVE max-height + overflow */
@@ -72,7 +79,6 @@ body, html {
 .destination-card {
   background: #111111;
   border: 2px solid #f0f0f0;
-  border-radius: 16px;
   width: 100%;
   max-width: 520px;
   cursor: pointer;
@@ -119,16 +125,49 @@ body, html {
 
 
 /* Top Header with background image */
+/* Shared base */
 .top-header {
-  height: 45%;
+  height: 65%;
   display: flex;
   align-items: flex-start;
   padding: 2rem 2rem 0 2rem;
-  background: url('sunset.jpg') no-repeat center center;
-  background-size: cover;
   position: relative;
-  overflow: hidden; /* ensures fade stays inside */
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
+
+/* Fade overlay */
+.top-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; /* adjust for stronger/weaker fade */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #000 100%);
+  pointer-events: none;
+}
+
+/* Biome-specific backgrounds */
+.top-header.frost {
+  background-image: url('biome-background/frost.jpg');
+}
+
+.top-header.jungle {
+  background-image: url('biome-background/jungle.jpg');
+}
+
+.top-header.desert {
+  background-image: url('biome-background/sunrise-desert.jpg');
+}
+
+.top-header.waves {
+  background-image: url('biome-background/waves.jpg');
+}
+
+ 
+
 
 
 /* Logo Styling */
@@ -318,3 +357,151 @@ body, html {
 }
 
 
+
+
+
+/* Footer Base */
+.site-footer {
+  background: linear-gradient(180deg, #000 0%, #000000 100%);
+  color: #eee;
+  padding: 50px 20px 20px;
+  font-family: 'playfair display', serif;
+  font-size: 14px;
+  position: relative;
+  overflow: hidden; /* shapes stay inside footer */
+}
+
+/* Abstract shapes inside footer */
+.footer-shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.07;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+/* Ensure all footer content appears above shapes */
+.footer-container,
+.footer-sponsors,
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+}
+
+/* Layout */
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+/* Logo & tagline */
+.footer-logo img {
+  max-width: 160px;
+  margin-bottom: 15px;
+}
+.footer-tagline {
+  font-style: italic;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Links */
+.footer-column h4 {
+  color: var(--gold);
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+.footer-links li {
+  margin-bottom: 8px;
+}
+.footer-links a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+/* Newsletter */
+.footer-newsletter {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+.footer-newsletter input {
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  flex: 1;
+  outline: none;
+}
+.footer-newsletter button {
+  background: var(--gold);
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.footer-newsletter button:hover {
+  background: var(--gold);
+}
+
+/* Social links */
+.footer-social {
+  margin-top: 10px;
+}
+.footer-social a {
+  color: var(--gold);
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+.footer-social a:hover {
+  opacity: 0.7;
+}
+
+/* Sponsors */
+.footer-sponsors {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer-sponsors p {
+  font-weight: bold;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.sponsor-logos img {
+  max-height: 50px;
+  transition: filter 0.3s;
+}
+
+
+/* Bottom credits */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: #888;
+}

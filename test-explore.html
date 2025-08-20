@@ -10,10 +10,10 @@
 
   <!-- Background Slides -->
   <div class="bg-slides">
-    <div class="bg-slide active" style="background-image: url('biome-images/snow.png');"></div>
-    <div class="bg-slide" style="background-image: url('biome-images/green.png');"></div>
-    <div class="bg-slide" style="background-image: url('biome-images/island.png');"></div>
-    <div class="bg-slide" style="background-image: url('biome-images/fire.png');"></div>
+    <div class="bg-slide active" style="background-image: url('explore-image/snow.png');"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/green.png');"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/fire.png');"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/island.png');"></div>
   </div>
 
   <!-- Logo and Navigation on top of slideshow -->
@@ -34,6 +34,7 @@
     <p>Explore the icy landscapes and crisp adventures of the Frost biome.</p>
     <a href="frost.html" class="slide-btn">Explore Frost</a>
   </div>
+  
 
   <script>
     const slides = document.querySelectorAll('.bg-slide');
@@ -45,37 +46,32 @@ const slideData = [
     title: 'Frost Biome',
     description: 'Explore the icy landscapes and crisp adventures of the Frost biome.',
     link: 'frost.html',
-    btnText: 'Explore Frost'
+    btnText: 'Explore The Frost'
   },
   {
     title: 'Jungle Biome',
     description: 'Dense, wild, and full of life. The jungle awaits your discovery.',
     link: 'jungle.html',
-    btnText: 'Explore Jungle'
+    btnText: 'Explore The Jungle'
   },
   {
     title: 'Desert Biome',
     description: 'Golden dunes and ancient secrets lie within the desert biome.',
     link: 'desert.html',
-    btnText: 'Explore Desert'
+    btnText: 'Explore The Desert'
   },
   {
-    title: 'Frost Biome',
-    description: 'Explore the icy landscapes and crisp adventures of the Frost biome.',
-    link: 'frost.html',
-    btnText: 'Explore Frost'
+    title: 'Tides Biome',
+    description: 'Drift into serene shores and timeless journeys where waves embrace the islands.',
+    link: 'tides.html',
+    btnText: 'Explore The Waves'
   },
-  {
-    title: 'Frost Biome',
-    description: 'Explore the icy landscapes and crisp adventures of the Frost biome.',
-    link: 'frost.html',
-    btnText: 'Explore Frost'
-  }
+  
 ];
 
 let current = 0;
 const total = slides.length;
-const intervalTime = 6000; // 6 seconds
+const intervalTime = 4000; // 4 seconds
 
 function showSlide(index) {
   slides.forEach((slide, i) => {

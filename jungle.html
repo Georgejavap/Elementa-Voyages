@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Frost – Elementa Voyagés</title>
+  <title>The Jungle – Elementa Voyagés</title>
   <link rel="stylesheet" href="biome-style.css" />
 </head>
 <body>
 
-<header class="top-header">
+<header class="top-header jungle">
   <div class="logo-container">
     <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" /></a>
   </div>
@@ -19,112 +19,180 @@
   </nav>
 </header>
 
+<!-- FILTERS + GRID -->
+<section class="destination-filter">
+  <div class="filter-bar">
+    <select id="family-select">
+      <option value="">Family / Adult</option>
+      <option value="family">Family Friendly</option>
+      <option value="adult">Adult Only</option>
+    </select>
 
+    <select id="continent-select">
+      <option value="">Continent</option>
+      <option value="europe">Europe</option>
+      <option value="asia">Asia</option>
+      <option value="north-america">North America</option>
+      <option value="south-america">South America</option>
+      <option value="africa">Africa</option>
+      <option value="oceania">Oceania</option>
+      <option value="antarctica">Antarctica</option>
+    </select>
 
+    <select id="type-select">
+      <option value="">Holiday Type</option>
+      <option value="relaxing">Relaxing</option>
+      <option value="adventurous">Adventurous</option>
+    </select>
 
-  <!-- FILTERS + GRID -->
-  <section class="destination-filter">
+    <button class="clear-btn">✖ Clear Filters</button>
+  </div>
+
+<div class="destination-grid">
+  <!-- Europe -->
+  <div class="destination-card" data-family="family" data-continent="europe" data-type="relaxing">
+    <a href="https://www.black-forest-travel.com/" target="_blank">
+      <img src="jungle-biome/germany.png" alt="Black Forest, Germany" />
+      <h3>Black Forest, Germany</h3>
+    </a>
+  </div>
+  <div class="destination-card" data-family="adult" data-continent="europe" data-type="adventurous">
+    <a href="https://www.santuarideterrades.cat/home/" target="_blank">
+      <img src="jungle-biome/spain.png" alt="Costa Brava, Spain" />
+      <h3>Costa Brava, Spain</h3>
+    </a>
+  </div>
+
+  <!-- Asia -->
+  <div class="destination-card" data-family="family" data-continent="asia" data-type="relaxing">
+    <a href="https://www.naturaresortbali.com/" target="_blank">
+      <img src="jungle-biome/bail.png" alt="Bali, Indonesia" />
+      <h3>Bali, Indonesia</h3>
+    </a>
+  </div>
+  <div class="destination-card" data-family="adult" data-continent="asia" data-type="adventurous">
+    <a href="https://www.khaosokaccommodation.com/accommodation/khao-sok-river-hut" target="_blank">
+      <img src="jungle-biome/thailand.png" alt="Thailand Rainforest" />
+      <h3>Thailand Rainforest</h3>
+    </a>
+  </div>
+
+  <!-- North America -->
+  <div class="destination-card" data-family="family" data-continent="north-america" data-type="relaxing">
+    <a href="https://www.believesurfandyoga.com/" target="_blank">
+      <img src="jungle-biome/costa-rica.png" alt="Costa Rica Rainforest" />
+      <h3>Costa Rica Rainforest</h3>
+    </a>
+  </div>
+  <div class="destination-card" data-family="adult" data-continent="north-america" data-type="adventurous">
+    <a href="https://www.casonaloscedros.com/" target="_blank">
+      <img src="jungle-biome/mexico.png" alt="Yucatan Jungle, Mexico" />
+      <h3>Yucatan Jungle, Mexico</h3>
+    </a>
+  </div>
+
+  <!-- South America -->
+  <div class="destination-card" data-family="family" data-continent="south-america" data-type="relaxing">
+    <a href="https://www.onvacation.com/en/co/destinos/nacionales/amazonas/hotel-amazon/" target="_blank">
+      <img src="jungle-biome/amazon.jpg" alt="Amazon Rainforest, Brazil" />
+      <h3>Amazon Rainforest, Brazil</h3>
+    </a>
+  </div>
+  <div class="destination-card" data-family="adult" data-continent="south-america" data-type="adventurous">
+    <a href="https://karinawasi.xtadia.com/" target="_blank">
+      <img src="jungle-biome/peru.png" alt="Andean Jungle, Peru" />
+      <h3>Andean Jungle, Peru</h3>
+    </a>
+  </div>
+
+  <!-- Africa -->
+  <div class="destination-card" data-family="family" data-continent="africa" data-type="relaxing">
+    <a href="https://www.akiba-lodge.mg/" target="_blank">
+      <img src="jungle-biome/madagascar.png" alt="Madagascar Rainforest" />
+      <h3>Madagascar Rainforest</h3>
+    </a>
+  </div>
+  <div class="destination-card" data-family="adult" data-continent="africa" data-type="adventurous">
+    <a href="https://artofsafari.travel/congo-safari-lodges/" target="_blank">
+      <img src="jungle-biome/congo.png" alt="Congo Jungle" />
+      <h3>Congo Jungle</h3>
+    </a>
+  </div>
+
+  <!-- Oceania -->
+  <div class="destination-card" data-family="family" data-continent="oceania" data-type="relaxing">
+    <a href="https://www.tripadvisor.com/Hotels-g255067-c3-zff17-Queensland-Hotels.html" target="_blank">
+      <img src="jungle-biome/queensland.png" alt="Queensland Rainforest, Australia" />
+      <h3>Queensland Rainforest, Australia</h3>
+    </a>
+  </div>
+  <div class="destination-card" data-family="adult" data-continent="oceania" data-type="adventurous">
+    <a href="https://www.fiordlandlodge.co.nz/" target="_blank">
+      <img src="jungle-biome/new-zealand.png" alt="Fiordland Jungle, New Zealand" />
+      <h3>Fiordland Jungle, New Zealand</h3>
+    </a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Column 1: Logo & About -->
+    <div class="footer-column">
+      <div class="footer-logo">
+        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo">
+      </div>
+      <p class="footer-tagline">
+        Curated journeys, luxurious stays, and unforgettable experiences.
+      </p>
+    </div>
     
-
-    <div class="filter-bar">
-      <select id="family-select">
-        <option value="">Family / Adult</option>
-        <option value="family">Family Friendly</option>
-        <option value="adult">Adult Only</option>
-      </select>
-
-      <select id="continent-select">
-        <option value="">Continent</option>
-        <option value="europe">Europe</option>
-        <option value="asia">Asia</option>
-        <option value="north-america">North America</option>
-        <option value="south-america">South America</option>
-      </select>
-
-      <select id="type-select">
-        <option value="">Holiday Type</option>
-        <option value="relaxing">Relaxing</option>
-        <option value="adventurous">Adventurous</option>
-      </select>
-
-      <button class="clear-btn">✖ Clear Filters</button>
+    <!-- Column 2: Quick Links -->
+    <div class="footer-column">
+      <h4>Explore</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="test-explore.html">Destinations</a></li>
+        <li><a href="mailto:info@elementavoyages.com">Contact</a></li>
+      </ul>
     </div>
 
-    <div class="destination-grid">
-      <!-- Europe -->
-      <div class="destination-card" data-family="family" data-continent="europe" data-type="relaxing">
-        <img src="Screenshot 2025-08-05 200419.png" alt="Lapland, Sweden" />
-        <h3>Lapland, Sweden</h3>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="europe" data-type="adventurous">
-        <img src="Screenshot 2025-08-05 201405.png" alt="Iceland Glaciers" />
-        <h3>Iceland Glaciers</h3>
-      </div>
-      <div class="destination-card" data-family="family" data-continent="europe" data-type="adventurous">
-        <img src="Screenshot 2025-08-05 201650.png" alt="Norway Fjords" />
-        <h3>Norway Fjords</h3>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="europe" data-type="relaxing">
-        <img src="Screenshot 2025-08-13 105952.png" alt="Swiss Alps" />
-        <h3>Swiss Alps</h3>
-      </div>
-
-      <!-- Asia -->
-      <div class="destination-card" data-family="family" data-continent="asia" data-type="relaxing">
-        <img src="images/japan-alps.jpg" alt="Japan Alps" />
-        <h3>Japan Alps</h3>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="asia" data-type="adventurous">
-        <img src="images/himalayas.jpg" alt="Himalayas, Nepal" />
-        <h3>Himalayas, Nepal</h3>
-      </div>
-      <div class="destination-card" data-family="family" data-continent="asia" data-type="adventurous">
-        <img src="images/mongolia.jpg" alt="Mongolia Winter Steppe" />
-        <h3>Mongolia Winter Steppe</h3>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="asia" data-type="relaxing">
-        <img src="images/kyrgyzstan.jpg" alt="Kyrgyzstan Lakes" />
-        <h3>Kyrgyzstan Lakes</h3>
-      </div>
-
-      <!-- North America -->
-      <div class="destination-card" data-family="family" data-continent="north-america" data-type="relaxing">
-        <img src="images/canada.jpg" alt="Banff, Canada" />
-        <h3>Banff, Canada</h3>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="north-america" data-type="adventurous">
-        <img src="images/alaska.jpg" alt="Alaska Wilderness" />
-        <h3>Alaska Wilderness</h3>
-      </div>
-      <div class="destination-card" data-family="family" data-continent="north-america" data-type="adventurous">
-        <img src="images/rockies.jpg" alt="Rocky Mountains, USA" />
-        <h3>Rocky Mountains, USA</h3>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="north-america" data-type="relaxing">
-        <img src="images/yukon.jpg" alt="Yukon, Canada" />
-        <h3>Yukon, Canada</h3>
-      </div>
-
-      <!-- South America -->
-      <div class="destination-card" data-family="family" data-continent="south-america" data-type="relaxing">
-        <img src="images/chile.jpg" alt="Torres del Paine, Chile" />
-        <h3>Torres del Paine, Chile</h3>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="south-america" data-type="adventurous">
-        <img src="images/argentina.jpg" alt="Patagonia, Argentina" />
-        <h3>Patagonia, Argentina</h3>
-      </div>
-      <div class="destination-card" data-family="family" data-continent="south-america" data-type="adventurous">
-        <img src="images/andes.jpg" alt="Andes, Peru" />
-        <h3>Andes, Peru</h3>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="south-america" data-type="relaxing">
-        <img src="images/bolivia.jpg" alt="Salar de Uyuni, Bolivia" />
-        <h3>Salar de Uyuni, Bolivia</h3>
+    <!-- Column 3: Newsletter & Social -->
+    <div class="footer-column">
+      <h4>Stay Connected</h4>
+      <p>Join our newsletter for travel inspiration & exclusive offers.</p>
+      <form class="footer-newsletter">
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <script src="biome.js"></script>
+  <!-- Sponsors & Credits -->
+  <div class="footer-sponsors">
+    <p>Sponsored by Luxury Travels & Partners</p>
+    <div class="sponsor-logos">
+      <img src="sponsors/Screenshot 2025-08-18 164132.png" alt="Sponsor 1">
+      <img src="sponsors/Screenshot 2025-08-18 164141.png" alt="Sponsor 2">
+      <img src="sponsors/Screenshot 2025-08-18 164206.png" alt="Sponsor 3">
+      <img src="sponsors/Screenshot 2025-08-18 164213.png" alt="Sponsor 4">
+      <img src="sponsors/Screenshot 2025-08-18 164353.png" alt="Sponsor 5">
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Elementa Voyagés. All Rights Reserved.</p>
+  </div>
+
+  
+</footer>
+
+
+<script src="biome.js"></script>
 </body>
 </html>
