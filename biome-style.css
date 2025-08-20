@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
+
 
 /* Import fonts: Playfair Display (for headings) and Open Sans (for body text) */
 
@@ -68,7 +68,7 @@ body, html {
 .destination-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: rem;
+  gap: 1rem;
   width: 100%;
   justify-items: center;
   /* REMOVE max-height + overflow */
@@ -282,7 +282,7 @@ body, html {
 .filter-bar select:hover, .filter-bar button:hover {
   background: #fff;
   color: #000;
-  border-color: #fff;
+  border-color: #fcfbfb;
 }
 
 /* Destination Grid Section: sets up 2-column layout for destinations */
