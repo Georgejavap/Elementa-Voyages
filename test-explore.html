@@ -9,88 +9,101 @@
 <body>
 
   <!-- Background Slides -->
-  <div class="bg-slides">
-    <div class="bg-slide active" style="background-image: url('explore-image/snow.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('explore-image/jungle.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('explore-image/fire.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('explore-image/pexels-mikhail-nilov-8356067.jpg');"></div>
+  <div class="bg-slides" aria-label="Biome background slideshow" role="region">
+    <div class="bg-slide active" style="background-image: url('explore-image/snow.jpg');" aria-label="Frost biome background"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/jungle.jpg');" aria-label="Jungle biome background"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/fire.jpg');" aria-label="Fire biome background"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/pexels-mikhail-nilov-8356067.jpg');" aria-label="Volcanic biome background"></div>
   </div>
 
   <!-- Logo and Navigation on top of slideshow -->
-  <header class="top-header">
+  <header class="top-header" role="banner" aria-label="Site header with logo and navigation">
     <div class="logo-container">
-      <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" /></a>
+      <a href="index.html" aria-label="Go to home page">
+        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo" />
+      </a>
     </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="">Explore</a>
-      <a href="mailto:info@elementavoyages.com">Contact</a>
+    <nav class="nav-links" role="navigation" aria-label="Main site navigation">
+      <a href="index.html" aria-label="Go to Home page">Home</a>
+      <a href="" aria-label="Go to Explore page">Explore</a>
+      <a href="mailto:info@elementavoyages.com" aria-label="Send email to Elementa Voyagés">Contact</a>
     </nav>
   </header>
 
   <!-- Slide Text Content -->
-  <div class="slide-text-container" id="slideText">
-    <h1>Frost Biome</h1>
-    <p>Explore the icy landscapes and crisp adventures of the Frost biome.</p>
-    <a href="frost.html" class="slide-btn">Explore Frost</a>
+  <div class="slide-text-container" id="slideText" role="region" aria-label="Slideshow text content">
+    <h1 id="slideTitle">Frost Biome</h1>
+    <p id="slideDescription">Explore the icy landscapes and crisp adventures of the Frost biome.</p>
+    <a href="frost.html" class="slide-btn" aria-labelledby="slideTitle slideDescription">Explore Frost</a>
   </div>
+
+
   
+<script>
+  const slides = document.querySelectorAll('.bg-slide');
+  const slideText = document.getElementById('slideText');
 
-  <script>
-    const slides = document.querySelectorAll('.bg-slide');
-const slideText = document.getElementById('slideText');
+  // Data for each slide's text and link
+  const slideData = [
+    {
+      title: 'Frost Biome',
+      description: 'Explore the icy landscapes and crisp adventures of the Frost biome.',
+      link: 'frost.html',
+      btnText: 'Explore The Frost',
+      ariaLabel: 'Frost biome background'
+    },
+    {
+      title: 'Jungle Biome',
+      description: 'Dense, wild, and full of life. The jungle awaits your discovery.',
+      link: 'jungle.html',
+      btnText: 'Explore The Jungle',
+      ariaLabel: 'Jungle biome background'
+    },
+    {
+      title: 'Desert Biome',
+      description: 'Golden dunes and ancient secrets lie within the desert biome.',
+      link: 'desert.html',
+      btnText: 'Explore The Desert',
+      ariaLabel: 'Desert biome background'
+    },
+    {
+      title: 'Tides Biome',
+      description: 'Drift into serene shores and timeless journeys where waves embrace the islands.',
+      link: 'tides.html',
+      btnText: 'Explore The Waves',
+      ariaLabel: 'Tides biome background'
+    },
+  ];
 
-// Data for each slide's text and link
-const slideData = [
-  {
-    title: 'Frost Biome',
-    description: 'Explore the icy landscapes and crisp adventures of the Frost biome.',
-    link: 'frost.html',
-    btnText: 'Explore The Frost'
-  },
-  {
-    title: 'Jungle Biome',
-    description: 'Dense, wild, and full of life. The jungle awaits your discovery.',
-    link: 'jungle.html',
-    btnText: 'Explore The Jungle'
-  },
-  {
-    title: 'Desert Biome',
-    description: 'Golden dunes and ancient secrets lie within the desert biome.',
-    link: 'desert.html',
-    btnText: 'Explore The Desert'
-  },
-  {
-    title: 'Tides Biome',
-    description: 'Drift into serene shores and timeless journeys where waves embrace the islands.',
-    link: 'tides.html',
-    btnText: 'Explore The Waves'
-  },
-  
-];
+  let current = 0;
+  const total = slides.length;
+  const intervalTime = 4000; // 4 seconds
 
-let current = 0;
-const total = slides.length;
-const intervalTime = 4000; // 4 seconds
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      slide.setAttribute('aria-hidden', i === index ? 'false' : 'true'); // hide inactive slides from screen readers
+      slide.setAttribute('aria-label', slideData[i].ariaLabel); // update aria-label just in case
+    });
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-  });
+    // Update text content
+    slideText.querySelector('h1').textContent = slideData[index].title;
+    slideText.querySelector('p').textContent = slideData[index].description;
+    const btn = slideText.querySelector('a');
+    btn.href = slideData[index].link;
+    btn.textContent = slideData[index].btnText;
+    btn.setAttribute('aria-label', `${slideData[index].btnText}, ${slideData[index].description}`); // better description for screen readers
+  }
 
-  // Update text
-  slideText.querySelector('h1').textContent = slideData[index].title;
-  slideText.querySelector('p').textContent = slideData[index].description;
-  slideText.querySelector('a').href = slideData[index].link;
-  slideText.querySelector('a').textContent = slideData[index].btnText;
-}
-
-setInterval(() => {
-  current = (current + 1) % total;
+  // Initial display
   showSlide(current);
-}, intervalTime);
 
-  </script>
-  
+  setInterval(() => {
+    current = (current + 1) % total;
+    showSlide(current);
+  }, intervalTime);
+</script>
+
 </body>
 </html>
+

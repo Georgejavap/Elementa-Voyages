@@ -10,93 +10,124 @@
 </head>
 <body>
 
-<header class="top-header">
+<header class="top-header" role="banner" aria-label="Site Header">
+  <!-- Logo Container -->
   <div class="logo-container">
-    <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo"></a>
+    <a href="index.html">
+      <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" aria-label="Elementa Voyagés Logo">
+    </a>
   </div>
-  <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="test-explore.html">Explore</a>
-    <a href="mailto:info@elementavoyages.com">Contact</a>
+
+  <!-- Navigation Links -->
+  <nav class="nav-links" role="navigation" aria-label="Main navigation">
+    <a href="index.html" aria-label="Go to Home page">Home</a>
+    <a href="test-explore.html" aria-label="Go to Explore page">Explore</a>
+    <a href="mailto:info@elementavoyages.com" aria-label="Send email to Elementa Voyagés">Contact</a>
   </nav>
 </header>
 
-<h1 id="city-title">Explore Shanghai</h1>
+<!-- Page Title -->
+<h1 id="city-title" aria-label="Shanghai city map and hotel information">Explore Shanghai</h1>
 
-<div class="main-content">
-  <div class="map-section">
+
+<!-- Main Content: Map Section -->
+<div class="main-content" aria-label="Main map and hotel listings for Shanghai">
+  <div class="map-section" aria-label="Shanghai interactive map section">
+    <!-- Google Maps API Loader: loads the maps component -->
     <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
-    <gmp-map id="map" center="31.2304,121.4737" zoom="14">
-      <div slot="control-block-start-inline-start" class="place-picker-container">
-        <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
+    
+    <!-- Google Map Centered on Shanghai -->
+    <gmp-map id="map" center="31.2304,121.4737" zoom="14" aria-label="Interactive map centered on Shanghai">
+      <!-- Place Picker for Searching Cities or Addresses -->
+      <div slot="control-block-start-inline-start" class="place-picker-container" aria-label="Map search control">
+        <gmpx-place-picker placeholder="Search a city or address" aria-label="Search a city or address in Shanghai"></gmpx-place-picker>
       </div>
     </gmp-map>
   </div>
-
-  <div class="sidebar">
+  
+  <!-- Sidebar: Recommended Hotels -->
+  <div class="sidebar" aria-label="Recommended hotels in Shanghai">
     <h2>Recommended Hotels</h2>
+
     <div class="hotel-links">
-      <a href="https://www.hyatt.com/zh-CN/hotel/china/grand-hyatt-shanghai/shagh" target="_blank" class="hotel-card">
-        <img src="shanghai/Screenshot 2025-08-19 172120.png" alt="Grand Hyatt Shanghai">
+      <!-- Individual hotel cards with images, headings, and links -->
+      <a href="https://www.hyatt.com/zh-CN/hotel/china/grand-hyatt-shanghai/shagh" target="_blank" class="hotel-card" aria-label="Grand Hyatt Shanghai">
+        <img src="shanghai/Screenshot 2025-08-19 172120.png" alt="Grand Hyatt Shanghai" aria-label="Image of Grand Hyatt Shanghai">
         <h3>Grand Hyatt Shanghai</h3>
       </a>
-      <a href="https://www.hyatt.com/grand-hyatt/zh-CN/shang-hyatt-on-the-bund-shanghai" target="_blank" class="hotel-card">
-        <img src="shanghai/Screenshot 2025-08-19 172213.png" alt="Hyatt on the Bund Hotel">
+
+      <a href="https://www.hyatt.com/grand-hyatt/zh-CN/shang-hyatt-on-the-bund-shanghai" target="_blank" class="hotel-card" aria-label="Hyatt on the Bund Hotel">
+        <img src="shanghai/Screenshot 2025-08-19 172213.png" alt="Hyatt on the Bund Hotel" aria-label="Image of Hyatt on the Bund Hotel">
         <h3>Hyatt on the Bund Hotel</h3>
       </a>
-      <a href="https://www.mandarinoriental.com/en/shanghai/pudong/offers?src=ps.brand.mopud.ggl&gclsrc=aw.ds&gad_source=1&gad_campaignid=20814215455&gclid=Cj0KCQjwwZDFBhCpARIsAB95qO3-yKum76rDgVry1qnP2w-rB6GqEA7C32mAKiJmrC0VXEpKOooGlKYaAq0OEALw_wcB" target="_blank" class="hotel-card">
-        <img src="shanghai/Screenshot 2025-08-19 172506.png" alt="Mandarin Oriental Pudong">
+
+      <a href="https://www.mandarinoriental.com/en/shanghai/pudong/offers?src=ps.brand.mopud.ggl&gclsrc=aw.ds&gad_source=1&gad_campaignid=20814215455&gclid=Cj0KCQjwwZDFBhCpARIsAB95qO3-yKum76rDgVry1qnP2w-rB6GqEA7C32mAKiJmrC0VXEpKOooGlKYaAq0OEALw_wcB" target="_blank" class="hotel-card" aria-label="Mandarin Oriental Pudong">
+        <img src="shanghai/Screenshot 2025-08-19 172506.png" alt="Mandarin Oriental Pudong" aria-label="Image of Mandarin Oriental Pudong">
         <h3>Mandarin Oriental Pudong</h3>
       </a>
-      <a href="https://waldorfastoriahotels.com.cn/zh-cn/hotel/shanghai/waldorf-astoria-shanghai-SHAWAWA/index.html" target="_blank" class="hotel-card">
-        <img src="shanghai/Screenshot 2025-08-19 172609.png" alt="Waldorf Astoria Shanghai on the Bund">
+
+      <a href="https://waldorfastoriahotels.com.cn/zh-cn/hotel/shanghai/waldorf-astoria-shanghai-SHAWAWA/index.html" target="_blank" class="hotel-card" aria-label="Waldorf Astoria Shanghai on the Bund">
+        <img src="shanghai/Screenshot 2025-08-19 172609.png" alt="Waldorf Astoria Shanghai on the Bund" aria-label="Image of Waldorf Astoria Shanghai on the Bund">
         <h3>Waldorf Astoria Shanghai on the Bund</h3>
       </a>
-      <a href="https://www.hotel.com.au/shanghai/shanghai-meego-qingwen-hotel.htm" target="_blank" class="hotel-card">
-        <img src="shanghai/Screenshot 2025-08-19 172825.png" alt="Meego Qingwen Hotel">
+
+      <a href="https://www.hotel.com.au/shanghai/shanghai-meego-qingwen-hotel.htm" target="_blank" class="hotel-card" aria-label="Meego Qingwen Hotel">
+        <img src="shanghai/Screenshot 2025-08-19 172825.png" alt="Meego Qingwen Hotel" aria-label="Image of Meego Qingwen Hotel">
         <h3>Meego Qingwen Hotel</h3>
       </a>
-      <a href="https://www.marriott.com.cn/hotels/shamc-shanghai-marriott-marquis-city-centre/overview/" target="_blank" class="hotel-card">
-        <img src="shanghai/Screenshot 2025-08-19 172955.png" alt="Shanghai Marriott Hotel City Centre">
+
+      <a href="https://www.marriott.com.cn/hotels/shamc-shanghai-marriott-marquis-city-centre/overview/" target="_blank" class="hotel-card" aria-label="Shanghai Marriott Hotel City Centre">
+        <img src="shanghai/Screenshot 2025-08-19 172955.png" alt="Shanghai Marriott Hotel City Centre" aria-label="Image of Shanghai Marriott Hotel City Centre">
         <h3>Shanghai Marriott Hotel City Centre</h3>
       </a>
     </div>
   </div>
 </div>
 
-<script type="module">
-  async function init() {
-    await customElements.whenDefined('gmp-map');
-    const map = document.querySelector('#map');
-    const placePicker = document.querySelector('gmpx-place-picker');
-    const infoWindow = new google.maps.InfoWindow();
 
+
+<script type="module">
+  // Initialize the map and place picker after the custom element is defined
+  async function init() {
+    await customElements.whenDefined('gmp-map')
+    ;
+    // Select the map and place picker elements
+    const map = document.querySelector('#map');// Reference to the map element
+    const placePicker = document.querySelector('gmpx-place-picker');// Reference to the search box
+    const infoWindow = new google.maps.InfoWindow();// Info window to display place details
+
+    // Listen for place selection changes from the place picker
     placePicker.addEventListener('gmpx-placechange', () => {
       const place = placePicker.value;
 
+      // Alert if no location data is available
       if (!place.location) {
         window.alert("No details available for input: '" + place.name + "'");
         return;
       }
 
+      // Adjust map view to place viewport or center/zoom if viewport not provided
       if (place.viewport) {
         map.innerMap.fitBounds(place.viewport);
       } else {
-        map.center = place.location;
+        map.center = place.location; // Center map to location
         map.zoom = 14;
       }
 
+      // Add marker for selected place on the map
       const searchMarker = new google.maps.Marker({
         position: place.location,
         map: map.innerMap,
-        title: place.displayName
+        title: place.displayName // ARIA-friendly marker title
       });
 
+      // Display info window with place name and formatted address
       infoWindow.setContent(`<strong>${place.displayName}</strong><br>${place.formattedAddress || ""}`);
       infoWindow.open(map.innerMap, searchMarker);
     });
   }
 
+  // Run init function once DOM is fully loaded
   document.addEventListener('DOMContentLoaded', init);
 </script>
 

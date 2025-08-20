@@ -8,26 +8,34 @@
 </head>
 <body>
 
-<header class="top-header waves">
+<!-- Top header with logo and navigation -->
+<header class="top-header waves" role="banner" aria-label="The Waves biome header with logo and main navigation">
   <div class="logo-container">
-    <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" /></a>
+    <!-- Logo with clear alt description -->
+    <a href="index.html" aria-label="Return to Elementa Voyagés home">
+      <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés logo" />
+    </a>
   </div>
-  <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="test-explore.html">Explore</a>
-    <a href="mailto:info@elementavoyages.com">Contact</a>
+  <!-- Navigation Links -->
+  <nav class="nav-links" role="navigation" aria-label="Primary navigation for The Waves biome page">
+    <a href="index.html" aria-label="Go to the Home page of Elementa Voyagés">Home</a>
+    <a href="test-explore.html" aria-label="Explore destinations across different biomes">Explore</a>
+    <a href="mailto:info@elementavoyages.com" aria-label="Send an email to Elementa Voyagés">Contact</a>
   </nav>
 </header>
 
-<section class="destination-filter">
-  <div class="filter-bar">
-    <select id="family-select">
+<!-- FILTERS + GRID -->
+<section class="destination-filter" role="region" aria-label="Filter and browse holiday destinations by family type, continent, and holiday style">
+  <!-- Filter controls -->
+  <div class="filter-bar" role="form" aria-label="Destination filter bar">
+    <select id="family-select" aria-label="Filter destinations by family-friendly or adult only">
       <option value="">Family / Adult</option>
       <option value="family">Family Friendly</option>
       <option value="adult">Adult Only</option>
     </select>
 
-    <select id="continent-select">
+    
+    <select id="continent-select" aria-label="Filter destinations by continent">
       <option value="">Continent</option>
       <option value="europe">Europe</option>
       <option value="asia">Asia</option>
@@ -37,107 +45,115 @@
       <option value="oceania">Oceania</option>
     </select>
 
-    <select id="type-select">
+    
+    <select id="type-select" aria-label="Filter destinations by holiday type such as relaxing or adventurous">
       <option value="">Holiday Type</option>
       <option value="relaxing">Relaxing</option>
       <option value="adventurous">Adventurous</option>
     </select>
 
-    <button class="clear-btn">✖ Clear Filters</button>
+    <button class="clear-btn" aria-label="Clear all filters">✖ Clear Filters</button>
   </div>
 
-  <div class="destination-grid">
+  <!-- Destination grid -->
+  <div class="destination-grid" role="list" aria-label="Available holiday destinations">
     <!-- Europe -->
-    <div class="destination-card" data-family="family" data-continent="europe" data-type="relaxing">
-      <a href="https://www.booking.com/city/es/canary-islands.en.html" target="_blank">
-        <img src="tides-biome/spain.jpg" alt="Canary Islands, Spain" />
+    <div class="destination-card" role="listitem" data-family="family" data-continent="europe" data-type="relaxing">
+      <a href="https://www.booking.com/city/es/canary-islands.en.html" target="_blank" aria-label="View more about Canary Islands, Spain – Family Friendly and Relaxing destination">
+        <img src="tides-biome/spain.jpg" alt="Scenic beaches of Canary Islands, Spain" />
         <h3>Canary Islands, Spain</h3>
       </a>
     </div>
-    <div class="destination-card" data-family="adult" data-continent="europe" data-type="adventurous">
-      <a href="https://www.pestana.com/en/hotel/pestana-bahia-praia?utm_campaign=pestana-bahia-praia-partoo&utm_medium=organicsearch" target="_blank">
-        <img src="tides-biome/portugal.jpg" alt="Azores, Portugal" />
+
+    <div class="destination-card" role="listitem" data-family="adult" data-continent="europe" data-type="adventurous">
+      <a href="https://www.pestana.com/en/hotel/pestana-bahia-praia?utm_campaign=pestana-bahia-praia-partoo&utm_medium=organicsearch" target="_blank" aria-label="Explore Azores, Portugal – Adult Only and Adventurous destination">
+        <img src="tides-biome/portugal.jpg" alt="Lush volcanic scenery in Azores, Portugal" />
         <h3>Azores, Portugal</h3>
       </a>
     </div>
 
     <!-- Asia -->
-    <div class="destination-card" data-family="family" data-continent="asia" data-type="relaxing">
-      <a href="https://balibeachsanur.com/" target="_blank">
-        <img src="tides-biome/bail.jpg" alt="Bali, Indonesia" />
+    <div class="destination-card" role="listitem" data-family="family" data-continent="asia" data-type="relaxing">
+      <a href="https://balibeachsanur.com/" target="_blank" aria-label="Discover Bali, Indonesia – Family Friendly and Relaxing destination">
+        <img src="tides-biome/bail.jpg" alt="Tropical coast of Bali, Indonesia" />
         <h3>Bali, Indonesia</h3>
       </a>
     </div>
-    <div class="destination-card" data-family="adult" data-continent="asia" data-type="adventurous">
-      <a href="https://villaresorts.com/villa-park/" target="_blank">
-        <img src="tides-biome/maldives.jpg" alt="Maldives" />
+
+    <div class="destination-card" role="listitem" data-family="adult" data-continent="asia" data-type="adventurous">
+      <a href="https://villaresorts.com/villa-park/" target="_blank" aria-label="Discover Maldives – Adult Only and Adventurous destination">
+        <img src="tides-biome/maldives.jpg" alt="Overwater villas in Maldives" />
         <h3>Maldives</h3>
       </a>
     </div>
 
     <!-- Africa -->
-    <div class="destination-card" data-family="family" data-continent="africa" data-type="relaxing">
-      <a href="https://www.ocean-villas.com/" target="_blank">
-        <img src="tides-biome/mauritius.jpg" alt="Mauritius" />
+    <div class="destination-card" role="listitem" data-family="family" data-continent="africa" data-type="relaxing">
+      <a href="https://www.ocean-villas.com/" target="_blank" aria-label="View Mauritius – Family Friendly and Relaxing destination">
+        <img src="tides-biome/mauritius.jpg" alt="Oceanfront view of Mauritius" />
         <h3>Mauritius</h3>
       </a>
     </div>
-    <div class="destination-card" data-family="adult" data-continent="africa" data-type="adventurous">
-      <a href="https://www.fourseasons.com/seychelles/?utm_source=google&utm_medium=organicsearch&utm_campaign=tor-sey-hre-mid-seo-na&utm_content=na-na&utm_term=na" target="_blank">
-        <img src="tides-biome/Seychelles.jpg" alt="Seychelles" />
+
+    <div class="destination-card" role="listitem" data-family="adult" data-continent="africa" data-type="adventurous">
+      <a href="https://www.fourseasons.com/seychelles/?utm_source=google&utm_medium=organicsearch&utm_campaign=tor-sey-hre-mid-seo-na&utm_content=na-na&utm_term=na" target="_blank" aria-label="Explore Seychelles – Adult Only and Adventurous destination">
+        <img src="tides-biome/Seychelles.jpg" alt="Rocky coastline of Seychelles" />
         <h3>Seychelles</h3>
       </a>
     </div>
 
     <!-- North America -->
-    <div class="destination-card" data-family="family" data-continent="north-america" data-type="relaxing">
-      <a href="https://www.melia.com/en/hotels/dominican-republic/punta-cana/melia-caribe-beach-resort?utm_campaign=google&utm_content=5918&utm_medium=organic&utm_source=directories" target="_blank">
-        <img src="tides-biome/punta-cana.jpg" alt="Punta Cana, Dominican Republic" />
+    <div class="destination-card" role="listitem" data-family="family" data-continent="north-america" data-type="relaxing">
+      <a href="https://www.melia.com/en/hotels/dominican-republic/punta-cana/melia-caribe-beach-resort?utm_campaign=google&utm_content=5918&utm_medium=organic&utm_source=directories" target="_blank" aria-label="Discover Punta Cana, Dominican Republic – Family Friendly and Relaxing destination">
+        <img src="tides-biome/punta-cana.jpg" alt="Beachfront in Punta Cana, Dominican Republic" />
         <h3>Punta Cana, Dominican Republic</h3>
       </a>
     </div>
-    <div class="destination-card" data-family="adult" data-continent="north-america" data-type="adventurous">
-      <a href="https://solymarcancun.com/" target="_blank">
-        <img src="tides-biome/cancun.jpg" alt="Cancún, Mexico" />
+
+    <div class="destination-card" role="listitem" data-family="adult" data-continent="north-america" data-type="adventurous">
+      <a href="https://solymarcancun.com/" target="_blank" aria-label="Explore Cancún, Mexico – Adult Only and Adventurous destination">
+        <img src="tides-biome/cancun.jpg" alt="Turquoise waters in Cancún, Mexico" />
         <h3>Cancún, Mexico</h3>
       </a>
     </div>
 
     <!-- Oceania -->
-    <div class="destination-card" data-family="family" data-continent="oceania" data-type="relaxing">
-      <a href="https://www.marriott.com/en-us/hotels/nanmc-fiji-marriott-resort-momi-bay/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0" target="_blank">
-        <img src="tides-biome/fiji.jpg" alt="Fiji" />
+    <div class="destination-card" role="listitem" data-family="family" data-continent="oceania" data-type="relaxing">
+      <a href="https://www.marriott.com/en-us/hotels/nanmc-fiji-marriott-resort-momi-bay/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0" target="_blank" aria-label="Discover Fiji – Family Friendly and Relaxing destination">
+        <img src="tides-biome/fiji.jpg" alt="Palm-lined coast of Fiji" />
         <h3>Fiji</h3>
       </a>
     </div>
-    <div class="destination-card" data-family="adult" data-continent="oceania" data-type="adventurous">
-      <a href="https://www.fourseasons.com/borabora/?utm_source=google&utm_medium=organicsearch&utm_campaign=tor-bor-hre-mid-seo-na&utm_content=na-na&utm_term=na" target="_blank">
-        <img src="tides-biome/bora-bora.jpg" alt="Bora Bora, French Polynesia" />
+
+    <div class="destination-card" role="listitem" data-family="adult" data-continent="oceania" data-type="adventurous">
+      <a href="https://www.fourseasons.com/borabora/?utm_source=google&utm_medium=organicsearch&utm_campaign=tor-bor-hre-mid-seo-na&utm_content=na-na&utm_term=na" target="_blank" aria-label="Explore Bora Bora, French Polynesia – Adult Only and Adventurous destination">
+        <img src="tides-biome/bora-bora.jpg" alt="Lagoon and mountains of Bora Bora, French Polynesia" />
         <h3>Bora Bora, French Polynesia</h3>
       </a>
     </div>
-    <!-- Fernando de Noronha, Brazil -->
-    <div class="destination-card" data-family="adult" data-continent="south-america" data-type="beach">
-      <a href="https://hamares.com.br/" target="_blank">
-        <img src="tides-biome/brazil.jpg" alt="Fernando de Noronha, Brazil" />
+
+    <!-- South America -->
+    <div class="destination-card" role="listitem" data-family="adult" data-continent="south-america" data-type="beach">
+      <a href="https://hamares.com.br/" target="_blank" aria-label="Discover Fernando de Noronha, Brazil – Adult Only beach destination">
+        <img src="tides-biome/brazil.jpg" alt="Coastal cliffs of Fernando de Noronha, Brazil" />
         <h3>Fernando de Noronha, Brazil</h3>
       </a>
     </div>
 
-    <!-- San Andrés, Colombia -->
-    <div class="destination-card" data-family="adult" data-continent="south-america" data-type="beach">
-      <a href="https://www.lasislas.com.co/" target="_blank">
-        <img src="tides-biome/colombia.jpg" alt="San Andrés, Colombia" />
+    <div class="destination-card" role="listitem" data-family="adult" data-continent="south-america" data-type="beach">
+      <a href="https://www.lasislas.com.co/" target="_blank" aria-label="Explore San Andrés, Colombia – Adult Only beach destination">
+        <img src="tides-biome/colombia.jpg" alt="San Andrés, Colombia with turquoise water" />
         <h3>San Andrés, Colombia</h3>
       </a>
     </div>
   </div>
 </section>
 
-<footer class="site-footer">
+
+<footer class="site-footer" role="contentinfo" aria-label="Website Footer">
   <div class="footer-container">
     <!-- Column 1: Logo & About -->
-    <div class="footer-column">
+    <div class="footer-column" role="region" aria-label="About Elementa Voyagés">
       <div class="footer-logo">
         <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo">
       </div>
@@ -147,7 +163,7 @@
     </div>
     
     <!-- Column 2: Quick Links -->
-    <div class="footer-column">
+    <div class="footer-column" role="navigation" aria-label="Footer Quick Links">
       <h4>Explore</h4>
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
@@ -158,14 +174,15 @@
     </div>
 
     <!-- Column 3: Newsletter & Social -->
-    <div class="footer-column">
+    <div class="footer-column" role="region" aria-label="Newsletter and Social Links">
       <h4>Stay Connected</h4>
       <p>Join our newsletter for travel inspiration & exclusive offers.</p>
-      <form class="footer-newsletter">
-        <input type="email" placeholder="Enter your email">
+      <form class="footer-newsletter" role="form" aria-label="Subscribe to newsletter">
+        <label class="visually-hidden" for="newsletter-email">Email Address</label>
+        <input id="newsletter-email" type="email" placeholder="Enter your email">
         <button type="submit">Subscribe</button>
       </form>
-      <div class="footer-social">
+      <div class="footer-social" role="navigation" aria-label="Social Media Links">
         <a href="https://www.instagram.com/" target="_blank">Instagram</a>
         <a href="https://facebook.com" target="_blank">Facebook</a>
         <a href="https://linkedin.com" target="_blank">LinkedIn</a>
@@ -174,7 +191,7 @@
   </div>
 
   <!-- Sponsors & Credits -->
-  <div class="footer-sponsors">
+  <div class="footer-sponsors" role="region" aria-label="Sponsors">
     <p>Sponsored by Luxury Travels & Partners</p>
     <div class="sponsor-logos">
       <img src="sponsors/Screenshot 2025-08-18 164132.png" alt="Sponsor 1">
@@ -188,8 +205,6 @@
   <div class="footer-bottom">
     <p>&copy; 2025 Elementa Voyagés. All Rights Reserved.</p>
   </div>
-
-  
 </footer>
 
 <script src="biome.js"></script>

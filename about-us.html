@@ -4,23 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | Elementa Voyagés</title>
+  <!-- Link to about page stylesheet -->
   <link rel="stylesheet" href="about.css" />
 </head>
 <body>
-   <header class="top-header">
+  <!-- Top Header: Logo and navigation -->
+  <header class="top-header" role="banner">
     <div class="logo-container">
-      <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" /></a>
+      <!-- Logo linking back to home page -->
+      <a href="index.html" aria-label="Go to home page">
+        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo" />
+      </a>
     </div>
-    <nav class="nav-links">
+    <nav class="nav-links" role="navigation" aria-label="Main site navigation">
       <a href="index.html">Home</a>
       <a href="test-explore.html">Explore</a>
       <a href="mailto:info@elementavoyages.com">Contact</a>
     </nav>
   </header>
 
-  <main class="about-container">
-    <section class="intro">
-      <h2>Who We Are</h2>
+  <!-- Main Content Area -->
+  <main class="about-container" role="main">
+    <!-- Intro Section: Who We Are -->
+    <section class="intro" aria-labelledby="intro-title">
+      <h2 id="intro-title">Who We Are</h2>
       <p>
         Founded in 2019, Elementa Voyagés is more than a travel company — it’s a vision. 
         We believe that each journey should be a work of art, blending luxury, culture, 
@@ -29,9 +36,10 @@
       </p>
     </section>
 
-    <section class="story">
+    <!-- Story Section: Company Background -->
+    <section class="story" aria-labelledby="story-title">
       <div class="story-text">
-        <h2>Our Story</h2>
+        <h2 id="story-title">Our Story</h2>
         <p>
           The name <strong>Elementa</strong> comes from the idea of the four elements: 
           Earth, Water, Air, and Fire. These elements shape not only our planet, but 
@@ -46,35 +54,41 @@
           your unique style.
         </p>
       </div>
+      <!-- Image of the team -->
       <div class="story-image">
         <img src="about-image/staff.png" alt="Our Team" />
       </div>
     </section>
 
-    <section class="values">
-      <h2>What We Value</h2>
-      <div class="values-grid">
-        <div class="value-card">
-          <img src="about-image/italy.jpg" alt="Luxury" />
-          <h3>Luxury</h3>
-          <p>Every detail matters. We craft experiences that feel effortless, elegant, and unforgettable.</p>
-        </div>
-        <div class="value-card">
-          <img src="front-page-image/macaw-birds-couple-colorful-jungle-love-birds-tropical-3840x2160-7464.jpg" alt="Authenticity" />
-          <h3>Authenticity</h3>
-          <p>Our trips are rooted in real culture and community, making your journey authentic and unique.</p>
-        </div>
-        <div class="value-card">
-          <img src="about-image/switzerland.jpg" alt="Exploration" />
-          <h3>Exploration</h3>
-          <p>We celebrate curiosity — helping travelers step into new worlds and discover hidden gems.</p>
-        </div>
-      </div>
-    </section>
-  </main>
+<section class="values" aria-labelledby="values-title">
+  <h2 id="values-title">What We Value</h2>
+  <div class="values-grid">
+    <!-- Individual Value Card: Luxury -->
+    <div class="value-card">
+      <img src="about-image/italy.jpg" alt="Luxury" />
+      <h3>Luxury</h3>
+      <p>Every detail matters. We craft experiences that feel effortless, elegant, and unforgettable.</p>
+    </div>
+
+    <!-- Individual Value Card: Authenticity -->
+    <div class="value-card">
+      <img src="front-page-image/macaw-birds-couple-colorful-jungle-love-birds-tropical-3840x2160-7464.jpg" alt="Authenticity" />
+      <h3>Authenticity</h3>
+      <p>Our trips are rooted in real culture and community, making your journey authentic and unique.</p>
+    </div>
+
+    <!-- Individual Value Card: Exploration -->
+    <div class="value-card">
+      <img src="about-image/switzerland.jpg" alt="Exploration" />
+      <h3>Exploration</h3>
+      <p>We celebrate curiosity — helping travelers step into new worlds and discover hidden gems.</p>
+    </div>
+  </div>
+</section>
+</main>
 
 
-<footer class="site-footer">
+<footer class="site-footer" role="contentinfo">
   <div class="footer-container">
     <!-- Column 1: Logo & About -->
     <div class="footer-column">
@@ -87,8 +101,8 @@
     </div>
     
     <!-- Column 2: Quick Links -->
-    <div class="footer-column">
-      <h4>Explore</h4>
+    <div class="footer-column" aria-labelledby="footer-links-title">
+      <h4 id="footer-links-title">Explore</h4>
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="">About Us</a></li>
@@ -98,14 +112,14 @@
     </div>
 
     <!-- Column 3: Newsletter & Social -->
-    <div class="footer-column">
-      <h4>Stay Connected</h4>
+    <div class="footer-column" aria-labelledby="footer-newsletter-title">
+      <h4 id="footer-newsletter-title">Stay Connected</h4>
       <p>Join our newsletter for travel inspiration & exclusive offers.</p>
-      <form class="footer-newsletter">
-        <input type="email" placeholder="Enter your email">
+      <form class="footer-newsletter" role="form" aria-label="Subscribe to newsletter">
+        <input type="email" placeholder="Enter your email" aria-label="Email address">
         <button type="submit">Subscribe</button>
       </form>
-      <div class="footer-social">
+      <div class="footer-social" role="navigation" aria-label="Social media links">
         <a href="https://www.instagram.com/" target="_blank">Instagram</a>
         <a href="https://facebook.com" target="_blank">Facebook</a>
         <a href="https://linkedin.com" target="_blank">LinkedIn</a>
@@ -114,7 +128,7 @@
   </div>
 
   <!-- Sponsors & Credits -->
-  <div class="footer-sponsors">
+  <div class="footer-sponsors" aria-label="Sponsors and Partners">
     <p>Sponsored by Luxury Travels & Partners</p>
     <div class="sponsor-logos">
       <img src="sponsors/Screenshot 2025-08-18 164132.png" alt="Sponsor 1">
@@ -125,11 +139,10 @@
     </div>
   </div>
 
+  <!-- Footer Bottom -->
   <div class="footer-bottom">
     <p>&copy; 2025 Elementa Voyagés. All Rights Reserved.</p>
   </div>
-
-  
 </footer>
 
 

@@ -10,32 +10,49 @@
 </head>
 <body>
 
-<header class="top-header">
+<header class="top-header" role="banner" aria-label="Site Header">
+  <!-- Logo Container -->
   <div class="logo-container">
-    <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo"></a>
+    <a href="index.html">
+      <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" aria-label="Elementa Voyagés Logo">
+    </a>
   </div>
-  <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="test-explore.html">Explore</a>
-    <a href="mailto:info@elementavoyages.com">Contact</a>
+
+  <!-- Navigation Links -->
+  <nav class="nav-links" role="navigation" aria-label="Main navigation">
+    <a href="index.html" aria-label="Go to Home page">Home</a>
+    <a href="test-explore.html" aria-label="Go to Explore page">Explore</a>
+    <a href="mailto:info@elementavoyages.com" aria-label="Send email to Elementa Voyagés">Contact</a>
   </nav>
 </header>
 
-<h1 id="city-title">Explore Patagonia</h1>
+<!-- Page Title -->
+<h1 id="city-title" aria-label="Patagonia city map and hotel information">Explore Patagonia</h1>
 
+
+
+
+
+<!-- Main Content: Map Section -->
 <div class="main-content">
-  <div class="map-section">
+  <div class="map-section" role="region" aria-labelledby="city-title">
+    <!-- Google Maps API Loader: loads the maps component -->
     <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
-    <gmp-map id="map" center="-50.9423,-73.4068" zoom="6">
-      <div slot="control-block-start-inline-start" class="place-picker-container">
+
+    <!-- Google Map Component -->
+    <gmp-map id="map" center="-50.9423,-73.4068" zoom="6" aria-label="Map of Patagonia">
+      <!-- Place Picker / Search box inside map -->
+      <div slot="control-block-start-inline-start" class="place-picker-container" role="search" aria-label="Search for cities or addresses">
         <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
       </div>
     </gmp-map>
   </div>
 
-  <div class="sidebar">
+  <!-- Sidebar: Recommended Hotels -->
+  <div class="sidebar" role="complementary" aria-label="Recommended Hotels in Patagonia">
     <h2>Recommended Hotels</h2>
     <div class="hotel-links">
+      <!-- Individual hotel cards with images, headings, and links -->
       <a href="https://llaollao.com/" target="_blank" class="hotel-card">
         <img src="patagonia/Screenshot 2025-08-19 171019.png" alt="Llao Llao Hotel">
         <h3>Llao Llao Hotel</h3>
@@ -64,39 +81,49 @@
   </div>
 </div>
 
+
 <script type="module">
+  // Initialize the map and place picker after the custom element is defined
   async function init() {
     await customElements.whenDefined('gmp-map');
-    const map = document.querySelector('#map');
-    const placePicker = document.querySelector('gmpx-place-picker');
-    const infoWindow = new google.maps.InfoWindow();
 
+    // Select the map and place picker elements
+    const map = document.querySelector('#map'); // Reference to the map element
+    const placePicker = document.querySelector('gmpx-place-picker'); // Reference to the search box
+    const infoWindow = new google.maps.InfoWindow(); // Info window to display place details
+
+    // Listen for place selection changes from the place picker
     placePicker.addEventListener('gmpx-placechange', () => {
       const place = placePicker.value;
 
+      // Alert if no location data is available
       if (!place.location) {
         window.alert("No details available for input: '" + place.name + "'");
         return;
       }
 
+      // Adjust map view to place viewport or center/zoom if viewport not provided
       if (place.viewport) {
         map.innerMap.fitBounds(place.viewport);
       } else {
-        map.center = place.location;
+        map.center = place.location;// Center map to location
         map.zoom = 14;
       }
 
+      // Add marker for selected place on the map
       const searchMarker = new google.maps.Marker({
         position: place.location,
         map: map.innerMap,
         title: place.displayName
       });
 
+      // Display info window with place name and formatted address
       infoWindow.setContent(`<strong>${place.displayName}</strong><br>${place.formattedAddress || ""}`);
       infoWindow.open(map.innerMap, searchMarker);
     });
   }
 
+  // Run init function once DOM is fully loaded
   document.addEventListener('DOMContentLoaded', init);
 </script>
 

@@ -10,109 +10,134 @@
 </head>
 <body>
 
-<header class="top-header">
+<header class="top-header" role="banner" aria-label="Site Header">
+  <!-- Logo Container -->
   <div class="logo-container">
-    <a href="index.html"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo"></a>
+    <a href="index.html">
+      <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" aria-label="Elementa Voyagés Logo">
+    </a>
   </div>
-  <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="test-explore.html">Explore</a>
-    <a href="mailto:info@elementavoyages.com">Contact</a>
+
+  <!-- Navigation Links -->
+  <nav class="nav-links" role="navigation" aria-label="Main navigation">
+    <a href="index.html" aria-label="Go to Home page">Home</a>
+    <a href="test-explore.html" aria-label="Go to Explore page">Explore</a>
+    <a href="mailto:info@elementavoyages.com" aria-label="Send email to Elementa Voyagés">Contact</a>
   </nav>
 </header>
 
-<h1 id="city-title">Explore Paris</h1>
+<!-- Page Title -->
+<h1 id="city-title" aria-label="Paris city map and hotel information">Explore Paris</h1>
 
+
+
+<!-- Main Content: Map Section -->
 <div class="main-content">
-  <div class="map-section">
+  <div class="map-section" aria-label="Interactive Paris map section">
+    <!-- Google Maps API Loader: loads the maps component -->
     <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
-    <gmp-map id="map" center="48.8566,2.3522" zoom="14">
-      <div slot="control-block-start-inline-start" class="place-picker-container">
-        <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
+
+    <!-- Google Map Centered on Paris -->
+    <gmp-map id="map" center="48.8566,2.3522" zoom="14" aria-label="Map of Paris, France">
+      <!-- Place Picker for Searching Cities or Addresses -->
+      <div slot="control-block-start-inline-start" class="place-picker-container" aria-label="Map search control">
+        <gmpx-place-picker placeholder="Search a city or address" aria-label="Search for a city or address"></gmpx-place-picker>
       </div>
     </gmp-map>
   </div>
 
-  <div class="sidebar">
+  <!-- Sidebar with Recommended Hotels -->
+  <div class="sidebar" aria-label="Recommended hotels in Paris">
     <h2>Recommended Hotels</h2>
     <div class="hotel-links">
-      <a href="https://www.chateauvoltaire.com/en/" target="_blank" class="hotel-card">
-        <img src="paris/Screenshot 2025-08-19 164518.png" alt="Château Voltaire">
+      <!-- Individual Hotel Cards with images and links -->
+      <a href="https://www.chateauvoltaire.com/en/" target="_blank" class="hotel-card" aria-label="Visit Château Voltaire website">
+        <img src="paris/Screenshot 2025-08-19 164518.png" alt="Château Voltaire" aria-label="Château Voltaire hotel image">
         <h3>Château Voltaire</h3>
       </a>
-      <a href="https://hotellemireille.com/" target="_blank" class="hotel-card">
-        <img src="paris/Screenshot 2025-08-19 164757.png" alt="Hôtel Le Mireille">
+      <a href="https://hotellemireille.com/" target="_blank" class="hotel-card" aria-label="Visit Hôtel Le Mireille website">
+        <img src="paris/Screenshot 2025-08-19 164757.png" alt="Hôtel Le Mireille" aria-label="Hôtel Le Mireille hotel image">
         <h3>Hôtel Le Mireille</h3>
       </a>
-      <a href="https://hotelgeorgette.com/" target="_blank" class="hotel-card">
-        <img src="paris/Screenshot 2025-08-19 164918.png" alt="Hôtel Georgette">
+      <a href="https://hotelgeorgette.com/" target="_blank" class="hotel-card" aria-label="Visit Hôtel Georgette website">
+        <img src="paris/Screenshot 2025-08-19 164918.png" alt="Hôtel Georgette" aria-label="Hôtel Georgette hotel image">
         <h3>Hôtel Georgette</h3>
       </a>
-      <a href="https://www.grandhoteldupalaisroyal.com/" target="_blank" class="hotel-card">
-        <img src="paris/Screenshot 2025-08-19 165241.png" alt="Grand Hôtel du Palais Royal">
+      <a href="https://www.grandhoteldupalaisroyal.com/" target="_blank" class="hotel-card" aria-label="Visit Grand Hôtel du Palais Royal website">
+        <img src="paris/Screenshot 2025-08-19 165241.png" alt="Grand Hôtel du Palais Royal" aria-label="Grand Hôtel du Palais Royal hotel image">
         <h3>Grand Hôtel du Palais Royal</h3>
       </a>
-      <a href="https://www.ritzparis.com/" target="_blank" class="hotel-card">
-        <img src="paris/Screenshot 2025-08-19 165646.png" alt="Ritz Paris">
+      <a href="https://www.ritzparis.com/" target="_blank" class="hotel-card" aria-label="Visit Ritz Paris website">
+        <img src="paris/Screenshot 2025-08-19 165646.png" alt="Ritz Paris" aria-label="Ritz Paris hotel image">
         <h3>Ritz Paris</h3>
       </a>
-      <a href="https://www.fourseasons.com/paris/" target="_blank" class="hotel-card">
-        <img src="paris/Screenshot 2025-08-19 165715.png" alt="Four Seasons Hotel George V">
+      <a href="https://www.fourseasons.com/paris/" target="_blank" class="hotel-card" aria-label="Visit Four Seasons Hotel George V website">
+        <img src="paris/Screenshot 2025-08-19 165715.png" alt="Four Seasons Hotel George V" aria-label="Four Seasons Hotel George V image">
         <h3>Four Seasons Hotel George V</h3>
       </a>
-      <a href="https://www.lebristolparis.com/" target="_blank" class="hotel-card">
-        <img src="paris/Screenshot 2025-08-19 165745.png" alt="Le Bristol Paris">
+      <a href="https://www.lebristolparis.com/" target="_blank" class="hotel-card" aria-label="Visit Le Bristol Paris website">
+        <img src="paris/Screenshot 2025-08-19 165745.png" alt="Le Bristol Paris" aria-label="Le Bristol Paris hotel image">
         <h3>Le Bristol Paris</h3>
       </a>
-      <a href="https://www.shangri-la.com/paris/shangrila/" target="_blank" class="hotel-card">
-        <img src="paris/Screenshot 2025-08-19 165926.png" alt="Shangri-La Hotel Paris">
+      <a href="https://www.shangri-la.com/paris/shangrila/" target="_blank" class="hotel-card" aria-label="Visit Shangri-La Hotel Paris website">
+        <img src="paris/Screenshot 2025-08-19 165926.png" alt="Shangri-La Hotel Paris" aria-label="Shangri-La Hotel Paris image">
         <h3>Shangri-La Hotel Paris</h3>
       </a>
-      <a href="https://www.peninsula.com/en/paris/5-star-luxury-hotel-16e" target="_blank" class="hotel-card">
-        <img src="paris/Screenshot 2025-08-19 165955.png" alt="The Peninsula Paris">
+      <a href="https://www.peninsula.com/en/paris/5-star-luxury-hotel-16e" target="_blank" class="hotel-card" aria-label="Visit The Peninsula Paris website">
+        <img src="paris/Screenshot 2025-08-19 165955.png" alt="The Peninsula Paris" aria-label="The Peninsula Paris hotel image">
         <h3>The Peninsula Paris</h3>
       </a>
-      <a href="https://www.hotelplazaathenee.com/" target="_blank" class="hotel-card">
-        <img src="paris/Screenshot 2025-08-19 170252.png" alt="Hôtel Plaza Athénée">
+      <a href="https://www.hotelplazaathenee.com/" target="_blank" class="hotel-card" aria-label="Visit Hôtel Plaza Athénée website">
+        <img src="paris/Screenshot 2025-08-19 170252.png" alt="Hôtel Plaza Athénée" aria-label="Hôtel Plaza Athénée hotel image">
         <h3>Hôtel Plaza Athénée</h3>
       </a>
     </div>
   </div>
 </div>
 
+
 <script type="module">
+  // Initialize the map and place picker after the custom element is defined
   async function init() {
     await customElements.whenDefined('gmp-map');
-    const map = document.querySelector('#map');
-    const placePicker = document.querySelector('gmpx-place-picker');
-    const infoWindow = new google.maps.InfoWindow();
 
+    // Select the map and place picker elements
+    const map = document.querySelector('#map');// Reference to the map element
+    const placePicker = document.querySelector('gmpx-place-picker'); // Reference to the search box
+    const infoWindow = new google.maps.InfoWindow();// Info window to display place details
+
+    // Listen for place selection changes from the place picker
     placePicker.addEventListener('gmpx-placechange', () => {
       const place = placePicker.value;
 
+      // Alert if no location data is available
       if (!place.location) {
         window.alert("No details available for input: '" + place.name + "'");
         return;
       }
 
+      // Adjust map view to place viewport or center/zoom if viewport not provided
       if (place.viewport) {
         map.innerMap.fitBounds(place.viewport);
       } else {
-        map.center = place.location;
+        map.center = place.location;// Center map to location
         map.zoom = 14;
       }
 
+      // Add marker for selected place on the map
       const searchMarker = new google.maps.Marker({
         position: place.location,
         map: map.innerMap,
-        title: place.displayName
+        title: place.displayName // ARIA-friendly marker title
       });
 
+      // Display info window with place name and formatted address
       infoWindow.setContent(`<strong>${place.displayName}</strong><br>${place.formattedAddress || ""}`);
       infoWindow.open(map.innerMap, searchMarker);
     });
   }
 
+  // Run init function once DOM is fully loaded
   document.addEventListener('DOMContentLoaded', init);
 </script>
 
