@@ -12,8 +12,8 @@
 
   <!-- Background Slides (leave CSS out of here) -->
   <div class="bg-slides">
-    <div class="bg-slide active" style="background-image: url('front-page-image/manhattan-new-york-city-manhattan-bridge-cityscape-sunset-3840x2160-1346.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('front-page-image/macaw-birds-couple-colorful-jungle-love-birds-tropical-3840x2160-7464.jpg');"></div>
+    <div class="bg-slide active" style="background-image: url('front-page-image/macaw-birds-couple-colorful-jungle-love-birds-tropical-3840x2160-7464.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/manhattan-new-york-city-manhattan-bridge-cityscape-sunset-3840x2160-1346.jpg');"></div>
     <div class="bg-slide" style="background-image: url('front-page-image/0ne-front.jpg');"></div>
     <div class="bg-slide" style="background-image: url('front-page-image/banff-national-park-3840x2160-12366.jpg');"></div>
     <div class="bg-slide" style="background-image: url('front-page-image/cityscape-sunrise-portland-panorama-city-lights-3840x2160-23.jpg');"></div>
@@ -25,7 +25,7 @@
   </div>
  <header class="top-header">
   <div class="logo-container">
-    <a href="#holidays"><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" /></a>
+    <a href=""><img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" /></a>
   </div>
   <nav class="nav-links">
     <a href="mailto:info@elementavoyages.com">Contact</a>
@@ -58,7 +58,7 @@
 
     <!-- Decorative shapes -->
     <div class="shape shape-circle"></div>
-    <div class="shape shape-line"></div>
+    
 
     <!-- Scroll arrow -->
     <div class="scroll-arrow" id="scrollArrow">&#x2193;</div>
@@ -149,7 +149,7 @@
   <h2>Travelers’ Favourite Holidays</h2>
   <div class="holidays-rotator">
     <div class="holiday-card">
-      <img src="holiday-pictures-frost/Screenshot 2025-08-05 201405.png" alt="Patagonia, Argentina" />
+      <img src="feature-holidays/patagonia.jpg" alt="Patagonia, Argentina" />
       <div class="holiday-info">
         <h3>Patagonia, Argentina</h3>
         <a href="argentina.html" class="map-link">View on Map</a>
@@ -157,7 +157,7 @@
     </div>
 
     <div class="holiday-card">
-  <img src="feature-holidays/baros-maldives-island-seascape-tropical-beach-blue-sky-3840x2160-4325.jpg" alt="Male, Maldives" />
+  <img src="feature-holidays/maldives.png" alt="Male, Maldives" />
   <div class="holiday-info">
     <h3>Male, Maldives</h3>
     <a href="maldives.html" class="map-link">View on Map</a>
@@ -166,7 +166,7 @@
 
 
     <div class="holiday-card">
-      <img src="feature-holidays/santorini-island-thira-aegean-sea-fira-town-greece-dusk-3840x2160-8092.jpg" alt="Santorini, Greece" />
+      <img src="feature-holidays/santorini.jpg" alt="Santorini, Greece" />
       <div class="holiday-info">
         <h3>Santorini, Greece</h3>
         <a href="santorini.html" class="map-link">View on Map</a>
@@ -174,7 +174,7 @@
     </div>
 
     <div class="holiday-card">
-      <img src="feature-holidays/eiffel-tower-la-tour-eiffel-night-cloudy-sky-sunset-paris-3840x2160-6099.jpg" alt="Paris, France" />
+      <img src="feature-holidays/paris.jpg" alt="Paris, France" />
       <div class="holiday-info">
         <h3>Paris, France</h3>
         <a href="paris.html" class="map-link">View on Map</a>
@@ -182,7 +182,7 @@
     </div>
 
     <div class="holiday-card">
-      <img src="feature-holidays/shanghai-city-3840x2160-16563.jpg" alt="Shanghai, China" />
+      <img src="feature-holidays/shanghai.jpg" alt="Shanghai, China" />
       <div class="holiday-info">
         <h3>Shanghai, China</h3>
         <a href="shanghai.html" class="map-link">View on Map</a>
@@ -199,9 +199,9 @@
     <p>Explore curated biomes and luxury escapes designed for you.</p>
     <div class="biome-buttons">
       <a href="desert.html" class="biome-btn">Desert</a>
-      <a href="frost.html" class="biome-btn">Forest</a>
-      <a href="jungle.html" class="biome-btn">Mountain</a>
-      <a href="tides.html" class="biome-btn">Beach</a>
+      <a href="frost.html" class="biome-btn">Frost</a>
+      <a href="jungle.html" class="biome-btn">Jungle</a>
+      <a href="tides.html" class="biome-btn">Tides</a>
     </div>
   </div>
 </section>
@@ -302,7 +302,7 @@
     slides[current].classList.remove('active');
     current = (current + 1) % slides.length;
     slides[current].classList.add('active');
-  }, 5000); // 5 seconds per slide
+  }, 4000); // 4 seconds per slide
 
   // Lock scroll initially
   document.body.classList.add('lock-scroll');

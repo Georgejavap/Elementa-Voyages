@@ -297,51 +297,69 @@ details {
 
 
 /* ------------------------------
-   Responsive Tweaks
+   Media Query for Tablets / 768px
 ------------------------------ */
 @media (max-width: 768px) {
-  .how-it-works h2 {
-    font-size: 2rem;
+  
+  /* Top Header */
+  .top-header {
+    height: 60px;
+    padding: 0 1rem;
   }
 
-  .how-it-works p {
-    font-size: 1rem;
+  .logo-container a img {
+    max-width: 180px; /* smaller logo */
   }
 
-  .shape-circle {
-    width: 100px;
-    height: 100px;
-  }
-
-  .shape-line {
-    height: 150px;
-  }
-
-  .navbar {
-    flex-direction: row;
-    align-items: center;
+  .nav-links {
     gap: 1rem;
+    padding-right: 1rem;
   }
 
-  .dropbtn {
-    width: 100%;
-    max-width: 180px;
+  .nav-links a {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
   }
 
-  .dropdown-content {
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 180px;
+  /* Hero Section */
+  .hero-content {
+    padding: 1rem;
+    max-width: 95%;
   }
 
   .hero h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .hero p {
     font-size: 1.2rem;
+  }
+
+  /* Navbar Buttons / Dropdown */
+  .nav-button,
+  .dropbtn {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .dropdown-content a {
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  /* Decorative Shapes */
+  .shape-circle {
+    width: 100px;
+    height: 100px;
+    top: 15%;
+    left: -30px;
+  }
+
+  .shape-line {
+    width: 2px;
+    height: 200px;
+    top: 35%;
+    right: -15px;
   }
 }
 
@@ -519,8 +537,15 @@ details {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .how-it-works-split { flex-direction: column; gap: 3rem; }
-  .mindmap-container { justify-content: center; }
+  .how-it-works-split { 
+    flex-direction: column; gap: 3rem; 
+  }
+  .mindmap-container { 
+    justify-content: center; 
+  }
+  .how-left h2, .how-right h2 {
+    font-size: 2rem;
+  }
 }
 
 
@@ -610,18 +635,22 @@ details {
   color: #ffffff;
 }
 
-
+@media (max-width: 768px) {
+  .featured-holidays h2 {
+    font-size: 2.5rem;
+  }
+}
 
 
 
 .hero-biomes {
   position: relative;
-  background: url('queensboro-bridge-3840x2160-11470.jpg') center/cover no-repeat;
+  background: url('explore-image/pexels-vr33s-26831720.jpg') center/cover no-repeat;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: hidden
 }
 
 .hero-overlay {
@@ -630,6 +659,8 @@ details {
   background: rgba(0,0,0,0.4); /* subtle overlay for readability */
   padding: 2rem;
   border-radius: 16px;
+  position: relative; /* make top work */
+  top: 12%;
 }
 
 .hero-overlay h2 {
@@ -669,6 +700,33 @@ details {
   background-color: #000000;
   color: #ffffff;
   
+}
+
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 1rem 1.5rem; /* smaller padding */
+    top: 8%; /* slightly lower than desktop */
+    border-radius: 12px; /* slightly smaller corners */
+  }
+
+  .hero-overlay h2 {
+    font-size: 2rem; /* smaller heading */
+  }
+
+  .hero-overlay p {
+    font-size: 1rem; /* smaller paragraph */
+  }
+
+  .biome-buttons {
+    gap: 0.5rem; /* smaller gap between buttons */
+    margin-top: 1rem;
+  }
+
+  .biome-btn {
+    padding: 0.5rem 1rem; /* smaller buttons */
+    font-size: 0.9rem;
+  }
 }
 
 
