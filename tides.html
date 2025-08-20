@@ -19,7 +19,6 @@
   </nav>
 </header>
 
-<!-- FILTERS + GRID -->
 <section class="destination-filter">
   <div class="filter-bar">
     <select id="family-select">
@@ -36,7 +35,6 @@
       <option value="south-america">South America</option>
       <option value="africa">Africa</option>
       <option value="oceania">Oceania</option>
-      <option value="antarctica">Antarctica</option>
     </select>
 
     <select id="type-select">
@@ -51,77 +49,134 @@
   <div class="destination-grid">
     <!-- Europe -->
     <div class="destination-card" data-family="family" data-continent="europe" data-type="relaxing">
-      <img src="images/canary-islands.jpg" alt="Canary Islands, Spain" />
-      <h3>Canary Islands, Spain</h3>
+      <a href="https://www.booking.com/city/es/canary-islands.en.html" target="_blank">
+        <img src="images/canary-islands.jpg" alt="Canary Islands, Spain" />
+        <h3>Canary Islands, Spain</h3>
+      </a>
     </div>
     <div class="destination-card" data-family="adult" data-continent="europe" data-type="adventurous">
-      <img src="images/azores-portugal.jpg" alt="Azores, Portugal" />
-      <h3>Azores, Portugal</h3>
+      <a href="https://www.booking.com/region/pt/azores.en.html" target="_blank">
+        <img src="images/azores-portugal.jpg" alt="Azores, Portugal" />
+        <h3>Azores, Portugal</h3>
+      </a>
     </div>
 
     <!-- Asia -->
     <div class="destination-card" data-family="family" data-continent="asia" data-type="relaxing">
-      <img src="images/bali-indonesia-beach.jpg" alt="Bali, Indonesia" />
-      <h3>Bali, Indonesia</h3>
+      <a href="https://www.booking.com/city/id/bali.en.html" target="_blank">
+        <img src="images/bali-indonesia.jpg" alt="Bali, Indonesia" />
+        <h3>Bali, Indonesia</h3>
+      </a>
     </div>
     <div class="destination-card" data-family="adult" data-continent="asia" data-type="adventurous">
-      <img src="images/philippines.jpg" alt="Palawan, Philippines" />
-      <h3>Palawan, Philippines</h3>
-    </div>
-
-    <!-- North America -->
-    <div class="destination-card" data-family="family" data-continent="north-america" data-type="relaxing">
-      <img src="images/bahamas.jpg" alt="Bahamas" />
-      <h3>Bahamas</h3>
-    </div>
-    <div class="destination-card" data-family="adult" data-continent="north-america" data-type="adventurous">
-      <img src="images/hawaii.jpg" alt="Hawaii, USA" />
-      <h3>Hawaii, USA</h3>
-    </div>
-
-    <!-- South America -->
-    <div class="destination-card" data-family="family" data-continent="south-america" data-type="relaxing">
-      <img src="images/brazil-copacabana.jpg" alt="Copacabana, Brazil" />
-      <h3>Copacabana, Brazil</h3>
-    </div>
-    <div class="destination-card" data-family="adult" data-continent="south-america" data-type="adventurous">
-      <img src="images/galapagos.jpg" alt="Galapagos Islands, Ecuador" />
-      <h3>Galapagos Islands, Ecuador</h3>
+      <a href="https://www.booking.com/city/mv/maldives.en.html" target="_blank">
+        <img src="images/maldives.jpg" alt="Maldives" />
+        <h3>Maldives</h3>
+      </a>
     </div>
 
     <!-- Africa -->
     <div class="destination-card" data-family="family" data-continent="africa" data-type="relaxing">
-      <img src="images/mauritius.jpg" alt="Mauritius" />
-      <h3>Mauritius</h3>
+      <a href="https://www.booking.com/city/mu/mauritius.en.html" target="_blank">
+        <img src="images/mauritius.jpg" alt="Mauritius" />
+        <h3>Mauritius</h3>
+      </a>
     </div>
     <div class="destination-card" data-family="adult" data-continent="africa" data-type="adventurous">
-      <img src="images/seychelles.jpg" alt="Seychelles" />
-      <h3>Seychelles</h3>
+      <a href="https://www.booking.com/city/sc/seychelles.en.html" target="_blank">
+        <img src="images/seychelles.jpg" alt="Seychelles" />
+        <h3>Seychelles</h3>
+      </a>
+    </div>
+
+    <!-- North America -->
+    <div class="destination-card" data-family="family" data-continent="north-america" data-type="relaxing">
+      <a href="https://www.booking.com/city/do/punta-cana.en.html" target="_blank">
+        <img src="images/punta-cana.jpg" alt="Punta Cana, Dominican Republic" />
+        <h3>Punta Cana, Dominican Republic</h3>
+      </a>
+    </div>
+    <div class="destination-card" data-family="adult" data-continent="north-america" data-type="adventurous">
+      <a href="https://www.booking.com/city/mx/cancun.en.html" target="_blank">
+        <img src="images/cancun.jpg" alt="Cancún, Mexico" />
+        <h3>Cancún, Mexico</h3>
+      </a>
     </div>
 
     <!-- Oceania -->
     <div class="destination-card" data-family="family" data-continent="oceania" data-type="relaxing">
-      <img src="images/fiji.jpg" alt="Fiji" />
-      <h3>Fiji</h3>
+      <a href="https://www.booking.com/city/fj/nadi.en.html" target="_blank">
+        <img src="images/fiji.jpg" alt="Fiji" />
+        <h3>Fiji</h3>
+      </a>
     </div>
     <div class="destination-card" data-family="adult" data-continent="oceania" data-type="adventurous">
-      <img src="images/tahiti.jpg" alt="Tahiti" />
-      <h3>Tahiti</h3>
-    </div>
-
-    <!-- Antarctica (no tropical islands) -->
-    <div class="destination-card" data-family="family" data-continent="antarctica" data-type="relaxing">
-      <img src="images/antarctica-coast.jpg" alt="Antarctica Coast" />
-      <h3>Antarctica Coast</h3>
-    </div>
-    <div class="destination-card" data-family="adult" data-continent="antarctica" data-type="adventurous">
-      <img src="images/antarctica-islands.jpg" alt="Antarctica Islands" />
-      <h3>Antarctica Islands</h3>
+      <a href="https://www.booking.com/city/pf/bora-bora.en.html" target="_blank">
+        <img src="images/bora-bora.jpg" alt="Bora Bora, French Polynesia" />
+        <h3>Bora Bora, French Polynesia</h3>
+      </a>
     </div>
   </div>
 </section>
 
+<footer class="site-footer">
+  <div class="footer-container">
+    <!-- Column 1: Logo & About -->
+    <div class="footer-column">
+      <div class="footer-logo">
+        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo">
+      </div>
+      <p class="footer-tagline">
+        Curated journeys, luxurious stays, and unforgettable experiences.
+      </p>
+    </div>
+    
+    <!-- Column 2: Quick Links -->
+    <div class="footer-column">
+      <h4>Explore</h4>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="test-explore.html">Destinations</a></li>
+        <li><a href="mailto:info@elementavoyages.com">Contact</a></li>
+      </ul>
+    </div>
 
-<script src="biome.js"></script>
+    <!-- Column 3: Newsletter & Social -->
+    <div class="footer-column">
+      <h4>Stay Connected</h4>
+      <p>Join our newsletter for travel inspiration & exclusive offers.</p>
+      <form class="footer-newsletter">
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sponsors & Credits -->
+  <div class="footer-sponsors">
+    <p>Sponsored by Luxury Travels & Partners</p>
+    <div class="sponsor-logos">
+      <img src="sponsors/Screenshot 2025-08-18 164132.png" alt="Sponsor 1">
+      <img src="sponsors/Screenshot 2025-08-18 164141.png" alt="Sponsor 2">
+      <img src="sponsors/Screenshot 2025-08-18 164206.png" alt="Sponsor 3">
+      <img src="sponsors/Screenshot 2025-08-18 164213.png" alt="Sponsor 4">
+      <img src="sponsors/Screenshot 2025-08-18 164353.png" alt="Sponsor 5">
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Elementa Voyagés. All Rights Reserved.</p>
+  </div>
+
+  
+</footer>
+
+<script src="filter.js"></script>
 </body>
 </html>
