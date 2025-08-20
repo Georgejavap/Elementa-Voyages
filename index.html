@@ -2,14 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elementa Voyagés</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <script async src="https://www.gstatic.com/maps-platform/places/web-component/loader.js"></script>
 </head>
 <body>
-
   <!-- Background Slides -->
   <div class="bg-slides" aria-hidden="true">
     <div class="bg-slide active" style="background-image: url('front-page-image/macaw-birds-couple-colorful-jungle-love-birds-tropical-3840x2160-7464.jpg');"></div>
@@ -23,25 +22,22 @@
     <div class="bg-slide" style="background-image: url('front-page-image/peacock-green-grass-beautiful-green-feathers-bird-trees-3840x2160-2147.jpg');"></div>
     <div class="bg-slide" style="background-image: url('front-page-image/nanpu-bridge-modern-architecture-cityscape-shanghai-city-3840x2160-18.jpg');"></div>
   </div>
-
-  <header class="top-header" role="banner">
+  <header class="top-header">
     <div class="logo-container">
       <a href="index.html">
         <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo">
       </a>
     </div>
-    <nav class="nav-links" role="navigation" aria-label="Main navigation">
+    <nav class="nav-links" aria-label="Main navigation">
       <a href="mailto:info@elementavoyages.com">Contact</a>
     </nav>
   </header>
-
   <!-- Hero (unchanged structure) -->
   <div class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
       <h1>Elementa Voyagés</h1>
       <p>Luxury journeys through the world’s rawest beauty</p>
-
       <nav class="navbar">
         <a href="test-explore.html" class="nav-button">Destinations</a>
         <a href="about-us.html" class="nav-button">About Us</a>
@@ -56,264 +52,223 @@
         </div>
       </nav>
     </div>
-
     <!-- Decorative shapes -->
     <div class="shape shape-circle"></div>
-    
     <!-- Scroll arrow -->
     <div class="scroll-arrow" id="scrollArrow">&#x2193;</div>
   </div>
-
-
-<div id="info-section">
-  <section class="how-it-works-split" id="how-it-works">
-    
-    <!-- Left: How It Works -->
-    <div class="how-left">
-      <h2>How It Works</h2>
-      <div class="mindmap-container">
-        <div class="mind-box" id="box1">
-          <h3>Browse Biomes</h3>
-          <p>Explore curated travel biomes to find your perfect journey.</p>
-        </div>
-        <div class="arrow arrow1">&#8594;</div>
-
-        <div class="mind-box" id="box2">
-          <h3>Select Destination</h3>
-          <p>Choose your luxury getaway and preview it on the map.</p>
-        </div>
-        <div class="arrow arrow2">&#8595;</div>
-
-        <div class="mind-box" id="box3">
-          <h3>Book Trip</h3>
-          <p>Secure your trip with our seamless booking process.</p>
-        </div>
-        <div class="arrow arrow3">&#8594;</div>
-
-        <div class="mind-box" id="box4">
-          <h3>Exclusive Events</h3>
-          <p>Access Gold Member events and premium experiences.</p>
+  <div id="info-section">
+    <section class="how-it-works-split" id="how-it-works">
+      <!-- Left: How It Works -->
+      <div class="how-left">
+        <h2>How It Works</h2>
+        <div class="mindmap-container">
+          <div class="mind-box" id="box1">
+            <h3>Browse Biomes</h3>
+            <p>Explore curated travel biomes to find your perfect journey.</p>
+          </div>
+          <div class="arrow arrow1">&#8594;</div>
+          <div class="mind-box" id="box2">
+            <h3>Select Destination</h3>
+            <p>Choose your luxury getaway and preview it on the map.</p>
+          </div>
+          <div class="arrow arrow2">&#8595;</div>
+          <div class="mind-box" id="box3">
+            <h3>Book Trip</h3>
+            <p>Secure your trip with our seamless booking process.</p>
+          </div>
+          <div class="arrow arrow3">&#8594;</div>
+          <div class="mind-box" id="box4">
+            <h3>Exclusive Events</h3>
+            <p>Access Gold Member events and premium experiences.</p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- Right: Travel Experts -->
-    <div class="how-right">
-      <h2>Meet Our Travel Experts</h2>
-
-      <div class="agent">
-        <div class="agent-img"><img src="staff/Screenshot 2025-08-14 125200.png" alt="Alexandra M."></div>
-        <div class="agent-info">
-          <h3>Alex M.</h3>
-          <p>With over 12 years of experience curating bespoke European vacations, 
-            Alex ensures every client experiences the perfect blend of culture, luxury, and adventure.
-            Specializes in exclusive villas, private tours, and gastronomic journeys.</p>
+      <!-- Right: Travel Experts -->
+      <div class="how-right">
+        <h2>Meet Our Travel Experts</h2>
+        <div class="agent">
+          <div class="agent-img"><img src="staff/staff-one.png" alt="Alexandra M."></div>
+          <div class="agent-info">
+            <h3>Alex M.</h3>
+            <p>With over 12 years of experience curating bespoke European vacations, 
+              Alex ensures every client experiences the perfect blend of culture, luxury, and adventure.
+              Specializes in exclusive villas, private tours, and gastronomic journeys.</p>
+          </div>
+        </div>
+        <div class="agent">
+          <div class="agent-img"><img src="staff/staff-two.png" alt="Ravi K."></div>
+          <div class="agent-info">
+            <h3>Ravi K.</h3>
+            <p>Ravi has spent the last decade exploring hidden corners of the world. 
+              From remote mountain treks to off-the-grid islands, he curates extraordinary 
+              experiences for thrill-seekers and nature enthusiasts alike.</p>
+          </div>
+        </div>
+        <div class="agent">
+          <div class="agent-img"><img src="staff/staff-three.png" alt="Leila S."></div>
+          <div class="agent-info">
+            <h3>Leila S.</h3>
+            <p>Leila is passionate about connecting travelers with authentic cultural and culinary adventures. 
+              From cooking classes with local chefs to immersive city tours, she ensures clients return home with unforgettable memories.</p>
+          </div>
+        </div>
+        <!-- Contact Button -->
+        <div class="contact-box">
+          <h3>Get in Touch</h3>
+          <p>Contact any of our travel specialists for queries about selected destinations and city escapes.</p>
+          <a href="mailto:info@elementavoyages.com" class="contact-button">Contact Us</a>
         </div>
       </div>
-
-      <div class="agent">
-        <div class="agent-img"><img src="staff/Screenshot 2025-08-15 144810.png" alt="Ravi K."></div>
-        <div class="agent-info">
-          <h3>Ravi K.</h3>
-          <p>Ravi has spent the last decade exploring hidden corners of the world. 
-            From remote mountain treks to off-the-grid islands, he curates extraordinary 
-            experiences for thrill-seekers and nature enthusiasts alike.</p>
-        </div>
-      </div>
-
-      <div class="agent">
-        <div class="agent-img"><img src="staff/Screenshot 2025-08-15 144949.png" alt="Leila S."></div>
-        <div class="agent-info">
-          <h3>Leila S.</h3>
-          <p>Leila is passionate about connecting travelers with authentic cultural and culinary adventures. 
-            From cooking classes with local chefs to immersive city tours, she ensures clients return home with unforgettable memories.</p>
-        </div>
-      </div>
-
-      <!-- Contact Button -->
-      <div class="contact-box">
-        <h3>Get in Touch</h3>
-        <p>Contact any of our travel specialists for queries about selected destinations and city escapes.</p>
-        <a href="mailto:info@elementavoyages.com" class="contact-button">Contact Us</a>
-      </div>
-    </div>
-  </section>
-</div>
-
-
-
-
-
-
-<section class="featured-holidays" id="holidays" aria-label="Featured travelers' favourite holidays"> 
-  <!-- Section containing the most popular holiday destinations among travelers -->
-  <h2>Travelers’ Favourite Holidays</h2>
-  <div class="holidays-rotator" aria-label="Rotating list of featured holiday destinations"> 
-    <!-- Rotator container holding individual holiday cards -->
-
-    <div class="holiday-card" aria-label="Holiday card for Patagonia, Argentina"> 
-      <!-- Individual holiday card for Patagonia, Argentina -->
-      <img src="feature-holidays/patagonia.jpg" alt="Patagonia, Argentina" aria-label="Image of Patagonia, Argentina" />
-      <div class="holiday-info" aria-label="Information for Patagonia, Argentina">
-        <h3>Patagonia, Argentina</h3>
-        <a href="argentina.html" class="map-link" aria-label="View Patagonia, Argentina on map">View on Map</a>
-      </div>
-    </div>
-
-    <div class="holiday-card" aria-label="Holiday card for Male, Maldives"> 
-      <!-- Individual holiday card for Male, Maldives -->
-      <img src="feature-holidays/maldives.png" alt="Male, Maldives" aria-label="Image of Male, Maldives" />
-      <div class="holiday-info" aria-label="Information for Male, Maldives">
-        <h3>Male, Maldives</h3>
-        <a href="maldives.html" class="map-link" aria-label="View Male, Maldives on map">View on Map</a>
-      </div>
-    </div>
-
-    <div class="holiday-card" aria-label="Holiday card for Santorini, Greece"> 
-      <!-- Individual holiday card for Santorini, Greece -->
-      <img src="feature-holidays/santorini.jpg" alt="Santorini, Greece" aria-label="Image of Santorini, Greece" />
-      <div class="holiday-info" aria-label="Information for Santorini, Greece">
-        <h3>Santorini, Greece</h3>
-        <a href="santorini.html" class="map-link" aria-label="View Santorini, Greece on map">View on Map</a>
-      </div>
-    </div>
-
-    <div class="holiday-card" aria-label="Holiday card for Paris, France"> 
-      <!-- Individual holiday card for Paris, France -->
-      <img src="feature-holidays/paris.jpg" alt="Paris, France" aria-label="Image of Paris, France" />
-      <div class="holiday-info" aria-label="Information for Paris, France">
-        <h3>Paris, France</h3>
-        <a href="paris.html" class="map-link" aria-label="View Paris, France on map">View on Map</a>
-      </div>
-    </div>
-
-    <div class="holiday-card" aria-label="Holiday card for Shanghai, China"> 
-      <!-- Individual holiday card for Shanghai, China -->
-      <img src="feature-holidays/shanghai.jpg" alt="Shanghai, China" aria-label="Image of Shanghai, China" />
-      <div class="holiday-info" aria-label="Information for Shanghai, China">
-        <h3>Shanghai, China</h3>
-        <a href="shanghai.html" class="map-link" aria-label="View Shanghai, China on map">View on Map</a>
-      </div>
-    </div>
-
+    </section>
   </div>
-</section>
-
-
-
-
-
-<section class="hero-biomes" aria-label="Hero section for exploring different travel biomes">
-  <!-- Hero section introducing curated biomes and luxury escapes -->
-  <div class="hero-overlay" aria-label="Overlay container for hero text and biome buttons">
-    <!-- Overlay layer containing headings and biome buttons -->
-    <h2 aria-label="Main heading: Your Dream is Just One Click Away">Your Dream is Just One Click Away</h2>
-    <p aria-label="Subheading: Explore curated biomes and luxury escapes designed for you.">
-      Explore curated biomes and luxury escapes designed for you.
-    </p>
-    <div class="biome-buttons" aria-label="Navigation buttons to different biomes">
-      <!-- Buttons linking to specific biome pages -->
-      <a href="desert.html" class="biome-btn" aria-label="Explore Desert biome">Desert</a>
-      <a href="frost.html" class="biome-btn" aria-label="Explore Frost biome">Frost</a>
-      <a href="jungle.html" class="biome-btn" aria-label="Explore Jungle biome">Jungle</a>
-      <a href="tides.html" class="biome-btn" aria-label="Explore Tides biome">Tides</a>
-    </div>
-  </div>
-</section>
-
-<section class="gold-event-full" aria-label="Gold Membership promotion section">
-  <!-- Section highlighting Gold Membership benefits -->
-  <div class="gold-card" aria-label="Gold Membership card container">
-    <div class="gold-bg" aria-label="Background layer for Gold Membership card"></div>
-    
-    <div class="gold-content" aria-label="Content container for Gold Membership details">
-      <!-- Main content including heading, description, and inquiry button -->
-      <h2 aria-label="Gold Membership heading">Gold Membership</h2>
-      <p aria-label="Description of Gold Membership benefits">
-        Experience the ultimate luxury getaway. Exclusive access to curated trips, personalized services, and once-in-a-lifetime experiences await our Gold Members.
-      </p>
-      <button 
-        onclick="location.href='mailto:info@yourdomain.com?subject=Gold Membership Inquiry'" 
-        aria-label="Send an inquiry email about Gold Membership">
-        Inquire Now
-      </button>
-    </div>
-
-    <!-- Abstract Shapes for decorative purposes -->
-    <div class="abstract-shape gold-shape1" aria-label="Decorative abstract shape 1"></div>
-    <div class="abstract-shape gold-shape2" aria-label="Decorative abstract shape 2"></div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<footer class="site-footer" role="contentinfo" aria-label="Website Footer">
-  <div class="footer-container">
-    <!-- Column 1: Logo & About -->
-    <div class="footer-column" role="region" aria-label="About Elementa Voyagés">
-      <div class="footer-logo">
-        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo">
+    <section class="featured-holidays" id="holidays" aria-label="Featured travelers' favourite holidays"> 
+      <!-- Section containing the most popular holiday destinations among travelers -->
+      <h2>Travelers’ Favourite Holidays</h2>
+      <div class="holidays-rotator"> 
+          <!-- Rotator container holding individual holiday cards -->
+        <div class="holiday-card"> 
+          <!-- Individual holiday card for Patagonia, Argentina -->
+          <img src="feature-holidays/patagonia.jpg" alt="Patagonia, Argentina">
+          <div class="holiday-info">
+            <h3>Patagonia, Argentina</h3>
+            <a href="argentina.html" class="map-link" aria-label="View Patagonia, Argentina on map">View on Map</a>
+          </div>
+        </div>
+        <div class="holiday-card"> 
+          <!-- Individual holiday card for Male, Maldives -->
+          <img src="feature-holidays/maldives.png" alt="Male, Maldives">
+          <div class="holiday-info">
+            <h3>Male, Maldives</h3>
+            <a href="maldives.html" class="map-link" aria-label="View Male, Maldives on map">View on Map</a>
+          </div>
+        </div>
+        <div class="holiday-card"> 
+          <!-- Individual holiday card for Santorini, Greece -->
+          <img src="feature-holidays/santorini.jpg" alt="Santorini, Greece">
+          <div class="holiday-info">
+            <h3>Santorini, Greece</h3>
+            <a href="santorini.html" class="map-link" aria-label="View Santorini, Greece on map">View on Map</a>
+          </div>
+        </div>
+        <div class="holiday-card"> 
+          <!-- Individual holiday card for Paris, France -->
+          <img src="feature-holidays/paris.jpg" alt="Paris, France">
+          <div class="holiday-info">
+            <h3>Paris, France</h3>
+            <a href="paris.html" class="map-link" aria-label="View Paris, France on map">View on Map</a>
+          </div>
+        </div>
+        <div class="holiday-card"> 
+          <!-- Individual holiday card for Shanghai, China -->
+          <img src="feature-holidays/shanghai.jpg" alt="Shanghai, China">
+          <div class="holiday-info" >
+            <h3>Shanghai, China</h3>
+            <a href="shanghai.html" class="map-link" aria-label="View Shanghai, China on map">View on Map</a>
+          </div>
+        </div>
       </div>
-      <p class="footer-tagline">
-        Curated journeys, luxurious stays, and unforgettable experiences.
-      </p>
-    </div>
-    
-    <!-- Column 2: Quick Links -->
-    <div class="footer-column" role="navigation" aria-label="Footer Quick Links">
-      <h4>Explore</h4>
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="test-explore.html">Destinations</a></li>
-        <li><a href="mailto:info@elementavoyages.com">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Column 3: Newsletter & Social -->
-    <div class="footer-column" role="region" aria-label="Newsletter and Social Links">
-      <h4>Stay Connected</h4>
-      <p>Join our newsletter for travel inspiration & exclusive offers.</p>
-      <form class="footer-newsletter" role="form" aria-label="Subscribe to newsletter">
-        <label class="visually-hidden" for="newsletter-email">Email Address</label>
-        <input id="newsletter-email" type="email" placeholder="Enter your email">
-        <button type="submit">Subscribe</button>
-      </form>
-      <div class="footer-social" role="navigation" aria-label="Social Media Links">
-        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a href="https://facebook.com" target="_blank">Facebook</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </section>
+    <section class="hero-biomes" aria-label="Hero section for exploring different travel biomes">
+      <!-- Hero section introducing curated biomes and luxury escapes -->
+      <div class="hero-overlay">
+       <!-- Overlay layer containing headings and biome buttons -->
+       <h2 aria-label="Main heading: Your Dream is Just One Click Away">Your Dream is Just One Click Away</h2>
+        <p>
+          Explore curated biomes and luxury escapes designed for you.
+        </p>
+        <div class="biome-buttons">
+          <!-- Buttons linking to specific biome pages -->
+          <a href="desert.html" class="biome-btn" aria-label="Explore Desert biome">Desert</a>
+          <a href="frost.html" class="biome-btn" aria-label="Explore Frost biome">Frost</a>
+          <a href="jungle.html" class="biome-btn" aria-label="Explore Jungle biome">Jungle</a>
+          <a href="tides.html" class="biome-btn" aria-label="Explore Tides biome">Tides</a>
+        </div>
+      </div>
+    </section>
+    <section class="gold-event-full" aria-label="Gold Membership promotion section">
+      <!-- Section highlighting Gold Membership benefits -->
+      <div class="gold-card">
+        <div class="gold-bg"></div>
+        <div class="gold-content">
+          <!-- Main content including heading, description, and inquiry button -->
+          <h2 aria-label="Gold Membership heading">Gold Membership</h2>
+            <p>
+              Experience the ultimate luxury getaway. Exclusive access to curated trips, personalized services, and once-in-a-lifetime experiences await our Gold Members.
+            </p>
+            <button 
+              onclick="location.href='mailto:info@yourdomain.com?subject=Gold Membership Inquiry'" 
+              aria-label="Send an inquiry email about Gold Membership">
+              Inquire Now
+            </button>
+        </div>
+        <!-- Abstract Shapes for decorative purposes -->
+        <div class="abstract-shape gold-shape1"></div>
+        <div class="abstract-shape gold-shape2"></div>
+      </div>
+    </section>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Column 1: Logo & About -->
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo">
+        </div>
+        <p class="footer-tagline">
+          Curated journeys, luxurious stays, and unforgettable experiences.
+        </p>
+      </div>
+      <!-- Column 2: Quick Links -->
+      <div class="footer-column" aria-labelledby="footer-links-title">
+        <h4 id="footer-links-title">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="test-explore.html">Destinations</a></li>
+          <li><a href="mailto:info@elementavoyages.com">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Column 3: Newsletter & Social -->
+      <div class="footer-column" aria-labelledby="footer-newsletter-title">
+        <h4 id="footer-newsletter-title">Stay Connected</h4>
+        <p>Join our newsletter for travel inspiration & exclusive offers.</p>
+        <form class="footer-newsletter">
+          <input type="email" placeholder="Enter your email" aria-label="Email address">
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="footer-social" role="navigation" aria-label="Social media links">
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
       </div>
     </div>
-  </div>
-
-  <!-- Sponsors & Credits -->
-  <div class="footer-sponsors" role="region" aria-label="Sponsors">
-    <p>Sponsored by Luxury Travels & Partners</p>
-    <div class="sponsor-logos">
-      <img src="sponsors/Screenshot 2025-08-18 164132.png" alt="Sponsor 1">
-      <img src="sponsors/Screenshot 2025-08-18 164141.png" alt="Sponsor 2">
-      <img src="sponsors/Screenshot 2025-08-18 164206.png" alt="Sponsor 3">
-      <img src="sponsors/Screenshot 2025-08-18 164213.png" alt="Sponsor 4">
-      <img src="sponsors/Screenshot 2025-08-18 164353.png" alt="Sponsor 5">
+    <!-- Sponsors & Credits -->
+    <div class="footer-sponsors">
+      <p>Sponsored by Luxury Travels & Partners</p>
+      <div class="sponsor-logos">
+        <img src="sponsors/image-one.png" alt="Sponsor 1">
+        <img src="sponsors/image-two.png" alt="Sponsor 2">
+        <img src="sponsors/image-three.png" alt="Sponsor 3">
+        <img src="sponsors/image-four.png" alt="Sponsor 4">
+        <img src="sponsors/image-five.png" alt="Sponsor 5">
+      </div>
     </div>
-  </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Elementa Voyagés. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Decorative background shapes -->
+  <div class="abstract-shape shape1"></div>
+  <div class="abstract-shape shape2"></div>
+  <div class="abstract-shape shape3"></div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 Elementa Voyagés. All Rights Reserved.</p>
-  </div>
-</footer>
     
     
 <script>
-   
   // Background slideshow
   const slides = document.querySelectorAll('.bg-slide');
-  let current = 0;
   setInterval(() => {
     slides[current].classList.remove('active');
     current = (current + 1) % slides.length;
@@ -368,9 +323,7 @@
   // Run on scroll and on page load
   window.addEventListener('scroll', revealElements);
   window.addEventListener('load', revealElements);
-
-
 </script>
 
-  </body>
+</body>
 </html>

@@ -9,79 +9,67 @@
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
 </head>
 <body>
-
-<header class="top-header" role="banner" aria-label="Site Header">
-  <!-- Logo Container -->
-  <div class="logo-container">
-    <a href="index.html">
-      <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" aria-label="Elementa Voyagés Logo">
-    </a>
-  </div>
-
-  <!-- Navigation Links -->
-  <nav class="nav-links" role="navigation" aria-label="Main navigation">
-    <a href="index.html" aria-label="Go to Home page">Home</a>
-    <a href="test-explore.html" aria-label="Go to Explore page">Explore</a>
-    <a href="mailto:info@elementavoyages.com" aria-label="Send email to Elementa Voyagés">Contact</a>
-  </nav>
-</header>
-
-<!-- Page Title -->
-<h1 id="city-title" aria-label="Patagonia city map and hotel information">Explore Patagonia</h1>
-
-
-
-
-
-<!-- Main Content: Map Section -->
-<div class="main-content">
-  <div class="map-section" role="region" aria-labelledby="city-title">
-    <!-- Google Maps API Loader: loads the maps component -->
-    <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
-
-    <!-- Google Map Component -->
-    <gmp-map id="map" center="-50.9423,-73.4068" zoom="6" aria-label="Map of Patagonia">
-      <!-- Place Picker / Search box inside map -->
-      <div slot="control-block-start-inline-start" class="place-picker-container" role="search" aria-label="Search for cities or addresses">
-        <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
-      </div>
-    </gmp-map>
-  </div>
-
-  <!-- Sidebar: Recommended Hotels -->
-  <div class="sidebar" role="complementary" aria-label="Recommended Hotels in Patagonia">
-    <h2>Recommended Hotels</h2>
-    <div class="hotel-links">
-      <!-- Individual hotel cards with images, headings, and links -->
-      <a href="https://llaollao.com/" target="_blank" class="hotel-card">
-        <img src="patagonia/Screenshot 2025-08-19 171019.png" alt="Llao Llao Hotel">
-        <h3>Llao Llao Hotel</h3>
-      </a>
-      <a href="https://awasi.com/" target="_blank" class="hotel-card">
-        <img src="patagonia/Screenshot 2025-08-19 171155.png" alt="Awasi Patagonia">
-        <h3>Awasi Patagonia</h3>
-      </a>
-      <a href="https://www.hotelcostaustralis.com/" target="_blank" class="hotel-card">
-        <img src="patagonia/Screenshot 2025-08-19 171432.png" alt="Hotel Costaustralis">
-        <h3>Hotel Costaustralis</h3>
-      </a>
-      <a href="https://www.hosteriapehoe.cl/" target="_blank" class="hotel-card">
-        <img src="patagonia/Screenshot 2025-08-19 171620.png" alt="Hosteria Pehoe">
-        <h3>Hosteria Pehoe</h3>
-      </a>
-      <a href="https://hotels.cloudbeds.com/404?redirect_url=https%3A%2F%2Fhotels.cloudbeds.com%2Fes%2Freservation%2FPttMz3%3Fcurrency%3Dars&error_code=GENERIC" target="_blank" class="hotel-card">
-        <img src="patagonia/Screenshot 2025-08-19 171722.png" alt="Socialtel Bariloche">
-        <h3>Socialtel Bariloche</h3>
-      </a>
-      <a href="https://tierrapatagonia.com/" target="_blank" class="hotel-card">
-        <img src="patagonia/Screenshot 2025-08-19 171854.png" alt="Tierra Patagonia">
-        <h3>Tierra Patagonia</h3>
+  <header class="top-header" aria-label="Site Header">
+    <!-- Logo Container -->
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Logo" aria-label="Elementa Voyagés Logo">
       </a>
     </div>
+    <!-- Navigation Links -->
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" aria-label="Go to Home page">Home</a>
+      <a href="test-explore.html" aria-label="Go to Explore page">Explore</a>
+      <a href="mailto:info@elementavoyages.com" aria-label="Send email to Elementa Voyagés">Contact</a>
+    </nav>
+  </header>
+  <!-- Page Title -->
+  <h1 id="city-title" aria-label="Patagonia city map and hotel information">Explore Patagonia</h1>
+  <!-- Main Content: Map Section -->
+  <div class="main-content">
+    <div class="map-section" role="region" aria-labelledby="city-title">
+      <!-- Google Maps API Loader: loads the maps component -->
+      <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
+      <!-- Google Map Component -->
+      <gmp-map id="map" center="-50.9423,-73.4068" zoom="6">
+        <!-- Place Picker / Search box inside map -->
+        <div slot="control-block-start-inline-start" class="place-picker-container" role="search" aria-label="Search for cities or addresses">
+          <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
+        </div>
+      </gmp-map>
+    </div>
+    <!-- Sidebar: Recommended Hotels -->
+    <div class="sidebar" role="complementary" aria-label="Recommended Hotels in Patagonia">
+      <h2>Recommended Hotels</h2>
+      <div class="hotel-links">
+        <!-- Individual hotel cards with images, headings, and links -->
+        <a href="https://llaollao.com/" target="_blank" class="hotel-card">
+          <img src="patagonia/image-five.png" alt="Llao Llao Hotel">
+          <h3>Llao Llao Hotel</h3>
+        </a>
+        <a href="https://awasi.com/" target="_blank" class="hotel-card">
+          <img src="patagonia/image-four.png" alt="Awasi Patagonia">
+          <h3>Awasi Patagonia</h3>
+        </a>
+        <a href="https://www.hotelcostaustralis.com/" target="_blank" class="hotel-card">
+          <img src="patagonia/image-one.png" alt="Hotel Costaustralis">
+          <h3>Hotel Costaustralis</h3>
+        </a>
+        <a href="https://www.hosteriapehoe.cl/" target="_blank" class="hotel-card">
+          <img src="patagonia/image-six.png" alt="Hosteria Pehoe">
+          <h3>Hosteria Pehoe</h3>
+        </a>
+        <a href="https://hotels.cloudbeds.com/404?redirect_url=https%3A%2F%2Fhotels.cloudbeds.com%2Fes%2Freservation%2FPttMz3%3Fcurrency%3Dars&error_code=GENERIC" target="_blank" class="hotel-card">
+          <img src="patagonia/image-three.png" alt="Socialtel Bariloche">
+          <h3>Socialtel Bariloche</h3>
+        </a>
+        <a href="https://tierrapatagonia.com/" target="_blank" class="hotel-card">
+          <img src="patagonia/image-two.png" alt="Tierra Patagonia">
+          <h3>Tierra Patagonia</h3>
+        </a>
+      </div>
+    </div>
   </div>
-</div>
-
-
 <script type="module">
   // Initialize the map and place picker after the custom element is defined
   async function init() {

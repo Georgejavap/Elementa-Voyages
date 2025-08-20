@@ -9,94 +9,83 @@
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
 </head>
 <body>
-
-<header class="top-header" role="banner" aria-label="Site Header">
-  <!-- Logo Container -->
-  <div class="logo-container">
-    <a href="index.html">
-      <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo" aria-label="Elementa Voyagés Logo">
-    </a>
-  </div>
-
-  <!-- Navigation Links -->
-  <nav class="nav-links" role="navigation" aria-label="Main navigation">
-    <a href="index.html" aria-label="Go to Home page">Home</a>
-    <a href="test-explore.html" aria-label="Go to Explore page">Explore</a>
-    <a href="mailto:info@elementavoyages.com" aria-label="Send email to Elementa Voyagés">Contact</a>
-  </nav>
-</header>
-
-<!-- Page Title -->
-<h1 id="city-title" aria-label="Destination city map and hotel information">Explore Santorini</h1> 
-
-
-
-
-<!-- Main Content: Map Section -->
-<div class="main-content">
-  <div class="map-section">
-    <!-- Google Maps API Loader: loads the maps component -->
-    <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
-
-    <!-- Map centered on Santorini -->
-    <gmp-map id="map" center="36.3932,25.4615" zoom="14" aria-label="Santorini city map with hotel locations">
-      <!-- Place Picker for Searching Cities or Addresses -->
-      <div slot="control-block-start-inline-start" class="place-picker-container">
-        <gmpx-place-picker placeholder="Search a city or address" aria-label="Search for a city or hotel"></gmpx-place-picker>
-      </div>
-    </gmp-map>
-  </div>
-
-  <!-- Sidebar with recommended hotels -->
-  <div class="sidebar" role="complementary" aria-label="Recommended Hotels Sidebar">
-    <h2>Recommended Hotels</h2>
-    <div class="hotel-links">
-      <!-- Individual Hotel Cards with images and links -->
-      <a href="https://www.kastelliresort.com/" target="_blank" class="hotel-card">
-        <img src="santorini/Screenshot 2025-08-18 031314.png" alt="Kastelli Resort, Santorini" aria-label="Kastelli Resort, Santorini">
-        <h3>Kastelli Resort</h3>
-      </a>
-      <a href="https://donkeyhotels.gr/nous-santorini/" target="_blank" class="hotel-card">
-        <img src="santorini/Screenshot 2025-08-18 031534.png" alt="NOŪS Santorini" aria-label="NOŪS Santorini">
-        <h3>NOŪS Santorini</h3>
-      </a>
-      <a href="https://www.soledorosantorini.com/" target="_blank" class="hotel-card">
-        <img src="santorini/Screenshot 2025-08-18 032038.png" alt="Sole d’oro Luxury Suites" aria-label="Sole d’oro Luxury Suites">
-        <h3>Sole d’oro Luxury Suites</h3>
-      </a>
-      <a href="https://www.bluepillow.com/search/5afa47cc7c00cb2bd0a4adf1?dest=bkng&cat=House&lat=36.46273&lng=25.39381" target="_blank" class="hotel-card">
-        <img src="santorini/Screenshot 2025-08-19 160808.png" alt="Caves 1880, Santorini" aria-label="Caves 1880, Santorini">
-        <h3>Caves 1880</h3>
-      </a>
-      <a href="https://www.loucashotel-santorini.com/" target="_blank" class="hotel-card">
-        <img src="santorini/Screenshot 2025-08-19 161045.png" alt="Loucas on the Cliff, Santorini" aria-label="Loucas on the Cliff, Santorini">
-        <h3>Loucas on the Cliff</h3>
-      </a>
-      <a href="https://www.danavillas.com/" target="_blank" class="hotel-card">
-        <img src="santorini/Screenshot 2025-08-19 161308.png" alt="Dana Villas & Infinity Suites, Santorini" aria-label="Dana Villas & Infinity Suites, Santorini">
-        <h3>Dana Villas & Infinity Suites</h3>
-      </a>
-      <a href="https://www.rocabella-hotel-santorini.com/" target="_blank" class="hotel-card">
-        <img src="santorini/Screenshot 2025-08-19 161541.png" alt="Rocabella Santorini" aria-label="Rocabella Santorini">
-        <h3>Rocabella Santorini</h3>
-      </a>
-      <a href="https://www.athinasuites.com/" target="_blank" class="hotel-card">
-        <img src="santorini/Screenshot 2025-08-19 161729.png" alt="Athina Luxury Suites, Santorini" aria-label="Athina Luxury Suites, Santorini">
-        <h3>Athina Luxury Suites</h3>
-      </a>
-      <a href="https://www.portocastello.com/" target="_blank" class="hotel-card">
-        <img src="santorini/Screenshot 2025-08-19 161901.png" alt="Porto Castello, Santorini" aria-label="Porto Castello, Santorini">
-        <h3>Porto Castello</h3>
-      </a>
-      <a href="https://maistrosvillage.gr/" target="_blank" class="hotel-card">
-        <img src="santorini/Screenshot 2025-08-19 161959.png" alt="Maistros Village, Santorini" aria-label="Maistros Village, Santorini">
-        <h3>Maistros Village</h3>
+  <header class="top-header" aria-label="Site Header">
+    <!-- Logo Container -->
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo" aria-label="Elementa Voyagés Logo">
       </a>
     </div>
+    <!-- Navigation Links -->
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" aria-label="Go to Home page">Home</a>
+      <a href="test-explore.html" aria-label="Go to Explore page">Explore</a>
+      <a href="mailto:info@elementavoyages.com" aria-label="Send email to Elementa Voyagés">Contact</a>
+    </nav>
+  </header>
+  <!-- Page Title -->
+  <h1 id="city-title" aria-label="Destination city map and hotel information">Explore Santorini</h1> 
+  <!-- Main Content: Map Section -->
+  <div class="main-content">
+    <div class="map-section">
+      <!-- Google Maps API Loader: loads the maps component -->
+      <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
+      <!-- Map centered on Santorini -->
+      <gmp-map id="map" center="36.3932,25.4615" zoom="14">
+        <!-- Place Picker for Searching Cities or Addresses -->
+        <div slot="control-block-start-inline-start" class="place-picker-container">
+          <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
+        </div>
+      </gmp-map>
+    </div>
+    <!-- Sidebar with recommended hotels -->
+    <div class="sidebar" role="complementary">
+      <h2>Recommended Hotels</h2>
+      <div class="hotel-links">
+        <!-- Individual Hotel Cards with images and links -->
+        <a href="https://www.kastelliresort.com/" target="_blank" class="hotel-card">
+          <img src="santorini/image-one.png" alt="Kastelli Resort, Santorini" aria-label="Kastelli Resort, Santorini">
+          <h3>Kastelli Resort</h3>
+        </a>
+        <a href="https://donkeyhotels.gr/nous-santorini/" target="_blank" class="hotel-card">
+          <img src="santorini/image-two.png" alt="NOŪS Santorini" aria-label="NOŪS Santorini">
+          <h3>NOŪS Santorini</h3>
+        </a>
+        <a href="https://www.soledorosantorini.com/" target="_blank" class="hotel-card">
+          <img src="santorini/image-three.png" alt="Sole d’oro Luxury Suites" aria-label="Sole d’oro Luxury Suites">
+          <h3>Sole d’oro Luxury Suites</h3>
+        </a>
+        <a href="https://www.bluepillow.com/search/5afa47cc7c00cb2bd0a4adf1?dest=bkng&cat=House&lat=36.46273&lng=25.39381" target="_blank" class="hotel-card">
+          <img src="santorini/image-four.png" alt="Caves 1880, Santorini" aria-label="Caves 1880, Santorini">
+          <h3>Caves 1880</h3>
+        </a>
+        <a href="https://www.loucashotel-santorini.com/" target="_blank" class="hotel-card">
+          <img src="santorini/image-five.png" alt="Loucas on the Cliff, Santorini" aria-label="Loucas on the Cliff, Santorini">
+          <h3>Loucas on the Cliff</h3>
+        </a>
+        <a href="https://www.danavillas.com/" target="_blank" class="hotel-card">
+          <img src="santorini/image-six.png" alt="Dana Villas & Infinity Suites, Santorini" aria-label="Dana Villas & Infinity Suites, Santorini">
+          <h3>Dana Villas & Infinity Suites</h3>
+        </a>
+        <a href="https://www.rocabella-hotel-santorini.com/" target="_blank" class="hotel-card">
+          <img src="santorini/image-seven.png" alt="Rocabella Santorini" aria-label="Rocabella Santorini">
+          <h3>Rocabella Santorini</h3>
+        </a>
+        <a href="https://www.athinasuites.com/" target="_blank" class="hotel-card">
+          <img src="santorini/image-eight.png" alt="Athina Luxury Suites, Santorini" aria-label="Athina Luxury Suites, Santorini">
+          <h3>Athina Luxury Suites</h3>
+        </a>
+        <a href="https://www.portocastello.com/" target="_blank" class="hotel-card">
+          <img src="santorini/image-nine.png" alt="Porto Castello, Santorini" aria-label="Porto Castello, Santorini">
+          <h3>Porto Castello</h3>
+        </a>
+        <a href="https://maistrosvillage.gr/" target="_blank" class="hotel-card">
+          <img src="santorini/image-ten.png" alt="Maistros Village, Santorini" aria-label="Maistros Village, Santorini">
+          <h3>Maistros Village</h3>
+        </a>
+      </div>
+    </div>
   </div>
-</div>
-
-
 <script type="module">
   // Initialize the map and place picker after the custom element is defined
   async function init() {
@@ -141,6 +130,5 @@
   // Run init function once DOM is fully loaded
   document.addEventListener('DOMContentLoaded', init);
 </script>
-
 </body>
 </html>

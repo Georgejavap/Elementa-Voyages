@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Biome Background Slideshow</title>
-  <link rel="stylesheet" href="test-styles.css" />
+  <link rel="stylesheet" href="test-styles.css">
 </head>
 <body>
-
   <!-- Background Slides -->
-  <div class="bg-slides" aria-label="Biome background slideshow" role="region">
-    <div class="bg-slide active" style="background-image: url('explore-image/snow.jpg');" aria-label="Frost biome background"></div>
-    <div class="bg-slide" style="background-image: url('explore-image/jungle.jpg');" aria-label="Jungle biome background"></div>
-    <div class="bg-slide" style="background-image: url('explore-image/fire.jpg');" aria-label="Fire biome background"></div>
-    <div class="bg-slide" style="background-image: url('explore-image/pexels-mikhail-nilov-8356067.jpg');" aria-label="Volcanic biome background"></div>
+  <div class="bg-slides">
+    <div class="bg-slide active" style="background-image: url('explore-image/snow.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/jungle.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/fire.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/pexels-mikhail-nilov-8356067.jpg');"></div>
   </div>
-
   <!-- Logo and Navigation on top of slideshow -->
-  <header class="top-header" role="banner" aria-label="Site header with logo and navigation">
+  <header class="top-header" aria-label="Site header with logo and navigation">
     <div class="logo-container">
       <a href="index.html" aria-label="Go to home page">
-        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo" />
+        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.png" alt="Elementa Voyagés Logo">
       </a>
     </div>
-    <nav class="nav-links" role="navigation" aria-label="Main site navigation">
+    <nav class="nav-links" aria-label="Main site navigation">
       <a href="index.html" aria-label="Go to Home page">Home</a>
       <a href="" aria-label="Go to Explore page">Explore</a>
       <a href="mailto:info@elementavoyages.com" aria-label="Send email to Elementa Voyagés">Contact</a>
     </nav>
   </header>
-
   <!-- Slide Text Content -->
   <div class="slide-text-container" id="slideText" role="region" aria-label="Slideshow text content">
     <h1 id="slideTitle">Frost Biome</h1>
     <p id="slideDescription">Explore the icy landscapes and crisp adventures of the Frost biome.</p>
     <a href="frost.html" class="slide-btn" aria-labelledby="slideTitle slideDescription">Explore Frost</a>
   </div>
-
-
-  
 <script>
   const slides = document.querySelectorAll('.bg-slide');
   const slideText = document.getElementById('slideText');
@@ -103,7 +97,6 @@
     showSlide(current);
   }, intervalTime);
 </script>
-
 </body>
 </html>
 
