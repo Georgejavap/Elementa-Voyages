@@ -438,6 +438,12 @@ Finalised Wireframe for my website before completion --final sketch before finis
 
 - [W3School-html](https://www.w3schools.com/html/default.asp)
 
+### PHOTOGRAPHS, PICTURES 
+- **All credit is for**
+- [Pexels](https://www.pexels.com/)
+- [Pinterest](https://uk.pinterest.com/today/)
+- [4K Wallpapers](https://4kwallpapers.com/)
+
 
 ### JavaScript & Interactivity (Planned Enhancements)  
 - **Stack Overflow:** Event listener tips, interactive element troubleshooting  
