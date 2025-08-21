@@ -115,7 +115,6 @@ body {
   border-color: white;
 }
 
-
 /* Hero Section */
 .hero {
   height: 100%;
@@ -159,7 +158,6 @@ body {
   margin-bottom: 2rem;
 }
 
-
 /* Navbar Container */
 .navbar {
   padding: 1rem 2rem;
@@ -191,8 +189,6 @@ body {
   background-color: white;
   color: black;
 }
-
-
 
 /* Dropdown Container */
 .dropdown {
@@ -257,9 +253,6 @@ body {
   display: block;
 }
 
-
-
-
 /* Base Shape Styling */
 .shape {
   position: absolute;
@@ -287,7 +280,6 @@ body {
   right: -20px;
   transform: rotate(-25deg);
 }
-
 
 /* Details Box Styling */
 details {
@@ -364,7 +356,6 @@ details {
     right: -15px;
   }
 }
-
 
 /* Main How It Works Section */
 .how-it-works-split {
@@ -569,12 +560,6 @@ details {
   }
 }
 
-
-
-
-
-
-
 /* Featured Holidays Section */
 .featured-holidays {
   padding: 4rem 2rem;
@@ -759,8 +744,6 @@ details {
   }
 }
 
-
-
 /* Full Gold Event Section */
 .gold-event-full {
   width: 100%;
@@ -875,10 +858,6 @@ details {
     font-size: 1.1rem;
   }
 }
-
-
-
-
 
 /* Footer Base: main styling for the footer container */
 .site-footer {
@@ -1022,9 +1001,6 @@ details {
   font-size: 15px;
   color: #888;
 }
-
-
-
 
 /* Scroll Down Arrow */
 .scroll-arrow {

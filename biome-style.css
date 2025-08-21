@@ -1,5 +1,3 @@
-
-
 /* Import fonts: Playfair Display (for headings) and Open Sans (for body text) */
 
 * {
@@ -174,7 +172,6 @@ body, html {
 }
 
 
-
 /* Logo Styling: container and hover effect for logo image */
 .logo-container {
   display: flex;
@@ -249,7 +246,6 @@ body, html {
   color: #ccc;
   max-width: 600px; /* constrain width for readability */
 }
-
 
 /* Filter Bar Section: futuristic sharp container with subtle glow */
 .filter-bar {
@@ -365,8 +361,6 @@ body, html {
   opacity:1;
   pointer-events: none;
 }
-
-
 
 /* Footer Base: main styling for the footer container */
 .site-footer {
