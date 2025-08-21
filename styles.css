@@ -658,7 +658,7 @@ details {
 /* Hero Biomes Section */
 .hero-biomes {
   position: relative;
-  background: url('explore-image/pexels-vr33s-26831720.jpg') center/cover no-repeat;
+  background: url('explore-image/overlay.jpg') center/cover no-repeat;
   height: 100%;
   display: flex;
   justify-content: center;

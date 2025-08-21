@@ -95,6 +95,7 @@ Elementa-Voyages/
     └── image-ten.jpg
     └── image-eleven.jpg
     └── image-twelve.jpg
+
 ├── frost-biome 
     └── alaska.jpg
     └── canada.jpg
@@ -110,6 +111,7 @@ Elementa-Voyages/
     └── new-zealand.jpg
     └── patagonia.jpg
     └── tasmania.jpg
+
 ├── jungle-biome
     └── amazon.jpg
     └── bali.png
@@ -123,6 +125,7 @@ Elementa-Voyages/
     └── queensland.png
     └── spain.png 
     └── thailand.png
+
 ├── maldives 
     └── image-one.jpg
     └── image-two.jpg
@@ -134,6 +137,7 @@ Elementa-Voyages/
     └── image-eight.jpg
     └── image-nine.jpg
     └── image-ten.jpg
+
 ├──paris
     └── image-one.jpg
     └── image-two.jpg
@@ -145,6 +149,7 @@ Elementa-Voyages/
     └── image-eight.jpg
     └── image-nine.jpg
     └── image-ten.jpg
+
 ├── patagonia 
     └── image-one.jpg
     └── image-two.jpg
@@ -152,6 +157,7 @@ Elementa-Voyages/
     └── image-four.jpg
     └── image-five.jpg
     └── image-six.jpg
+
 ├── santorini
     └── image-one.jpg
     └── image-two.jpg
@@ -163,6 +169,7 @@ Elementa-Voyages/
     └── image-eight.jpg
     └── image-nine.jpg
     └── image-ten.jpg
+
 ├── screenshots 
     └── about-one.png
     └── biome-one.png
@@ -192,6 +199,7 @@ Elementa-Voyages/
     └── santorini.png
     └──shanghai.png
     └── tides.png
+
 ├── shanghai 
     └── image-one.jpg
     └── image-two.jpg
@@ -199,16 +207,19 @@ Elementa-Voyages/
     └── image-four.jpg
     └── image-five.jpg
     └── image-six.jpg
+
 ├── sponsors 
     └── image-one.jpg
     └── image-two.jpg
     └── image-three.jpg
     └── image-four.jpg
     └── image-five.jpg
+
 ├── staff 
     └── staff-one.png
     └── staff-two.png
     └── staff-three.png
+
 ├── test
     └── about-css.png
     └── about-us.png
@@ -231,6 +242,7 @@ Elementa-Voyages/
     └── test-css.png
     └── test.png
     └── tides.png
+
 ├── tides-biome
     └── bali.jpg
     └── bora-bora.jpg
@@ -244,26 +256,47 @@ Elementa-Voyages/
     └── punta-cana.jpg
     └── seychelles.jpg
     └── spain.jpg
+
 ├── about-us.html
+
 ├── about.css
+
 ├── argentina.html
+
 ├── biome-style.css
+
 ├── biome.js
+
 ├── city-map.css
+
 ├── city-map.js
+
 ├── desert.html
+
 ├── frost.html
+
 ├── index.html
+
 ├── jungle.html
+
 ├── maldives.html
+
 ├── paris.html
+
 ├── santorini.html
+
 ├── screenshot_2025-07...
+
 ├── script.js
+
 ├── shanghai.html
+
 ├── styles.css
+
 ├── test-explore.html
+
 ├── test-explore.css
+
 ├── tides.html
 
 
