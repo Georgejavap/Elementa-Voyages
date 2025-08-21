@@ -687,7 +687,6 @@ details {
   color: #fff;
   background: rgba(0,0,0,0.4); /* subtle overlay for readability */
   padding: 2rem;
-  border-radius: 16px;
   position: relative; /* allows top positioning */
   top: 12%;
 }

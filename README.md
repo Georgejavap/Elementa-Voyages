@@ -4,7 +4,7 @@
 
 Welcome to **Elementa Voyagés** — a visually immersive travel website showcasing stunning destinations across biomes such as deserts, jungles, frost landscapes, and tropical paradises.  
 
-This project emphasizes **aesthetic design, accessibility, responsive layouts, and interactive features** to create an elegant digital travel experience.  
+This project emphasizes **aesthetic design, accessibility, responsive layouts, and interactive features** to create an elegant digital travel experience with the additive of crip 4k photos to make you feel like you're already their.
 
 ---
 
@@ -26,7 +26,7 @@ The website’s goals are to:
 ### Front-End  
 - **HTML5:** Semantic structure and sectioning  
 - **CSS3:** Biome-specific themes, responsive flexbox layouts, and custom scrollbars  
-- **JavaScript (Planned Enhancements):** Interactive elements, animations, and navigation behavior  
+- **JavaScript (Planned Enhancements):** Interactive elements, animations, and navigation behavior  --planned enhancmenst include fixing the home logo image so the page isnt alwasy locked --
 
 ### Interactive Features  
 - Themed destination pages: `desert.html`, `jungle.html`, `frost.html`, `tides.html`, etc.  
@@ -226,8 +226,8 @@ Elementa-Voyages/
 - **Performance optimized** — lightweight images and clean code for fast loading  
 - **Scalable navigation system** to easily add destinations  
 - **Custom hero sections** with large background imagery  
-- **Cross-device tested** — works smoothly on desktop, tablet, and mobile  
-- **Clean repository structure** for scalability and professional presentation  
+- **Cross-device tested** — works smoothly on desktop, tablet, and mobile  --mobile @media will be added but i have stuck to the 768px for now, also some feature for cross device testing is Firefox, Windows and Mac some warnings came up but the website runs smoothly on all--
+- **Clean repository structure** for scalability and professional presentation  --everything labelled correctly for an easy read--
 
 ---
 
@@ -239,28 +239,60 @@ Design decisions were based on **travel inspiration, accessibility, and usabilit
 - **Consistency:** Same header/footer/navigation structure across all pages.  
 - **User control:** Pages are static, lightweight, and easy to navigate.  
 - **Accessibility:** Semantic HTML, alt text, scalable typography, and ARIA roles.  
-- **Engagement:** Visual hero sections, immersive imagery, and interactive maps.  
+- **Engagement:** Visual hero sections, immersive imagery, and interactive maps.  --helps with the interactive front-end user friendly experiences--
 
 ---
 
 ## 📸 Screenshots  
 
+This is the completed website minus one photo which has now changed the development will be placed underneath from the ground up--
+
 ### Homepage  
-![Homepage Screenshot](screenshots/homepage.png)  
+![Homepage Screenshot](screenshots/homepage-one.png)  
+![Homepage Screenshot](screenshots/homepage-two.png)  
+![Homepage Screenshot](screenshots/homepage-three.png)  
+![Homepage Screenshot](screenshots/homepage-four.png)  
+![Homepage Screenshot](screenshots/homepage-five.png)  
 
 ### Example Destination Page  
-![Destination Screenshot](screenshots/destination-example.png)  
+![Destination Screenshot](screenshots/biome-one.png)  
+![Destination Screenshot](screenshots/biome-two.png)  
+![Destination Screenshot](screenshots/biome-three.png)  
+![Destination Screenshot](screenshots/biome-four.png)  
 
-*(Add more as development continues.)*  
+### Example About Page  
+![About Screenshot](screenshots/about-one.png)  
 
----
+### Example Biome Page  
+![Biome Screenshot](screenshots/frost.png) 
+![Biome Screenshot](screenshots/jungle.png) 
+![Biome Screenshot](screenshots/desert.png) 
+![Biome Screenshot](screenshots/tides.png) 
+
+### Example map Page  
+![map Screenshot](screenshots/patagonia.png) 
+![map Screenshot](screenshots/maldives.png) 
+![map Screenshot](screenshots/santorini.png) 
+![map Screenshot](screenshots/paris.png) 
+![map Screenshot](screenshots/shanghai.png) 
+
 
 ## 🗺️ Wireframes  
 
 Wireframes created during the planning stage:  
+![Homepage Screenshot](screenshots/image-pre-one.jpg)
+![Homepage Screenshot](screenshots/image-pre-three.jpg)  
+![Destination Screenshot](screenshots/image-pre-two.jpg) 
 
-- Homepage Wireframe → `wireframes/homepage-wireframe.png`  
-- Destination Wireframe → `wireframes/destination-wireframe.png`  
+
+Finalised Wireframe for my website before completion --final sketch before finishing everything--
+
+- ![Homepage Screenshot](screenshots/image-one.jpg)
+- ![Homepage Screenshot](screenshots/image-two.jpg)    
+- ![Destination Screenshot](screenshots/image-three.jpg) 
+- ![About Screenshot](screenshots/image-four.jpg)  
+- ![Biome Screenshot](screenshots/image-five.jpg) 
+- ![map Screenshot](screenshots/image-six.jpg) 
 
 ---
 
@@ -270,36 +302,76 @@ Wireframes created during the planning stage:
 - **CSS Validation:** [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) → handled pseudo-element warnings (`::-webkit-scrollbar`)  
 - **Cross-Browser Testing:** Chrome, Firefox → consistent rendering and responsiveness  
 - **Deployment Test:** Hosted on GitHub Pages → confirmed link integrity and folder organization  
-- **Performance Test:** Lighthouse → good performance, accessibility, and SEO scores  
+
 
 ### Testing Evidence (Screenshots in `/testing/`)  
 - HTML Validation Pass  
+
+- ![validator Screenshot](test/about-us.png) 
+- ![validator Screenshot](test/argentina.png) 
+- ![validator Screenshot](test/desert.png) 
+- ![validator Screenshot](test/frost.png) 
+- ![validator Screenshot](test/index.png) 
+- ![validator Screenshot](test/jungle.png) 
+- ![validator Screenshot](test/maldives.png) 
+- ![validator Screenshot](test/paris.png) 
+- ![validator Screenshot](test/santorini.png) 
+- ![validator Screenshot](test/shanghai.png) 
+- ![validator Screenshot](test/test.png) 
+- ![validator Screenshot](test/tides.png) 
+
+
 - CSS Validation Pass  
-- Cross-browser responsiveness  
+
+- ![validator Screenshot](test/about-css.png) 
+- ![validator Screenshot](test/biome-css.png) 
+- ![validator Screenshot](test/city-css.png) 
+- ![validator Screenshot](test/styles-css.png) 
+- ![validator Screenshot](test/test-css.png) 
+
+
+- Javascript Validation
+
+- ![validator Screenshot](test/biome-js.png) 
+- ![validator Screenshot](test/city-js.png) 
+- ![validator Screenshot](test/script-js.png) 
 
 ---
 
 ## 📚 Attributions & References  
 
 ### HTML/CSS Design Assistance  
-- **ChatGPT (OpenAI):** Provided structural guidance and responsive layout suggestions  
+- **ChatGPT (OpenAI):** Provided structural guidance and responsive layout suggestions 
+- [Openai](https://openai.com/) 
 - **MDN Web Docs:** Reference for CSS pseudo-elements and semantic HTML  
+- [Mozilla](https://developer.mozilla.org/en-US/)
 - **W3Schools:** General HTML & CSS syntax examples  
+- [W3School-css](https://www.w3schools.com/css/default.asp)
+
+- [W3School-html](https://www.w3schools.com/html/default.asp)
+
 
 ### JavaScript & Interactivity (Planned Enhancements)  
 - **Stack Overflow:** Event listener tips, interactive element troubleshooting  
+- [Stack Overflow Labs](https://stackoverflow.co/labs/?utm_medium=referral&utm_source=stackoverflow-community&utm_campaign=top-nav&utm_content=labs)  
 - **Personal Research:** Front-end learning through experimentation  
+- [Freecodecamp](https://www.freecodecamp.org/)  
+- [W3School-javascript](https://www.w3schools.com/js/)  
+- **OpenAI / ChatGPT:** Assisted in configuring Google Maps API integration for the maps page, combining examples from Google's API documentation with guidance from ChatGPT to ensure proper functionality.  
+- [OpenAI](https://www.openai.com/)
+
 
 ### Fonts, Maps, and Accessibility  
 - **Google Fonts:** [Playfair Display](https://fonts.google.com/specimen/Playfair+Display), [Open Sans](https://fonts.google.com/specimen/Open+Sans)  
-- **Google Maps API:** Dynamic map embedding  
+- **Google Maps API:** Dynamic map embedding  copying the code and infomation provided by API service [Google API](https://console.cloud.google.com/apis/dashboard?inv=1&invt=Ab53vw&project=maps-1-469315&supportedpurview=folder
+)
+- ![Reference Screenshot](test/api.png) 
 - **W3C WAI-ARIA Practices:** Accessibility patterns and validation  
 
 ---
-
 ## 🖼️ Reflection  
 
-This project has been a strong learning experience in combining **HTML, CSS, and project structuring** into a polished multi-page website.  
+This project has been a strong learning experience in combining **HTML, CSS, Javascript and project structuring** into a polished multi-page website.  
 
 - Learned to design **biome-based themes** consistently across pages  
 - Improved knowledge of **validation tools** for code quality  
@@ -311,7 +383,7 @@ This project has been a strong learning experience in combining **HTML, CSS, and
 
 ## 🚀 Future Plans  
 
-- Add **JS-based interactivity** (animations, transitions, scroll effects)  
+- Add **JS-based interactivity** improving on what i have already(animations, transitions, scroll effects)  
 - Expand destination pages with **travel guides and booking links**  
 - Create **dark mode toggle** for accessibility and user preference  
 - Add **search functionality** for destinations  
@@ -322,9 +394,9 @@ This project has been a strong learning experience in combining **HTML, CSS, and
 
 ## 📧 Contact  
 
-✉️ Email: elementavoyages@gmail.com *(or your preferred contact)*  
-👤 Project by: George Baldwin  
-🎨 Web Design: George Baldwin  
+- ✉️ Email: georgeb2801@icloud.com 
+- 👤 Project by: George Baldwin  
+- 🎨 Web Design: George Baldwin  
 
 ---
 
