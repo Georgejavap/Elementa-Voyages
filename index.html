@@ -11,16 +11,18 @@
 <body>
   <!-- Background Slides -->
   <div class="bg-slides" aria-hidden="true">
-    <div class="bg-slide active" style="background-image: url('front-page-image/macaw-birds-couple-colorful-jungle-love-birds-tropical-3840x2160-7464.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('front-page-image/manhattan-new-york-city-manhattan-bridge-cityscape-sunset-3840x2160-1346.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('front-page-image/0ne-front.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('front-page-image/banff-national-park-3840x2160-12366.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('front-page-image/cityscape-sunrise-portland-panorama-city-lights-3840x2160-23.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('front-page-image/kihaadhuffaru-island-maldives-water-villa-wooden-pier-3840x2160-3884.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('front-page-image/lake-louise-winter-3840x2160-19913.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('front-page-image/mount-rundle-nightscape-banff-national-park-reflections-3840x2160-28.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('front-page-image/peacock-green-grass-beautiful-green-feathers-bird-trees-3840x2160-2147.jpg');"></div>
-    <div class="bg-slide" style="background-image: url('front-page-image/nanpu-bridge-modern-architecture-cityscape-shanghai-city-3840x2160-18.jpg');"></div>
+    <div class="bg-slide active" style="background-image: url('front-page-image/image-one.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-two.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-three.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-four.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-five.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-six.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-seven.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-eight.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-nine.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-ten.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-eleven.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-twelve.jpg');"></div>
   </div>
   <header class="top-header">
     <div class="logo-container">
@@ -269,6 +271,8 @@
 <script>
   // Background slideshow
   const slides = document.querySelectorAll('.bg-slide');
+  let current = 0; // start at the first slide
+
   setInterval(() => {
     slides[current].classList.remove('active');
     current = (current + 1) % slides.length;
@@ -324,5 +328,6 @@
   window.addEventListener('scroll', revealElements);
   window.addEventListener('load', revealElements);
 </script>
+
 </body>
 </html>
