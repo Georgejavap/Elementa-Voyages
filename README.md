@@ -83,110 +83,167 @@ Elementa-Voyages/
     └── shanghai.jpg
 
 ├── front-page-image
-    └── One-front.jpg
-    └── banff-national-park-
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
+    └── image-one.jpg
+    └── image-two.jpg
+    └── image-three.jpg
+    └── image-four.jpg
+    └── image-five.jpg
+    └── image-six.jpg
+    └── image-seven.jpg
+    └── image-eight.jpg
+    └── image-nine.jpg
+    └── image-ten.jpg
+    └── image-eleven.jpg
+    └── image-twelve.jpg
 ├── frost-biome 
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
+    └── alaska.jpg
+    └── canada.jpg
+    └── chile.jpg
+    └── cruise.jpg
+    └── expo.jpg
+    └── iceland.jpg 
+    └── japan.jpg
+    └── kenya.jpg 
+    └── kila.jpg
+    └── lapland.jpg
+    └── nepal.jpg
+    └── new-zealand.jpg
+    └── patagonia.jpg
+    └── tasmania.jpg
 ├── jungle-biome
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
+    └── amazon.jpg
+    └── bali.png
+    └── congo.png
+    └── costa-rica.png
+    └── germany.png
+    └── madagascar.png
+    └── mexico.png 
+    └── new-zealand.png
+    └── peru.png
+    └── queensland.png
+    └── spain.png 
+    └── thailand.png
 ├── maldives 
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
+    └── image-one.jpg
+    └── image-two.jpg
+    └── image-three.jpg
+    └── image-four.jpg
+    └── image-five.jpg
+    └── image-six.jpg
+    └── image-seven.jpg
+    └── image-eight.jpg
+    └── image-nine.jpg
+    └── image-ten.jpg
 ├──paris
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
+    └── image-one.jpg
+    └── image-two.jpg
+    └── image-three.jpg
+    └── image-four.jpg
+    └── image-five.jpg
+    └── image-six.jpg
+    └── image-seven.jpg
+    └── image-eight.jpg
+    └── image-nine.jpg
+    └── image-ten.jpg
 ├── patagonia 
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
+    └── image-one.jpg
+    └── image-two.jpg
+    └── image-three.jpg
+    └── image-four.jpg
+    └── image-five.jpg
+    └── image-six.jpg
 ├── santorini
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
+    └── image-one.jpg
+    └── image-two.jpg
+    └── image-three.jpg
+    └── image-four.jpg
+    └── image-five.jpg
+    └── image-six.jpg
+    └── image-seven.jpg
+    └── image-eight.jpg
+    └── image-nine.jpg
+    └── image-ten.jpg
+├── screenshots 
+    └── about-one.png
+    └── biome-one.png
+    └── biome-two.png 
+    └── biome-three.png
+    └── biome-four.png 
+    └── desert.png
+    └── frost.png
+    └── homepage-one.png
+    └── homepage-two.png
+    └── homepage-three.png
+    └── homepage-four.png
+    └── homepage-five.png
+    └── image-one.jpg
+    └── image-two.jpg
+    └── image-three.jpg
+    └── image-four.jpg
+    └── image-five.jpg
+    └── image-six.jpg
+    └── image-pre-one.jpg
+    └── image-pre-two.jpg
+    └── image-pre-three.jpg
+    └── jungle.png
+    └── maldives.png
+    └── paris.png
+    └── patagonia.png
+    └── santorini.png
+    └──shanghai.png
+    └── tides.png
 ├── shanghai 
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
+    └── image-one.jpg
+    └── image-two.jpg
+    └── image-three.jpg
+    └── image-four.jpg
+    └── image-five.jpg
+    └── image-six.jpg
 ├── sponsors 
-    └──
-    └──
-    └──
-    └──
-    └──
+    └── image-one.jpg
+    └── image-two.jpg
+    └── image-three.jpg
+    └── image-four.jpg
+    └── image-five.jpg
 ├── staff 
-    └──
-    └──
-    └──
+    └── staff-one.png
+    └── staff-two.png
+    └── staff-three.png
+├── test
+    └── about-css.png
+    └── about-us.png
+    └── api.png
+    └── argentina.png 
+    └── biome-css.png
+    └── biome-js.png
+    └── city-css.png
+    └── city-js.png
+    └── desert.png 
+    └── frost.png
+    └── index.png
+    └── jungle.png
+    └── maldives.png 
+    └── paris.png 
+    └── santorini.png
+    └── script-js.png
+    └── shanghai.png
+    └── styles-css.png
+    └── test-css.png
+    └── test.png
+    └── tides.png
 ├── tides-biome
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
-    └──
+    └── bali.jpg
+    └── bora-bora.jpg
+    └── brazil.jpg 
+    └── cancun.jpg
+    └── colombia.jpg
+    └── fiji.jpg
+    └── madlives.jpg
+    └── mauritius.jpg
+    └── portugal.jpg
+    └── punta-cana.jpg
+    └── seychelles.jpg
+    └── spain.jpg
 ├── about-us.html
 ├── about.css
 ├── argentina.html
@@ -209,8 +266,6 @@ Elementa-Voyages/
 ├── test-explore.css
 ├── tides.html
 
-
-*(Add your images into `screenshots/`, `testing/`, and `wireframes/` to keep everything neat and professional.)*  
 
 ---
 
