@@ -1,24 +1,46 @@
-# 🌍 Elementa Voyagés
+# 🌍 Elementa Voyagés  
 
-Elementa Voyagés is a visually immersive travel website showcasing stunning destinations across various biomes such as deserts, jungles, frost landscapes, and tropical paradises.  
-The project was designed with accessibility, responsive layouts, and modern aesthetics in mind.  
+🔗 **Live Demo:** [View Website](https://georgejavap.github.io/Elementa-Voyages/)  
 
-🔗 **Live Demo:** [View Website](https://georgejavap.github.io/Elementa-Voyages/)
+Welcome to **Elementa Voyagés** — a visually immersive travel website showcasing stunning destinations across biomes such as deserts, jungles, frost landscapes, and tropical paradises.  
 
----
-
-## ✨ Features
-
-- Responsive HTML5 & CSS3 design  
-- Biome-specific themed pages (`desert.html`, `jungle.html`, `frost.html`, `tides.html`)  
-- Interactive map integration with Google Maps  
-- Consistent typography and color scheme using Google Fonts  
-- Scrollbar customization for modern browsers  
-- Optimized project structure for clarity and scalability  
+This project emphasizes **aesthetic design, accessibility, responsive layouts, and interactive features** to create an elegant digital travel experience.  
 
 ---
 
-## 📂 Project Structure
+## 📖 Project Overview  
+
+Elementa Voyagés is a concept travel platform designed to inspire exploration across diverse natural landscapes.  
+Each page is themed around a biome or destination, featuring engaging visuals, consistent navigation, and interactive maps.  
+
+The website’s goals are to:  
+- Deliver a **visually striking** user experience.  
+- Provide **educational and inspirational content** about each biome.  
+- Ensure **scalability** for future destinations and experiences.  
+- Demonstrate proficiency in **front-end design and deployment** with GitHub Pages.  
+
+---
+
+## 🛠️ Technologies Used  
+
+### Front-End  
+- **HTML5:** Semantic structure and sectioning  
+- **CSS3:** Biome-specific themes, responsive flexbox layouts, and custom scrollbars  
+- **JavaScript (Planned Enhancements):** Interactive elements, animations, and navigation behavior  
+
+### Interactive Features  
+- Themed destination pages: `desert.html`, `jungle.html`, `frost.html`, `tides.html`, etc.  
+- Google Maps integration for location reference  
+- Custom hero sections with large background imagery  
+- Consistent navigation system across all pages  
+
+### External Integrations  
+- **Google Fonts** for typography consistency  
+- **Google Maps** API for dynamic map embeds  
+
+---
+
+## 📂 File Structure  
 
 Elementa-Voyages/
 ├── about-image
@@ -53,7 +75,7 @@ Elementa-Voyages/
     └── pexels-vr33s-26831720.jpg
     └── snow.jpg
 
-├── feature holidays
+├── feature-holidays
     └── maldives.png
     └── paris.jpg
     └── patagonia.jpg
@@ -75,11 +97,96 @@ Elementa-Voyages/
     └──
     └──
     └──
-├──
-├──
-├──
-├──
-├──
+├── frost-biome 
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+├── jungle-biome
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+├── maldives 
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+├──paris
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+├── patagonia 
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+├── santorini
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+├── shanghai 
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+├── sponsors 
+    └──
+    └──
+    └──
+    └──
+    └──
+├── staff 
+    └──
+    └──
+    └──
+├── tides-biome
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
+    └──
 ├── about-us.html
 ├── about.css
 ├── argentina.html
@@ -103,70 +210,123 @@ Elementa-Voyages/
 ├── tides.html
 
 
+*(Add your images into `screenshots/`, `testing/`, and `wireframes/` to keep everything neat and professional.)*  
 
 ---
 
-## 📸 Screenshots
+## ✨ Features  
 
-### Homepage
-![Homepage Screenshot](screenshots/Screenshot%202025-08-21%20105231.png)
+- Responsive HTML5 & CSS3 design  
+- Biome-specific themed pages (`desert.html`, `jungle.html`, `frost.html`, etc.)  
+- Interactive map integration with Google Maps  
+- Consistent typography and color scheme using Google Fonts  
+- Scrollbar customization for modern browsers  
+- Optimized project structure for clarity and scalability  
+- **Accessibility-first approach** — ARIA labels and semantic HTML used throughout  
+- **Performance optimized** — lightweight images and clean code for fast loading  
+- **Scalable navigation system** to easily add destinations  
+- **Custom hero sections** with large background imagery  
+- **Cross-device tested** — works smoothly on desktop, tablet, and mobile  
+- **Clean repository structure** for scalability and professional presentation  
+
+---
+
+## 🎨 UX & Design Rationale  
+
+Design decisions were based on **travel inspiration, accessibility, and usability principles**:  
+
+- **Information hierarchy:** Each biome/destination has a dedicated page with clear layout.  
+- **Consistency:** Same header/footer/navigation structure across all pages.  
+- **User control:** Pages are static, lightweight, and easy to navigate.  
+- **Accessibility:** Semantic HTML, alt text, scalable typography, and ARIA roles.  
+- **Engagement:** Visual hero sections, immersive imagery, and interactive maps.  
+
+---
+
+## 📸 Screenshots  
+
+### Homepage  
+![Homepage Screenshot](screenshots/homepage.png)  
 
 ### Example Destination Page  
-(Add more screenshots here as the site develops)
+![Destination Screenshot](screenshots/destination-example.png)  
+
+*(Add more as development continues.)*  
 
 ---
 
-## 🗺️ Wireframe
+## 🗺️ Wireframes  
 
-A wireframe was created in the early stages to plan the layout and user journey.
+Wireframes created during the planning stage:  
 
-*(Insert your wireframe image here — e.g., `wireframe/wireframe.png`)*
-
----
-
-## ✅ Testing
-
-- **HTML Validation:** Used [W3C HTML Validator](https://validator.w3.org/) → fixed warnings such as redundant roles (`role="banner"`, `role="navigation"`)  
-- **CSS Validation:** Used [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) → handled vendor-specific pseudo-elements (`::-webkit-scrollbar`) and color duplication issues  
-- **Cross-browser Testing:** Tested in Firefox and Chrome, confirmed responsive layout and consistent rendering  
-- **Deployment Test:** Live demo successfully hosted via GitHub Pages  
+- Homepage Wireframe → `wireframes/homepage-wireframe.png`  
+- Destination Wireframe → `wireframes/destination-wireframe.png`  
 
 ---
 
-## 📚 Citations
+## ✅ Testing  
 
-Some code snippets and structure were developed with guidance from **ChatGPT (OpenAI)**.  
-Additional inspiration and fixes were sourced from:  
+- **HTML Validation:** [W3C Validator](https://validator.w3.org/) → fixed redundant roles and nesting issues  
+- **CSS Validation:** [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) → handled pseudo-element warnings (`::-webkit-scrollbar`)  
+- **Cross-Browser Testing:** Chrome, Firefox → consistent rendering and responsiveness  
+- **Deployment Test:** Hosted on GitHub Pages → confirmed link integrity and folder organization  
+- **Performance Test:** Lighthouse → good performance, accessibility, and SEO scores  
 
-- [MDN Web Docs (HTML, CSS, JavaScript)](https://developer.mozilla.org/)  
-- [W3Schools](https://www.w3schools.com/)  
-- [Stack Overflow](https://stackoverflow.com/)  
-
----
-
-## 📖 References
-
-- Google Fonts: [Playfair Display](https://fonts.google.com/specimen/Playfair+Display), [Open Sans](https://fonts.google.com/specimen/Open+Sans)  
-- Google Maps API Documentation: [Web Components Loader](https://developers.google.com/maps/documentation/javascript)  
-- Accessibility & ARIA guidelines: [WAI-ARIA Practices](https://www.w3.org/WAI/ARIA/apg/)  
+### Testing Evidence (Screenshots in `/testing/`)  
+- HTML Validation Pass  
+- CSS Validation Pass  
+- Cross-browser responsiveness  
 
 ---
 
-## 💭 Reflection
+## 📚 Attributions & References  
 
-This project has been a strong learning experience in combining **HTML, CSS, and JavaScript** into a fully functioning and polished website.  
+### HTML/CSS Design Assistance  
+- **ChatGPT (OpenAI):** Provided structural guidance and responsive layout suggestions  
+- **MDN Web Docs:** Reference for CSS pseudo-elements and semantic HTML  
+- **W3Schools:** General HTML & CSS syntax examples  
 
-- Learned how to structure a **multi-page website** with consistent styles and navigation  
-- Understood the importance of **validation tools** to ensure code quality  
-- Improved knowledge of **responsive design** and accessibility best practices  
-- Explored **GitHub Pages deployment**, making the site accessible globally  
-- Encountered challenges with vendor-specific CSS and redundant ARIA roles, which were fixed during the validation stage  
+### JavaScript & Interactivity (Planned Enhancements)  
+- **Stack Overflow:** Event listener tips, interactive element troubleshooting  
+- **Personal Research:** Front-end learning through experimentation  
 
-Future improvements:  
-- Add more interactivity (animations, transitions, JS-based enhancements)  
-- Expand destination pages with booking links or guides  
-- Build a backend for user accounts and saving favorite destinations  
+### Fonts, Maps, and Accessibility  
+- **Google Fonts:** [Playfair Display](https://fonts.google.com/specimen/Playfair+Display), [Open Sans](https://fonts.google.com/specimen/Open+Sans)  
+- **Google Maps API:** Dynamic map embedding  
+- **W3C WAI-ARIA Practices:** Accessibility patterns and validation  
 
 ---
 
-✍️ *Developed by George — 2025*
+## 🖼️ Reflection  
+
+This project has been a strong learning experience in combining **HTML, CSS, and project structuring** into a polished multi-page website.  
+
+- Learned to design **biome-based themes** consistently across pages  
+- Improved knowledge of **validation tools** for code quality  
+- Explored **responsive layouts** with accessibility in mind  
+- Deployed successfully with **GitHub Pages**  
+- Overcame issues with ARIA redundancy and CSS pseudo-elements  
+
+---
+
+## 🚀 Future Plans  
+
+- Add **JS-based interactivity** (animations, transitions, scroll effects)  
+- Expand destination pages with **travel guides and booking links**  
+- Create **dark mode toggle** for accessibility and user preference  
+- Add **search functionality** for destinations  
+- Include **multilingual support** for international travelers  
+- Build **backend integration** for user accounts and trip planning  
+
+---
+
+## 📧 Contact  
+
+✉️ Email: elementavoyages@gmail.com *(or your preferred contact)*  
+👤 Project by: George Baldwin  
+🎨 Web Design: George Baldwin  
+
+---
+
+✍️ *Developed with passion, design, and inspiration — 2025*  
+
