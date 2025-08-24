@@ -156,19 +156,19 @@ body, html {
 
 /* Specific background images for different biomes */
 .top-header.frost {
-  background-image: url('biome-background/frost.jpg');
+  background-image: url('biome-background/frost.webp');
 }
 
 .top-header.jungle {
-  background-image: url('biome-background/jungle.jpg');
+  background-image: url('biome-background/jungle.webp');
 }
 
 .top-header.desert {
-  background-image: url('biome-background/sunrise-desert.jpg');
+  background-image: url('biome-background/sunrise-desert.webp');
 }
 
 .top-header.waves {
-  background-image: url('biome-background/waves.jpg');
+  background-image: url('biome-background/waves.webp');
 }
 
 
