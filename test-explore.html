@@ -1,38 +1,39 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Biome Background Slideshow</title>
-  <link rel="stylesheet" href="test-styles.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Biome Background Slideshow</title>
+<link href="test-styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <!-- Background Slides -->
-  <div class="bg-slides">
-    <div class="bg-slide active" style="background-image: url('explore-image/snow.webp');"></div>
-    <div class="bg-slide" style="background-image: url('explore-image/jungle.webp');"></div>
-    <div class="bg-slide" style="background-image: url('explore-image/fire.webp');"></div>
-    <div class="bg-slide" style="background-image: url('explore-image/tides.webp');"></div>
-  </div>
-  <!-- Logo and Navigation on top of slideshow -->
-  <header class="top-header" aria-label="Site header with logo and navigation">
-    <div class="logo-container">
-      <a href="index.html" aria-label="Go to home page">
-        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" alt="Elementa Voyagés Logo">
-      </a>
-    </div>
-    <nav class="nav-links" aria-label="Main site navigation">
-      <a href="index.html" aria-label="Go to Home page">Home</a>
-      <a href="" aria-label="Go to Explore page">Explore</a>
-      <a href="mailto:info@elementavoyages.com" aria-label="Send email to Elementa Voyagés">Contact</a>
-    </nav>
-  </header>
-  <!-- Slide Text Content -->
-  <div class="slide-text-container" id="slideText" role="region" aria-label="Slideshow text content">
-    <h1 id="slideTitle">Frost Biome</h1>
-    <p id="slideDescription">Explore the icy landscapes and crisp adventures of the Frost biome.</p>
-    <a href="frost.html" class="slide-btn" aria-labelledby="slideTitle slideDescription">Explore Frost</a>
-  </div>
+<!-- Background Slides -->
+<div class="bg-slides">
+<div class="bg-slide active" style="background-image: url('explore-image/snow.webp');"></div>
+<div class="bg-slide" style="background-image: url('explore-image/jungle.webp');"></div>
+<div class="bg-slide" style="background-image: url('explore-image/fire.webp');"></div>
+<div class="bg-slide" style="background-image: url('explore-image/tides.webp');"></div>
+</div>
+<!-- Logo and Navigation on top of slideshow -->
+<header aria-label="Site header with logo and navigation" class="top-header">
+<div class="logo-container">
+<a aria-label="Go to home page" href="index.html">
+<img alt="Elementa Voyagés Logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
+</a>
+</div>
+<nav aria-label="Main site navigation" class="nav-links">
+<a aria-label="Go to Home page" href="index.html">Home</a>
+<a aria-label="Go to Explore page" href="">Explore</a>
+<a aria-label="Send email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
+</nav>
+</header>
+<!-- Slide Text Content -->
+<div aria-label="Slideshow text content" class="slide-text-container" id="slideText" role="region">
+<h1 id="slideTitle">Frost Biome</h1>
+<p id="slideDescription">Explore the icy landscapes and crisp adventures of the Frost biome.</p>
+<a aria-labelledby="slideTitle slideDescription" class="slide-btn" href="frost.html">Explore Frost</a>
+</div>
 <script>
   const slides = document.querySelectorAll('.bg-slide');
   const slideText = document.getElementById('slideText');
@@ -99,4 +100,3 @@
 </script>
 </body>
 </html>
-

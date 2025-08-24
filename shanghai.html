@@ -1,75 +1,76 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shanghai Map & Hotels</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="city-map.css">
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shanghai Map &amp; Hotels</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Open+Sans&amp;display=swap" rel="stylesheet"/>
+<link href="city-map.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js" type="module"></script>
 </head>
 <body>
-  <header class="top-header" aria-label="Site Header">
-    <!-- Logo Container -->
-    <div class="logo-container">
-      <a href="index.html">
-        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" alt="Logo" aria-label="Elementa Voyagés Logo">
-      </a>
-    </div>
-    <!-- Navigation Links -->
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="index.html" aria-label="Go to Home page">Home</a>
-      <a href="test-explore.html" aria-label="Go to Explore page">Explore</a>
-      <a href="mailto:info@elementavoyages.com" aria-label="Send email to Elementa Voyagés">Contact</a>
-    </nav>
-  </header>
-  <!-- Page Title -->
-  <h1 id="city-title" aria-label="Shanghai city map and hotel information">Explore Shanghai</h1>
-  <!-- Main Content: Map Section -->
-  <div class="main-content">
-    <div class="map-section">
-      <!-- Google Maps API Loader: loads the maps component -->
-      <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>    
-      <!-- Google Map Centered on Shanghai -->
-      <gmp-map id="map" center="31.2304,121.4737" zoom="14">
-        <!-- Place Picker for Searching Cities or Addresses -->
-        <div slot="control-block-start-inline-start" class="place-picker-container">
-          <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
-        </div>
-      </gmp-map>
-    </div>
-    <!-- Sidebar: Recommended Hotels -->
-    <div class="sidebar">
-      <h2>Recommended Hotels</h2>
-      <div class="hotel-links">
-        <!-- Individual hotel cards with images, headings, and links -->
-        <a href="https://www.hyatt.com/zh-CN/hotel/china/grand-hyatt-shanghai/shagh" target="_blank" class="hotel-card" aria-label="Grand Hyatt Shanghai">
-          <img src="shanghai/image-one.webp" alt="Grand Hyatt Shanghai" aria-label="Image of Grand Hyatt Shanghai">
-          <h3>Grand Hyatt Shanghai</h3>
-        </a>
-        <a href="https://www.hyatt.com/grand-hyatt/zh-CN/shang-hyatt-on-the-bund-shanghai" target="_blank" class="hotel-card" aria-label="Hyatt on the Bund Hotel">
-          <img src="shanghai/image-two.webp" alt="Hyatt on the Bund Hotel" aria-label="Image of Hyatt on the Bund Hotel">
-          <h3>Hyatt on the Bund Hotel</h3>
-        </a>
-        <a href="https://www.mandarinoriental.com/en/shanghai/pudong/offers?src=ps.brand.mopud.ggl&gclsrc=aw.ds&gad_source=1&gad_campaignid=20814215455&gclid=Cj0KCQjwwZDFBhCpARIsAB95qO3-yKum76rDgVry1qnP2w-rB6GqEA7C32mAKiJmrC0VXEpKOooGlKYaAq0OEALw_wcB" target="_blank" class="hotel-card" aria-label="Mandarin Oriental Pudong">
-          <img src="shanghai/image-three.webp" alt="Mandarin Oriental Pudong" aria-label="Image of Mandarin Oriental Pudong">
-          <h3>Mandarin Oriental Pudong</h3>
-        </a>
-        <a href="https://waldorfastoriahotels.com.cn/zh-cn/hotel/shanghai/waldorf-astoria-shanghai-SHAWAWA/index.html" target="_blank" class="hotel-card" aria-label="Waldorf Astoria Shanghai on the Bund">
-          <img src="shanghai/image-four.webp" alt="Waldorf Astoria Shanghai on the Bund" aria-label="Image of Waldorf Astoria Shanghai on the Bund">
-          <h3>Waldorf Astoria Shanghai on the Bund</h3>
-        </a>
-        <a href="https://www.hotel.com.au/shanghai/shanghai-meego-qingwen-hotel.htm" target="_blank" class="hotel-card" aria-label="Meego Qingwen Hotel">
-          <img src="shanghai/image-five.webp" alt="Meego Qingwen Hotel" aria-label="Image of Meego Qingwen Hotel">
-          <h3>Meego Qingwen Hotel</h3>
-        </a>
-        <a href="https://www.marriott.com.cn/hotels/shamc-shanghai-marriott-marquis-city-centre/overview/" target="_blank" class="hotel-card" aria-label="Shanghai Marriott Hotel City Centre">
-          <img src="shanghai/image-six.webp" alt="Shanghai Marriott Hotel City Centre" aria-label="Image of Shanghai Marriott Hotel City Centre">
-          <h3>Shanghai Marriott Hotel City Centre</h3>
-        </a>
-      </div>
-    </div>
-  </div>
+<header aria-label="Site Header" class="top-header">
+<!-- Logo Container -->
+<div class="logo-container">
+<a href="index.html">
+<img alt="Logo" aria-label="Elementa Voyagés Logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
+</a>
+</div>
+<!-- Navigation Links -->
+<nav aria-label="Main navigation" class="nav-links">
+<a aria-label="Go to Home page" href="index.html">Home</a>
+<a aria-label="Go to Explore page" href="test-explore.html">Explore</a>
+<a aria-label="Send email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
+</nav>
+</header>
+<!-- Page Title -->
+<h1 aria-label="Shanghai city map and hotel information" id="city-title">Explore Shanghai</h1>
+<!-- Main Content: Map Section -->
+<div class="main-content">
+<div class="map-section">
+<!-- Google Maps API Loader: loads the maps component -->
+<gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
+<!-- Google Map Centered on Shanghai -->
+<gmp-map center="31.2304,121.4737" id="map" zoom="14">
+<!-- Place Picker for Searching Cities or Addresses -->
+<div class="place-picker-container" slot="control-block-start-inline-start">
+<gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
+</div>
+</gmp-map>
+</div>
+<!-- Sidebar: Recommended Hotels -->
+<div class="sidebar">
+<h2>Recommended Hotels</h2>
+<div class="hotel-links">
+<!-- Individual hotel cards with images, headings, and links -->
+<a aria-label="Grand Hyatt Shanghai" class="hotel-card" href="https://www.hyatt.com/zh-CN/hotel/china/grand-hyatt-shanghai/shagh" target="_blank">
+<img alt="Grand Hyatt Shanghai" aria-label="Image of Grand Hyatt Shanghai" src="shanghai/image-one.webp"/>
+<h3>Grand Hyatt Shanghai</h3>
+</a>
+<a aria-label="Hyatt on the Bund Hotel" class="hotel-card" href="https://www.hyatt.com/grand-hyatt/zh-CN/shang-hyatt-on-the-bund-shanghai" target="_blank">
+<img alt="Hyatt on the Bund Hotel" aria-label="Image of Hyatt on the Bund Hotel" src="shanghai/image-two.webp"/>
+<h3>Hyatt on the Bund Hotel</h3>
+</a>
+<a aria-label="Mandarin Oriental Pudong" class="hotel-card" href="https://www.mandarinoriental.com/en/shanghai/pudong/offers?src=ps.brand.mopud.ggl&amp;gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=20814215455&amp;gclid=Cj0KCQjwwZDFBhCpARIsAB95qO3-yKum76rDgVry1qnP2w-rB6GqEA7C32mAKiJmrC0VXEpKOooGlKYaAq0OEALw_wcB" target="_blank">
+<img alt="Mandarin Oriental Pudong" aria-label="Image of Mandarin Oriental Pudong" src="shanghai/image-three.webp"/>
+<h3>Mandarin Oriental Pudong</h3>
+</a>
+<a aria-label="Waldorf Astoria Shanghai on the Bund" class="hotel-card" href="https://waldorfastoriahotels.com.cn/zh-cn/hotel/shanghai/waldorf-astoria-shanghai-SHAWAWA/index.html" target="_blank">
+<img alt="Waldorf Astoria Shanghai on the Bund" aria-label="Image of Waldorf Astoria Shanghai on the Bund" src="shanghai/image-four.webp"/>
+<h3>Waldorf Astoria Shanghai on the Bund</h3>
+</a>
+<a aria-label="Meego Qingwen Hotel" class="hotel-card" href="https://www.hotel.com.au/shanghai/shanghai-meego-qingwen-hotel.htm" target="_blank">
+<img alt="Meego Qingwen Hotel" aria-label="Image of Meego Qingwen Hotel" src="shanghai/image-five.webp"/>
+<h3>Meego Qingwen Hotel</h3>
+</a>
+<a aria-label="Shanghai Marriott Hotel City Centre" class="hotel-card" href="https://www.marriott.com.cn/hotels/shamc-shanghai-marriott-marquis-city-centre/overview/" target="_blank">
+<img alt="Shanghai Marriott Hotel City Centre" aria-label="Image of Shanghai Marriott Hotel City Centre" src="shanghai/image-six.webp"/>
+<h3>Shanghai Marriott Hotel City Centre</h3>
+</a>
+</div>
+</div>
+</div>
 <script type="module">
   // Initialize the map and place picker after the custom element is defined
   async function init() {
@@ -115,11 +116,9 @@
   document.addEventListener('DOMContentLoaded', init);
 </script>
 <p>
-  <a href="https://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px"
-      src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-      alt="Valid CSS!">
-  </a>
+<a href="https://jigsaw.w3.org/css-validator/check/referer">
+<img alt="Valid CSS!" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" style="border:0;width:88px;height:31px"/>
+</a>
 </p>
 </body>
 </html>

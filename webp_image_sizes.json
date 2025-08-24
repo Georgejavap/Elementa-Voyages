@@ -1,0 +1,722 @@
+{
+  "Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp": {
+    "width": 754,
+    "height": 331
+  },
+  "about-image/italy.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "about-image/staff.webp": {
+    "width": 535,
+    "height": 237
+  },
+  "about-image/switzerland.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "biome-background/frost.webp": {
+    "width": 3840,
+    "height": 1671
+  },
+  "biome-background/jungle.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "biome-background/sunrise-desert.webp": {
+    "width": 3840,
+    "height": 1465
+  },
+  "biome-background/waves.webp": {
+    "width": 3840,
+    "height": 1639
+  },
+  "desert-biome/argentina.webp": {
+    "width": 5472,
+    "height": 3648
+  },
+  "desert-biome/arizona.webp": {
+    "width": 5184,
+    "height": 3456
+  },
+  "desert-biome/chile.webp": {
+    "width": 2280,
+    "height": 2849
+  },
+  "desert-biome/croatia.webp": {
+    "width": 917,
+    "height": 580
+  },
+  "desert-biome/dubai.webp": {
+    "width": 4912,
+    "height": 5376
+  },
+  "desert-biome/india.webp": {
+    "width": 3166,
+    "height": 5628
+  },
+  "desert-biome/madrid.webp": {
+    "width": 692,
+    "height": 453
+  },
+  "desert-biome/mexico.webp": {
+    "width": 3755,
+    "height": 4032
+  },
+  "desert-biome/morocco.webp": {
+    "width": 2702,
+    "height": 2000
+  },
+  "desert-biome/namibia.webp": {
+    "width": 4606,
+    "height": 4973
+  },
+  "desert-biome/new-zealand.webp": {
+    "width": 6000,
+    "height": 4000
+  },
+  "desert-biome/sydney.webp": {
+    "width": 3744,
+    "height": 4680
+  },
+  "explore-image/fire.webp": {
+    "width": 3771,
+    "height": 2828
+  },
+  "explore-image/jungle.webp": {
+    "width": 5000,
+    "height": 4000
+  },
+  "explore-image/overlay.webp": {
+    "width": 4240,
+    "height": 2832
+  },
+  "explore-image/snow.webp": {
+    "width": 5281,
+    "height": 3514
+  },
+  "explore-image/tides.webp": {
+    "width": 5464,
+    "height": 3640
+  },
+  "feature-holidays/maldives.webp": {
+    "width": 574,
+    "height": 447
+  },
+  "feature-holidays/paris.webp": {
+    "width": 4731,
+    "height": 3154
+  },
+  "feature-holidays/patagonia.webp": {
+    "width": 5472,
+    "height": 3499
+  },
+  "feature-holidays/santorini.webp": {
+    "width": 3804,
+    "height": 3072
+  },
+  "feature-holidays/shanghai.webp": {
+    "width": 6000,
+    "height": 3074
+  },
+  "front-page-image/image-eight.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "front-page-image/image-eleven.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "front-page-image/image-five.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "front-page-image/image-four.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "front-page-image/image-nine.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "front-page-image/image-one.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "front-page-image/image-seven.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "front-page-image/image-six.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "front-page-image/image-ten.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "front-page-image/image-three.webp": {
+    "width": 4411,
+    "height": 2137
+  },
+  "front-page-image/image-twelve.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "front-page-image/image-two.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "frost-biome/alaska.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "frost-biome/canada.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "frost-biome/chile.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "frost-biome/cruise.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "frost-biome/expo.webp": {
+    "width": 639,
+    "height": 479
+  },
+  "frost-biome/iceland.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "frost-biome/japan.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "frost-biome/kenya.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "frost-biome/kila.webp": {
+    "width": 524,
+    "height": 394
+  },
+  "frost-biome/lapland.webp": {
+    "width": 774,
+    "height": 550
+  },
+  "frost-biome/nepal.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "frost-biome/new-zealand.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "frost-biome/patagonia.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "frost-biome/tasmania.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "jungle-biome/amazon.webp": {
+    "width": 3840,
+    "height": 2160
+  },
+  "jungle-biome/bail.webp": {
+    "width": 769,
+    "height": 563
+  },
+  "jungle-biome/congo.webp": {
+    "width": 917,
+    "height": 678
+  },
+  "jungle-biome/costa-rica.webp": {
+    "width": 542,
+    "height": 367
+  },
+  "jungle-biome/germany.webp": {
+    "width": 547,
+    "height": 353
+  },
+  "jungle-biome/madagascar.webp": {
+    "width": 714,
+    "height": 541
+  },
+  "jungle-biome/mexico.webp": {
+    "width": 855,
+    "height": 511
+  },
+  "jungle-biome/new-zealand.webp": {
+    "width": 421,
+    "height": 355
+  },
+  "jungle-biome/peru.webp": {
+    "width": 598,
+    "height": 437
+  },
+  "jungle-biome/queensland.webp": {
+    "width": 367,
+    "height": 290
+  },
+  "jungle-biome/spain.webp": {
+    "width": 649,
+    "height": 541
+  },
+  "jungle-biome/thailand.webp": {
+    "width": 1172,
+    "height": 671
+  },
+  "maldives/image-eight.webp": {
+    "width": 957,
+    "height": 598
+  },
+  "maldives/image-five.webp": {
+    "width": 1118,
+    "height": 661
+  },
+  "maldives/image-four.webp": {
+    "width": 801,
+    "height": 525
+  },
+  "maldives/image-nine.webp": {
+    "width": 897,
+    "height": 560
+  },
+  "maldives/image-one.webp": {
+    "width": 1106,
+    "height": 639
+  },
+  "maldives/image-seven.webp": {
+    "width": 971,
+    "height": 629
+  },
+  "maldives/image-six.webp": {
+    "width": 1024,
+    "height": 582
+  },
+  "maldives/image-ten.webp": {
+    "width": 1027,
+    "height": 640
+  },
+  "maldives/image-three.webp": {
+    "width": 989,
+    "height": 678
+  },
+  "maldives/image-two.webp": {
+    "width": 1139,
+    "height": 660
+  },
+  "paris/image-eight.webp": {
+    "width": 1109,
+    "height": 772
+  },
+  "paris/image-five.webp": {
+    "width": 1203,
+    "height": 653
+  },
+  "paris/image-four.webp": {
+    "width": 1108,
+    "height": 677
+  },
+  "paris/image-nine.webp": {
+    "width": 1169,
+    "height": 701
+  },
+  "paris/image-one.webp": {
+    "width": 681,
+    "height": 521
+  },
+  "paris/image-seven.webp": {
+    "width": 1054,
+    "height": 657
+  },
+  "paris/image-six.webp": {
+    "width": 1222,
+    "height": 651
+  },
+  "paris/image-ten.webp": {
+    "width": 600,
+    "height": 330
+  },
+  "paris/image-three.webp": {
+    "width": 1076,
+    "height": 660
+  },
+  "paris/image-two.webp": {
+    "width": 1073,
+    "height": 663
+  },
+  "patagonia/image-five.webp": {
+    "width": 1083,
+    "height": 541
+  },
+  "patagonia/image-four.webp": {
+    "width": 642,
+    "height": 450
+  },
+  "patagonia/image-one.webp": {
+    "width": 847,
+    "height": 554
+  },
+  "patagonia/image-six.webp": {
+    "width": 687,
+    "height": 451
+  },
+  "patagonia/image-three.webp": {
+    "width": 1109,
+    "height": 582
+  },
+  "patagonia/image-two.webp": {
+    "width": 682,
+    "height": 427
+  },
+  "santorini/image-eight.webp": {
+    "width": 1081,
+    "height": 651
+  },
+  "santorini/image-five.webp": {
+    "width": 1080,
+    "height": 609
+  },
+  "santorini/image-four.webp": {
+    "width": 1498,
+    "height": 932
+  },
+  "santorini/image-nine.webp": {
+    "width": 1111,
+    "height": 526
+  },
+  "santorini/image-one.webp": {
+    "width": 1542,
+    "height": 887
+  },
+  "santorini/image-seven.webp": {
+    "width": 1113,
+    "height": 650
+  },
+  "santorini/image-six.webp": {
+    "width": 1018,
+    "height": 596
+  },
+  "santorini/image-ten.webp": {
+    "width": 1218,
+    "height": 646
+  },
+  "santorini/image-three.webp": {
+    "width": 1594,
+    "height": 726
+  },
+  "santorini/image-two.webp": {
+    "width": 1526,
+    "height": 914
+  },
+  "santorini/Screenshot 2025-08-19 161901.webp": {
+    "width": 945,
+    "height": 593
+  },
+  "screenshots/about-one.webp": {
+    "width": 1857,
+    "height": 939
+  },
+  "screenshots/biome-four.webp": {
+    "width": 1847,
+    "height": 920
+  },
+  "screenshots/biome-one.webp": {
+    "width": 1850,
+    "height": 921
+  },
+  "screenshots/biome-three.webp": {
+    "width": 1854,
+    "height": 924
+  },
+  "screenshots/biome-two.webp": {
+    "width": 1844,
+    "height": 924
+  },
+  "screenshots/desert.webp": {
+    "width": 1841,
+    "height": 915
+  },
+  "screenshots/frost.webp": {
+    "width": 1846,
+    "height": 927
+  },
+  "screenshots/homepage-five.webp": {
+    "width": 1837,
+    "height": 928
+  },
+  "screenshots/homepage-four.webp": {
+    "width": 1851,
+    "height": 916
+  },
+  "screenshots/homepage-one.webp": {
+    "width": 1850,
+    "height": 929
+  },
+  "screenshots/homepage-three.webp": {
+    "width": 1830,
+    "height": 533
+  },
+  "screenshots/homepage-two.webp": {
+    "width": 1847,
+    "height": 875
+  },
+  "screenshots/image-five.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "screenshots/image-four.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "screenshots/image-one.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "screenshots/image-pre-one.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "screenshots/image-pre-three.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "screenshots/image-pre-two.webp": {
+    "width": 2048,
+    "height": 1536
+  },
+  "screenshots/image-six.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "screenshots/image-three.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "screenshots/image-two.webp": {
+    "width": 1536,
+    "height": 2048
+  },
+  "screenshots/jungle.webp": {
+    "width": 1836,
+    "height": 927
+  },
+  "screenshots/maldives.webp": {
+    "width": 1835,
+    "height": 921
+  },
+  "screenshots/paris.webp": {
+    "width": 1826,
+    "height": 916
+  },
+  "screenshots/patagonia.webp": {
+    "width": 1832,
+    "height": 918
+  },
+  "screenshots/santorini.webp": {
+    "width": 1836,
+    "height": 922
+  },
+  "screenshots/shanghai.webp": {
+    "width": 1824,
+    "height": 911
+  },
+  "screenshots/tides.webp": {
+    "width": 1833,
+    "height": 917
+  },
+  "shanghai/image-five.webp": {
+    "width": 1039,
+    "height": 650
+  },
+  "shanghai/image-four.webp": {
+    "width": 1141,
+    "height": 614
+  },
+  "shanghai/image-one.webp": {
+    "width": 1097,
+    "height": 610
+  },
+  "shanghai/image-six.webp": {
+    "width": 1111,
+    "height": 626
+  },
+  "shanghai/image-three.webp": {
+    "width": 1079,
+    "height": 636
+  },
+  "shanghai/image-two.webp": {
+    "width": 1141,
+    "height": 604
+  },
+  "sponsors/image-five.webp": {
+    "width": 82,
+    "height": 48
+  },
+  "sponsors/image-four.webp": {
+    "width": 85,
+    "height": 37
+  },
+  "sponsors/image-one.webp": {
+    "width": 64,
+    "height": 33
+  },
+  "sponsors/image-three.webp": {
+    "width": 54,
+    "height": 44
+  },
+  "sponsors/image-two.webp": {
+    "width": 63,
+    "height": 43
+  },
+  "staff/staff-one.webp": {
+    "width": 179,
+    "height": 143
+  },
+  "staff/staff-three.webp": {
+    "width": 649,
+    "height": 602
+  },
+  "staff/staff-two.webp": {
+    "width": 331,
+    "height": 348
+  },
+  "test/about-css.webp": {
+    "width": 1753,
+    "height": 1070
+  },
+  "test/about-us.webp": {
+    "width": 1369,
+    "height": 611
+  },
+  "test/api.webp": {
+    "width": 1858,
+    "height": 869
+  },
+  "test/argentina.webp": {
+    "width": 1608,
+    "height": 701
+  },
+  "test/biome-css.webp": {
+    "width": 1936,
+    "height": 1089
+  },
+  "test/biome-js.webp": {
+    "width": 1184,
+    "height": 627
+  },
+  "test/city-css.webp": {
+    "width": 1839,
+    "height": 1066
+  },
+  "test/city-js.webp": {
+    "width": 1388,
+    "height": 661
+  },
+  "test/desert.webp": {
+    "width": 1805,
+    "height": 618
+  },
+  "test/frost.webp": {
+    "width": 1570,
+    "height": 694
+  },
+  "test/index.webp": {
+    "width": 1592,
+    "height": 690
+  },
+  "test/jungle.webp": {
+    "width": 1607,
+    "height": 702
+  },
+  "test/maldives.webp": {
+    "width": 1774,
+    "height": 724
+  },
+  "test/paris.webp": {
+    "width": 1832,
+    "height": 640
+  },
+  "test/santorini.webp": {
+    "width": 1817,
+    "height": 675
+  },
+  "test/script-js.webp": {
+    "width": 1210,
+    "height": 636
+  },
+  "test/shanghai.webp": {
+    "width": 1808,
+    "height": 643
+  },
+  "test/styles-css.webp": {
+    "width": 1907,
+    "height": 1097
+  },
+  "test/test-css.webp": {
+    "width": 1924,
+    "height": 1083
+  },
+  "test/test.webp": {
+    "width": 1816,
+    "height": 672
+  },
+  "test/tides.webp": {
+    "width": 1794,
+    "height": 727
+  },
+  "tides-biome/bail.webp": {
+    "width": 3970,
+    "height": 5955
+  },
+  "tides-biome/bora-bora.webp": {
+    "width": 4472,
+    "height": 7952
+  },
+  "tides-biome/brazil.webp": {
+    "width": 2268,
+    "height": 3024
+  },
+  "tides-biome/cancun.webp": {
+    "width": 6554,
+    "height": 8192
+  },
+  "tides-biome/colombia.webp": {
+    "width": 2977,
+    "height": 3721
+  },
+  "tides-biome/fiji.webp": {
+    "width": 7803,
+    "height": 5205
+  },
+  "tides-biome/maldives.webp": {
+    "width": 3307,
+    "height": 2214
+  },
+  "tides-biome/mauritius.webp": {
+    "width": 5860,
+    "height": 3907
+  },
+  "tides-biome/portugal.webp": {
+    "width": 4032,
+    "height": 3024
+  },
+  "tides-biome/punta-cana.webp": {
+    "width": 2996,
+    "height": 4494
+  },
+  "tides-biome/Seychelles.webp": {
+    "width": 4000,
+    "height": 3000
+  },
+  "tides-biome/spain.webp": {
+    "width": 3000,
+    "height": 2000
+  }
+}

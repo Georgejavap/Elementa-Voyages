@@ -1,207 +1,206 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Frost – Elementa Voyagés</title>
-  <link rel="stylesheet" href="biome-style.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>The Frost – Elementa Voyagés</title>
+<link href="biome-style.css" rel="stylesheet"/>
 </head>
 <body>
-  <!-- Top header with logo and navigation -->
-  <header class="top-header frost" aria-label="The Waves biome header with logo and main navigation">
-    <div class="logo-container">
-      <!-- Logo with clear alt description -->
-      <a href="index.html" aria-label="Return to Elementa Voyagés home">
-        <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" alt="Elementa Voyagés logo">
-      </a>
-    </div>
-    <!-- Navigation Links -->
-    <nav class="nav-links" aria-label="Primary navigation for The Waves biome page">
-      <a href="index.html" aria-label="Go to the Home page of Elementa Voyagés">Home</a>
-      <a href="test-explore.html" aria-label="Explore destinations across different biomes">Explore</a>
-      <a href="mailto:info@elementavoyages.com" aria-label="Send an email to Elementa Voyagés">Contact</a>
-    </nav>
-  </header>
-  <!-- FILTERS + GRID -->
-  <section class="destination-filter" aria-label="Destination Filters and Grid">
-    <!-- Filter Bar -->
-    <div class="filter-bar">
-      <select id="family-select" aria-label="Select family or adult type">
-        <option value="">Family / Adult</option>
-        <option value="family">Family Friendly</option>
-        <option value="adult">Adult Only</option>
-      </select>
-      <select id="continent-select" aria-label="Select continent">
-        <option value="">Continent</option>
-        <option value="europe">Europe</option>
-        <option value="asia">Asia</option>
-        <option value="north-america">North America</option>
-        <option value="south-america">South America</option>
-        <option value="africa">Africa</option>
-        <option value="oceania">Oceania</option>
-        <option value="antarctica">Antarctica</option>
-      </select>
-      <select id="type-select" aria-label="Select holiday type">
-        <option value="">Holiday Type</option>
-        <option value="relaxing">Relaxing</option>
-        <option value="adventurous">Adventurous</option>
-      </select>
-      <button class="clear-btn" aria-label="Clear all filters">✖ Clear Filters</button>
-    </div>
-    <!-- Destination Grid -->
-    <div class="destination-grid" role="list" aria-label="Destination Cards">
-      <!-- Europe -->
-      <div class="destination-card" data-family="family" data-continent="europe" data-type="relaxing" role="listitem">
-        <a href="https://www.santaclausholidayvillage.fi/" target="_blank">
-          <img src="frost-biome/lapland.webp" alt="Lapland, Sweden">
-          <h3>Lapland, Sweden</h3>
-        </a>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="europe" data-type="adventurous" role="listitem">
-        <a href="https://www.iceland.is/" target="_blank">
-          <img src="frost-biome/iceland.webp" alt="Iceland Glaciers">
-          <h3>Iceland Glaciers</h3>
-        </a>
-      </div>
-      <!-- Asia -->
-      <div class="destination-card" data-family="family" data-continent="asia" data-type="relaxing" role="listitem">
-        <a href="https://www.japan.travel/en/uk/hokkaido/" target="_blank">
-          <img src="frost-biome/japan.webp" alt="Hokkaido, Japan">
-          <h3>Hokkaido, Japan</h3>
-        </a>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="asia" data-type="adventurous" role="listitem">
-        <a href="https://www.nepal.travel/" target="_blank">
-          <img src="frost-biome/nepal.webp" alt="Himalayas, Nepal">
-          <h3>Himalayas, Nepal</h3>
-        </a>
-      </div>
-      <!-- North America -->
-      <div class="destination-card" data-family="family" data-continent="north-america" data-type="relaxing" role="listitem">
-        <a href="https://www.banfflakelouise.com/" target="_blank">
-          <img src="frost-biome/canada.webp" alt="Banff, Canada">
-          <h3>Banff, Canada</h3>
-        </a>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="north-america" data-type="adventurous" role="listitem">
-        <a href="https://www.travelalaska.com/" target="_blank">
-          <img src="frost-biome/alaska.webp" alt="Alaska Wilderness">
-          <h3>Alaska Wilderness</h3>
-        </a>
-      </div>
-      <!-- South America -->
-      <div class="destination-card" data-family="family" data-continent="south-america" data-type="relaxing" role="listitem">
-        <a href="https://www.patagonia-argentina.com/" target="_blank">
-          <img src="frost-biome/patagonia.webp" alt="Patagonia, Argentina">
-          <h3>Patagonia, Argentina</h3>
-        </a>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="south-america" data-type="adventurous" role="listitem">
-        <a href="https://www.chile.travel/en/" target="_blank">
-          <img src="frost-biome/chile.webp" alt="Torres del Paine, Chile">
-          <h3>Torres del Paine, Chile</h3>
-        </a>
-      </div>
-      <!-- Africa -->
-      <div class="destination-card" data-family="family" data-continent="africa" data-type="relaxing" role="listitem">
-        <a href="https://www.safaris-kenya.com/" target="_blank">
-          <img src="frost-biome/kenya.webp" alt="Masai Mara, Kenya">
-          <h3>Masai Mara, Kenya</h3>
-        </a>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="africa" data-type="adventurous" role="listitem">
-        <a href="https://www.southafrica.net/" target="_blank">
-          <img src="frost-biome/kila.webp" alt="Kilimanjaro">
-          <h3>Kilimanjaro</h3>
-        </a>
-      </div>
-      <!-- Oceania -->
-      <div class="destination-card" data-family="family" data-continent="oceania" data-type="relaxing" role="listitem">
-        <a href="https://www.newzealand.com/int/plan/places-to-go/south-island/" target="_blank">
-          <img src="frost-biome/new-zealand.webp" alt="South Island, New Zealand">
-          <h3>South Island, New Zealand</h3>
-        </a>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="oceania" data-type="adventurous" role="listitem">
-        <a href="https://www.australia.com/en" target="_blank">
-          <img src="frost-biome/tasmania.webp" alt="Tasmania, Australia">
-          <h3>Tasmania, Australia</h3>
-        </a>
-      </div>
-      <!-- Antarctica -->
-      <div class="destination-card" data-family="family" data-continent="antarctica" data-type="relaxing" role="listitem">
-        <a href="https://www.quarkexpeditions.com/en/antarctica" target="_blank">
-          <img src="frost-biome/cruise.webp" alt="Antarctica Cruise">
-          <h3>Antarctica Cruise</h3>
-        </a>
-      </div>
-      <div class="destination-card" data-family="adult" data-continent="antarctica" data-type="adventurous" role="listitem">
-        <a href="https://www.antarctic-expeditions.com/" target="_blank">
-          <img src="frost-biome/expo.webp" alt="Antarctica Expedition">
-          <h3>Antarctica Expedition</h3>
-        </a>
-      </div>
-    </div>
-  </section>
-  <footer class="site-footer" aria-label="Website Footer">
-    <div class="footer-container">
-      <!-- Column 1: Logo & About -->
-      <div class="footer-column" role="region" aria-label="About Elementa Voyagés">
-        <div class="footer-logo">
-          <img src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" alt="Elementa Voyagés Logo">
-        </div>
-        <p class="footer-tagline">
+<!-- Top header with logo and navigation -->
+<header aria-label="The Waves biome header with logo and main navigation" class="top-header frost">
+<div class="logo-container">
+<!-- Logo with clear alt description -->
+<a aria-label="Return to Elementa Voyagés home" href="index.html">
+<img alt="Elementa Voyagés logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
+</a>
+</div>
+<!-- Navigation Links -->
+<nav aria-label="Primary navigation for The Waves biome page" class="nav-links">
+<a aria-label="Go to the Home page of Elementa Voyagés" href="index.html">Home</a>
+<a aria-label="Explore destinations across different biomes" href="test-explore.html">Explore</a>
+<a aria-label="Send an email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
+</nav>
+</header>
+<!-- FILTERS + GRID -->
+<section aria-label="Destination Filters and Grid" class="destination-filter">
+<!-- Filter Bar -->
+<div class="filter-bar">
+<select aria-label="Select family or adult type" id="family-select">
+<option value="">Family / Adult</option>
+<option value="family">Family Friendly</option>
+<option value="adult">Adult Only</option>
+</select>
+<select aria-label="Select continent" id="continent-select">
+<option value="">Continent</option>
+<option value="europe">Europe</option>
+<option value="asia">Asia</option>
+<option value="north-america">North America</option>
+<option value="south-america">South America</option>
+<option value="africa">Africa</option>
+<option value="oceania">Oceania</option>
+<option value="antarctica">Antarctica</option>
+</select>
+<select aria-label="Select holiday type" id="type-select">
+<option value="">Holiday Type</option>
+<option value="relaxing">Relaxing</option>
+<option value="adventurous">Adventurous</option>
+</select>
+<button aria-label="Clear all filters" class="clear-btn">✖ Clear Filters</button>
+</div>
+<!-- Destination Grid -->
+<div aria-label="Destination Cards" class="destination-grid" role="list">
+<!-- Europe -->
+<div class="destination-card" data-continent="europe" data-family="family" data-type="relaxing" role="listitem">
+<a href="https://www.santaclausholidayvillage.fi/" target="_blank">
+<img alt="Lapland, Sweden" src="frost-biome/lapland.webp"/>
+<h3>Lapland, Sweden</h3>
+</a>
+</div>
+<div class="destination-card" data-continent="europe" data-family="adult" data-type="adventurous" role="listitem">
+<a href="https://www.iceland.is/" target="_blank">
+<img alt="Iceland Glaciers" src="frost-biome/iceland.webp"/>
+<h3>Iceland Glaciers</h3>
+</a>
+</div>
+<!-- Asia -->
+<div class="destination-card" data-continent="asia" data-family="family" data-type="relaxing" role="listitem">
+<a href="https://www.japan.travel/en/uk/hokkaido/" target="_blank">
+<img alt="Hokkaido, Japan" src="frost-biome/japan.webp"/>
+<h3>Hokkaido, Japan</h3>
+</a>
+</div>
+<div class="destination-card" data-continent="asia" data-family="adult" data-type="adventurous" role="listitem">
+<a href="https://www.nepal.travel/" target="_blank">
+<img alt="Himalayas, Nepal" src="frost-biome/nepal.webp"/>
+<h3>Himalayas, Nepal</h3>
+</a>
+</div>
+<!-- North America -->
+<div class="destination-card" data-continent="north-america" data-family="family" data-type="relaxing" role="listitem">
+<a href="https://www.banfflakelouise.com/" target="_blank">
+<img alt="Banff, Canada" src="frost-biome/canada.webp"/>
+<h3>Banff, Canada</h3>
+</a>
+</div>
+<div class="destination-card" data-continent="north-america" data-family="adult" data-type="adventurous" role="listitem">
+<a href="https://www.travelalaska.com/" target="_blank">
+<img alt="Alaska Wilderness" src="frost-biome/alaska.webp"/>
+<h3>Alaska Wilderness</h3>
+</a>
+</div>
+<!-- South America -->
+<div class="destination-card" data-continent="south-america" data-family="family" data-type="relaxing" role="listitem">
+<a href="https://www.patagonia-argentina.com/" target="_blank">
+<img alt="Patagonia, Argentina" src="frost-biome/patagonia.webp"/>
+<h3>Patagonia, Argentina</h3>
+</a>
+</div>
+<div class="destination-card" data-continent="south-america" data-family="adult" data-type="adventurous" role="listitem">
+<a href="https://www.chile.travel/en/" target="_blank">
+<img alt="Torres del Paine, Chile" src="frost-biome/chile.webp"/>
+<h3>Torres del Paine, Chile</h3>
+</a>
+</div>
+<!-- Africa -->
+<div class="destination-card" data-continent="africa" data-family="family" data-type="relaxing" role="listitem">
+<a href="https://www.safaris-kenya.com/" target="_blank">
+<img alt="Masai Mara, Kenya" src="frost-biome/kenya.webp"/>
+<h3>Masai Mara, Kenya</h3>
+</a>
+</div>
+<div class="destination-card" data-continent="africa" data-family="adult" data-type="adventurous" role="listitem">
+<a href="https://www.southafrica.net/" target="_blank">
+<img alt="Kilimanjaro" src="frost-biome/kila.webp"/>
+<h3>Kilimanjaro</h3>
+</a>
+</div>
+<!-- Oceania -->
+<div class="destination-card" data-continent="oceania" data-family="family" data-type="relaxing" role="listitem">
+<a href="https://www.newzealand.com/int/plan/places-to-go/south-island/" target="_blank">
+<img alt="South Island, New Zealand" src="frost-biome/new-zealand.webp"/>
+<h3>South Island, New Zealand</h3>
+</a>
+</div>
+<div class="destination-card" data-continent="oceania" data-family="adult" data-type="adventurous" role="listitem">
+<a href="https://www.australia.com/en" target="_blank">
+<img alt="Tasmania, Australia" src="frost-biome/tasmania.webp"/>
+<h3>Tasmania, Australia</h3>
+</a>
+</div>
+<!-- Antarctica -->
+<div class="destination-card" data-continent="antarctica" data-family="family" data-type="relaxing" role="listitem">
+<a href="https://www.quarkexpeditions.com/en/antarctica" target="_blank">
+<img alt="Antarctica Cruise" src="frost-biome/cruise.webp"/>
+<h3>Antarctica Cruise</h3>
+</a>
+</div>
+<div class="destination-card" data-continent="antarctica" data-family="adult" data-type="adventurous" role="listitem">
+<a href="https://www.antarctic-expeditions.com/" target="_blank">
+<img alt="Antarctica Expedition" src="frost-biome/expo.webp"/>
+<h3>Antarctica Expedition</h3>
+</a>
+</div>
+</div>
+</section>
+<footer aria-label="Website Footer" class="site-footer">
+<div class="footer-container">
+<!-- Column 1: Logo & About -->
+<div aria-label="About Elementa Voyagés" class="footer-column" role="region">
+<div class="footer-logo">
+<img alt="Elementa Voyagés Logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
+</div>
+<p class="footer-tagline">
           Curated journeys, luxurious stays, and unforgettable experiences.
         </p>
-      </div>    
-      <!-- Column 2: Quick Links -->
-      <div class="footer-column" role="navigation" aria-label="Footer Quick Links">
-        <h4>Explore</h4>
-        <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="test-explore.html">Destinations</a></li>
-          <li><a href="mailto:info@elementavoyages.com">Contact</a></li>
-        </ul>
-      </div>
-      <!-- Column 3: Newsletter & Social -->
-      <div class="footer-column" role="region" aria-label="Newsletter and Social Links">
-        <h4>Stay Connected</h4>
-        <p>Join our newsletter for travel inspiration & exclusive offers.</p>
-        <form class="footer-newsletter" aria-label="Subscribe to newsletter">
-          <label class="visually-hidden" for="newsletter-email">Email Address</label>
-          <input id="newsletter-email" type="email" placeholder="Enter your email">
-          <button type="submit">Subscribe</button>
-        </form>
-        <div class="footer-social" role="navigation" aria-label="Social Media Links">
-          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-          <a href="https://facebook.com" target="_blank">Facebook</a>
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-    <!-- Sponsors & Credits -->
-    <div class="footer-sponsors" role="region" aria-label="Sponsors">
-      <p>Sponsored by Luxury Travels & Partners</p>
-      <div class="sponsor-logos">
-          <img src="sponsors/image-one.webp" alt="Sponsor 1">
-          <img src="sponsors/image-two.webp" alt="Sponsor 2">
-          <img src="sponsors/image-three.webp" alt="Sponsor 3">
-          <img src="sponsors/image-four.webp" alt="Sponsor 4">
-          <img src="sponsors/image-five.webp" alt="Sponsor 5">
-        </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Elementa Voyagés. All Rights Reserved.</p>
-    </div>
-  </footer>
+</div>
+<!-- Column 2: Quick Links -->
+<div aria-label="Footer Quick Links" class="footer-column" role="navigation">
+<h4>Explore</h4>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about-us.html">About Us</a></li>
+<li><a href="test-explore.html">Destinations</a></li>
+<li><a href="mailto:info@elementavoyages.com">Contact</a></li>
+</ul>
+</div>
+<!-- Column 3: Newsletter & Social -->
+<div aria-label="Newsletter and Social Links" class="footer-column" role="region">
+<h4>Stay Connected</h4>
+<p>Join our newsletter for travel inspiration &amp; exclusive offers.</p>
+<form aria-label="Subscribe to newsletter" class="footer-newsletter">
+<label class="visually-hidden" for="newsletter-email">Email Address</label>
+<input id="newsletter-email" placeholder="Enter your email" type="email"/>
+<button type="submit">Subscribe</button>
+</form>
+<div aria-label="Social Media Links" class="footer-social" role="navigation">
+<a href="https://www.instagram.com/" target="_blank">Instagram</a>
+<a href="https://facebook.com" target="_blank">Facebook</a>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a>
+</div>
+</div>
+</div>
+<!-- Sponsors & Credits -->
+<div aria-label="Sponsors" class="footer-sponsors" role="region">
+<p>Sponsored by Luxury Travels &amp; Partners</p>
+<div class="sponsor-logos">
+<img alt="Sponsor 1" src="sponsors/image-one.webp"/>
+<img alt="Sponsor 2" src="sponsors/image-two.webp"/>
+<img alt="Sponsor 3" src="sponsors/image-three.webp"/>
+<img alt="Sponsor 4" src="sponsors/image-four.webp"/>
+<img alt="Sponsor 5" src="sponsors/image-five.webp"/>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 Elementa Voyagés. All Rights Reserved.</p>
+</div>
+</footer>
 <script src="biome.js"></script>
 <p>
-  <a href="https://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px"
-      src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-      alt="Valid CSS!">
-  </a>
+<a href="https://jigsaw.w3.org/css-validator/check/referer">
+<img alt="Valid CSS!" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" style="border:0;width:88px;height:31px"/>
+</a>
 </p>
 </body>
 </html>
