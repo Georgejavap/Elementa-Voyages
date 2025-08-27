@@ -6,7 +6,7 @@
 [![Performance](https://img.shields.io/badge/Lighthouse-Performance-orange)]
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)]
 
-**Live Website:** [Elementa Voyages](https://georgejavap.github.io/Elementa-V)  
+**Live Website:** [Elementa Voyages](https://georgejavap.github.io/Elementa-Voyages/)  
 **GitHub Repository:** [GitHub Link](https://github.com/GeorgeJavaP/Elementa-Voyages)
 
 ---
