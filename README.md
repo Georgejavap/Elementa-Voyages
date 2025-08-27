@@ -6,7 +6,7 @@
 [![Performance](https://img.shields.io/badge/Lighthouse-Performance-orange)]
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)]
 
-**Live Website:** [Elementa Voyages](https://georgejavap.github.io/Elementa-Voyages/)  
+**Live Website:** [Elementa Voyages](https://georgejavap.github.io/Elemenges/)  
 **GitHub Repository:** [GitHub Link](https://github.com/GeorgeJavaP/Elementa-Voyages)
 
 ---
@@ -34,7 +34,7 @@
 **Elementa Voyagés** is a modern travel inspiration website aimed at providing users with an **interactive, responsive, and accessible travel browsing experience**. The website allows users to explore destinations, view featured holidays, discover the staff team, and interact with maps to locate destinations worldwide.  
 
 **Key Goals:**
-- Deliver a **responsive, mobile-first design** across desktop, tablet, and mobile.  
+- Deliver a **responsive, Tablet design** across all devices.  
 - Implement **interactive features** using JavaScript and Google Maps API.  
 - Optimize performance via **image compression, CSS minification, and deferred scripts**.  
 - Maintain **accessibility standards** (ARIA roles, semantic HTML, and focus states).  
@@ -53,7 +53,7 @@
 
 ---
 
-## Wireframes UX Planning
+## wireframe-ux-planning
 
 Wireframes were created at the **planning stage** to structure the website’s layout, content hierarchy, and user flow before development. These guided both **desktop and mobile implementations**, ensuring consistency, accessibility, and responsive design.
 
@@ -64,61 +64,42 @@ Wireframes were created at the **planning stage** to structure the website’s l
 ### 🖥️ Desktop Wireframes (Before / After)
 
 **Before Redesign (10 slots):**
-1. ![Desktop Before 1](screenshots/desktop-before-1.jpg)
-2. ![Desktop Before 2](screenshots/desktop-before-2.jpg)
-3. ![Desktop Before 3](screenshots/desktop-before-3.jpg)
-4. ![Desktop Before 4](screenshots/desktop-before-4.jpg)
-5. ![Desktop Before 5](screenshots/desktop-before-5.jpg)
-6. ![Desktop Before 6](screenshots/desktop-before-6.jpg)
-7. ![Desktop Before 7](screenshots/desktop-before-7.jpg)
-8. ![Desktop Before 8](screenshots/desktop-before-8.jpg)
-9. ![Desktop Before 9](screenshots/desktop-before-9.jpg)
-10. ![Desktop Before 10](screenshots/desktop-before-10.jpg)
+1. ![Desktop Before 1](screenshots/image-one.webp)
+2. ![Desktop Before 2](screenshots/image-two.webp)
+3. ![Desktop Before 3](screenshots/image-three.webp)
+4. ![Desktop Before 4](screenshots/image-four.webp)
+5. ![Desktop Before 5](screenshots/image-five.webp)
+6. ![Desktop Before 6](screenshots/image-six.webp)
 
 **After Redesign (10 slots):**
-1. ![Desktop After 1](screenshots/desktop-after-1.jpg)
-2. ![Desktop After 2](screenshots/desktop-after-2.jpg)
-3. ![Desktop After 3](screenshots/desktop-after-3.jpg)
-4. ![Desktop After 4](screenshots/desktop-after-4.jpg)
-5. ![Desktop After 5](screenshots/desktop-after-5.jpg)
-6. ![Desktop After 6](screenshots/desktop-after-6.jpg)
-7. ![Desktop After 7](screenshots/desktop-after-7.jpg)
-8. ![Desktop After 8](screenshots/desktop-after-8.jpg)
-9. ![Desktop After 9](screenshots/desktop-after-9.jpg)
-10. ![Desktop After 10](screenshots/desktop-after-10.jpg)
-
+1. ![Desktop After 1](wireframe/image-one.png)
+2. ![Desktop After 2](wireframe/image-two.png)
+3. ![Desktop After 3](wireframe/image-three.png)
+4. ![Desktop After 4](wireframe/image-four.png)
+5. ![Desktop After 5](wireframe/image-five.png)
 ---
 
 ### 📐 Tablet Wireframes (768px) (Before / After)
 
 **Before Redesign (9 slots):**
-1. ![Tablet Before 1](screenshots/tablet-before-1.jpg)
-2. ![Tablet Before 2](screenshots/tablet-before-2.jpg)
-3. ![Tablet Before 3](screenshots/tablet-before-3.jpg)
-4. ![Tablet Before 4](screenshots/tablet-before-4.jpg)
-5. ![Tablet Before 5](screenshots/tablet-before-5.jpg)
-6. ![Tablet Before 6](screenshots/tablet-before-6.jpg)
-7. ![Tablet Before 7](screenshots/tablet-before-7.jpg)
-8. ![Tablet Before 8](screenshots/tablet-before-8.jpg)
-9. ![Tablet Before 9](screenshots/tablet-before-9.jpg)
+1. ![Tablet Before 1](screenshots/image-pre-one.webp)
+2. ![Tablet Before 2](screenshots/image-pre-two.webp)
+3. ![Tablet Before 3](screenshots/image-pre-three.webp)
 
 **After Redesign (9 slots):**
-1. ![Tablet After 1](screenshots/tablet-after-1.jpg)
-2. ![Tablet After 2](screenshots/tablet-after-2.jpg)
-3. ![Tablet After 3](screenshots/tablet-after-3.jpg)
-4. ![Tablet After 4](screenshots/tablet-after-4.jpg)
-5. ![Tablet After 5](screenshots/tablet-after-5.jpg)
-6. ![Tablet After 6](screenshots/tablet-after-6.jpg)
-7. ![Tablet After 7](screenshots/tablet-after-7.jpg)
-8. ![Tablet After 8](screenshots/tablet-after-8.jpg)
-9. ![Tablet After 9](screenshots/tablet-after-9.jpg)
+1. ![Tablet After 1](wireframe/image-768-one.png)
+2. ![Tablet After 2](wireframe/image-768-two.png)
+3. ![Tablet After 3](wireframe/image-768-three.png)
+4. ![Tablet After 4](wireframe/image-768-four.png)
+5. ![Tablet After 5](wireframe/image-768-five.png)
+
 
 
 ### 🔹 Key Takeaways
 
 - Wireframes **provided a visual blueprint** for layout, spacing, and interactions.  
 - Enabled faster development with fewer layout errors.  
-- Helped implement **mobile-first responsive design** from the beginning.  
+- Helped implement **responsive design** from the beginning.  
 - Ensured **accessibility and user-friendliness** were considered early in the project.
 
 
@@ -129,45 +110,11 @@ Wireframes were created at the **planning stage** to structure the website’s l
 Elementa-Voyages/  
 
 
-index.html
-about-us.html
-desert.html
-frost.html
-jungle.html
-maldives.html
-paris.html
-santorini.html
-shanghai.html
-tides.html
-css/
-└── styles.css
-└── biome-style.css
-└── about.css
-└── city-map.css
-js/
-└── script.js
-└── biome.js
-└── city-map.js
-img/
-├── front-page-image/
-├── feature-holidays/
-├── staff/
-├── biome-background/
-├── desert-biome/
-├── frost-biome/
-├── jungle-biome/
-├── tides-biome/
-├── maldives/
-├── paris/
-├── patagonia/
-├── santorini/
-├── shanghai/
-├── sponsors/
-├── explore-image/
-screenshots/
-test/
-LICENSE
-README.md
+## 📂 File Structure – Elementa-Voyages/
+
+![!file structure](file-structure-one.png)
+- 
+![!file structure](file-structure-two.png)
 
 
 *Folders contain high-resolution images, screenshots for wireframes, and testing evidence.*
@@ -186,7 +133,7 @@ README.md
 - **Performance optimized** (lightweight images, clean code)  
 - **Scalable navigation system** for adding destinations  
 - **Custom hero sections** with large background imagery  
-- Cross-device tested on desktop, tablet, and mobile  
+- Cross-device tested on desktop, tablet as required 
 
 ---
 
@@ -202,34 +149,66 @@ README.md
 
 ## Screenshots  
 
-### Homepage  
-![Homepage Screenshot](screenshots/homepage-one.png)  
-![Homepage Screenshot](screenshots/homepage-two.png)  
-![Homepage Screenshot](screenshots/homepage-three.png)  
-![Homepage Screenshot](screenshots/homepage-four.png)  
-![Homepage Screenshot](screenshots/homepage-five.png)  
+### Homepage – 
+#### Desktop
+![Homepage After](screenshots/homepage-one.png)  
+![Homepage After](screenshots/homepage-two.png)  
+![Homepage After](screenshots/homepage-three.png)  
+![Homepage After](screenshots/homepage-four.png)  
+![Homepage After](screenshots/homepage-five.png)  
 
-### Destination Pages  
-![Destination Screenshot](screenshots/biome-one.png)  
-![Destination Screenshot](screenshots/biome-two.png)  
-![Destination Screenshot](screenshots/biome-three.png)  
-![Destination Screenshot](screenshots/biome-four.png)  
+### Homepage – Tablet (768px) 
+![Tablet After](screenshots/image-one-tablet.png)  
+![Tablet After](screenshots/tablet-two.png)  
+![Tablet After](screenshots/tablet-three.png) 
+![Tablet After](screenshots/tablet-four.png)  
+![Tablet After](screenshots/tablet-five.png) 
+![Tablet After](screenshots/tablet-six.png) 
+![Tablet After](screenshots/tablet-seven.png) 
 
-### About Page  
-![About Screenshot](screenshots/about-one.png)  
+---
 
-### Biome Pages  
-![Biome Screenshot](screenshots/frost.png)  
-![Biome Screenshot](screenshots/jungle.png)  
-![Biome Screenshot](screenshots/desert.png)  
-![Biome Screenshot](screenshots/tides.png)  
+### Destination Pages -
+#### Desktop
+![Destination Screenshot](screenshots/biome-one.png) 
 
-### Maps Pages  
-![Map Screenshot](screenshots/patagonia.png)  
-![Map Screenshot](screenshots/maldives.png)  
-![Map Screenshot](screenshots/santorini.png)  
-![Map Screenshot](screenshots/paris.png)  
-![Map Screenshot](screenshots/shanghai.png)  
+
+#### Tablet (768px) 
+![Destination Screenshot](screenshots/tablet-eight.png) 
+
+
+### About Page – 
+#### Desktop 
+![About Before](screenshots/about-one.png)  
+
+#### Tablet (768px) 
+![About After](screenshots/tablet-nine.png) 
+![About After](screenshots/tablet-ten.png) 
+
+
+---
+
+### Biome Pages – 
+#### Desktop 
+![Biome Before](screenshots/jungle.png)  
+
+
+
+#### Tablet (768px) 
+![Biome After](screenshots/tablet-eleven.png) 
+
+
+---
+
+### Maps Pages -
+#### Desktop
+![Map Screenshot](screenshots/patagonia.png) 
+
+
+#### Tablet (768px) 
+![Map Screenshot](screenshots/tablet-twelve.png) 
+
+
 
 ---
 
@@ -291,7 +270,7 @@ Lighthouse provides quantitative metrics for **performance, accessibility, best 
 
 ### 🔹 Key Takeaways  
 
-- Page loads significantly faster on **desktop and mobile**  
+- Page loads significantly faster on **desktop than mobile**  
 - Smooth scrolling with minimal layout shifts  
 - Interactivity is more responsive due to reduced blocking time  
 - Accessibility unaffected; semantic HTML preserved  
@@ -320,21 +299,6 @@ Testing ensures that **Elementa Voyagés** performs well across devices, browser
 - Purpose: Validate interactive features like Google Maps, hover effects, and form validation.  
 - Result: ✅ Pass — no console errors detected.
 
-**4. Performance Testing**  
-- Tool: Lighthouse (Chrome DevTools)  
-- Metrics Tested: FCP, LCP, CLS, TBT, Speed Index  
-- Result (Desktop):  
-  - FCP: 0.7s  
-  - LCP: 4.1s  
-  - CLS: 0.005  
-  - TBT: 0ms  
-- Result (Mobile):  
-  - FCP: 1.2s  
-  - LCP: 4.5s  
-  - CLS: 0.008  
-  - TBT: 5ms  
-- Optimizations Applied: Deferred scripts, minified CSS, WebP images, lazy loading.
-
 ---
 
 ### 🔹 Manual Testing
@@ -344,8 +308,8 @@ Testing ensures that **Elementa Voyagés** performs well across devices, browser
 - Purpose: Ensure layout, fonts, and interactive features render correctly.  
 - Result: ✅ Consistent performance and visuals across browsers.
 
-**2. Responsive & Mobile Testing**  
-- Devices Tested: Desktop, Tablet (768px), Mobile (375px)  
+**2. Responsive & Testing**  
+- Devices Tested: Desktop, Tablet (768px)  
 - Purpose: Verify that the layout adapts without breaking.  
 - Result: ✅ Layout scales correctly; nav menu works with hamburger icon.
 
@@ -368,10 +332,6 @@ Testing ensures that **Elementa Voyagés** performs well across devices, browser
 ---
 
 ### 🔹 Additional Tests to Perform
-
-**1. Accessibility Audit**  
-- Tool: [Lighthouse Accessibility Audit](https://developers.google.com/web/tools/lighthouse)  
-- Check: Keyboard navigation, color contrast, ARIA roles, focus order.  
 
 **2. Link & Resource Validation**  
 - Tool: [W3C Link Checker](https://validator.w3.org/checklink)  
@@ -403,9 +363,21 @@ Testing ensures that **Elementa Voyagés** performs well across devices, browser
 **JavaScript Testing:**  
 ![JS Testing](test/script-js.png)  
 
-**Lighthouse Reports (Desktop & Mobile):**  
-![Lighthouse Desktop](screenshots/lighthouse-desktop.png)  
-![Lighthouse Mobile](screenshots/lighthouse-mobile.png)  
+**Lighthouse Reports (Desktop & Tablet)**
+#### Before
+![Lighthouse Desktop](screenshots/lighthouse-before.png)
+
+---
+
+#### After 
+![Lighthouse Desktop](screenshots/lighthouse-after.png)
+
+
+### Tablet
+
+![Lighthouse Tablet](screenshots/small-screen-test.png)
+![Lighthouse Desktop](screenshots/small-screen-test-one.png)
+ 
 
 ---
 
