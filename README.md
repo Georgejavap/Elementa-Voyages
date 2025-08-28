@@ -73,7 +73,7 @@ Wireframes were created at the **planning stage** to structure the website’s l
 
 **After Redesign (10 slots):**
 1. ![Desktop After 1](wireframe/image-one.png)
-2. ![Desktop After 2](wireframe/image-two.png)
+2. ![Desktop After 2](wireframe/imge-two.png)
 3. ![Desktop After 3](wireframe/image-three.png)
 4. ![Desktop After 4](wireframe/image-four.png)
 5. ![Desktop After 5](wireframe/image-five.png)
