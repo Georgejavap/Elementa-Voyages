@@ -6,7 +6,8 @@
 [![Performance](https://img.shields.io/badge/Lighthouse-Performance-orange)]
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)]
 
-**Live Website:** [Elementa Voyages](https://georgejavap.github.io/Elementa-Voyages/)  
+**Live Website:** [Elementa Voyages](https://georgejavap.github.io/Elementa-Voyages/)  *This works better if you drag into another browser as githubs internal system can sometimes mess with rednering speed etc of the website 
+Thanks!!
 **GitHub Repository:** [GitHub Link](https://github.com/GeorgeJavaP/Elementa-Voyages)
 
 ---
