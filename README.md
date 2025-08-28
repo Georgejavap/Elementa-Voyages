@@ -353,15 +353,32 @@ Testing ensures that **Elementa Voyagés** performs well across devices, browser
 
 ### 🔹 Testing Evidence (Screenshots)
 
+#### Before
+**HTML Validation:**  
+![HTML Validation](test/html-before.png)  
+![HTML Validation](test/html-before-one.png)  
+
+**CSS Validation:**  
+![CSS Validation](test/css-before.png)  
+![CSS Validation](test/css-before-one.png)  
+
+**JavaScript Testing:**  
+![JS Testing](test/java-before.png)  
+
+#### After
 **HTML Validation:**  
 ![HTML Validation](test/about-us.png)  
 ![HTML Validation](test/argentina.png)  
 
 **CSS Validation:**  
 ![CSS Validation](test/styles-css.png)  
+![CSS Validation](test/test-css.png)  
 
 **JavaScript Testing:**  
 ![JS Testing](test/script-js.png)  
+![JS Testing](test/java-after.png)  
+
+- These are just genralised pages I did testing for all HTML, CSS and JavaScript, this is just the evidence for the testing proof 
 
 **Lighthouse Reports (Desktop & Tablet)**
 #### Before

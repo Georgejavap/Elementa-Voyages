@@ -1,102 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta name="description" content="Test and explore Elementa Voyages' features, layouts, and travel inspiration ideas in this experimental page.">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Biome Background Slideshow</title>
-<link href="test-styles.css" rel="stylesheet"/>
+  <meta name="description"
+    content="Test and explore Elementa Voyages' features, layouts, and travel inspiration ideas in this experimental page.">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Biome Background Slideshow</title>
+  <link href="test-styles.css" rel="stylesheet">
 </head>
+
 <body>
-<!-- Background Slides -->
-<div class="bg-slides">
-<div class="bg-slide active" style="background-image: url('explore-image/snow.webp');"></div>
-<div class="bg-slide" style="background-image: url('explore-image/jungle.webp');"></div>
-<div class="bg-slide" style="background-image: url('explore-image/fire.webp');"></div>
-<div class="bg-slide" style="background-image: url('explore-image/tides.webp');"></div>
-</div>
-<!-- Logo and Navigation on top of slideshow -->
-<header aria-label="Site header with logo and navigation" class="top-header">
-<div class="logo-container">
-<a aria-label="Go to home page" href="index.html">
-<img alt="Elementa Voyagés Logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
-</a>
-</div>
-<nav aria-label="Main site navigation" class="nav-links">
-<a aria-label="Go to Home page" href="index.html">Home</a>
-<a aria-label="Go to Explore page" href="">Explore</a>
-<a aria-label="Send email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
-</nav>
-</header>
-<!-- Slide Text Content -->
-<div aria-label="Slideshow text content" class="slide-text-container" id="slideText" role="region">
-<h1 id="slideTitle">Frost Biome</h1>
-<p id="slideDescription">Explore the icy landscapes and crisp adventures of the Frost biome.</p>
-<a aria-labelledby="slideTitle slideDescription" class="slide-btn" href="frost.html">Explore Frost</a>
-</div>
-<script>
-  const slides = document.querySelectorAll('.bg-slide');
-  const slideText = document.getElementById('slideText');
+  <!-- Background Slides -->
+  <div class="bg-slides">
+    <div class="bg-slide active" style="background-image: url('explore-image/snow.webp');"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/jungle.webp');"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/fire.webp');"></div>
+    <div class="bg-slide" style="background-image: url('explore-image/tides.webp');"></div>
+  </div>
+  <!-- Logo and Navigation on top of slideshow -->
+  <header aria-label="Site header with logo and navigation" class="top-header">
+    <div class="logo-container">
+      <a aria-label="Go to home page" href="index.html">
+        <img alt="Elementa Voyagés Logo" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp">
+      </a>
+    </div>
+    <nav aria-label="Main site navigation" class="nav-links">
+      <a aria-label="Go to Home page" href="index.html">Home</a>
+      <a aria-label="Go to Explore page" href="">Explore</a>
+      <a aria-label="Send email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
+    </nav>
+  </header>
+  <!-- Slide Text Content -->
+  <div aria-label="Slideshow text content" class="slide-text-container" id="slideText" role="region">
+    <h1 id="slideTitle">Frost Biome</h1>
+    <p id="slideDescription">Explore the icy landscapes and crisp adventures of the Frost biome.</p>
+    <a aria-labelledby="slideTitle slideDescription" class="slide-btn" href="frost.html">Explore Frost</a>
+  </div>
+  <script>
+    const slides = document.querySelectorAll('.bg-slide');
+    const slideText = document.getElementById('slideText');
 
-  // Data for each slide's text and link
-  const slideData = [
-    {
-      title: 'Frost Biome',
-      description: 'Explore the icy landscapes and crisp adventures of the Frost biome.',
-      link: 'frost.html',
-      btnText: 'Explore The Frost',
-      ariaLabel: 'Frost biome background'
-    },
-    {
-      title: 'Jungle Biome',
-      description: 'Dense, wild, and full of life. The jungle awaits your discovery.',
-      link: 'jungle.html',
-      btnText: 'Explore The Jungle',
-      ariaLabel: 'Jungle biome background'
-    },
-    {
-      title: 'Desert Biome',
-      description: 'Golden dunes and ancient secrets lie within the desert biome.',
-      link: 'desert.html',
-      btnText: 'Explore The Desert',
-      ariaLabel: 'Desert biome background'
-    },
-    {
-      title: 'Tides Biome',
-      description: 'Drift into serene shores and timeless journeys where waves embrace the islands.',
-      link: 'tides.html',
-      btnText: 'Explore The Waves',
-      ariaLabel: 'Tides biome background'
-    },
-  ];
+    // Data for each slide's text and link
+    const slideData = [
+      {
+        title: 'Frost Biome',
+        description: 'Explore the icy landscapes and crisp adventures of the Frost biome.',
+        link: 'frost.html',
+        btnText: 'Explore The Frost',
+        ariaLabel: 'Frost biome background'
+      },
+      {
+        title: 'Jungle Biome',
+        description: 'Dense, wild, and full of life. The jungle awaits your discovery.',
+        link: 'jungle.html',
+        btnText: 'Explore The Jungle',
+        ariaLabel: 'Jungle biome background'
+      },
+      {
+        title: 'Desert Biome',
+        description: 'Golden dunes and ancient secrets lie within the desert biome.',
+        link: 'desert.html',
+        btnText: 'Explore The Desert',
+        ariaLabel: 'Desert biome background'
+      },
+      {
+        title: 'Tides Biome',
+        description: 'Drift into serene shores and timeless journeys where waves embrace the islands.',
+        link: 'tides.html',
+        btnText: 'Explore The Waves',
+        ariaLabel: 'Tides biome background'
+      },
+    ];
 
-  let current = 0;
-  const total = slides.length;
-  const intervalTime = 4000; // 4 seconds
+    let current = 0;
+    const total = slides.length;
+    const intervalTime = 4000; // 4 seconds
 
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.toggle('active', i === index);
-      slide.setAttribute('aria-hidden', i === index ? 'false' : 'true'); // hide inactive slides from screen readers
-      slide.setAttribute('aria-label', slideData[i].ariaLabel); // update aria-label just in case
-    });
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        slide.setAttribute('aria-hidden', i === index ? 'false' : 'true'); // hide inactive slides from screen readers
+        slide.setAttribute('aria-label', slideData[i].ariaLabel); // update aria-label just in case
+      });
 
-    // Update text content
-    slideText.querySelector('h1').textContent = slideData[index].title;
-    slideText.querySelector('p').textContent = slideData[index].description;
-    const btn = slideText.querySelector('a');
-    btn.href = slideData[index].link;
-    btn.textContent = slideData[index].btnText;
-    btn.setAttribute('aria-label', `${slideData[index].btnText}, ${slideData[index].description}`); // better description for screen readers
-  }
+      // Update text content
+      slideText.querySelector('h1').textContent = slideData[index].title;
+      slideText.querySelector('p').textContent = slideData[index].description;
+      const btn = slideText.querySelector('a');
+      btn.href = slideData[index].link;
+      btn.textContent = slideData[index].btnText;
+      btn.setAttribute('aria-label', `${slideData[index].btnText}, ${slideData[index].description}`); // better description for screen readers
+    }
 
-  // Initial display
-  showSlide(current);
-
-  setInterval(() => {
-    current = (current + 1) % total;
+    // Initial display
     showSlide(current);
-  }, intervalTime);
-</script>
+
+    setInterval(() => {
+      current = (current + 1) % total;
+      showSlide(current);
+    }, intervalTime);
+  </script>
 </body>
+
 </html>

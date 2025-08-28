@@ -33,6 +33,7 @@
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 .logo-container a img:hover {
   transform: scale(1.05);
 }
@@ -60,6 +61,7 @@
   background-color: #000000;
   color: #ffffff;
 }
+
 /* Main Container: sets padding, max width, centering, and stacking context */
 .about-container {
   padding: 2rem;
@@ -118,8 +120,9 @@
 .story-image img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 /* Values Section: overall centering and heading styling */
 .values {
   text-align: center;
@@ -144,7 +147,7 @@
   border: 2px solid var(--gold);
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
@@ -212,6 +215,7 @@
   .story {
     flex-direction: column;
   }
+
   .values-grid {
     grid-template-columns: 1fr;
   }
@@ -226,7 +230,8 @@
   font-family: 'playfair display', serif;
   font-size: 14px;
   position: relative;
-  overflow: hidden; /* ensures decorative shapes stay inside footer */
+  overflow: hidden;
+  /* ensures decorative shapes stay inside footer */
 }
 
 /* Abstract shapes: decorative elements inside footer */
@@ -235,7 +240,8 @@
   border-radius: 50%;
   opacity: 0.07;
   z-index: 0;
-  pointer-events: none; /* shapes don't interfere with interaction */
+  pointer-events: none;
+  /* shapes don't interfere with interaction */
 }
 
 /* Layering: ensures all main footer content sits above shapes */
@@ -255,11 +261,13 @@
   margin: 0 auto 40px;
   text-align: left;
 }
+
 /* Logo & Tagline: styles for footer branding */
 .footer-logo img {
   max-width: 160px;
   margin-bottom: 15px;
 }
+
 .footer-tagline {
   font-style: italic;
   color: #ccc;
@@ -274,18 +282,22 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 .footer-links {
   list-style: none;
   padding: 0;
 }
+
 .footer-links li {
   margin-bottom: 8px;
 }
+
 .footer-links a {
   color: #eee;
   text-decoration: none;
   transition: color 0.3s;
 }
+
 .footer-links a:hover {
   color: var(--gold);
 }
@@ -296,6 +308,7 @@
   gap: 10px;
   margin: 15px 0;
 }
+
 .footer-newsletter input {
   padding: 10px 15px;
   border-radius: 25px;
@@ -303,6 +316,7 @@
   flex: 1;
   outline: none;
 }
+
 .footer-newsletter button {
   background: var(--gold);
   border: none;
@@ -313,6 +327,7 @@
   cursor: pointer;
   transition: background 0.3s;
 }
+
 .footer-newsletter button:hover {
   background: var(--gold);
 }
@@ -321,6 +336,7 @@
 .footer-social {
   margin-top: 10px;
 }
+
 .footer-social a {
   color: var(--gold);
   margin-right: 15px;
@@ -328,6 +344,7 @@
   font-weight: bold;
   transition: opacity 0.3s;
 }
+
 .footer-social a:hover {
   opacity: 0.7;
 }
@@ -337,16 +354,19 @@
   text-align: center;
   margin-bottom: 20px;
 }
+
 .footer-sponsors p {
   font-weight: bold;
   color: var(--gold);
   margin-bottom: 10px;
 }
+
 .sponsor-logos {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 .sponsor-logos img {
   max-height: 50px;
   transition: filter 0.3s;

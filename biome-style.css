@@ -1,10 +1,11 @@
 /* Import fonts: Playfair Display (for headings) and Open Sans (for body text) */
 
 * {
-  margin: 0; 
-  padding: 0; 
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 /* Reset all elements: remove default margin/padding and use border-box sizing */
 
 :root {
@@ -12,15 +13,18 @@
   --black: #000;
   --white: #fff;
 }
+
 /* Define reusable theme color variables (gold, black, white) */
 
-body, html {
+body,
+html {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   background: #000000;
   color: #f0f0f0;
   overflow-x: hidden;
 }
+
 /* Set global styles: full height, dark background, light text, Open Sans font, prevent horizontal scroll */
 
 /* Container for filter controls + grid layout */
@@ -62,6 +66,7 @@ body, html {
   background-color: #f0f0f0;
   color: #000000;
 }
+
 /* Grid layout for all destination cards */
 .destination-grid {
   display: grid;
@@ -76,6 +81,7 @@ body, html {
 .destination-grid::-webkit-scrollbar {
   width: 8px;
 }
+
 .destination-grid::-webkit-scrollbar-thumb {
   background: #444;
   border-radius: 4px;
@@ -124,6 +130,7 @@ body, html {
     max-height: none;
     overflow: visible;
   }
+
   .filter-bar {
     justify-content: space-around;
   }
@@ -149,8 +156,9 @@ body, html {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 120px; /* adjust for stronger/weaker fade */
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #000 100%);
+  height: 120px;
+  /* adjust for stronger/weaker fade */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000 100%);
   pointer-events: none;
 }
 
@@ -185,8 +193,10 @@ body, html {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 .logo-container a img:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05);
+  /* Slight zoom on hover */
 }
 
 /* Navigation Styling: horizontal menu with spacing and hover effect */
@@ -210,7 +220,8 @@ body, html {
 }
 
 .nav-links a:hover {
-  background-color: #ffffff; /* Highlight on hover */
+  background-color: #ffffff;
+  /* Highlight on hover */
   color: #000000;
 }
 
@@ -224,7 +235,8 @@ body, html {
 
 /* Frost Biome Section: background container with luxury feel */
 .frost-bg {
-  background-color: #000; /* deep black for luxury feel */
+  background-color: #000;
+  /* deep black for luxury feel */
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -244,7 +256,8 @@ body, html {
 .frost-bg .hero-text p {
   font-size: 1.3rem;
   color: #ccc;
-  max-width: 600px; /* constrain width for readability */
+  max-width: 600px;
+  /* constrain width for readability */
 }
 
 /* Filter Bar Section: futuristic sharp container with subtle glow */
@@ -253,17 +266,23 @@ body, html {
   flex-wrap: wrap;
   gap: 1rem;
   margin: 2rem 0;
-  padding: 1rem; /* inner spacing */
-  border: 2px solid #605c5c; /* sharp white border */
-  border-radius: 4px; /* minimal rounding for sharp look */
-  background: rgba(0,0,0,0.2); /* subtle black overlay for depth */
-  box-shadow: 0 0 15px rgba(240,240,240,0.1); /* subtle glow for luxury feel */
+  padding: 1rem;
+  /* inner spacing */
+  border: 2px solid #605c5c;
+  /* sharp white border */
+  border-radius: 4px;
+  /* minimal rounding for sharp look */
+  background: rgba(0, 0, 0, 0.2);
+  /* subtle black overlay for depth */
+  box-shadow: 0 0 15px rgba(240, 240, 240, 0.1);
+  /* subtle glow for luxury feel */
   justify-content: center;
   align-items: center;
 }
 
 /* Filter Controls: select dropdowns and buttons styling */
-.filter-bar select, .filter-bar button {
+.filter-bar select,
+.filter-bar button {
   background: #111;
   color: #fff;
   border: 1px solid #fff;
@@ -275,7 +294,8 @@ body, html {
 }
 
 /* Hover effects: invert colors for interactivity */
-.filter-bar select:hover, .filter-bar button:hover {
+.filter-bar select:hover,
+.filter-bar button:hover {
   background: #fff;
   color: #000;
   border-color: #fcfbfb;
@@ -284,7 +304,8 @@ body, html {
 /* Destination Grid Section: sets up 2-column layout for destinations */
 .destination-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 per row */
   gap: 2rem;
   position: relative;
   z-index: 2;
@@ -322,7 +343,8 @@ body, html {
 
 /* Hover effect for luxury feel */
 .destination-card:hover {
-  transform: scale(1.02); /* subtle pop effect */
+  transform: scale(1.02);
+  /* subtle pop effect */
 }
 
 /* Decorative line under card titles */
@@ -331,7 +353,8 @@ body, html {
   display: block;
   width: 40px;
   height: 2px;
-  background-color: #00aaff; /* subtle color accent */
+  background-color: #00aaff;
+  /* subtle color accent */
   margin: 0.5rem auto 0 auto;
 }
 
@@ -357,8 +380,9 @@ body, html {
   left: 0;
   width: 2px;
   height: 100%;
-  background: #605c5c; /* subtle accent color */
-  opacity:1;
+  background: #605c5c;
+  /* subtle accent color */
+  opacity: 1;
   pointer-events: none;
 }
 
@@ -370,7 +394,8 @@ body, html {
   font-family: 'playfair display', serif;
   font-size: 14px;
   position: relative;
-  overflow: hidden; /* ensures decorative shapes stay inside footer */
+  overflow: hidden;
+  /* ensures decorative shapes stay inside footer */
 }
 
 /* Abstract shapes: decorative elements inside footer */
@@ -379,7 +404,8 @@ body, html {
   border-radius: 50%;
   opacity: 0.07;
   z-index: 0;
-  pointer-events: none; /* shapes don't interfere with interaction */
+  pointer-events: none;
+  /* shapes don't interfere with interaction */
 }
 
 /* Layering: ensures all main footer content sits above shapes */
@@ -399,11 +425,13 @@ body, html {
   margin: 0 auto 40px;
   text-align: left;
 }
+
 /* Logo & Tagline: styles for footer branding */
 .footer-logo img {
   max-width: 160px;
   margin-bottom: 15px;
 }
+
 .footer-tagline {
   font-style: italic;
   color: #ccc;
@@ -418,18 +446,22 @@ body, html {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 .footer-links {
   list-style: none;
   padding: 0;
 }
+
 .footer-links li {
   margin-bottom: 8px;
 }
+
 .footer-links a {
   color: #eee;
   text-decoration: none;
   transition: color 0.3s;
 }
+
 .footer-links a:hover {
   color: var(--gold);
 }
@@ -440,6 +472,7 @@ body, html {
   gap: 10px;
   margin: 15px 0;
 }
+
 .footer-newsletter input {
   padding: 10px 15px;
   border-radius: 25px;
@@ -447,6 +480,7 @@ body, html {
   flex: 1;
   outline: none;
 }
+
 .footer-newsletter button {
   background: var(--gold);
   border: none;
@@ -457,6 +491,7 @@ body, html {
   cursor: pointer;
   transition: background 0.3s;
 }
+
 .footer-newsletter button:hover {
   background: var(--gold);
 }
@@ -465,6 +500,7 @@ body, html {
 .footer-social {
   margin-top: 10px;
 }
+
 .footer-social a {
   color: var(--gold);
   margin-right: 15px;
@@ -472,6 +508,7 @@ body, html {
   font-weight: bold;
   transition: opacity 0.3s;
 }
+
 .footer-social a:hover {
   opacity: 0.7;
 }
@@ -481,16 +518,19 @@ body, html {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .footer-sponsors p {
   font-weight: bold;
   color: var(--gold);
   margin-bottom: 10px;
 }
+
 .sponsor-logos {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 .sponsor-logos img {
   max-height: 50px;
   transition: filter 0.3s;

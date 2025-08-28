@@ -16,7 +16,8 @@
 }
 
 /* Base HTML/body styles */
-html, body {
+html,
+body {
   height: 100%;
   font-family: 'playfair display', serif;
   color: #ffffff;
@@ -56,15 +57,18 @@ body {
 
 /* Top Header: fixed navigation bar overlaying slides */
 .top-header {
-  position: fixed;          /* overlay instead of pushing down content */
+  position: fixed;
+  /* overlay instead of pushing down content */
   top: 3%;
   left: 0;
   width: 100%;
-  height: 70px;             /* fixed height */
+  height: 70px;
+  /* fixed height */
   display: flex;
   align-items: center;
   padding: 0 2rem;
-  z-index: 1000;            /* stays above all other content */
+  z-index: 1000;
+  /* stays above all other content */
 }
 
 /* Logo container: horizontal alignment */
@@ -80,6 +84,7 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 .logo-container a img:hover {
   transform: scale(1.05);
 }
@@ -216,9 +221,11 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%; /* Position below button */
+  top: 100%;
+  /* Position below button */
   left: 0;
-  width: 100%; /* Match button width */
+  width: 100%;
+  /* Match button width */
   border: 2px solid white;
   overflow: hidden;
   z-index: 999;
@@ -257,7 +264,8 @@ body {
 .shape {
   position: absolute;
   z-index: 1;
-  pointer-events: none; /* Shapes are decorative only */
+  pointer-events: none;
+  /* Shapes are decorative only */
 }
 
 /* Circular Shape */
@@ -289,7 +297,8 @@ details {
   border-radius: 8px;
   margin: 1rem 0;
   cursor: pointer;
-  direction: ltr; /* ensure left-to-right text flow */
+  direction: ltr;
+  /* ensure left-to-right text flow */
 }
 
 /* Responsive Adjustments for screens ≤ 768px */
@@ -302,7 +311,8 @@ details {
   }
 
   .logo-container a img {
-    max-width: 180px; /* smaller logo on mobile */
+    max-width: 180px;
+    /* smaller logo on mobile */
   }
 
   .nav-links {
@@ -367,16 +377,20 @@ details {
   max-width: 1900px;
   margin: 0 auto;
   align-items: flex-start;
-  position: relative; /* for abstract shapes positioning */
+  position: relative;
+  /* for abstract shapes positioning */
   overflow: hidden;
 }
 
-.how-left, .how-right {
-  flex: 1; /* split section equally */
+.how-left,
+.how-right {
+  flex: 1;
+  /* split section equally */
 }
 
 /* Titles for left and right sections */
-.how-left h2, .how-right h2 {
+.how-left h2,
+.how-right h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
   margin-bottom: 2rem;
@@ -401,16 +415,20 @@ details {
   padding: 2rem;
   text-align: center;
   color: var(--white);
-  opacity: 0;                  /* initial hidden state for animation */
-  transform: translateY(40px); /* initial slide-up position */
+  opacity: 0;
+  /* initial hidden state for animation */
+  transform: translateY(40px);
+  /* initial slide-up position */
   transition: all 0.8s ease-out;
-  box-shadow: 0 10px 25px rgba(240, 167, 19, 0.5); /* subtle glow */
+  box-shadow: 0 10px 25px rgba(240, 167, 19, 0.5);
+  /* subtle glow */
 }
 
 /* Mind Box visible state */
 .mind-box.visible {
   opacity: 1;
-  transform: translateY(0); /* slide into view */
+  transform: translateY(0);
+  /* slide into view */
 }
 
 /* Mind Box text styling */
@@ -418,6 +436,7 @@ details {
   color: var(--gold);
   margin-bottom: 0.5rem;
 }
+
 .mind-box p {
   color: #fff;
   font-size: 0.95rem;
@@ -428,19 +447,32 @@ details {
 .arrow {
   font-size: 2rem;
   color: var(--gold);
-  opacity: 0;                  /* hidden initially for animation */
+  opacity: 0;
+  /* hidden initially for animation */
   transition: all 0.8s ease-out;
 }
 
 /* Arrow visible state */
-.arrow.visible { 
-  opacity: 1; 
+.arrow.visible {
+  opacity: 1;
 }
 
 /* Specific arrow positions */
-.arrow1 { align-self: center; margin: 0 1rem; }
-.arrow2 { flex-basis: 100%; text-align: center; margin: 1rem 0; }
-.arrow3 { align-self: center; margin: 0 1rem; }
+.arrow1 {
+  align-self: center;
+  margin: 0 1rem;
+}
+
+.arrow2 {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.arrow3 {
+  align-self: center;
+  margin: 0 1rem;
+}
 
 /* Agent Cards container */
 .agent {
@@ -448,8 +480,10 @@ details {
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 2rem;
-  opacity: 0;                  /* initial hidden for animation */
-  transform: translateY(30px); /* slide-up effect */
+  opacity: 0;
+  /* initial hidden for animation */
+  transform: translateY(30px);
+  /* slide-up effect */
   transition: all 0.8s ease-out;
 }
 
@@ -469,21 +503,21 @@ details {
 }
 
 /* Agent Info Styling */
-.agent-info { 
-  position: relative; 
+.agent-info {
+  position: relative;
 }
 
-.agent-info h3 { 
-  font-family: 'Playfair Display', serif; 
-  font-size: 1.4rem; 
-  margin-bottom: 0.3rem; 
-  color: var(--gold); 
+.agent-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  color: var(--gold);
 }
 
-.agent-info p { 
-  color: #fff; 
-  font-size: 1rem; 
-  margin-bottom: 0.5rem; 
+.agent-info p {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Connector lines inside agent cards */
@@ -515,9 +549,9 @@ details {
 }
 
 /* Text inside Contact Box */
-.contact-box p { 
-  color: #fff; 
-  margin-bottom: 1rem; 
+.contact-box p {
+  color: #fff;
+  margin-bottom: 1rem;
 }
 
 /* Contact Button Styling */
@@ -548,14 +582,17 @@ details {
 
 /* Responsive tweaks for smaller screens */
 @media (max-width: 1024px) {
-  .how-it-works-split { 
-    flex-direction: column; 
-    gap: 3rem; 
+  .how-it-works-split {
+    flex-direction: column;
+    gap: 3rem;
   }
-  .mindmap-container { 
-    justify-content: center; 
+
+  .mindmap-container {
+    justify-content: center;
   }
-  .how-left h2, .how-right h2 {
+
+  .how-left h2,
+  .how-right h2 {
     font-size: 2rem;
   }
 }
@@ -601,7 +638,7 @@ details {
 /* Hover effect for holiday card */
 .holiday-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
 }
 
 /* Holiday Card Image */
@@ -670,9 +707,11 @@ details {
 .hero-overlay {
   text-align: center;
   color: #fff;
-  background: rgba(0,0,0,0.4); /* subtle overlay for readability */
+  background: rgba(0, 0, 0, 0.4);
+  /* subtle overlay for readability */
   padding: 2rem;
-  position: relative; /* allows top positioning */
+  position: relative;
+  /* allows top positioning */
   top: 12%;
 }
 
@@ -704,8 +743,10 @@ details {
 .biome-btn {
   text-decoration: none;
   padding: 0.8rem 1.5rem;
-  background: #ffffff; /* gold base */
-  color: #111; /* dark text */
+  background: #ffffff;
+  /* gold base */
+  color: #111;
+  /* dark text */
   font-weight: bold;
   transition: all 0.3s ease;
   display: inline-block;
@@ -720,26 +761,33 @@ details {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero-overlay {
-    padding: 1rem 1.5rem; /* smaller padding */
-    top: 8%; /* slightly lower than desktop */
-    border-radius: 12px; /* slightly smaller corners */
+    padding: 1rem 1.5rem;
+    /* smaller padding */
+    top: 8%;
+    /* slightly lower than desktop */
+    border-radius: 12px;
+    /* slightly smaller corners */
   }
 
   .hero-overlay h2 {
-    font-size: 2rem; /* smaller heading */
+    font-size: 2rem;
+    /* smaller heading */
   }
 
   .hero-overlay p {
-    font-size: 1rem; /* smaller paragraph */
+    font-size: 1rem;
+    /* smaller paragraph */
   }
 
   .biome-buttons {
-    gap: 0.5rem; /* smaller gap between buttons */
+    gap: 0.5rem;
+    /* smaller gap between buttons */
     margin-top: 1rem;
   }
 
   .biome-btn {
-    padding: 0.5rem 1rem; /* smaller buttons */
+    padding: 0.5rem 1rem;
+    /* smaller buttons */
     font-size: 0.9rem;
   }
 }
@@ -851,9 +899,11 @@ details {
   .gold-card {
     height: 400px;
   }
+
   .gold-content h2 {
     font-size: 2.2rem;
   }
+
   .gold-content p {
     font-size: 1.1rem;
   }
@@ -867,7 +917,8 @@ details {
   font-family: 'playfair display', serif;
   font-size: 14px;
   position: relative;
-  overflow: hidden; /* ensures decorative shapes stay inside footer */
+  overflow: hidden;
+  /* ensures decorative shapes stay inside footer */
 }
 
 /* Abstract shapes: decorative elements inside footer */
@@ -876,7 +927,8 @@ details {
   border-radius: 50%;
   opacity: 0.07;
   z-index: 0;
-  pointer-events: none; /* shapes don't interfere with interaction */
+  pointer-events: none;
+  /* shapes don't interfere with interaction */
 }
 
 /* Layering: ensures all main footer content sits above shapes */
@@ -896,11 +948,13 @@ details {
   margin: 0 auto 40px;
   text-align: left;
 }
+
 /* Logo & Tagline: styles for footer branding */
 .footer-logo img {
   max-width: 160px;
   margin-bottom: 15px;
 }
+
 .footer-tagline {
   font-style: italic;
   color: #ccc;
@@ -915,18 +969,22 @@ details {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 .footer-links {
   list-style: none;
   padding: 0;
 }
+
 .footer-links li {
   margin-bottom: 8px;
 }
+
 .footer-links a {
   color: #eee;
   text-decoration: none;
   transition: color 0.3s;
 }
+
 .footer-links a:hover {
   color: var(--gold);
 }
@@ -937,6 +995,7 @@ details {
   gap: 10px;
   margin: 15px 0;
 }
+
 .footer-newsletter input {
   padding: 10px 15px;
   border-radius: 25px;
@@ -944,6 +1003,7 @@ details {
   flex: 1;
   outline: none;
 }
+
 .footer-newsletter button {
   background: var(--gold);
   border: none;
@@ -954,6 +1014,7 @@ details {
   cursor: pointer;
   transition: background 0.3s;
 }
+
 .footer-newsletter button:hover {
   background: var(--gold);
 }
@@ -962,6 +1023,7 @@ details {
 .footer-social {
   margin-top: 10px;
 }
+
 .footer-social a {
   color: var(--gold);
   margin-right: 15px;
@@ -969,6 +1031,7 @@ details {
   font-weight: bold;
   transition: opacity 0.3s;
 }
+
 .footer-social a:hover {
   opacity: 0.7;
 }
@@ -978,16 +1041,19 @@ details {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .footer-sponsors p {
   font-weight: bold;
   color: var(--gold);
   margin-bottom: 10px;
 }
+
 .sponsor-logos {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
+
 .sponsor-logos img {
   max-height: 50px;
   transition: filter 0.3s;
@@ -1012,14 +1078,28 @@ details {
   color: #ffffff;
   cursor: pointer;
   animation: bounce 1.5s infinite;
-  z-index: 10; /* keep arrow above all */
+  z-index: 10;
+  /* keep arrow above all */
 }
 
 /* Bounce Animation */
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
-  40% { transform: translate(-50%, 15px); }
-  60% { transform: translate(-50%, 8px); }
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translate(-50%, 0);
+  }
+
+  40% {
+    transform: translate(-50%, 15px);
+  }
+
+  60% {
+    transform: translate(-50%, 8px);
+  }
 }
 
 /* Info Section Fade-In */
@@ -1036,4 +1116,3 @@ details {
 body.lock-scroll {
   overflow: hidden;
 }
-

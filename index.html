@@ -1,329 +1,334 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta name="description" content="Elementa Voyages: Explore curated travel inspiration, destination guides, and breathtaking photography for your next adventure.">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Elementa Voyagés</title>
-<link href="styles.css" rel="stylesheet"/>
-<script async="" src="https://www.gstatic.com/maps-platform/places/web-component/loader.js"></script>
+  <meta name="description"
+    content="Elementa Voyages: Explore curated travel inspiration, destination guides, and breathtaking photography for your next adventure.">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Elementa Voyagés</title>
+  <link href="styles.css" rel="stylesheet">
+  <script async="" src="https://www.gstatic.com/maps-platform/places/web-component/loader.js"></script>
 </head>
+
 <body>
-<!-- Background Slides -->
-<div aria-hidden="true" class="bg-slides">
-<div class="bg-slide active" style="background-image: url('front-page-image/image-one.webp');"></div>
-<div class="bg-slide" style="background-image: url('front-page-image/image-two.webp');"></div>
-<div class="bg-slide" style="background-image: url('front-page-image/image-three.webp');"></div>
-<div class="bg-slide" style="background-image: url('front-page-image/image-four.webp');"></div>
-<div class="bg-slide" style="background-image: url('front-page-image/image-five.webp');"></div>
-<div class="bg-slide" style="background-image: url('front-page-image/image-six.webp');"></div>
-<div class="bg-slide" style="background-image: url('front-page-image/image-seven.webp');"></div>
-<div class="bg-slide" style="background-image: url('front-page-image/image-eight.webp');"></div>
-<div class="bg-slide" style="background-image: url('front-page-image/image-nine.webp');"></div>
-<div class="bg-slide" style="background-image: url('front-page-image/image-ten.webp');"></div>
-<div class="bg-slide" style="background-image: url('front-page-image/image-eleven.webp');"></div>
-<div class="bg-slide" style="background-image: url('front-page-image/image-twelve.webp');"></div>
-</div>
-<header class="top-header">
-<div class="logo-container">
-<a href="index.html">
-<img alt="Elementa Voyagés Logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
-</a>
-</div>
-<nav aria-label="Main navigation" class="nav-links">
-<a href="mailto:info@elementavoyages.com">Contact</a>
-</nav>
-</header>
-<!-- Hero (unchanged structure) -->
-<div class="hero">
-<div class="overlay"></div>
-<div class="hero-content">
-<h1>Elementa Voyagés</h1>
-<p>Luxury journeys through the world’s rawest beauty</p>
-<nav class="navbar">
-<a class="nav-button" href="test-explore.html">Destinations</a>
-<a class="nav-button" href="about-us.html">About Us</a>
-<div class="dropdown">
-<a href="" class="nav-button dropbtn">Journal ▾</a>
-<div class="dropdown-content">
-<a href="https://roadbook.com/" target="_blank">Trails To Tides</a>
-<a href="https://www.rojocangrejo.com/" target="_blank">Whispers of the World</a>
-<a href="https://anywhereweroam.com/" target="_blank">The Fifth Element</a>
-<a href="https://www.notesfromtheroad.com/" target="_blank">Echoes of Earth</a>
-</div>
-</div>
-</nav>
-</div>
-<!-- Decorative shapes -->
-<div class="shape shape-circle"></div>
-<!-- Scroll arrow -->
-<div class="scroll-arrow" id="scrollArrow">↓</div>
-</div>
-<div id="info-section">
-<section class="how-it-works-split" id="how-it-works">
-<!-- Left: How It Works -->
-<div class="how-left">
-<h2>How It Works</h2>
-<div class="mindmap-container">
-<div class="mind-box" id="box1">
-<h3>Browse Biomes</h3>
-<p>Explore curated travel biomes to find your perfect journey.</p>
-</div>
-<div class="arrow arrow1">→</div>
-<div class="mind-box" id="box2">
-<h3>Select Destination</h3>
-<p>Choose your luxury getaway and preview it on the map.</p>
-</div>
-<div class="arrow arrow2">↓</div>
-<div class="mind-box" id="box3">
-<h3>Book Trip</h3>
-<p>Secure your trip with our seamless booking process.</p>
-</div>
-<div class="arrow arrow3">→</div>
-<div class="mind-box" id="box4">
-<h3>Exclusive Events</h3>
-<p>Access Gold Member events and premium experiences.</p>
-</div>
-</div>
-</div>
-<!-- Right: Travel Experts -->
-<div class="how-right">
-<h2>Meet Our Travel Experts</h2>
-<div class="agent">
-<div class="agent-img"><img alt="Alexandra M." src="staff/staff-one.webp"/></div>
-<div class="agent-info">
-<h3>Alex M.</h3>
-<p>With over 12 years of experience curating bespoke European vacations, 
+  <!-- Background Slides -->
+  <div aria-hidden="true" class="bg-slides">
+    <div class="bg-slide active" style="background-image: url('front-page-image/image-one.webp');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-two.webp');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-three.webp');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-four.webp');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-five.webp');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-six.webp');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-seven.webp');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-eight.webp');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-nine.webp');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-ten.webp');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-eleven.webp');"></div>
+    <div class="bg-slide" style="background-image: url('front-page-image/image-twelve.webp');"></div>
+  </div>
+  <header class="top-header">
+    <div class="logo-container">
+      <a href="index.html">
+        <img alt="Elementa Voyagés Logo" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp">
+      </a>
+    </div>
+    <nav aria-label="Main navigation" class="nav-links">
+      <a href="mailto:info@elementavoyages.com">Contact</a>
+    </nav>
+  </header>
+  <!-- Hero (unchanged structure) -->
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Elementa Voyagés</h1>
+      <p>Luxury journeys through the world’s rawest beauty</p>
+      <nav class="navbar">
+        <a class="nav-button" href="test-explore.html">Destinations</a>
+        <a class="nav-button" href="about-us.html">About Us</a>
+        <div class="dropdown">
+          <a href="" class="nav-button dropbtn">Journal ▾</a>
+          <div class="dropdown-content">
+            <a href="https://roadbook.com/" target="_blank">Trails To Tides</a>
+            <a href="https://www.rojocangrejo.com/" target="_blank">Whispers of the World</a>
+            <a href="https://anywhereweroam.com/" target="_blank">The Fifth Element</a>
+            <a href="https://www.notesfromtheroad.com/" target="_blank">Echoes of Earth</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Decorative shapes -->
+    <div class="shape shape-circle"></div>
+    <!-- Scroll arrow -->
+    <div class="scroll-arrow" id="scrollArrow">↓</div>
+  </div>
+  <div id="info-section">
+    <section class="how-it-works-split" id="how-it-works">
+      <!-- Left: How It Works -->
+      <div class="how-left">
+        <h2>How It Works</h2>
+        <div class="mindmap-container">
+          <div class="mind-box" id="box1">
+            <h3>Browse Biomes</h3>
+            <p>Explore curated travel biomes to find your perfect journey.</p>
+          </div>
+          <div class="arrow arrow1">→</div>
+          <div class="mind-box" id="box2">
+            <h3>Select Destination</h3>
+            <p>Choose your luxury getaway and preview it on the map.</p>
+          </div>
+          <div class="arrow arrow2">↓</div>
+          <div class="mind-box" id="box3">
+            <h3>Book Trip</h3>
+            <p>Secure your trip with our seamless booking process.</p>
+          </div>
+          <div class="arrow arrow3">→</div>
+          <div class="mind-box" id="box4">
+            <h3>Exclusive Events</h3>
+            <p>Access Gold Member events and premium experiences.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Right: Travel Experts -->
+      <div class="how-right">
+        <h2>Meet Our Travel Experts</h2>
+        <div class="agent">
+          <div class="agent-img"><img alt="Alexandra M." src="staff/staff-one.webp"></div>
+          <div class="agent-info">
+            <h3>Alex M.</h3>
+            <p>With over 12 years of experience curating bespoke European vacations,
               Alex ensures every client experiences the perfect blend of culture, luxury, and adventure.
               Specializes in exclusive villas, private tours, and gastronomic journeys.</p>
-</div>
-</div>
-<div class="agent">
-<div class="agent-img"><img alt="Ravi K." src="staff/staff-two.webp"/></div>
-<div class="agent-info">
-<h3>Ravi K.</h3>
-<p>Ravi has spent the last decade exploring hidden corners of the world. 
-              From remote mountain treks to off-the-grid islands, he curates extraordinary 
+          </div>
+        </div>
+        <div class="agent">
+          <div class="agent-img"><img alt="Ravi K." src="staff/staff-two.webp"></div>
+          <div class="agent-info">
+            <h3>Ravi K.</h3>
+            <p>Ravi has spent the last decade exploring hidden corners of the world.
+              From remote mountain treks to off-the-grid islands, he curates extraordinary
               experiences for thrill-seekers and nature enthusiasts alike.</p>
-</div>
-</div>
-<div class="agent">
-<div class="agent-img"><img alt="Leila S." src="staff/staff-three.webp"/></div>
-<div class="agent-info">
-<h3>Leila S.</h3>
-<p>Leila is passionate about connecting travelers with authentic cultural and culinary adventures. 
-              From cooking classes with local chefs to immersive city tours, she ensures clients return home with unforgettable memories.</p>
-</div>
-</div>
-<!-- Contact Button -->
-<div class="contact-box">
-<h3>Get in Touch</h3>
-<p>Contact any of our travel specialists for queries about selected destinations and city escapes.</p>
-<a class="contact-button" href="mailto:info@elementavoyages.com">Contact Us</a>
-</div>
-</div>
-</section>
-</div>
-<section aria-label="Featured travelers' favourite holidays" class="featured-holidays" id="holidays">
-<!-- Section containing the most popular holiday destinations among travelers -->
-<h2>Travelers’ Favourite Holidays</h2>
-<div class="holidays-rotator">
-<!-- Rotator container holding individual holiday cards -->
-<div class="holiday-card">
-<!-- Individual holiday card for Patagonia, Argentina -->
-<img alt="Patagonia, Argentina" src="feature-holidays/patagonia.webp"/>
-<div class="holiday-info">
-<h3>Patagonia, Argentina</h3>
-<a aria-label="View Patagonia, Argentina on map" class="map-link" href="argentina.html">View on Map</a>
-</div>
-</div>
-<div class="holiday-card">
-<!-- Individual holiday card for Male, Maldives -->
-<img alt="Male, Maldives" src="feature-holidays/maldives.webp"/>
-<div class="holiday-info">
-<h3>Male, Maldives</h3>
-<a aria-label="View Male, Maldives on map" class="map-link" href="maldives.html">View on Map</a>
-</div>
-</div>
-<div class="holiday-card">
-<!-- Individual holiday card for Santorini, Greece -->
-<img alt="Santorini, Greece" src="feature-holidays/santorini.webp"/>
-<div class="holiday-info">
-<h3>Santorini, Greece</h3>
-<a aria-label="View Santorini, Greece on map" class="map-link" href="santorini.html">View on Map</a>
-</div>
-</div>
-<div class="holiday-card">
-<!-- Individual holiday card for Paris, France -->
-<img alt="Paris, France" src="feature-holidays/paris.webp"/>
-<div class="holiday-info">
-<h3>Paris, France</h3>
-<a aria-label="View Paris, France on map" class="map-link" href="paris.html">View on Map</a>
-</div>
-</div>
-<div class="holiday-card">
-<!-- Individual holiday card for Shanghai, China -->
-<img alt="Shanghai, China" src="feature-holidays/shanghai.webp"/>
-<div class="holiday-info">
-<h3>Shanghai, China</h3>
-<a aria-label="View Shanghai, China on map" class="map-link" href="shanghai.html">View on Map</a>
-</div>
-</div>
-</div>
-</section>
-<section aria-label="Hero section for exploring different travel biomes" class="hero-biomes">
-<!-- Hero section introducing curated biomes and luxury escapes -->
-<div class="hero-overlay">
-<!-- Overlay layer containing headings and biome buttons -->
-<h2 aria-label="Main heading: Your Dream is Just One Click Away">Your Dream is Just One Click Away</h2>
-<p>
-          Explore curated biomes and luxury escapes designed for you.
+          </div>
+        </div>
+        <div class="agent">
+          <div class="agent-img"><img alt="Leila S." src="staff/staff-three.webp"></div>
+          <div class="agent-info">
+            <h3>Leila S.</h3>
+            <p>Leila is passionate about connecting travelers with authentic cultural and culinary adventures.
+              From cooking classes with local chefs to immersive city tours, she ensures clients return home with
+              unforgettable memories.</p>
+          </div>
+        </div>
+        <!-- Contact Button -->
+        <div class="contact-box">
+          <h3>Get in Touch</h3>
+          <p>Contact any of our travel specialists for queries about selected destinations and city escapes.</p>
+          <a class="contact-button" href="mailto:info@elementavoyages.com">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section aria-label="Featured travelers' favourite holidays" class="featured-holidays" id="holidays">
+    <!-- Section containing the most popular holiday destinations among travelers -->
+    <h2>Travelers’ Favourite Holidays</h2>
+    <div class="holidays-rotator">
+      <!-- Rotator container holding individual holiday cards -->
+      <div class="holiday-card">
+        <!-- Individual holiday card for Patagonia, Argentina -->
+        <img alt="Patagonia, Argentina" src="feature-holidays/patagonia.webp">
+        <div class="holiday-info">
+          <h3>Patagonia, Argentina</h3>
+          <a aria-label="View Patagonia, Argentina on map" class="map-link" href="argentina.html">View on Map</a>
+        </div>
+      </div>
+      <div class="holiday-card">
+        <!-- Individual holiday card for Male, Maldives -->
+        <img alt="Male, Maldives" src="feature-holidays/maldives.webp">
+        <div class="holiday-info">
+          <h3>Male, Maldives</h3>
+          <a aria-label="View Male, Maldives on map" class="map-link" href="maldives.html">View on Map</a>
+        </div>
+      </div>
+      <div class="holiday-card">
+        <!-- Individual holiday card for Santorini, Greece -->
+        <img alt="Santorini, Greece" src="feature-holidays/santorini.webp">
+        <div class="holiday-info">
+          <h3>Santorini, Greece</h3>
+          <a aria-label="View Santorini, Greece on map" class="map-link" href="santorini.html">View on Map</a>
+        </div>
+      </div>
+      <div class="holiday-card">
+        <!-- Individual holiday card for Paris, France -->
+        <img alt="Paris, France" src="feature-holidays/paris.webp">
+        <div class="holiday-info">
+          <h3>Paris, France</h3>
+          <a aria-label="View Paris, France on map" class="map-link" href="paris.html">View on Map</a>
+        </div>
+      </div>
+      <div class="holiday-card">
+        <!-- Individual holiday card for Shanghai, China -->
+        <img alt="Shanghai, China" src="feature-holidays/shanghai.webp">
+        <div class="holiday-info">
+          <h3>Shanghai, China</h3>
+          <a aria-label="View Shanghai, China on map" class="map-link" href="shanghai.html">View on Map</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section aria-label="Hero section for exploring different travel biomes" class="hero-biomes">
+    <!-- Hero section introducing curated biomes and luxury escapes -->
+    <div class="hero-overlay">
+      <!-- Overlay layer containing headings and biome buttons -->
+      <h2 aria-label="Main heading: Your Dream is Just One Click Away">Your Dream is Just One Click Away</h2>
+      <p>
+        Explore curated biomes and luxury escapes designed for you.
+      </p>
+      <div class="biome-buttons">
+        <!-- Buttons linking to specific biome pages -->
+        <a aria-label="Explore Desert biome" class="biome-btn" href="desert.html">Desert</a>
+        <a aria-label="Explore Frost biome" class="biome-btn" href="frost.html">Frost</a>
+        <a aria-label="Explore Jungle biome" class="biome-btn" href="jungle.html">Jungle</a>
+        <a aria-label="Explore Tides biome" class="biome-btn" href="tides.html">Tides</a>
+      </div>
+    </div>
+  </section>
+  <section aria-label="Gold Membership promotion section" class="gold-event-full">
+    <!-- Section highlighting Gold Membership benefits -->
+    <div class="gold-card">
+      <div class="gold-bg"></div>
+      <div class="gold-content">
+        <!-- Main content including heading, description, and inquiry button -->
+        <h2 aria-label="Gold Membership heading">Gold Membership</h2>
+        <p>
+          Experience the ultimate luxury getaway. Exclusive access to curated trips, personalized services, and
+          once-in-a-lifetime experiences await our Gold Members.
         </p>
-<div class="biome-buttons">
-<!-- Buttons linking to specific biome pages -->
-<a aria-label="Explore Desert biome" class="biome-btn" href="desert.html">Desert</a>
-<a aria-label="Explore Frost biome" class="biome-btn" href="frost.html">Frost</a>
-<a aria-label="Explore Jungle biome" class="biome-btn" href="jungle.html">Jungle</a>
-<a aria-label="Explore Tides biome" class="biome-btn" href="tides.html">Tides</a>
-</div>
-</div>
-</section>
-<section aria-label="Gold Membership promotion section" class="gold-event-full">
-<!-- Section highlighting Gold Membership benefits -->
-<div class="gold-card">
-<div class="gold-bg"></div>
-<div class="gold-content">
-<!-- Main content including heading, description, and inquiry button -->
-<h2 aria-label="Gold Membership heading">Gold Membership</h2>
-<p>
-              Experience the ultimate luxury getaway. Exclusive access to curated trips, personalized services, and once-in-a-lifetime experiences await our Gold Members.
-            </p>
-<button aria-label="Send an inquiry email about Gold Membership" onclick="location.href='mailto:info@yourdomain.com?subject=Gold Membership Inquiry'">
-              Inquire Now
-            </button>
-</div>
-<!-- Abstract Shapes for decorative purposes -->
-<div class="abstract-shape gold-shape1"></div>
-<div class="abstract-shape gold-shape2"></div>
-</div>
-</section>
-<footer class="site-footer">
-<div class="footer-container">
-<!-- Column 1: Logo & About -->
-<div class="footer-column">
-<div class="footer-logo">
-<img alt="Elementa Voyagés Logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
-</div>
-<p class="footer-tagline">
+        <button aria-label="Send an inquiry email about Gold Membership"
+          onclick="location.href='mailto:info@yourdomain.com?subject=Gold Membership Inquiry'">
+          Inquire Now
+        </button>
+      </div>
+      <!-- Abstract Shapes for decorative purposes -->
+      <div class="abstract-shape gold-shape1"></div>
+      <div class="abstract-shape gold-shape2"></div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Column 1: Logo & About -->
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img alt="Elementa Voyagés Logo" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp">
+        </div>
+        <p class="footer-tagline">
           Curated journeys, luxurious stays, and unforgettable experiences.
         </p>
-</div>
-<!-- Column 2: Quick Links -->
-<div aria-labelledby="footer-links-title" class="footer-column">
-<h4 id="footer-links-title">Explore</h4>
-<ul class="footer-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="test-explore.html">Destinations</a></li>
-<li><a href="mailto:info@elementavoyages.com">Contact</a></li>
-</ul>
-</div>
-<!-- Column 3: Newsletter & Social -->
-<div aria-labelledby="footer-newsletter-title" class="footer-column">
-<h4 id="footer-newsletter-title">Stay Connected</h4>
-<p>Join our newsletter for travel inspiration &amp; exclusive offers.</p>
-<form class="footer-newsletter">
-<input aria-label="Email address" placeholder="Enter your email" type="email"/>
-<button type="submit">Subscribe</button>
-</form>
-<div aria-label="Social media links" class="footer-social" role="navigation">
-<a href="https://www.instagram.com/" target="_blank">Instagram</a>
-<a href="https://facebook.com" target="_blank">Facebook</a>
-<a href="https://linkedin.com" target="_blank">LinkedIn</a>
-</div>
-</div>
-</div>
-<!-- Sponsors & Credits -->
-<div class="footer-sponsors">
-<p>Sponsored by Luxury Travels &amp; Partners</p>
-<div class="sponsor-logos">
-<img alt="Sponsor 1" src="sponsors/image-one.webp" width="64" height="33"/>
-<img alt="Sponsor 2" src="sponsors/image-two.webp" width="63" height="43"/>
-<img alt="Sponsor 3" src="sponsors/image-three.webp" width="54" height="44"/>
-<img alt="Sponsor 4" src="sponsors/image-four.webp" width="85" height="37"/>
-<img alt="Sponsor 5" src="sponsors/image-five.webp" width="82" height="48"/>
-</div>
-</div>
-<!-- Footer Bottom -->
-<div class="footer-bottom">
-<p>© 2025 Elementa Voyagés. All Rights Reserved.</p>
-</div>
-</footer>
-<!-- Decorative background shapes -->
-<div class="abstract-shape shape1"></div>
-<div class="abstract-shape shape2"></div>
-<div class="abstract-shape shape3"></div>
-<script>
-  // Background slideshow
-  const slides = document.querySelectorAll('.bg-slide');
-  let current = 0; // start at the first slide
+      </div>
+      <!-- Column 2: Quick Links -->
+      <div aria-labelledby="footer-links-title" class="footer-column">
+        <h4 id="footer-links-title">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="test-explore.html">Destinations</a></li>
+          <li><a href="mailto:info@elementavoyages.com">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Column 3: Newsletter & Social -->
+      <div aria-labelledby="footer-newsletter-title" class="footer-column">
+        <h4 id="footer-newsletter-title">Stay Connected</h4>
+        <p>Join our newsletter for travel inspiration &amp; exclusive offers.</p>
+        <form class="footer-newsletter">
+          <input aria-label="Email address" placeholder="Enter your email" type="email">
+          <button type="submit">Subscribe</button>
+        </form>
+        <div aria-label="Social media links" class="footer-social" role="navigation">
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <!-- Sponsors & Credits -->
+    <div class="footer-sponsors">
+      <p>Sponsored by Luxury Travels &amp; Partners</p>
+      <div class="sponsor-logos">
+        <img alt="Sponsor 1" src="sponsors/image-one.webp" width="64" height="33">
+        <img alt="Sponsor 2" src="sponsors/image-two.webp" width="63" height="43">
+        <img alt="Sponsor 3" src="sponsors/image-three.webp" width="54" height="44">
+        <img alt="Sponsor 4" src="sponsors/image-four.webp" width="85" height="37">
+        <img alt="Sponsor 5" src="sponsors/image-five.webp" width="82" height="48">
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 Elementa Voyagés. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <!-- Decorative background shapes -->
+  <div class="abstract-shape shape1"></div>
+  <div class="abstract-shape shape2"></div>
+  <div class="abstract-shape shape3"></div>
+  <script>
+    // Background slideshow
+    const slides = document.querySelectorAll('.bg-slide');
+    let current = 0; // start at the first slide
 
-  setInterval(() => {
-    slides[current].classList.remove('active');
-    current = (current + 1) % slides.length;
-    slides[current].classList.add('active');
-  }, 4000); // 4 seconds per slide
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4000); // 4 seconds per slide
 
-  // Lock scroll initially
-  document.body.classList.add('lock-scroll');
+    // Lock scroll initially
+    document.body.classList.add('lock-scroll');
 
-  const arrow = document.getElementById('scrollArrow');
-  const infoSection = document.getElementById('info-section');
+    const arrow = document.getElementById('scrollArrow');
+    const infoSection = document.getElementById('info-section');
 
-  arrow.addEventListener('click', () => {
-    // Unlock scroll
-    document.body.classList.remove('lock-scroll');
+    arrow.addEventListener('click', () => {
+      // Unlock scroll
+      document.body.classList.remove('lock-scroll');
 
-    // Make the info section visible
-    infoSection.classList.add('visible');
+      // Make the info section visible
+      infoSection.classList.add('visible');
 
-    // Scroll smoothly to the info section
-    infoSection.scrollIntoView({ behavior: 'smooth' });
-  });
-
-  // Select all elements to reveal
-  const mindBoxes = document.querySelectorAll('.mind-box');
-  const arrows = document.querySelectorAll('.arrow');
-  const agents = document.querySelectorAll('.agent');
-
-  // Check if element is in viewport
-  function isInViewport(el, offset = 0.85) {
-    const rect = el.getBoundingClientRect();
-    return rect.top < window.innerHeight * offset;
-  }
-
-  // Reveal elements only if section is visible
-  function revealElements() {
-    if (!infoSection.classList.contains('visible')) return;
-
-    mindBoxes.forEach(box => {
-      if (isInViewport(box)) box.classList.add('visible');
+      // Scroll smoothly to the info section
+      infoSection.scrollIntoView({ behavior: 'smooth' });
     });
 
-    arrows.forEach(arrow => {
-      if (isInViewport(arrow)) arrow.classList.add('visible');
-    });
+    // Select all elements to reveal
+    const mindBoxes = document.querySelectorAll('.mind-box');
+    const arrows = document.querySelectorAll('.arrow');
+    const agents = document.querySelectorAll('.agent');
 
-    agents.forEach(agent => {
-      if (isInViewport(agent)) agent.classList.add('visible');
-    });
-  }
+    // Check if element is in viewport
+    function isInViewport(el, offset = 0.85) {
+      const rect = el.getBoundingClientRect();
+      return rect.top < window.innerHeight * offset;
+    }
 
-  // Run on scroll and on page load
-  window.addEventListener('scroll', revealElements);
-  window.addEventListener('load', revealElements);
-</script>
+    // Reveal elements only if section is visible
+    function revealElements() {
+      if (!infoSection.classList.contains('visible')) return;
+
+      mindBoxes.forEach(box => {
+        if (isInViewport(box)) box.classList.add('visible');
+      });
+
+      arrows.forEach(arrow => {
+        if (isInViewport(arrow)) arrow.classList.add('visible');
+      });
+
+      agents.forEach(agent => {
+        if (isInViewport(agent)) agent.classList.add('visible');
+      });
+    }
+
+    // Run on scroll and on page load
+    window.addEventListener('scroll', revealElements);
+    window.addEventListener('load', revealElements);
+  </script>
 </body>
+
 </html>

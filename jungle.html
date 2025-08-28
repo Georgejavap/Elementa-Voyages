@@ -1,194 +1,205 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta name="description" content="Dive into the heart of jungles worldwide with Elementa Voyages: wildlife, adventure, and travel insights for jungle explorers.">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>The Jungle – Elementa Voyagés</title>
-<link href="biome-style.css" rel="stylesheet"/>
+  <meta name="description"
+    content="Dive into the heart of jungles worldwide with Elementa Voyages: wildlife, adventure, and travel insights for jungle explorers.">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>The Jungle – Elementa Voyagés</title>
+  <link href="biome-style.css" rel="stylesheet">
 </head>
+
 <body>
-<!-- Top header with logo and navigation -->
-<header aria-label="The Waves biome header with logo and main navigation" class="top-header jungle">
-<div class="logo-container">
-<!-- Logo with clear alt description -->
-<a aria-label="Return to Elementa Voyagés home" href="index.html">
-<img alt="Elementa Voyagés logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
-</a>
-</div>
-<!-- Navigation Links -->
-<nav aria-label="Primary navigation for The Waves biome page" class="nav-links">
-<a aria-label="Go to the Home page of Elementa Voyagés" href="index.html">Home</a>
-<a aria-label="Explore destinations across different biomes" href="test-explore.html">Explore</a>
-<a aria-label="Send an email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
-</nav>
-</header>
-<!-- FILTERS + GRID -->
-<section aria-label="Destination filters and grid" class="destination-filter">
-<!-- Filter bar for family, continent, and holiday type -->
-<div class="filter-bar">
-<select aria-label="Select family or adult friendly destinations" id="family-select">
-<option value="">Family / Adult</option>
-<option value="family">Family Friendly</option>
-<option value="adult">Adult Only</option>
-</select>
-<select aria-label="Select continent" id="continent-select">
-<option value="">Continent</option>
-<option value="europe">Europe</option>
-<option value="asia">Asia</option>
-<option value="north-america">North America</option>
-<option value="south-america">South America</option>
-<option value="africa">Africa</option>
-<option value="oceania">Oceania</option>
-<option value="antarctica">Antarctica</option>
-</select>
-<select aria-label="Select holiday type" id="type-select">
-<option value="">Holiday Type</option>
-<option value="relaxing">Relaxing</option>
-<option value="adventurous">Adventurous</option>
-</select>
-<button aria-label="Clear all selected filters" class="clear-btn">✖ Clear Filters</button>
-</div>
-<!-- Destination Grid -->
-<div class="destination-grid">
-<!-- Europe -->
-<div class="destination-card" data-continent="europe" data-family="family" data-type="relaxing">
-<a aria-label="Visit Black Forest, Germany website" href="https://www.black-forest-travel.com/" target="_blank">
-<img alt="Black Forest, Germany" aria-label="Image of Black Forest, Germany" src="jungle-biome/germany.webp"/>
-<h3>Black Forest, Germany</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="europe" data-family="adult" data-type="adventurous">
-<a aria-label="Visit Costa Brava, Spain website" href="https://www.santuarideterrades.cat/home/" target="_blank">
-<img alt="Costa Brava, Spain" aria-label="Image of Costa Brava, Spain" src="jungle-biome/spain.webp"/>
-<h3>Costa Brava, Spain</h3>
-</a>
-</div>
-<!-- Asia -->
-<div class="destination-card" data-continent="asia" data-family="family" data-type="relaxing">
-<a aria-label="Visit Bali, Indonesia website" href="https://www.naturaresortbali.com/" target="_blank">
-<img alt="Bali, Indonesia" aria-label="Image of Bali, Indonesia" src="jungle-biome/bail.webp"/>
-<h3>Bali, Indonesia</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="asia" data-family="adult" data-type="adventurous">
-<a aria-label="Visit Thailand Rainforest website" href="https://www.khaosokaccommodation.com/accommodation/khao-sok-river-hut" target="_blank">
-<img alt="Thailand Rainforest" aria-label="Image of Thailand Rainforest" src="jungle-biome/thailand.webp"/>
-<h3>Thailand Rainforest</h3>
-</a>
-</div>
-<!-- North America -->
-<div class="destination-card" data-continent="north-america" data-family="family" data-type="relaxing">
-<a aria-label="Visit Costa Rica Rainforest website" href="https://www.believesurfandyoga.com/" target="_blank">
-<img alt="Costa Rica Rainforest" aria-label="Image of Costa Rica Rainforest" src="jungle-biome/costa-rica.webp"/>
-<h3>Costa Rica Rainforest</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="north-america" data-family="adult" data-type="adventurous">
-<a aria-label="Visit Yucatan Jungle, Mexico website" href="https://www.casonaloscedros.com/" target="_blank">
-<img alt="Yucatan Jungle, Mexico" aria-label="Image of Yucatan Jungle, Mexico" src="jungle-biome/mexico.webp"/>
-<h3>Yucatan Jungle, Mexico</h3>
-</a>
-</div>
-<!-- South America -->
-<div class="destination-card" data-continent="south-america" data-family="family" data-type="relaxing">
-<a aria-label="Visit Amazon Rainforest, Brazil website" href="https://www.onvacation.com/en/co/destinos/nacionales/amazonas/hotel-amazon/" target="_blank">
-<img alt="Amazon Rainforest, Brazil" aria-label="Image of Amazon Rainforest, Brazil" src="jungle-biome/amazon.webp"/>
-<h3>Amazon Rainforest, Brazil</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="south-america" data-family="adult" data-type="adventurous">
-<a aria-label="Visit Andean Jungle, Peru website" href="https://karinawasi.xtadia.com/" target="_blank">
-<img alt="Andean Jungle, Peru" aria-label="Image of Andean Jungle, Peru" src="jungle-biome/peru.webp"/>
-<h3>Andean Jungle, Peru</h3>
-</a>
-</div>
-<!-- Africa -->
-<div class="destination-card" data-continent="africa" data-family="family" data-type="relaxing">
-<a aria-label="Visit Madagascar Rainforest website" href="https://www.akiba-lodge.mg/" target="_blank">
-<img alt="Madagascar Rainforest" aria-label="Image of Madagascar Rainforest" src="jungle-biome/madagascar.webp"/>
-<h3>Madagascar Rainforest</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="africa" data-family="adult" data-type="adventurous">
-<a aria-label="Visit Congo Jungle website" href="https://artofsafari.travel/congo-safari-lodges/" target="_blank">
-<img alt="Congo Jungle" aria-label="Image of Congo Jungle" src="jungle-biome/congo.webp"/>
-<h3>Congo Jungle</h3>
-</a>
-</div>
-<!-- Oceania -->
-<div class="destination-card" data-continent="oceania" data-family="family" data-type="relaxing">
-<a aria-label="Visit Queensland Rainforest, Australia website" href="https://www.tripadvisor.com/Hotels-g255067-c3-zff17-Queensland-Hotels.html" target="_blank">
-<img alt="Queensland Rainforest, Australia" aria-label="Image of Queensland Rainforest, Australia" src="jungle-biome/queensland.webp"/>
-<h3>Queensland Rainforest, Australia</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="oceania" data-family="adult" data-type="adventurous">
-<a aria-label="Visit Fiordland Jungle, New Zealand website" href="https://www.fiordlandlodge.co.nz/" target="_blank">
-<img alt="Fiordland Jungle, New Zealand" aria-label="Image of Fiordland Jungle, New Zealand" src="jungle-biome/new-zealand.webp"/>
-<h3>Fiordland Jungle, New Zealand</h3>
-</a>
-</div>
-</div>
-</section>
-<footer aria-label="Website Footer" class="site-footer">
-<div class="footer-container">
-<!-- Column 1: Logo & About -->
-<div aria-label="About Elementa Voyagés" class="footer-column" role="region">
-<div class="footer-logo">
-<img alt="Elementa Voyagés Logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
-</div>
-<p class="footer-tagline">
+  <!-- Top header with logo and navigation -->
+  <header aria-label="The Waves biome header with logo and main navigation" class="top-header jungle">
+    <div class="logo-container">
+      <!-- Logo with clear alt description -->
+      <a aria-label="Return to Elementa Voyagés home" href="index.html">
+        <img alt="Elementa Voyagés logo" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp">
+      </a>
+    </div>
+    <!-- Navigation Links -->
+    <nav aria-label="Primary navigation for The Waves biome page" class="nav-links">
+      <a aria-label="Go to the Home page of Elementa Voyagés" href="index.html">Home</a>
+      <a aria-label="Explore destinations across different biomes" href="test-explore.html">Explore</a>
+      <a aria-label="Send an email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
+    </nav>
+  </header>
+  <!-- FILTERS + GRID -->
+  <section aria-label="Destination filters and grid" class="destination-filter">
+    <!-- Filter bar for family, continent, and holiday type -->
+    <div class="filter-bar">
+      <select aria-label="Select family or adult friendly destinations" id="family-select">
+        <option value="">Family / Adult</option>
+        <option value="family">Family Friendly</option>
+        <option value="adult">Adult Only</option>
+      </select>
+      <select aria-label="Select continent" id="continent-select">
+        <option value="">Continent</option>
+        <option value="europe">Europe</option>
+        <option value="asia">Asia</option>
+        <option value="north-america">North America</option>
+        <option value="south-america">South America</option>
+        <option value="africa">Africa</option>
+        <option value="oceania">Oceania</option>
+        <option value="antarctica">Antarctica</option>
+      </select>
+      <select aria-label="Select holiday type" id="type-select">
+        <option value="">Holiday Type</option>
+        <option value="relaxing">Relaxing</option>
+        <option value="adventurous">Adventurous</option>
+      </select>
+      <button aria-label="Clear all selected filters" class="clear-btn">✖ Clear Filters</button>
+    </div>
+    <!-- Destination Grid -->
+    <div class="destination-grid">
+      <!-- Europe -->
+      <div class="destination-card" data-continent="europe" data-family="family" data-type="relaxing">
+        <a aria-label="Visit Black Forest, Germany website" href="https://www.black-forest-travel.com/" target="_blank">
+          <img alt="Black Forest, Germany" aria-label="Image of Black Forest, Germany"
+            src="jungle-biome/germany.webp">
+          <h3>Black Forest, Germany</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="europe" data-family="adult" data-type="adventurous">
+        <a aria-label="Visit Costa Brava, Spain website" href="https://www.santuarideterrades.cat/home/"
+          target="_blank">
+          <img alt="Costa Brava, Spain" aria-label="Image of Costa Brava, Spain" src="jungle-biome/spain.webp">
+          <h3>Costa Brava, Spain</h3>
+        </a>
+      </div>
+      <!-- Asia -->
+      <div class="destination-card" data-continent="asia" data-family="family" data-type="relaxing">
+        <a aria-label="Visit Bali, Indonesia website" href="https://www.naturaresortbali.com/" target="_blank">
+          <img alt="Bali, Indonesia" aria-label="Image of Bali, Indonesia" src="jungle-biome/bail.webp">
+          <h3>Bali, Indonesia</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="asia" data-family="adult" data-type="adventurous">
+        <a aria-label="Visit Thailand Rainforest website"
+          href="https://www.khaosokaccommodation.com/accommodation/khao-sok-river-hut" target="_blank">
+          <img alt="Thailand Rainforest" aria-label="Image of Thailand Rainforest" src="jungle-biome/thailand.webp">
+          <h3>Thailand Rainforest</h3>
+        </a>
+      </div>
+      <!-- North America -->
+      <div class="destination-card" data-continent="north-america" data-family="family" data-type="relaxing">
+        <a aria-label="Visit Costa Rica Rainforest website" href="https://www.believesurfandyoga.com/" target="_blank">
+          <img alt="Costa Rica Rainforest" aria-label="Image of Costa Rica Rainforest"
+            src="jungle-biome/costa-rica.webp">
+          <h3>Costa Rica Rainforest</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="north-america" data-family="adult" data-type="adventurous">
+        <a aria-label="Visit Yucatan Jungle, Mexico website" href="https://www.casonaloscedros.com/" target="_blank">
+          <img alt="Yucatan Jungle, Mexico" aria-label="Image of Yucatan Jungle, Mexico"
+            src="jungle-biome/mexico.webp">
+          <h3>Yucatan Jungle, Mexico</h3>
+        </a>
+      </div>
+      <!-- South America -->
+      <div class="destination-card" data-continent="south-america" data-family="family" data-type="relaxing">
+        <a aria-label="Visit Amazon Rainforest, Brazil website"
+          href="https://www.onvacation.com/en/co/destinos/nacionales/amazonas/hotel-amazon/" target="_blank">
+          <img alt="Amazon Rainforest, Brazil" aria-label="Image of Amazon Rainforest, Brazil"
+            src="jungle-biome/amazon.webp">
+          <h3>Amazon Rainforest, Brazil</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="south-america" data-family="adult" data-type="adventurous">
+        <a aria-label="Visit Andean Jungle, Peru website" href="https://karinawasi.xtadia.com/" target="_blank">
+          <img alt="Andean Jungle, Peru" aria-label="Image of Andean Jungle, Peru" src="jungle-biome/peru.webp">
+          <h3>Andean Jungle, Peru</h3>
+        </a>
+      </div>
+      <!-- Africa -->
+      <div class="destination-card" data-continent="africa" data-family="family" data-type="relaxing">
+        <a aria-label="Visit Madagascar Rainforest website" href="https://www.akiba-lodge.mg/" target="_blank">
+          <img alt="Madagascar Rainforest" aria-label="Image of Madagascar Rainforest"
+            src="jungle-biome/madagascar.webp">
+          <h3>Madagascar Rainforest</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="africa" data-family="adult" data-type="adventurous">
+        <a aria-label="Visit Congo Jungle website" href="https://artofsafari.travel/congo-safari-lodges/"
+          target="_blank">
+          <img alt="Congo Jungle" aria-label="Image of Congo Jungle" src="jungle-biome/congo.webp">
+          <h3>Congo Jungle</h3>
+        </a>
+      </div>
+      <!-- Oceania -->
+      <div class="destination-card" data-continent="oceania" data-family="family" data-type="relaxing">
+        <a aria-label="Visit Queensland Rainforest, Australia website"
+          href="https://www.tripadvisor.com/Hotels-g255067-c3-zff17-Queensland-Hotels.html" target="_blank">
+          <img alt="Queensland Rainforest, Australia" aria-label="Image of Queensland Rainforest, Australia"
+            src="jungle-biome/queensland.webp">
+          <h3>Queensland Rainforest, Australia</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="oceania" data-family="adult" data-type="adventurous">
+        <a aria-label="Visit Fiordland Jungle, New Zealand website" href="https://www.fiordlandlodge.co.nz/"
+          target="_blank">
+          <img alt="Fiordland Jungle, New Zealand" aria-label="Image of Fiordland Jungle, New Zealand"
+            src="jungle-biome/new-zealand.webp">
+          <h3>Fiordland Jungle, New Zealand</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer aria-label="Website Footer" class="site-footer">
+    <div class="footer-container">
+      <!-- Column 1: Logo & About -->
+      <div aria-label="About Elementa Voyagés" class="footer-column" role="region">
+        <div class="footer-logo">
+          <img alt="Elementa Voyagés Logo" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp">
+        </div>
+        <p class="footer-tagline">
           Curated journeys, luxurious stays, and unforgettable experiences.
         </p>
-</div>
-<!-- Column 2: Quick Links -->
-<div aria-label="Footer Quick Links" class="footer-column" role="navigation">
-<h4>Explore</h4>
-<ul class="footer-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="test-explore.html">Destinations</a></li>
-<li><a href="mailto:info@elementavoyages.com">Contact</a></li>
-</ul>
-</div>
-<!-- Column 3: Newsletter & Social -->
-<div aria-label="Newsletter and Social Links" class="footer-column" role="region">
-<h4>Stay Connected</h4>
-<p>Join our newsletter for travel inspiration &amp; exclusive offers.</p>
-<form aria-label="Subscribe to newsletter" class="footer-newsletter">
-<label class="visually-hidden" for="newsletter-email">Email Address</label>
-<input id="newsletter-email" placeholder="Enter your email" type="email"/>
-<button type="submit">Subscribe</button>
-</form>
-<div aria-label="Social Media Links" class="footer-social" role="navigation">
-<a href="https://www.instagram.com/" target="_blank">Instagram</a>
-<a href="https://facebook.com" target="_blank">Facebook</a>
-<a href="https://linkedin.com" target="_blank">LinkedIn</a>
-</div>
-</div>
-</div>
-<!-- Sponsors & Credits -->
-<div aria-label="Sponsors" class="footer-sponsors" role="region">
-<p>Sponsored by Luxury Travels &amp; Partners</p>
-<div class="sponsor-logos">
-<img alt="Sponsor 1" src="sponsors/image-one.webp" width="64" height="33"/>
-<img alt="Sponsor 2" src="sponsors/image-two.webp" width="63" height="43"/>
-<img alt="Sponsor 3" src="sponsors/image-three.webp" width="54" height="44"/>
-<img alt="Sponsor 4" src="sponsors/image-four.webp" width="85" height="37"/>
-<img alt="Sponsor 5" src="sponsors/image-five.webp" width="82" height="48"/>
-</div>
-</div>
-<div class="footer-bottom">
-<p>© 2025 Elementa Voyagés. All Rights Reserved.</p>
-</div>
-</footer>
-<script src="biome.js"></script>
-<p>
-<a href="https://jigsaw.w3.org/css-validator/check/referer">
-<img alt="Valid CSS!" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" style="border:0;width:88px;height:31px"/>
-</a>
-</p>
+      </div>
+      <!-- Column 2: Quick Links -->
+      <div aria-label="Footer Quick Links" class="footer-column" role="navigation">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="test-explore.html">Destinations</a></li>
+          <li><a href="mailto:info@elementavoyages.com">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Column 3: Newsletter & Social -->
+      <div aria-label="Newsletter and Social Links" class="footer-column" role="region">
+        <h4>Stay Connected</h4>
+        <p>Join our newsletter for travel inspiration &amp; exclusive offers.</p>
+        <form aria-label="Subscribe to newsletter" class="footer-newsletter">
+          <label class="visually-hidden" for="newsletter-email">Email Address</label>
+          <input id="newsletter-email" placeholder="Enter your email" type="email">
+          <button type="submit">Subscribe</button>
+        </form>
+        <div aria-label="Social Media Links" class="footer-social" role="navigation">
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <!-- Sponsors & Credits -->
+    <div aria-label="Sponsors" class="footer-sponsors" role="region">
+      <p>Sponsored by Luxury Travels &amp; Partners</p>
+      <div class="sponsor-logos">
+        <img alt="Sponsor 1" src="sponsors/image-one.webp" width="64" height="33">
+        <img alt="Sponsor 2" src="sponsors/image-two.webp" width="63" height="43">
+        <img alt="Sponsor 3" src="sponsors/image-three.webp" width="54" height="44">
+        <img alt="Sponsor 4" src="sponsors/image-four.webp" width="85" height="37">
+        <img alt="Sponsor 5" src="sponsors/image-five.webp" width="82" height="48">
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Elementa Voyagés. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="biome.js"></script>
 </body>
+
 </html>

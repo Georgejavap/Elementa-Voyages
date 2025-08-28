@@ -1,141 +1,160 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<meta name="description" content="Plan your dream Maldives escape with Elementa Voyages: luxury resorts, turquoise waters, and travel tips for the ultimate getaway.">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Maldives Map &amp; Hotels</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Open+Sans&amp;display=swap" rel="stylesheet"/>
-<link href="city-map.css" rel="stylesheet"/>
-<script src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js" type="module"></script>
+  <meta name="description"
+    content="Plan your dream Maldives escape with Elementa Voyages: luxury resorts, turquoise waters, and travel tips for the ultimate getaway.">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Maldives Map &amp; Hotels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Open+Sans&amp;display=swap"
+    rel="stylesheet">
+  <link href="city-map.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"
+    type="module"></script>
 </head>
+
 <body>
-<header aria-label="Site Header" class="top-header">
-<!-- Logo Container -->
-<div class="logo-container">
-<a href="index.html">
-<img alt="Logo" aria-label="Elementa Voyagés Logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
-</a>
-</div>
-<!-- Navigation Links -->
-<nav aria-label="Main navigation" class="nav-links">
-<a aria-label="Go to Home page" href="index.html">Home</a>
-<a aria-label="Go to Explore page" href="test-explore.html">Explore</a>
-<a aria-label="Send email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
-</nav>
-</header>
-<!-- Page Title -->
-<h1 aria-label="Maldives city map and hotel information" id="city-title">Explore Maldives</h1>
-<!-- Main Content: Map Section -->
-<div class="main-content">
-<div class="map-section">
-<!-- Google Maps API Loader: loads the maps component -->
-<gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
-<!-- Google Map Centered on maldives -->
-<gmp-map center="3.2028,73.2207" id="map" zoom="14">
-<!-- Place Picker for Searching Cities or Addresses -->
-<div class="place-picker-container" slot="control-block-start-inline-start">
-<gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
-</div>
-</gmp-map>
-</div>
-<!-- Sidebar: Recommended Hotels -->
-<div class="sidebar">
-<h2>Recommended Hotels</h2>
-<div class="hotel-links">
-<!-- Individual hotel cards with images, headings, and links -->
-<a aria-label="Ayada Maldives Hotel" class="hotel-card" href="https://www.ayadamaldives.com/" target="_blank">
-<img alt="Ayada Maldives" aria-label="Image of Ayada Maldives" src="maldives/image-one.webp"/>
-<h3>Ayada Maldives</h3>
-</a>
-<a aria-label="Cinnamon Velifushi Maldives Hotel" class="hotel-card" href="https://www.cinnamonhotels.com/cinnamon-velifushi-maldives?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=cinnamonvelifushimaldives&amp;utm_term=gbp" target="_blank">
-<img alt="Cinnamon Velifushi Maldives" aria-label="Image of Cinnamon Velifushi Maldives" src="maldives/image-two.webp"/>
-<h3>Cinnamon Velifushi Maldives</h3>
-</a>
-<a aria-label="Fushifaru Maldives Hotel" class="hotel-card" href="https://www.fushifaru.com/" target="_blank">
-<img alt="Fushifaru Maldives" aria-label="Image of Fushifaru Maldives" src="maldives/image-three.webp"/>
-<h3>Fushifaru Maldives</h3>
-</a>
-<a aria-label="SO/ Maldives Hotel" class="hotel-card" href="https://so-hotels.com/en/maldives/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb-website&amp;utm_content=website_button" target="_blank">
-<img alt="SO/ Maldives" aria-label="Image of SO/ Maldives" src="maldives/image-four.webp"/>
-<h3>SO/ Maldives</h3>
-</a>
-<a aria-label="JA Manafaru Hotel" class="hotel-card" href="https://www.jaresortshotels.com/maldives/ja-manafaru" target="_blank">
-<img alt="JA Manafaru" aria-label="Image of JA Manafaru" src="maldives/image-five.webp"/>
-<h3>JA Manafaru</h3>
-</a>
-<a aria-label="Medhufushi Island Resort" class="hotel-card" href="https://medhufushiisland.com/" target="_blank">
-<img alt="Medhufushi Island Resort" aria-label="Image of Medhufushi Island Resort" src="maldives/image-six.webp"/>
-<h3>Medhufushi Island Resort</h3>
-</a>
-<a aria-label="Soneva Fushi Hotel" class="hotel-card" href="https://soneva.com/resorts/soneva-fushi/" target="_blank">
-<img alt="Soneva Fushi" aria-label="Image of Soneva Fushi" src="maldives/image-seven.webp"/>
-<h3>Soneva Fushi</h3>
-</a>
-<a aria-label="Banyan Villa Maldives" class="hotel-card" href="https://www.bluepillow.com/search/5943837d7c00cb0e64323665?dest=bkng&amp;cat=House&amp;lat=3.60714&amp;lng=72.9552" target="_blank">
-<img alt="Banyan Villa Maldives" aria-label="Image of Banyan Villa Maldives" src="maldives/image-eight.webp"/>
-<h3>Banyan Villa Maldives</h3>
-</a>
-<a aria-label="JOALI Maldives Hotel" class="hotel-card" href="https://www.joali.com/joali-maldives/?utm_source=GoogleBusinessProfile&amp;utm_medium=GBP&amp;utm_campaign=Google_GBP" target="_blank">
-<img alt="JOALI Maldives" aria-label="Image of JOALI Maldives" src="maldives/image-nine.webp"/>
-<h3>JOALI Maldives</h3>
-</a>
-<a aria-label="Kandolhu Maldives Hotel" class="hotel-card" href="https://www.kandolhu.com/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp" target="_blank">
-<img alt="Kandolhu Maldives" aria-label="Image of Kandolhu Maldives" src="maldives/image-ten.webp"/>
-<h3>Kandolhu Maldives</h3>
-</a>
-</div>
-</div>
-</div>
-<script type="module">
-  // Initialize the map and place picker after the custom element is defined
-  async function init() {
-    await customElements.whenDefined('gmp-map');
+  <header aria-label="Site Header" class="top-header">
+    <!-- Logo Container -->
+    <div class="logo-container">
+      <a href="index.html">
+        <img alt="Logo" aria-label="Elementa Voyagés Logo"
+          src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp">
+      </a>
+    </div>
+    <!-- Navigation Links -->
+    <nav aria-label="Main navigation" class="nav-links">
+      <a aria-label="Go to Home page" href="index.html">Home</a>
+      <a aria-label="Go to Explore page" href="test-explore.html">Explore</a>
+      <a aria-label="Send email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
+    </nav>
+  </header>
+  <!-- Page Title -->
+  <h1 aria-label="Maldives city map and hotel information" id="city-title">Explore Maldives</h1>
+  <!-- Main Content: Map Section -->
+  <div class="main-content">
+    <div class="map-section">
+      <!-- Google Maps API Loader: loads the maps component -->
+      <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k"
+        solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
+      <!-- Google Map Centered on maldives -->
+      <gmp-map center="3.2028,73.2207" id="map" zoom="14">
+        <!-- Place Picker for Searching Cities or Addresses -->
+        <div class="place-picker-container" slot="control-block-start-inline-start">
+          <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
+        </div>
+      </gmp-map>
+    </div>
+    <!-- Sidebar: Recommended Hotels -->
+    <div class="sidebar">
+      <h2>Recommended Hotels</h2>
+      <div class="hotel-links">
+        <!-- Individual hotel cards with images, headings, and links -->
+        <a aria-label="Ayada Maldives Hotel" class="hotel-card" href="https://www.ayadamaldives.com/" target="_blank">
+          <img alt="Ayada Maldives" aria-label="Image of Ayada Maldives" src="maldives/image-one.webp">
+          <h3>Ayada Maldives</h3>
+        </a>
+        <a aria-label="Cinnamon Velifushi Maldives Hotel" class="hotel-card"
+          href="https://www.cinnamonhotels.com/cinnamon-velifushi-maldives?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=cinnamonvelifushimaldives&amp;utm_term=gbp"
+          target="_blank">
+          <img alt="Cinnamon Velifushi Maldives" aria-label="Image of Cinnamon Velifushi Maldives"
+            src="maldives/image-two.webp">
+          <h3>Cinnamon Velifushi Maldives</h3>
+        </a>
+        <a aria-label="Fushifaru Maldives Hotel" class="hotel-card" href="https://www.fushifaru.com/" target="_blank">
+          <img alt="Fushifaru Maldives" aria-label="Image of Fushifaru Maldives" src="maldives/image-three.webp">
+          <h3>Fushifaru Maldives</h3>
+        </a>
+        <a aria-label="SO/ Maldives Hotel" class="hotel-card"
+          href="https://so-hotels.com/en/maldives/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gmb-website&amp;utm_content=website_button"
+          target="_blank">
+          <img alt="SO/ Maldives" aria-label="Image of SO/ Maldives" src="maldives/image-four.webp">
+          <h3>SO/ Maldives</h3>
+        </a>
+        <a aria-label="JA Manafaru Hotel" class="hotel-card" href="https://www.jaresortshotels.com/maldives/ja-manafaru"
+          target="_blank">
+          <img alt="JA Manafaru" aria-label="Image of JA Manafaru" src="maldives/image-five.webp">
+          <h3>JA Manafaru</h3>
+        </a>
+        <a aria-label="Medhufushi Island Resort" class="hotel-card" href="https://medhufushiisland.com/"
+          target="_blank">
+          <img alt="Medhufushi Island Resort" aria-label="Image of Medhufushi Island Resort"
+            src="maldives/image-six.webp">
+          <h3>Medhufushi Island Resort</h3>
+        </a>
+        <a aria-label="Soneva Fushi Hotel" class="hotel-card" href="https://soneva.com/resorts/soneva-fushi/"
+          target="_blank">
+          <img alt="Soneva Fushi" aria-label="Image of Soneva Fushi" src="maldives/image-seven.webp">
+          <h3>Soneva Fushi</h3>
+        </a>
+        <a aria-label="Banyan Villa Maldives" class="hotel-card"
+          href="https://www.bluepillow.com/search/5943837d7c00cb0e64323665?dest=bkng&amp;cat=House&amp;lat=3.60714&amp;lng=72.9552"
+          target="_blank">
+          <img alt="Banyan Villa Maldives" aria-label="Image of Banyan Villa Maldives"
+            src="maldives/image-eight.webp">
+          <h3>Banyan Villa Maldives</h3>
+        </a>
+        <a aria-label="JOALI Maldives Hotel" class="hotel-card"
+          href="https://www.joali.com/joali-maldives/?utm_source=GoogleBusinessProfile&amp;utm_medium=GBP&amp;utm_campaign=Google_GBP"
+          target="_blank">
+          <img alt="JOALI Maldives" aria-label="Image of JOALI Maldives" src="maldives/image-nine.webp">
+          <h3>JOALI Maldives</h3>
+        </a>
+        <a aria-label="Kandolhu Maldives Hotel" class="hotel-card"
+          href="https://www.kandolhu.com/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp"
+          target="_blank">
+          <img alt="Kandolhu Maldives" aria-label="Image of Kandolhu Maldives" src="maldives/image-ten.webp">
+          <h3>Kandolhu Maldives</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script type="module">
+    // Initialize the map and place picker after the custom element is defined
+    async function init() {
+      await customElements.whenDefined('gmp-map');
 
-    // Select the map and place picker elements
-    const map = document.querySelector('#map'); // Reference to the map element
-    const placePicker = document.querySelector('gmpx-place-picker'); // Reference to the search box
-    const infoWindow = new google.maps.InfoWindow(); // Info window to display place details
+      // Select the map and place picker elements
+      const map = document.querySelector('#map'); // Reference to the map element
+      const placePicker = document.querySelector('gmpx-place-picker'); // Reference to the search box
+      const infoWindow = new google.maps.InfoWindow(); // Info window to display place details
 
-    // Listen for place selection changes from the place picker
-    placePicker.addEventListener('gmpx-placechange', () => {
-      const place = placePicker.value; 
+      // Listen for place selection changes from the place picker
+      placePicker.addEventListener('gmpx-placechange', () => {
+        const place = placePicker.value;
 
-      // Alert if no location data is available
-      if (!place.location) {
-        window.alert("No details available for input: '" + place.name + "'");
-        return;
-      }
+        // Alert if no location data is available
+        if (!place.location) {
+          window.alert("No details available for input: '" + place.name + "'");
+          return;
+        }
 
-      // Adjust map view to place viewport or center/zoom if viewport not provided
-      if (place.viewport) {
-        map.innerMap.fitBounds(place.viewport); 
-      } else {
-        map.center = place.location; // Center map to location
-        map.zoom = 14; 
-      }
+        // Adjust map view to place viewport or center/zoom if viewport not provided
+        if (place.viewport) {
+          map.innerMap.fitBounds(place.viewport);
+        } else {
+          map.center = place.location; // Center map to location
+          map.zoom = 14;
+        }
 
-      // Add marker for selected place on the map
-      const searchMarker = new google.maps.Marker({
-        position: place.location,
-        map: map.innerMap,
-        title: place.displayName // ARIA-friendly marker title
+        // Add marker for selected place on the map
+        const searchMarker = new google.maps.Marker({
+          position: place.location,
+          map: map.innerMap,
+          title: place.displayName // ARIA-friendly marker title
+        });
+
+        // Display info window with place name and formatted address
+        infoWindow.setContent(`<strong>${place.displayName}</strong><br>${place.formattedAddress || ""}`);
+        infoWindow.open(map.innerMap, searchMarker);
       });
+    }
 
-      // Display info window with place name and formatted address
-      infoWindow.setContent(`<strong>${place.displayName}</strong><br>${place.formattedAddress || ""}`);
-      infoWindow.open(map.innerMap, searchMarker);
-    });
-  }
-
-  // Run init function once DOM is fully loaded
-  document.addEventListener('DOMContentLoaded', init);
-</script>
-<p>
-<a href="https://jigsaw.w3.org/css-validator/check/referer">
-<img alt="Valid CSS!" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" style="border:0;width:88px;height:31px"/>
-</a>
-</p>
+    // Run init function once DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
 </body>
+
 </html>

@@ -1,194 +1,208 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<meta name="description" content="Explore the world's most stunning deserts with Elementa Voyages: travel guides, breathtaking images, and adventure tips.">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>The Desert – Elementa Voyagés</title>
-<link href="biome-style.css" rel="stylesheet"/>
+  <meta name="description"
+    content="Explore the world's most stunning deserts with Elementa Voyages: travel guides, breathtaking images, and adventure tips.">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>The Desert – Elementa Voyagés</title>
+  <link href="biome-style.css" rel="stylesheet">
 </head>
+
 <body>
-<!-- Top header with logo and navigation -->
-<header aria-label="The Waves biome header with logo and main navigation" class="top-header desert">
-<div class="logo-container">
-<!-- Logo with clear alt description -->
-<a aria-label="Return to Elementa Voyagés home" href="index.html">
-<img alt="Elementa Voyagés logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
-</a>
-</div>
-<!-- Navigation Links -->
-<nav aria-label="Primary navigation for The Waves biome page" class="nav-links">
-<a aria-label="Go to the Home page of Elementa Voyagés" href="index.html">Home</a>
-<a aria-label="Explore destinations across different biomes" href="test-explore.html">Explore</a>
-<a aria-label="Send an email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
-</nav>
-</header>
-<!-- FILTERS + GRID -->
-<section aria-label="Destination Filters and Listings" class="destination-filter">
-<!-- Filter Bar -->
-<div aria-label="Filter destinations" class="filter-bar" role="form">
-<select id="family-select">
-<option value="">Family / Adult</option>
-<option value="family">Family Friendly</option>
-<option value="adult">Adult Only</option>
-</select>
-<select id="continent-select">
-<option value="">Continent</option>
-<option value="europe">Europe</option>
-<option value="asia">Asia</option>
-<option value="north-america">North America</option>
-<option value="south-america">South America</option>
-<option value="africa">Africa</option>
-<option value="oceania">Oceania</option>
-<option value="antarctica">Antarctica</option>
-</select>
-<select id="type-select">
-<option value="">Holiday Type</option>
-<option value="relaxing">Relaxing</option>
-<option value="adventurous">Adventurous</option>
-</select>
-<button aria-label="Clear all filters" class="clear-btn">✖ Clear Filters</button>
-</div>
-<!-- Destination Grid -->
-<div class="destination-grid">
-<!-- Europe -->
-<div class="destination-card" data-continent="europe" data-family="family" data-type="relaxing">
-<a aria-label="View Madrid destination" href="https://www.fourseasons.com/madrid/?utm_source=google&amp;utm_medium=organicsearch&amp;utm_campaign=tor-mmd-hre-mid-seo-na&amp;utm_content=na-na&amp;utm_term=na" target="_blank">
-<img alt="Madrid" src="desert-biome/madrid.webp"/>
-<h3>Madrid</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="europe" data-family="adult" data-type="relaxing">
-<a aria-label="View Croatia destination" href="https://villamira-bol.com/" target="_blank">
-<img alt="Croatia" src="desert-biome/croatia.webp"/>
-<h3>Croatia</h3>
-</a>
-</div>
-<!-- Asia -->
-<div class="destination-card" data-continent="asia" data-family="family" data-type="adventurous">
-<a aria-label="View Dubai Desert destination" href="https://www.dubaistays.ae/listings/148327?googleVR=1&amp;utm_source=google&amp;utm_medium=vacation_rentals" target="_blank">
-<img alt="Dubai Desert, UAE" src="desert-biome/dubai.webp"/>
-<h3>Dubai Desert, UAE</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="asia" data-family="adult" data-type="adventurous">
-<a aria-label="View Thar Desert destination" href="https://tharviewhotel.com/" target="_blank">
-<img alt="Thar Desert, India" src="desert-biome/india.webp"/>
-<h3>Thar Desert, India</h3>
-</a>
-</div>
-<!-- North America -->
-<div class="destination-card" data-continent="north-america" data-family="family" data-type="relaxing">
-<a aria-label="View Arizona Desert destination" href="https://www.millenniumhotels.com/en/scottsdale/the-mccormick-scottsdale/" target="_blank">
-<img alt="Arizona Desert, USA" src="desert-biome/arizona.webp"/>
-<h3>Arizona Desert, USA</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="north-america" data-family="adult" data-type="adventurous">
-<a aria-label="View Baja Desert destination" href="https://www.ritzcarlton.com/en/hotels/mexico/cancun" target="_blank">
-<img alt="Baja Desert, Mexico" src="desert-biome/mexico.webp"/>
-<h3>Baja Desert, Mexico</h3>
-</a>
-</div>
-<!-- South America -->
-<div class="destination-card" data-continent="south-america" data-family="family" data-type="relaxing">
-<a aria-label="View Atacama Desert destination" href="https://www.ourhabitas.com/atacama/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=google_local" target="_blank">
-<img alt="Atacama Desert, Chile" src="desert-biome/chile.webp"/>
-<h3>Atacama Desert, Chile</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="south-america" data-family="adult" data-type="adventurous">
-<a aria-label="View Pampas Desert destination" href="https://all.accor.com/hotel/A029/index.en.shtml?utm_campaign=seo+maps&amp;utm_medium=seo+maps&amp;utm_source=google+Maps" target="_blank">
-<img alt="Pampas Desert, Argentina" src="desert-biome/argentina.webp"/>
-<h3>Pampas Desert, Argentina</h3>
-</a>
-</div>
-<!-- Africa -->
-<div class="destination-card" data-continent="africa" data-family="family" data-type="relaxing">
-<a aria-label="View Namib Desert destination" href="https://gmundner-lodge.com/" target="_blank">
-<img alt="Namib Desert, Namibia" src="desert-biome/namibia.webp"/>
-<h3>Namib Desert, Namibia</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="africa" data-family="adult" data-type="adventurous">
-<a aria-label="View Sahara Desert destination" href="https://www.royalmansour.com/en/marrakech/?utm_source=google&amp;utm_medium=local&amp;utm_campaign=hotel-royal-mansour-marrakech" target="_blank">
-<img alt="Sahara Desert, Morocco" src="desert-biome/morocco.webp"/>
-<h3>Sahara Desert, Morocco</h3>
-</a>
-</div>
-<!-- Oceania -->
-<div class="destination-card" data-continent="oceania" data-family="family" data-type="relaxing">
-<a aria-label="View Sydney destination" href="https://www.yha.com.au/hostels/nsw/sydney-surrounds/sydney-harbour/?utm_source=google-business&amp;utm_medium=righthandside&amp;utm_campaign=listing" target="_blank">
-<img alt="Sydney, Australia" src="desert-biome/sydney.webp"/>
-<h3>Sydney, Australia</h3>
-</a>
-</div>
-<div class="destination-card" data-continent="oceania" data-family="adult" data-type="adventurous">
-<a aria-label="View Wellington destination" href="https://www.newzealand.com/int/feature/mackenzie-desert/" target="_blank">
-<img alt="Wellington, New Zealand" src="desert-biome/new-zealand.webp"/>
-<h3>Wellington, New Zealand</h3>
-</a>
-</div>
-</div>
-</section>
-<footer aria-label="Website Footer" class="site-footer">
-<div class="footer-container">
-<!-- Column 1: Logo & About -->
-<div aria-label="About Elementa Voyagés" class="footer-column" role="region">
-<div class="footer-logo">
-<img alt="Elementa Voyagés Logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
-</div>
-<p class="footer-tagline">
+  <!-- Top header with logo and navigation -->
+  <header aria-label="The Waves biome header with logo and main navigation" class="top-header desert">
+    <div class="logo-container">
+      <!-- Logo with clear alt description -->
+      <a aria-label="Return to Elementa Voyagés home" href="index.html">
+        <img alt="Elementa Voyagés logo" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp">
+      </a>
+    </div>
+    <!-- Navigation Links -->
+    <nav aria-label="Primary navigation for The Waves biome page" class="nav-links">
+      <a aria-label="Go to the Home page of Elementa Voyagés" href="index.html">Home</a>
+      <a aria-label="Explore destinations across different biomes" href="test-explore.html">Explore</a>
+      <a aria-label="Send an email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
+    </nav>
+  </header>
+  <!-- FILTERS + GRID -->
+  <section aria-label="Destination Filters and Listings" class="destination-filter">
+    <!-- Filter Bar -->
+    <div aria-label="Filter destinations" class="filter-bar" role="form">
+      <select id="family-select">
+        <option value="">Family / Adult</option>
+        <option value="family">Family Friendly</option>
+        <option value="adult">Adult Only</option>
+      </select>
+      <select id="continent-select">
+        <option value="">Continent</option>
+        <option value="europe">Europe</option>
+        <option value="asia">Asia</option>
+        <option value="north-america">North America</option>
+        <option value="south-america">South America</option>
+        <option value="africa">Africa</option>
+        <option value="oceania">Oceania</option>
+        <option value="antarctica">Antarctica</option>
+      </select>
+      <select id="type-select">
+        <option value="">Holiday Type</option>
+        <option value="relaxing">Relaxing</option>
+        <option value="adventurous">Adventurous</option>
+      </select>
+      <button aria-label="Clear all filters" class="clear-btn">✖ Clear Filters</button>
+    </div>
+    <!-- Destination Grid -->
+    <div class="destination-grid">
+      <!-- Europe -->
+      <div class="destination-card" data-continent="europe" data-family="family" data-type="relaxing">
+        <a aria-label="View Madrid destination"
+          href="https://www.fourseasons.com/madrid/?utm_source=google&amp;utm_medium=organicsearch&amp;utm_campaign=tor-mmd-hre-mid-seo-na&amp;utm_content=na-na&amp;utm_term=na"
+          target="_blank">
+          <img alt="Madrid" src="desert-biome/madrid.webp">
+          <h3>Madrid</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="europe" data-family="adult" data-type="relaxing">
+        <a aria-label="View Croatia destination" href="https://villamira-bol.com/" target="_blank">
+          <img alt="Croatia" src="desert-biome/croatia.webp">
+          <h3>Croatia</h3>
+        </a>
+      </div>
+      <!-- Asia -->
+      <div class="destination-card" data-continent="asia" data-family="family" data-type="adventurous">
+        <a aria-label="View Dubai Desert destination"
+          href="https://www.dubaistays.ae/listings/148327?googleVR=1&amp;utm_source=google&amp;utm_medium=vacation_rentals"
+          target="_blank">
+          <img alt="Dubai Desert, UAE" src="desert-biome/dubai.webp">
+          <h3>Dubai Desert, UAE</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="asia" data-family="adult" data-type="adventurous">
+        <a aria-label="View Thar Desert destination" href="https://tharviewhotel.com/" target="_blank">
+          <img alt="Thar Desert, India" src="desert-biome/india.webp">
+          <h3>Thar Desert, India</h3>
+        </a>
+      </div>
+      <!-- North America -->
+      <div class="destination-card" data-continent="north-america" data-family="family" data-type="relaxing">
+        <a aria-label="View Arizona Desert destination"
+          href="https://www.millenniumhotels.com/en/scottsdale/the-mccormick-scottsdale/" target="_blank">
+          <img alt="Arizona Desert, USA" src="desert-biome/arizona.webp">
+          <h3>Arizona Desert, USA</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="north-america" data-family="adult" data-type="adventurous">
+        <a aria-label="View Baja Desert destination" href="https://www.ritzcarlton.com/en/hotels/mexico/cancun"
+          target="_blank">
+          <img alt="Baja Desert, Mexico" src="desert-biome/mexico.webp">
+          <h3>Baja Desert, Mexico</h3>
+        </a>
+      </div>
+      <!-- South America -->
+      <div class="destination-card" data-continent="south-america" data-family="family" data-type="relaxing">
+        <a aria-label="View Atacama Desert destination"
+          href="https://www.ourhabitas.com/atacama/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=google_local"
+          target="_blank">
+          <img alt="Atacama Desert, Chile" src="desert-biome/chile.webp">
+          <h3>Atacama Desert, Chile</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="south-america" data-family="adult" data-type="adventurous">
+        <a aria-label="View Pampas Desert destination"
+          href="https://all.accor.com/hotel/A029/index.en.shtml?utm_campaign=seo+maps&amp;utm_medium=seo+maps&amp;utm_source=google+Maps"
+          target="_blank">
+          <img alt="Pampas Desert, Argentina" src="desert-biome/argentina.webp">
+          <h3>Pampas Desert, Argentina</h3>
+        </a>
+      </div>
+      <!-- Africa -->
+      <div class="destination-card" data-continent="africa" data-family="family" data-type="relaxing">
+        <a aria-label="View Namib Desert destination" href="https://gmundner-lodge.com/" target="_blank">
+          <img alt="Namib Desert, Namibia" src="desert-biome/namibia.webp">
+          <h3>Namib Desert, Namibia</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="africa" data-family="adult" data-type="adventurous">
+        <a aria-label="View Sahara Desert destination"
+          href="https://www.royalmansour.com/en/marrakech/?utm_source=google&amp;utm_medium=local&amp;utm_campaign=hotel-royal-mansour-marrakech"
+          target="_blank">
+          <img alt="Sahara Desert, Morocco" src="desert-biome/morocco.webp">
+          <h3>Sahara Desert, Morocco</h3>
+        </a>
+      </div>
+      <!-- Oceania -->
+      <div class="destination-card" data-continent="oceania" data-family="family" data-type="relaxing">
+        <a aria-label="View Sydney destination"
+          href="https://www.yha.com.au/hostels/nsw/sydney-surrounds/sydney-harbour/?utm_source=google-business&amp;utm_medium=righthandside&amp;utm_campaign=listing"
+          target="_blank">
+          <img alt="Sydney, Australia" src="desert-biome/sydney.webp">
+          <h3>Sydney, Australia</h3>
+        </a>
+      </div>
+      <div class="destination-card" data-continent="oceania" data-family="adult" data-type="adventurous">
+        <a aria-label="View Wellington destination" href="https://www.newzealand.com/int/feature/mackenzie-desert/"
+          target="_blank">
+          <img alt="Wellington, New Zealand" src="desert-biome/new-zealand.webp">
+          <h3>Wellington, New Zealand</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer aria-label="Website Footer" class="site-footer">
+    <div class="footer-container">
+      <!-- Column 1: Logo & About -->
+      <div aria-label="About Elementa Voyagés" class="footer-column" role="region">
+        <div class="footer-logo">
+          <img alt="Elementa Voyagés Logo" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp">
+        </div>
+        <p class="footer-tagline">
           Curated journeys, luxurious stays, and unforgettable experiences.
         </p>
-</div>
-<!-- Column 2: Quick Links -->
-<div aria-label="Footer Quick Links" class="footer-column" role="navigation">
-<h4>Explore</h4>
-<ul class="footer-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="test-explore.html">Destinations</a></li>
-<li><a href="mailto:info@elementavoyages.com">Contact</a></li>
-</ul>
-</div>
-<!-- Column 3: Newsletter & Social -->
-<div aria-label="Newsletter and Social Links" class="footer-column" role="region">
-<h4>Stay Connected</h4>
-<p>Join our newsletter for travel inspiration &amp; exclusive offers.</p>
-<form aria-label="Subscribe to newsletter" class="footer-newsletter">
-<label class="visually-hidden" for="newsletter-email">Email Address</label>
-<input id="newsletter-email" placeholder="Enter your email" type="email"/>
-<button type="submit">Subscribe</button>
-</form>
-<div aria-label="Social Media Links" class="footer-social" role="navigation">
-<a href="https://www.instagram.com/" target="_blank">Instagram</a>
-<a href="https://facebook.com" target="_blank">Facebook</a>
-<a href="https://linkedin.com" target="_blank">LinkedIn</a>
-</div>
-</div>
-</div>
-<!-- Sponsors & Credits -->
-<div aria-label="Sponsors" class="footer-sponsors" role="region">
-<p>Sponsored by Luxury Travels &amp; Partners</p>
-<div class="sponsor-logos">
-<img alt="Sponsor 1" src="sponsors/image-one.webp" width="64" height="33"/>
-<img alt="Sponsor 2" src="sponsors/image-two.webp" width="63" height="43"/>
-<img alt="Sponsor 3" src="sponsors/image-three.webp" width="54" height="44"/>
-<img alt="Sponsor 4" src="sponsors/image-four.webp" width="85" height="37"/>
-<img alt="Sponsor 5" src="sponsors/image-five.webp" width="82" height="48"/>
-</div>
-</div>
-<div class="footer-bottom">
-<p>© 2025 Elementa Voyagés. All Rights Reserved.</p>
-</div>
-</footer>
-<script src="biome.js"></script>
-<p>
-<a href="https://jigsaw.w3.org/css-validator/check/referer">
-<img alt="Valid CSS!" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" style="border:0;width:88px;height:31px"/>
-</a>
-</p>
+      </div>
+      <!-- Column 2: Quick Links -->
+      <div aria-label="Footer Quick Links" class="footer-column" role="navigation">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="test-explore.html">Destinations</a></li>
+          <li><a href="mailto:info@elementavoyages.com">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Column 3: Newsletter & Social -->
+      <div aria-label="Newsletter and Social Links" class="footer-column" role="region">
+        <h4>Stay Connected</h4>
+        <p>Join our newsletter for travel inspiration &amp; exclusive offers.</p>
+        <form aria-label="Subscribe to newsletter" class="footer-newsletter">
+          <label class="visually-hidden" for="newsletter-email">Email Address</label>
+          <input id="newsletter-email" placeholder="Enter your email" type="email">
+          <button type="submit">Subscribe</button>
+        </form>
+        <div aria-label="Social Media Links" class="footer-social" role="navigation">
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <!-- Sponsors & Credits -->
+    <div aria-label="Sponsors" class="footer-sponsors" role="region">
+      <p>Sponsored by Luxury Travels &amp; Partners</p>
+      <div class="sponsor-logos">
+        <img alt="Sponsor 1" src="sponsors/image-one.webp" width="64" height="33">
+        <img alt="Sponsor 2" src="sponsors/image-two.webp" width="63" height="43">
+        <img alt="Sponsor 3" src="sponsors/image-three.webp" width="54" height="44">
+        <img alt="Sponsor 4" src="sponsors/image-four.webp" width="85" height="37">
+        <img alt="Sponsor 5" src="sponsors/image-five.webp" width="82" height="48">
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Elementa Voyagés. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="biome.js"></script>
 </body>
+
 </html>

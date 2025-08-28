@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap');
 
 * {
-  margin: 0; padding: 0; box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   font-family: 'Playfair Display', serif;
   overflow: hidden;
@@ -15,7 +18,8 @@ html, body {
 /* Background slides container: fixed behind content, covers full viewport */
 .bg-slides {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -40,7 +44,8 @@ html, body {
 }
 
 /* Top Header with logo and nav: flex container at top of page */
-.top-header {/* Pale frosty blue */
+.top-header {
+  /* Pale frosty blue */
   height: 15%;
   display: flex;
   align-items: center;
@@ -60,6 +65,7 @@ html, body {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
 .logo-container a img:hover {
   transform: scale(1.05);
 }
@@ -83,6 +89,7 @@ html, body {
   border-radius: 6px;
   transition: background 0.3s, color 0.3s;
 }
+
 .nav-links a:hover {
   background-color: #ffffff;
   color: #000000;
@@ -95,11 +102,11 @@ html, body {
   bottom: 15%;
   left: 5%;
   width: 35%;
-  background: linear-gradient(to right, rgba(0,0,0,0.7), transparent);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent);
   color: white;
   padding: 2rem;
   z-index: 10;
-  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
 /* Slide heading styling */
@@ -118,7 +125,7 @@ html, body {
 /* Slide button: semi-transparent with border and hover effect */
 .slide-btn {
   padding: 0.8rem 1.6rem;
-  background: rgba(255,255,255,0.25);
+  background: rgba(255, 255, 255, 0.25);
   color: white;
   border: 2px solid white;
   text-decoration: none;
@@ -126,8 +133,9 @@ html, body {
   transition: background 0.3s ease;
   display: inline-block;
 }
+
 .slide-btn:hover {
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 /* Responsive: adjust text box size and fonts on smaller screens */
@@ -138,6 +146,7 @@ html, body {
     left: 5%;
     font-size: 0.9rem;
   }
+
   .slide-text-container h1 {
     font-size: 2rem;
   }

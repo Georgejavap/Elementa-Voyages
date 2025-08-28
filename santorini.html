@@ -1,141 +1,151 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<meta name="description" content="Explore Santorini with Elementa Voyages: stunning sunsets, whitewashed buildings, and travel guides for your perfect Greek island trip.">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Destination Map &amp; Hotels</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Open+Sans&amp;display=swap" rel="stylesheet"/>
-<link href="city-map.css" rel="stylesheet"/>
-<script src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js" type="module"></script>
+  <meta name="description"
+    content="Explore Santorini with Elementa Voyages: stunning sunsets, whitewashed buildings, and travel guides for your perfect Greek island trip.">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Destination Map &amp; Hotels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&amp;family=Open+Sans&amp;display=swap"
+    rel="stylesheet">
+  <link href="city-map.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/@googlemaps/extended-component-library/0.6.11/index.min.js"
+    type="module"></script>
 </head>
+
 <body>
-<header aria-label="Site Header" class="top-header">
-<!-- Logo Container -->
-<div class="logo-container">
-<a href="index.html">
-<img alt="Elementa Voyagés Logo" aria-label="Elementa Voyagés Logo" height="height" src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp" width="width"/>
-</a>
-</div>
-<!-- Navigation Links -->
-<nav aria-label="Main navigation" class="nav-links">
-<a aria-label="Go to Home page" href="index.html">Home</a>
-<a aria-label="Go to Explore page" href="test-explore.html">Explore</a>
-<a aria-label="Send email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
-</nav>
-</header>
-<!-- Page Title -->
-<h1 aria-label="Destination city map and hotel information" id="city-title">Explore Santorini</h1>
-<!-- Main Content: Map Section -->
-<div class="main-content">
-<div class="map-section">
-<!-- Google Maps API Loader: loads the maps component -->
-<gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k" solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
-<!-- Map centered on Santorini -->
-<gmp-map center="36.3932,25.4615" id="map" zoom="14">
-<!-- Place Picker for Searching Cities or Addresses -->
-<div class="place-picker-container" slot="control-block-start-inline-start">
-<gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
-</div>
-</gmp-map>
-</div>
-<!-- Sidebar with recommended hotels -->
-<div class="sidebar" role="complementary">
-<h2>Recommended Hotels</h2>
-<div class="hotel-links">
-<!-- Individual Hotel Cards with images and links -->
-<a class="hotel-card" href="https://www.kastelliresort.com/" target="_blank">
-<img alt="Kastelli Resort, Santorini" aria-label="Kastelli Resort, Santorini" src="santorini/image-one.webp"/>
-<h3>Kastelli Resort</h3>
-</a>
-<a class="hotel-card" href="https://donkeyhotels.gr/nous-santorini/" target="_blank">
-<img alt="NOŪS Santorini" aria-label="NOŪS Santorini" src="santorini/image-two.webp"/>
-<h3>NOŪS Santorini</h3>
-</a>
-<a class="hotel-card" href="https://www.soledorosantorini.com/" target="_blank">
-<img alt="Sole d’oro Luxury Suites" aria-label="Sole d’oro Luxury Suites" src="santorini/image-three.webp"/>
-<h3>Sole d’oro Luxury Suites</h3>
-</a>
-<a class="hotel-card" href="https://www.bluepillow.com/search/5afa47cc7c00cb2bd0a4adf1?dest=bkng&amp;cat=House&amp;lat=36.46273&amp;lng=25.39381" target="_blank">
-<img alt="Caves 1880, Santorini" aria-label="Caves 1880, Santorini" src="santorini/image-four.webp"/>
-<h3>Caves 1880</h3>
-</a>
-<a class="hotel-card" href="https://www.loucashotel-santorini.com/" target="_blank">
-<img alt="Loucas on the Cliff, Santorini" aria-label="Loucas on the Cliff, Santorini" src="santorini/image-five.webp"/>
-<h3>Loucas on the Cliff</h3>
-</a>
-<a class="hotel-card" href="https://www.danavillas.com/" target="_blank">
-<img alt="Dana Villas &amp; Infinity Suites, Santorini" aria-label="Dana Villas &amp; Infinity Suites, Santorini" src="santorini/image-six.webp"/>
-<h3>Dana Villas &amp; Infinity Suites</h3>
-</a>
-<a class="hotel-card" href="https://www.rocabella-hotel-santorini.com/" target="_blank">
-<img alt="Rocabella Santorini" aria-label="Rocabella Santorini" src="santorini/image-seven.webp"/>
-<h3>Rocabella Santorini</h3>
-</a>
-<a class="hotel-card" href="https://www.athinasuites.com/" target="_blank">
-<img alt="Athina Luxury Suites, Santorini" aria-label="Athina Luxury Suites, Santorini" src="santorini/image-eight.webp"/>
-<h3>Athina Luxury Suites</h3>
-</a>
-<a class="hotel-card" href="https://www.portocastello.com/" target="_blank">
-<img alt="Porto Castello, Santorini" aria-label="Porto Castello, Santorini" src="santorini/image-nine.webp"/>
-<h3>Porto Castello</h3>
-</a>
-<a class="hotel-card" href="https://maistrosvillage.gr/" target="_blank">
-<img alt="Maistros Village, Santorini" aria-label="Maistros Village, Santorini" src="santorini/image-ten.webp"/>
-<h3>Maistros Village</h3>
-</a>
-</div>
-</div>
-</div>
-<script type="module">
-  // Initialize the map and place picker after the custom element is defined
-  async function init() {
-    await customElements.whenDefined('gmp-map');
+  <header aria-label="Site Header" class="top-header">
+    <!-- Logo Container -->
+    <div class="logo-container">
+      <a href="index.html">
+        <img alt="Elementa Voyagés Logo" aria-label="Elementa Voyagés Logo" 
+          src="Screenshot_2025-07-09_at_21.32.05-removebg-preview.webp">
+      </a>
+    </div>
+    <!-- Navigation Links -->
+    <nav aria-label="Main navigation" class="nav-links">
+      <a aria-label="Go to Home page" href="index.html">Home</a>
+      <a aria-label="Go to Explore page" href="test-explore.html">Explore</a>
+      <a aria-label="Send email to Elementa Voyagés" href="mailto:info@elementavoyages.com">Contact</a>
+    </nav>
+  </header>
+  <!-- Page Title -->
+  <h1 aria-label="Destination city map and hotel information" id="city-title">Explore Santorini</h1>
+  <!-- Main Content: Map Section -->
+  <div class="main-content">
+    <div class="map-section">
+      <!-- Google Maps API Loader: loads the maps component -->
+      <gmpx-api-loader key="AIzaSyCNGtQw7HZPR1UTtfZFG_5FOKpEzZ8wn_k"
+        solution-channel="GMP_GE_mapsandplacesautocomplete_v2"></gmpx-api-loader>
+      <!-- Map centered on Santorini -->
+      <gmp-map center="36.3932,25.4615" id="map" zoom="14">
+        <!-- Place Picker for Searching Cities or Addresses -->
+        <div class="place-picker-container" slot="control-block-start-inline-start">
+          <gmpx-place-picker placeholder="Search a city or address"></gmpx-place-picker>
+        </div>
+      </gmp-map>
+    </div>
+    <!-- Sidebar with recommended hotels -->
+    <div class="sidebar" role="complementary">
+      <h2>Recommended Hotels</h2>
+      <div class="hotel-links">
+        <!-- Individual Hotel Cards with images and links -->
+        <a class="hotel-card" href="https://www.kastelliresort.com/" target="_blank">
+          <img alt="Kastelli Resort, Santorini" aria-label="Kastelli Resort, Santorini"
+            src="santorini/image-one.webp">
+          <h3>Kastelli Resort</h3>
+        </a>
+        <a class="hotel-card" href="https://donkeyhotels.gr/nous-santorini/" target="_blank">
+          <img alt="NOŪS Santorini" aria-label="NOŪS Santorini" src="santorini/image-two.webp">
+          <h3>NOŪS Santorini</h3>
+        </a>
+        <a class="hotel-card" href="https://www.soledorosantorini.com/" target="_blank">
+          <img alt="Sole d’oro Luxury Suites" aria-label="Sole d’oro Luxury Suites" src="santorini/image-three.webp">
+          <h3>Sole d’oro Luxury Suites</h3>
+        </a>
+        <a class="hotel-card"
+          href="https://www.bluepillow.com/search/5afa47cc7c00cb2bd0a4adf1?dest=bkng&amp;cat=House&amp;lat=36.46273&amp;lng=25.39381"
+          target="_blank">
+          <img alt="Caves 1880, Santorini" aria-label="Caves 1880, Santorini" src="santorini/image-four.webp">
+          <h3>Caves 1880</h3>
+        </a>
+        <a class="hotel-card" href="https://www.loucashotel-santorini.com/" target="_blank">
+          <img alt="Loucas on the Cliff, Santorini" aria-label="Loucas on the Cliff, Santorini"
+            src="santorini/image-five.webp">
+          <h3>Loucas on the Cliff</h3>
+        </a>
+        <a class="hotel-card" href="https://www.danavillas.com/" target="_blank">
+          <img alt="Dana Villas &amp; Infinity Suites, Santorini"
+            aria-label="Dana Villas &amp; Infinity Suites, Santorini" src="santorini/image-six.webp">
+          <h3>Dana Villas &amp; Infinity Suites</h3>
+        </a>
+        <a class="hotel-card" href="https://www.rocabella-hotel-santorini.com/" target="_blank">
+          <img alt="Rocabella Santorini" aria-label="Rocabella Santorini" src="santorini/image-seven.webp">
+          <h3>Rocabella Santorini</h3>
+        </a>
+        <a class="hotel-card" href="https://www.athinasuites.com/" target="_blank">
+          <img alt="Athina Luxury Suites, Santorini" aria-label="Athina Luxury Suites, Santorini"
+            src="santorini/image-eight.webp">
+          <h3>Athina Luxury Suites</h3>
+        </a>
+        <a class="hotel-card" href="https://www.portocastello.com/" target="_blank">
+          <img alt="Porto Castello, Santorini" aria-label="Porto Castello, Santorini" src="santorini/image-nine.webp">
+          <h3>Porto Castello</h3>
+        </a>
+        <a class="hotel-card" href="https://maistrosvillage.gr/" target="_blank">
+          <img alt="Maistros Village, Santorini" aria-label="Maistros Village, Santorini"
+            src="santorini/image-ten.webp">
+          <h3>Maistros Village</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script type="module">
+    // Initialize the map and place picker after the custom element is defined
+    async function init() {
+      await customElements.whenDefined('gmp-map');
 
-     // Select the map and place picker elements
-    const map = document.querySelector('#map');// Reference to the map element
-    const placePicker = document.querySelector('gmpx-place-picker');// Reference to the search box
-    const infoWindow = new google.maps.InfoWindow();// Info window to display place details
+      // Select the map and place picker elements
+      const map = document.querySelector('#map');// Reference to the map element
+      const placePicker = document.querySelector('gmpx-place-picker');// Reference to the search box
+      const infoWindow = new google.maps.InfoWindow();// Info window to display place details
 
 
-    placePicker.addEventListener('gmpx-placechange', () => {
-      const place = placePicker.value;
+      placePicker.addEventListener('gmpx-placechange', () => {
+        const place = placePicker.value;
 
-      // Alert if no location data is available
-      if (!place.location) {
-        window.alert("No details available for input: '" + place.name + "'");
-        return;
-      }
+        // Alert if no location data is available
+        if (!place.location) {
+          window.alert("No details available for input: '" + place.name + "'");
+          return;
+        }
 
-      // Adjust map view to place viewport or center/zoom if viewport not provided
-      if (place.viewport) {
-        map.innerMap.fitBounds(place.viewport);
-      } else {
-        map.center = place.location;// Center map to location
-        map.zoom = 14;
-      }
+        // Adjust map view to place viewport or center/zoom if viewport not provided
+        if (place.viewport) {
+          map.innerMap.fitBounds(place.viewport);
+        } else {
+          map.center = place.location;// Center map to location
+          map.zoom = 14;
+        }
 
-      // Add marker for selected place on the map
-      const searchMarker = new google.maps.Marker({
-        position: place.location,
-        map: map.innerMap,
-        title: place.displayName // ARIA-friendly marker title
+        // Add marker for selected place on the map
+        const searchMarker = new google.maps.Marker({
+          position: place.location,
+          map: map.innerMap,
+          title: place.displayName // ARIA-friendly marker title
+        });
+
+        // Display info window with place name and formatted address
+        infoWindow.setContent(`<strong>${place.displayName}</strong><br>${place.formattedAddress || ""}`);
+        infoWindow.open(map.innerMap, searchMarker);
       });
+    }
 
-      // Display info window with place name and formatted address
-      infoWindow.setContent(`<strong>${place.displayName}</strong><br>${place.formattedAddress || ""}`);
-      infoWindow.open(map.innerMap, searchMarker);
-    });
-  }
-
-  // Run init function once DOM is fully loaded
-  document.addEventListener('DOMContentLoaded', init);
-</script>
-<p>
-<a href="https://jigsaw.w3.org/css-validator/check/referer">
-<img alt="Valid CSS!" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" style="border:0;width:88px;height:31px"/>
-</a>
-</p>
+    // Run init function once DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
 </body>
+
 </html>
