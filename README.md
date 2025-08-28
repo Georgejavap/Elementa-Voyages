@@ -6,7 +6,7 @@
 [![Performance](https://img.shields.io/badge/Lighthouse-Performance-orange)]
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)]
 
-**Live Website:** [Elementa Voyages](https://georgejavap.github.io/Elemenges/)  
+**Live Website:** [Elementa Voyages](https://georgejavap.github.io/Elementa-Voyages/)  
 **GitHub Repository:** [GitHub Link](https://github.com/GeorgeJavaP/Elementa-Voyages)
 
 ---
@@ -14,7 +14,7 @@
 ## 📖 Table of Contents
 1. [Project Overview](#project-overview)  
 2. [Website Features](#website-features)  
-3. [Wireframes UX Planning](#Wireframes-UX-Planning)  
+3. [Wireframes UX Planning](#wireframes-ux-planning)  
 4. [Folder Structure & File Descriptions](#folder-structure--file-descriptions)  
 5. [Installation & Local Testing](#installation--local-testing)  
 6. [Validation & Testing](#validation--testing)  
